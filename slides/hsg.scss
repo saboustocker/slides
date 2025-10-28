@@ -1,0 +1,26 @@
+/*-- scss:defaults --*/
+
+// Greens
+$hsg-gruen: #00802f;      // HSG-Grün
+$hsg-dunkelgruen: #0a5f2d; // HSG-Dunkelgrün
+
+// Neutral / Accent
+$hsg-beige: #e1d7c3;      // HSG-Beige
+$hsg-blau: #73a5af;       // HSG-Blau
+$hsg-korall: #eb6969;     // HSG-Korall
+$hsg-gelb: #fff04b;  // HSG-Gelb
+
+/*-- scss:rules --*/
+
+.reveal .slide blockquote {
+  border-left: 3px solid $text-muted;
+  padding-left: 0.5em;
+}
+
+.reveal title-slide {
+  background-color: $hsg-dunkelgruen;
+}
+
+.reveal h1 {
+  color: $hsg-beige;
+}

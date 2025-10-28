@@ -1,0 +1,16 @@
+---
+title: "How do people react to ambiguity about the origin of a material?"
+author: Sabou Rani Stocker
+date: 2025-10-29
+subtitle: literature scoping and overview
+format:
+  revealjs:  
+    theme: [dark, hsg.scss]
+    transition: slide
+    slide-number: true
+---
+
+
+# Titles 1
+
+# Title 2

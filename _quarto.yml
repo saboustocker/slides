@@ -3,11 +3,22 @@ project:
   output-dir: docs
 
 website:
-  title: "My Quarto Website"
+  title: "IBT-HSG - Slides"
   navbar:
+    search: true
     left:
       - text: "Home"
-        href: Slides.qmd
+        href: index.qmd
+    right: 
+      - icon: github
+        href: https://github.com/saboustocker/slides
+        aria-label: GitHub
+
+format: 
+  html:
+    theme: darkly
+    css: styles.scss
+    
 
 execute:
   echo: true
