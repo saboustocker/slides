@@ -1,5 +1,8 @@
 
 /*-- scss:defaults --*/
+
+// This file should 
+
 // HSG Brand Colors
 
 // Greens
@@ -14,17 +17,7 @@ $hsg-gelb: #fff04b;  // HSG-Gelb
 
 /*-- scss:rules --*/
 
-/*-- general formatting --*/
-$navbar-bg: #e1d7c3; 
-
-h1 {
-  color: #0a5f2d !important;  // Replace with your desired color
-}
-
-a {
-  color: $hsg-beige !important;
-  &:hover {
-    color: $hsg-gruen !important;
-  }
+h1, h2, h3 {
+  color: $hsg-beige;
 }
 

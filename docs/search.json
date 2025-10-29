@@ -12,5 +12,194 @@
     "title": "Slides",
     "section": "",
     "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "IBT-HSG - Slides",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "index.html#quarto",
+    "href": "index.html#quarto",
+    "title": "IBT-HSG - Slides",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "slides.html",
+    "href": "slides.html",
+    "title": "Slides Listing",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nSubtitle\n\n\n\nDate\n\n\n\nproject\n\n\n\n\n\n\n\n\nOrigin Ambiguity\n\n\nWhat happens if people no longer know if something originates from AI or human authorship?\n\n\n29.10.2025\n\n\nAI assessment\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "slides/ambiguity.html#relevance-of-topic",
+    "href": "slides/ambiguity.html#relevance-of-topic",
+    "title": "Authorship Ambiguity",
+    "section": "Relevance of Topic",
+    "text": "Relevance of Topic\n\n…"
+  },
+  {
+    "objectID": "slides/ambiguity.html#differences-in-perception",
+    "href": "slides/ambiguity.html#differences-in-perception",
+    "title": "Authorship Ambiguity",
+    "section": "Differences in Perception",
+    "text": "Differences in Perception\nTrust\n\npeople trust AI less than humans in various contexts:\n\nAI is perceived to lack human abilities (Kirk and Givi 2025; Lefkeli, Karataş, and Gürhan-Canli 2024)\n\nwhich leads to perceived human decision-makers in the background, which in turn leads to perceived reduction in privacy and increase in feeling exploitet (Lefkeli, Karataş, and Gürhan-Canli 2024)\n\nAI is perceived as less private (Lefkeli, Karataş, and Gürhan-Canli 2024)\ntrust is decreased more if AI use is disclosed (Schilke and Reimann 2025; Kirk and Givi 2025) …\n… and people trust AI less when disclosing things (Lefkeli, Karataş, and Gürhan-Canli 2024)\n\nsome of these effects (e.g. algorithm aversion (Bigman 2022)) have been discussed extensively already\nPfeuffer et al. (2025) show that disclosing the alteration of images decreases trust in content creators / brands"
+  },
+  {
+    "objectID": "slides/ambiguity.html#ability-to-differenciate",
+    "href": "slides/ambiguity.html#ability-to-differenciate",
+    "title": "Authorship Ambiguity",
+    "section": "Ability to Differenciate",
+    "text": "Ability to Differenciate\n\n“almost 50% of respondents can distinguish between AI and human generated artwork.” (Vukojičić, Krstić, and Veinović 2023)\n“participants performed below chance levels in identifying AI-generated poems (46.6% accuracy)” (Porter and Machery 2024) “participants were more likely to judge AI-generated poems as human-authored than actual human-authored poems (Porter and Machery 2024)\nnon-artists have pronounced difficulty identifying AI generated images (Ha et al. 2024), but artists and professional artists had much less difficulty (Ha et al. 2024)\nHowever, You et al. (2024) did not find a difference between creators and non-creators in accuracy of identifying images\nAI generated image detectors (e.g. Hive) had no difficulty detecting AI generated images (Ha et al. 2024)\nWith training, participants were able to correctly identify AI generated text correctyl 65% of the time; without training 55% - i.e. slightly above chance (Milička et al. 2025)"
+  },
+  {
+    "objectID": "slides/ambiguity.html#legal-grounds",
+    "href": "slides/ambiguity.html#legal-grounds",
+    "title": "Authorship Ambiguity",
+    "section": "Legal Grounds",
+    "text": "Legal Grounds\nDisclosure\n\nthere are no universal provisions to mandate AI disclosure (Vischer, 2024)\nthe existing laws leave enough leeway for companies to utilize AI without disclosure, justifying the question as to how consumers react when authorship is ambiguous\n\nGDPR / FADP as part of the duty to inform people when personal data is obtained to be used with any sort of AI system (GDPR Art. 13/14, FADP Art. 19ff) and for which purposes (GDPR Art. 5(1) and FADP Art. 6(2-3)), as well as in the context of consent (GDPR Art. 4(11) & FADP Art. 6(6))\nSwiss Labour Act (Ordinance 3, Art. 26) prohibits behavioral monitoring in the workplace unless required. In that case they must be disclosed (Ordinance 3, Art. 6)\nFederal Act on Cartels and other Restraints of Competition and the Federal Act on Unfair Competition(CH) provides some regulations on transparency, copyright of competitors, and targeting (CartA,UCA)\nThe United States have several state-wide bills which regulate some uses of AI (e.g. AI transparency Act in California or the Colorado AI Act).\ncopyright laws\nthe AI Act in the EU (see next page for excerpts)\nand more\n\n\nThe AI Act (EU)\nProviders shall ensure that AI systems intended to interact directly with natural persons are designed and developed in such a way that the natural persons concerned are informed that they are interacting with an AI system, unless this is obvious from the point of view of a natural person who is reasonably well-informed, observant and circumspect, taking into account the circumstances and the context of use. This obligation shall not apply to AI systems authorised by law to detect, prevent, investigate or prosecute criminal offences, subject to appropriate safeguards for the rights and freedoms of third parties, unless those systems are available for the public to report a criminal offence.\nProviders of AI systems, including general-purpose AI systems, generating synthetic audio, image, video or text content, shall ensure that the outputs of the AI system are marked in a machine-readable format and detectable as artificially generated or manipulated.\nDeployers of an AI system that generates or manipulates image, audio or video content constituting a deep fake, shall disclose that the content has been artificially generated or manipulated. This obligation shall not apply where the use is authorised by law to detect, prevent, investigate or prosecute criminal offence.\nWhere the content forms part of an evidently artistic, creative, satirical, fictional or analogous work or programme, the transparency obligations set out in this paragraph are limited to disclosure of the existence of such generated or manipulated content in an appropriate manner that does not hamper the display or enjoyment of the work.\nThe information referred to in paragraphs 1 to 4 shall be provided to the natural persons concerned in a clear and distinguishable manner at the latest at the time of the first interaction or exposure.\nAI Act, Art. 50\nCopyright\n\nIn general, AI generated materials cannot be copyrighted by companies"
+  },
+  {
+    "objectID": "slides/ambiguity.html#section",
+    "href": "slides/ambiguity.html#section",
+    "title": "Origin Ambiguity",
+    "section": "",
+    "text": "AI generated content (text, speech, images and video) is becoming more prevalent across all domains of digital life\nAI generated content also becomes increasingly relevant and prevalent in marketing & management contexts:\n\ncompanies use AI-generated materials in marketing (source, source)\ncompanies utilize AI in assessment (source), management decisions (source), and more\n\nthere is an emerging field of study comparing the perception of AI-generated content vs. human-generated content (source, source, source), however …\n… most, if not all research in that domain presumes knowledge on the source of the content (AI vs. human)\ndespite regulations on ownership (crediting the use of AI) (regbulation, regulation, regulation), not everyone credits the use of AI\ndue to the increasing difficulty to distinguish AI and human-generated content, this leads to more ambiguity about the source of content"
+  },
+  {
+    "objectID": "slides/ambiguity.html#summary-of-outline",
+    "href": "slides/ambiguity.html#summary-of-outline",
+    "title": "Authorship Ambiguity",
+    "section": "Summary of Outline",
+    "text": "Summary of Outline\n\nThere are many effects postulated as reactions of consumers to AI vs. human-generated content\nthere is evidence that these reactions are different when the source is unclear"
+  },
+  {
+    "objectID": "slides/ambiguity.html#the-ai-act-eu",
+    "href": "slides/ambiguity.html#the-ai-act-eu",
+    "title": "Authorship Ambiguity",
+    "section": "The AI Act (EU)",
+    "text": "The AI Act (EU)\nProviders shall ensure that AI systems intended to interact directly with natural persons are designed and developed in such a way that the natural persons concerned are informed that they are interacting with an AI system, unless this is obvious from the point of view of a natural person who is reasonably well-informed, observant and circumspect, taking into account the circumstances and the context of use. This obligation shall not apply to AI systems authorised by law to detect, prevent, investigate or prosecute criminal offences, subject to appropriate safeguards for the rights and freedoms of third parties, unless those systems are available for the public to report a criminal offence.\nProviders of AI systems, including general-purpose AI systems, generating synthetic audio, image, video or text content, shall ensure that the outputs of the AI system are marked in a machine-readable format and detectable as artificially generated or manipulated.\nDeployers of an AI system that generates or manipulates image, audio or video content constituting a deep fake, shall disclose that the content has been artificially generated or manipulated. This obligation shall not apply where the use is authorised by law to detect, prevent, investigate or prosecute criminal offence.\nWhere the content forms part of an evidently artistic, creative, satirical, fictional or analogous work or programme, the transparency obligations set out in this paragraph are limited to disclosure of the existence of such generated or manipulated content in an appropriate manner that does not hamper the display or enjoyment of the work.\nThe information referred to in paragraphs 1 to 4 shall be provided to the natural persons concerned in a clear and distinguishable manner at the latest at the time of the first interaction or exposure.\nAI Act, Art. 50"
+  },
+  {
+    "objectID": "slides/ambiguity.html#summary-of-the-existing-literature-and-gaps",
+    "href": "slides/ambiguity.html#summary-of-the-existing-literature-and-gaps",
+    "title": "Authorship Ambiguity",
+    "section": "Summary of the Existing Literature and Gaps",
+    "text": "Summary of the Existing Literature and Gaps\n\nresearch on the perception of AI generated content shows a generally negative attitude towards AI-generated content\nresearch on human ability to differenciate shows that certain aspects make it harder to differenciate\nlegal grounds tend"
+  },
+  {
+    "objectID": "slides/ambiguity.html#differences-in-perception-1",
+    "href": "slides/ambiguity.html#differences-in-perception-1",
+    "title": "Authorship Ambiguity",
+    "section": "Differences in Perception",
+    "text": "Differences in Perception\nPurchase Intention\n\nthe use of AI decreases the intention to purchase a product, the product loyalty and the willingness to recommend a product\n\nif communication is perceived to be written by AI (Kirk and Givi 2025)\nif generated imagery is generated by AI (Belanche et al. 2025)\n\nespecially for hedonic services (Belanche et al. 2025)\n\n… but if people trust AI, the effect is mitigated (Jung et al. 2025)\n… and perceived humanness of AI increases purchase intention (Jung et al. 2025)"
+  },
+  {
+    "objectID": "slides/ambiguity.html#differences-in-perception-2",
+    "href": "slides/ambiguity.html#differences-in-perception-2",
+    "title": "Authorship Ambiguity",
+    "section": "Differences in Perception",
+    "text": "Differences in Perception\nAttribution & Responsibility\n\nbecause AI is perceived as lacking human abilities (Lefkeli, Karataş, and Gürhan-Canli 2024; Bigman 2022), responsibility is shifted to “humans in the background”\nThis leads to perceiving AI as less biased …(Feldkamp et al. 2024; Bigman 2022; Bonezzi and Ostinelli 2021; Bedemariam and Wessel 2023)\n… and to less moral outcry when AI makes “biased” decisions (Feldkamp et al. 2024; Bigman 2022; Bonezzi and Ostinelli 2021; Bedemariam and Wessel 2023)"
+  },
+  {
+    "objectID": "slides/ambiguity.html#differences-in-perception-3",
+    "href": "slides/ambiguity.html#differences-in-perception-3",
+    "title": "Authorship Ambiguity",
+    "section": "Differences in Perception",
+    "text": "Differences in Perception\nGraphical Summary\n\nSummary of existing literature of difference in perception and behavior when comparing AI against humans in different contexts. This summary is still growing and not conclusive!"
+  },
+  {
+    "objectID": "slides/ambiguity.html#identifying-the-gap",
+    "href": "slides/ambiguity.html#identifying-the-gap",
+    "title": "Origin Ambiguity",
+    "section": "Identifying the Gap",
+    "text": "Identifying the Gap\nWhat we know\n\nPeople prefer human over AI\nOrganizations and Companies tend to prefer AI over human due to efficiency and cost*\nPeople are bad at identifying AI generated content\nThe law does not provide clear regulations on the (mandated) disclosure of AI, and research shows that AI disclosure decreases trust and purchase intention \\(\\rightarrow\\) motivation for companies to not disclose the use of AI\n\n*although it must be noted that many of these AI applications are still works in progress as well, and this sentiment could very well shift"
+  },
+  {
+    "objectID": "slides/ambiguity.html#relevance",
+    "href": "slides/ambiguity.html#relevance",
+    "title": "Authorship Ambiguity",
+    "section": "Relevance",
+    "text": "Relevance\n\nPeople prefer human over AI\nOrganizations and Companies tend to prefer AI over human due to efficiency and cost*\nPeople are bad at identifying AI generated content\nThe law does not provide clear regulations on the (mandated) disclosure of AI, and research shows that AI disclosure decreases trust and purchase intention \\(\\rightarrow\\) motivation for companies to not disclose the use of AI\n\n*although it must be noted that many of these AI applications are still works in progress as well, and this sentiment could very well shift"
+  },
+  {
+    "objectID": "slides/ambiguity.html#identifying-the-gap-1",
+    "href": "slides/ambiguity.html#identifying-the-gap-1",
+    "title": "Origin Ambiguity",
+    "section": "Identifying the Gap",
+    "text": "Identifying the Gap\nWhat is missing?\n\nResearch on perception of AI- vs. human origin discloses AI vs. human origin \\(\\rightarrow\\) this is not the case in the real world\nDoes, and if yes, how does response differ in uncertain territory?"
+  },
+  {
+    "objectID": "slides/ambiguity.html#identifying-the-gap-2",
+    "href": "slides/ambiguity.html#identifying-the-gap-2",
+    "title": "Origin Ambiguity",
+    "section": "Identifying the Gap",
+    "text": "Identifying the Gap\nWhy it matters\n\nthere is legitimate interest on the side of companies to not disclose AI (negative effects of disclosure: (Whittaker et al. 2025; Schilke and Reimann 2025; Lefkeli, Karataş, and Gürhan-Canli 2024))\nTo the best of my knowledge, there are not yet any studies analyzing the effect ambiguity of origin has on consumer perception of marketing and products\n(help here needed)"
+  },
+  {
+    "objectID": "slides/ambiguity.html#next-steps",
+    "href": "slides/ambiguity.html#next-steps",
+    "title": "Origin Ambiguity",
+    "section": "Next Steps",
+    "text": "Next Steps\n\nIs this research area substantial enough to make a project out of it?\nWhat key considerations are we missing to make a project out of it?"
+  },
+  {
+    "objectID": "slides/ambiguity.html#consequences-in-ambiguity-of-marketing-materials",
+    "href": "slides/ambiguity.html#consequences-in-ambiguity-of-marketing-materials",
+    "title": "Origin Ambiguity",
+    "section": "Consequences in Ambiguity of Marketing Materials",
+    "text": "Consequences in Ambiguity of Marketing Materials\n\nthere is very little research on how ambiguity of origin (and authenticity) affect consumer perception, however:\n\nWhittaker et al. (2025) show that perception of AI alteration (with deepfakes) decreases intention to purchase, and humanness of deepfake increases perceived authenticity\nSilver, Newman, and Small (2021) show that perceived inauthenticity increases outrage at brands. One core driver of perceived inauthenticity is deception, another one is adulteration (i.e. “enhancing”)\nthe uncanny valley effect is perceived as highly unpleasant (Seyama and Nagayama 2007)"
+  },
+  {
+    "objectID": "slides/ambiguity.html#legal-grounds-on-disclosure-of-the-use-of-ai",
+    "href": "slides/ambiguity.html#legal-grounds-on-disclosure-of-the-use-of-ai",
+    "title": "Origin Ambiguity",
+    "section": "Legal Grounds on Disclosure of the Use of AI",
+    "text": "Legal Grounds on Disclosure of the Use of AI\n\nthere are no universal provisions to mandate AI disclosure (Vischer, 2024)\nthe existing laws leave enough leeway for companies to utilize AI without disclosure, justifying the question as to how consumers react when origin is ambiguous\n\nGDPR / FADP as part of the duty to inform people when personal data is obtained to be used with any sort of AI system (GDPR Art. 13/14, FADP Art. 19ff) and for which purposes (GDPR Art. 5(1) and FADP Art. 6(2-3)), as well as in the context of consent (GDPR Art. 4(11) & FADP Art. 6(6))\nSwiss Labour Act (Ordinance 3, Art. 26) prohibits behavioral monitoring in the workplace unless required. In that case they must be disclosed (Ordinance 3, Art. 6)\nFederal Act on Cartels and other Restraints of Competition and the Federal Act on Unfair Competition(CH) provides some regulations on transparency, copyright of competitors, and targeting (CartA,UCA)\nThe United States have several state-wide bills which regulate some uses of AI (e.g. AI transparency Act in California or the Colorado AI Act).\ncopyright laws\nthe AI Act in the EU (see next page for excerpts)\nand more\n\n\nThe AI Act (EU)\nProviders shall ensure that AI systems intended to interact directly with natural persons are designed and developed in such a way that the natural persons concerned are informed that they are interacting with an AI system, unless this is obvious from the point of view of a natural person who is reasonably well-informed, observant and circumspect, taking into account the circumstances and the context of use. This obligation shall not apply to AI systems authorised by law to detect, prevent, investigate or prosecute criminal offences, subject to appropriate safeguards for the rights and freedoms of third parties, unless those systems are available for the public to report a criminal offence.\nProviders of AI systems, including general-purpose AI systems, generating synthetic audio, image, video or text content, shall ensure that the outputs of the AI system are marked in a machine-readable format and detectable as artificially generated or manipulated.\nDeployers of an AI system that generates or manipulates image, audio or video content constituting a deep fake, shall disclose that the content has been artificially generated or manipulated. This obligation shall not apply where the use is authorised by law to detect, prevent, investigate or prosecute criminal offence.\nWhere the content forms part of an evidently artistic, creative, satirical, fictional or analogous work or programme, the transparency obligations set out in this paragraph are limited to disclosure of the existence of such generated or manipulated content in an appropriate manner that does not hamper the display or enjoyment of the work.\nThe information referred to in paragraphs 1 to 4 shall be provided to the natural persons concerned in a clear and distinguishable manner at the latest at the time of the first interaction or exposure.\nAI Act, Art. 50\nCopyright\n\nIn general, AI generated materials cannot be copyrighted by companies"
+  },
+  {
+    "objectID": "slides/ambiguity.html#summary",
+    "href": "slides/ambiguity.html#summary",
+    "title": "Origin Ambiguity",
+    "section": "Summary",
+    "text": "Summary\n\nDifferences in perception of trustworthiness, purchase intention, attribution & responsibility, and behavior\nAbility to differentiate between human origin and AI origin\nConsequences of ambiguity of origin\nLegal grounds for disclosure"
+  },
+  {
+    "objectID": "slides/ambiguity.html#differences-between-human-and-ai-origin",
+    "href": "slides/ambiguity.html#differences-between-human-and-ai-origin",
+    "title": "Origin Ambiguity",
+    "section": "Differences between Human and AI origin",
+    "text": "Differences between Human and AI origin\nTrustworthiness\n\npeople trust AI less than humans in various contexts:\n\nAI is perceived to lack human abilities (kirkAIoriginEffectUnderstanding2025?; Lefkeli, Karataş, and Gürhan-Canli 2024)\n\nwhich leads to perceived human decision-makers in the background, which in turn leads to perceived reduction in privacy and increase in feeling exploitet (Lefkeli, Karataş, and Gürhan-Canli 2024)\n\nAI is perceived as less private (Lefkeli, Karataş, and Gürhan-Canli 2024)\ntrust is decreased more if AI use is disclosed (Schilke and Reimann 2025; kirkAIoriginEffectUnderstanding2025?) …\n… and people trust AI less when disclosing things (Lefkeli, Karataş, and Gürhan-Canli 2024)\n\nsome of these effects (e.g. algorithm aversion (Bigman 2022)) have been discussed extensively already\nPfeuffer et al. (2025) show that disclosing the alteration of images decreases trust in content creators / brands"
+  },
+  {
+    "objectID": "slides/ambiguity.html#differences-between-human-and-ai-origin-1",
+    "href": "slides/ambiguity.html#differences-between-human-and-ai-origin-1",
+    "title": "Origin Ambiguity",
+    "section": "Differences between Human and AI origin",
+    "text": "Differences between Human and AI origin\nPurchase Intention\n\nthe use of AI decreases the intention to purchase a product, the product loyalty and the willingness to recommend a product\n\nif communication is perceived to be written by AI (kirkAIoriginEffectUnderstanding2025?)\nif generated imagery is generated by AI (Belanche et al. 2025)\n\nespecially for hedonic services (Belanche et al. 2025)\n\n… but if people trust AI, the effect is mitigated (Jung et al. 2025)\n… and perceived humanness of AI increases purchase intention (Jung et al. 2025)"
+  },
+  {
+    "objectID": "slides/ambiguity.html#differences-between-human-and-ai-origin-2",
+    "href": "slides/ambiguity.html#differences-between-human-and-ai-origin-2",
+    "title": "Origin Ambiguity",
+    "section": "Differences between Human and AI origin",
+    "text": "Differences between Human and AI origin\nAttribution & Responsibility\n\nbecause AI is perceived as lacking human abilities (Lefkeli, Karataş, and Gürhan-Canli 2024; Bigman 2022), responsibility is shifted to “humans in the background”\nThis leads to perceiving AI as less biased …(Feldkamp et al. 2024; Bigman 2022; Bonezzi and Ostinelli 2021; Bedemariam and Wessel 2023)\n… and to less moral outcry when AI makes “biased” decisions (Feldkamp et al. 2024; Bigman 2022; Bonezzi and Ostinelli 2021; Bedemariam and Wessel 2023)"
+  },
+  {
+    "objectID": "slides/ambiguity.html#differences-between-human-and-ai-origin-3",
+    "href": "slides/ambiguity.html#differences-between-human-and-ai-origin-3",
+    "title": "Origin Ambiguity",
+    "section": "Differences between Human and AI origin",
+    "text": "Differences between Human and AI origin\nBehavior\n\nPeople display themselves as more analytical when they believe they are assessed by AI instead of humans (Goergen, De Bellis, and Klesse 2025)\n… (more phenomena in that direction to be researched)"
+  },
+  {
+    "objectID": "slides/ambiguity.html#ability-to-differenciate-between-human-and-ai-origin",
+    "href": "slides/ambiguity.html#ability-to-differenciate-between-human-and-ai-origin",
+    "title": "Origin Ambiguity",
+    "section": "Ability to Differenciate between Human and AI origin",
+    "text": "Ability to Differenciate between Human and AI origin\n\n“almost 50% of respondents can distinguish between AI and human generated artwork.” (Vukojičić, Krstić, and Veinović 2023)\n“participants performed below chance levels in identifying AI-generated poems (46.6% accuracy)” (Porter and Machery 2024) “participants were more likely to judge AI-generated poems as human-authored than actual human-authored poems (Porter and Machery 2024)\nnon-artists have pronounced difficulty identifying AI generated images (Ha et al. 2024), but artists and professional artists had much less difficulty (Ha et al. 2024)\nHowever, You et al. (2024) did not find a difference between creators and non-creators in accuracy of identifying images\nAI generated image detectors (e.g. Hive) had no difficulty detecting AI generated images (Ha et al. 2024)\nWith training, participants were able to correctly identify AI generated text correctyl 65% of the time; without training 55% - i.e. slightly above chance (Milička et al. 2025)"
   }
 ]

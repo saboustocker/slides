@@ -11,7 +11,7 @@
 
   <meta name="author" content="Sabou Rani Stocker">
   <meta name="dcterms.date" content="2025-10-29">
-  <title>IBT-HSG - Slides – How do people react to ambiguity about the origin of a material?</title>
+  <title>IBT-HSG - Slides – Origin Ambiguity</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -29,8 +29,28 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-4750efd3e8867b572ae5f6bc8e8c40e5.css">
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-166c73a3ea9a05278e4b364cf7dd5ed3.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -46,6 +66,7 @@
     }
     .reveal .slide:not(.center) {
       height: 100%;
+      overflow-y: auto;
     }
     .reveal .slide.scrollable {
       overflow-y: auto;
@@ -127,9 +148,9 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">How do people react to ambiguity about the origin of a material?</h1>
-  <p class="subtitle">literature scoping and overview</p>
+<section id="title-slide" data-background-color="#0a5f2d" class="quarto-title-block center">
+  <h1 class="title">Origin Ambiguity</h1>
+  <p class="subtitle">What happens if people no longer know if something originates from AI or human authorship?</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -141,15 +162,217 @@ Sabou Rani Stocker
 
   <p class="date">2025-10-29</p>
 </section>
-<section id="titles-1" class="title-slide slide level1 center">
-<h1>Titles 1</h1>
+<section>
+<section id="synthesis-of-existing-research" class="title-slide slide level1 center scrollable">
+<h1>Synthesis of existing Research</h1>
+<ol type="1">
+<li>Differences in perception of trustworthiness, purchase intention, attribution &amp; responsibility, and behavior</li>
+<li>Ability to differentiate between human origin and AI origin</li>
+<li>Consequences of ambiguity of origin</li>
+<li>Legal grounds for disclosure</li>
+</ol>
+</section>
+<section id="differences-between-human-and-ai-origin" class="slide level2">
+<h2>Differences between Human and AI origin</h2>
+<h3 id="trustworthiness">Trustworthiness</h3>
+<ul>
+<li>people trust AI less than humans in various contexts:
+<ul>
+<li>AI is perceived to lack human abilities <span class="citation" data-cites="kirkAIoriginEffectUnderstanding2025 lefkeliSharingInformationAI2024">(<a href="#/bibliography" role="doc-biblioref" onclick=""><strong>kirkAIoriginEffectUnderstanding2025?</strong></a>; <a href="#/bibliography" role="doc-biblioref" onclick="">Lefkeli, Karataş, and Gürhan-Canli 2024</a>)</span>
+<ul>
+<li>which leads to perceived human decision-makers in the background, which in turn leads to perceived reduction in privacy and increase in feeling exploitet <span class="citation" data-cites="lefkeliSharingInformationAI2024">(<a href="#/bibliography" role="doc-biblioref" onclick="">Lefkeli, Karataş, and Gürhan-Canli 2024</a>)</span></li>
+</ul></li>
+<li>AI is perceived as less private <span class="citation" data-cites="lefkeliSharingInformationAI2024">(<a href="#/bibliography" role="doc-biblioref" onclick="">Lefkeli, Karataş, and Gürhan-Canli 2024</a>)</span></li>
+<li>trust is decreased more if AI use is disclosed <span class="citation" data-cites="schilkeTransparencyDilemmaHow2025 kirkAIoriginEffectUnderstanding2025">(<a href="#/bibliography" role="doc-biblioref" onclick="">Schilke and Reimann 2025</a>; <a href="#/bibliography" role="doc-biblioref" onclick=""><strong>kirkAIoriginEffectUnderstanding2025?</strong></a>)</span> …</li>
+<li>… and people trust AI less when disclosing things <span class="citation" data-cites="lefkeliSharingInformationAI2024">(<a href="#/bibliography" role="doc-biblioref" onclick="">Lefkeli, Karataş, and Gürhan-Canli 2024</a>)</span></li>
+</ul></li>
+<li>some of these effects (e.g.&nbsp;algorithm aversion <span class="citation" data-cites="bigmanAlgorithmicDiscriminationCauses2022">(<a href="#/bibliography" role="doc-biblioref" onclick="">Bigman 2022</a>)</span>) have been discussed extensively already</li>
+<li><span class="citation" data-cites="pfeufferIllegallyBeautifulRole2025">Pfeuffer et al. (<a href="#/bibliography" role="doc-biblioref" onclick="">2025</a>)</span> show that disclosing the alteration of images decreases trust in content creators / brands</li>
+</ul>
+</section>
+<section id="differences-between-human-and-ai-origin-1" class="slide level2">
+<h2>Differences between Human and AI origin</h2>
+<h3 id="purchase-intention">Purchase Intention</h3>
+<ul>
+<li>the use of AI decreases the intention to purchase a product, the product loyalty and the willingness to recommend a product
+<ul>
+<li>if communication is perceived to be written by AI <span class="citation" data-cites="kirkAIoriginEffectUnderstanding2025">(<a href="#/bibliography" role="doc-biblioref" onclick=""><strong>kirkAIoriginEffectUnderstanding2025?</strong></a>)</span></li>
+<li>if generated imagery is generated by AI <span class="citation" data-cites="belancheCustomerReactionsGenerative2025">(<a href="#/bibliography" role="doc-biblioref" onclick="">Belanche et al. 2025</a>)</span>
+<ul>
+<li>especially for hedonic services <span class="citation" data-cites="belancheCustomerReactionsGenerative2025">(<a href="#/bibliography" role="doc-biblioref" onclick="">Belanche et al. 2025</a>)</span></li>
+</ul></li>
+<li>… but if people trust AI, the effect is mitigated <span class="citation" data-cites="jungArtificialCreativityLuxury2025">(<a href="#/bibliography" role="doc-biblioref" onclick="">Jung et al. 2025</a>)</span></li>
+<li>… and perceived humanness of AI increases purchase intention <span class="citation" data-cites="jungArtificialCreativityLuxury2025">(<a href="#/bibliography" role="doc-biblioref" onclick="">Jung et al. 2025</a>)</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="differences-between-human-and-ai-origin-2" class="slide level2">
+<h2>Differences between Human and AI origin</h2>
+<h3 id="attribution-responsibility">Attribution &amp; Responsibility</h3>
+<ul>
+<li>because AI is perceived as lacking human abilities <span class="citation" data-cites="lefkeliSharingInformationAI2024 bigmanAlgorithmicDiscriminationCauses2022">(<a href="#/bibliography" role="doc-biblioref" onclick="">Lefkeli, Karataş, and Gürhan-Canli 2024</a>; <a href="#/bibliography" role="doc-biblioref" onclick="">Bigman 2022</a>)</span>, responsibility is shifted to “humans in the background”</li>
+<li>This leads to perceiving AI as less biased …<span class="citation" data-cites="feldkampJusticeTrustMoral2024 bigmanAlgorithmicDiscriminationCauses2022 bonezziCanAlgorithmsLegitimize2021 bedemariamRolesOutcomeRace2023">(<a href="#/bibliography" role="doc-biblioref" onclick="">Feldkamp et al. 2024</a>; <a href="#/bibliography" role="doc-biblioref" onclick="">Bigman 2022</a>; <a href="#/bibliography" role="doc-biblioref" onclick="">Bonezzi and Ostinelli 2021</a>; <a href="#/bibliography" role="doc-biblioref" onclick="">Bedemariam and Wessel 2023</a>)</span></li>
+<li>… and to less moral outcry when AI makes “biased” decisions <span class="citation" data-cites="feldkampJusticeTrustMoral2024 bigmanAlgorithmicDiscriminationCauses2022 bonezziCanAlgorithmsLegitimize2021 bedemariamRolesOutcomeRace2023">(<a href="#/bibliography" role="doc-biblioref" onclick="">Feldkamp et al. 2024</a>; <a href="#/bibliography" role="doc-biblioref" onclick="">Bigman 2022</a>; <a href="#/bibliography" role="doc-biblioref" onclick="">Bonezzi and Ostinelli 2021</a>; <a href="#/bibliography" role="doc-biblioref" onclick="">Bedemariam and Wessel 2023</a>)</span></li>
+</ul>
+</section>
+<section id="differences-between-human-and-ai-origin-3" class="slide level2">
+<h2>Differences between Human and AI origin</h2>
+<h3 id="behavior">Behavior</h3>
+<ul>
+<li>People display themselves as more analytical when they believe they are assessed by AI instead of humans <span class="citation" data-cites="goergenAIAssessmentChanges2025">(<a href="#/bibliography" role="doc-biblioref" onclick="">Goergen, De Bellis, and Klesse 2025</a>)</span></li>
+<li>… (more phenomena in that direction to be researched)</li>
+</ul>
+</section>
+<section id="ability-to-differenciate-between-human-and-ai-origin" class="slide level2">
+<h2>Ability to Differenciate between Human and AI origin</h2>
+<ul>
+<li>“almost 50% of respondents can distinguish between AI and human generated artwork.” <span class="citation" data-cites="vukojicicImitationDrawingCan2023">(<a href="#/bibliography" role="doc-biblioref" onclick="">Vukojičić, Krstić, and Veinović 2023</a>)</span></li>
+<li>“participants performed below chance levels in identifying AI-generated poems (46.6% accuracy)” <span class="citation" data-cites="porterAIgeneratedPoetryIndistinguishable2024a">(<a href="#/bibliography" role="doc-biblioref" onclick="">Porter and Machery 2024</a>)</span> “participants were more likely to judge AI-generated poems as human-authored than actual human-authored poems <span class="citation" data-cites="porterAIgeneratedPoetryIndistinguishable2024a">(<a href="#/bibliography" role="doc-biblioref" onclick="">Porter and Machery 2024</a>)</span></li>
+<li>non-artists have pronounced difficulty identifying AI generated images <span class="citation" data-cites="haOrganicDiffusedCan2024">(<a href="#/bibliography" role="doc-biblioref" onclick="">Ha et al. 2024</a>)</span>, but artists and professional artists had much less difficulty <span class="citation" data-cites="haOrganicDiffusedCan2024">(<a href="#/bibliography" role="doc-biblioref" onclick="">Ha et al. 2024</a>)</span></li>
+<li>However, <span class="citation" data-cites="youDistinguishingAIImage2024">You et al. (<a href="#/bibliography" role="doc-biblioref" onclick="">2024</a>)</span> did not find a difference between creators and non-creators in accuracy of identifying images</li>
+<li>AI generated image detectors (e.g.&nbsp;Hive) had no difficulty detecting AI generated images <span class="citation" data-cites="haOrganicDiffusedCan2024">(<a href="#/bibliography" role="doc-biblioref" onclick="">Ha et al. 2024</a>)</span></li>
+<li>With training, participants were able to correctly identify AI generated text correctyl 65% of the time; without training 55% - i.e.&nbsp;slightly above chance <span class="citation" data-cites="milickaHumansCanLearn2025">(<a href="#/bibliography" role="doc-biblioref" onclick="">Milička et al. 2025</a>)</span></li>
+</ul>
+</section>
+<section id="consequences-in-ambiguity-of-marketing-materials" class="slide level2">
+<h2>Consequences in Ambiguity of Marketing Materials</h2>
+<ul>
+<li>there is very little research on how ambiguity of origin (and authenticity) affect consumer perception, however:
+<ul>
+<li><span class="citation" data-cites="whittakerExaminingConsumerAppraisals2025">Whittaker et al. (<a href="#/bibliography" role="doc-biblioref" onclick="">2025</a>)</span> show that perception of AI alteration (with deepfakes) decreases intention to purchase, and humanness of deepfake increases perceived authenticity</li>
+<li><span class="citation" data-cites="silverInauthenticityAversionMoral2021">Silver, Newman, and Small (<a href="#/bibliography" role="doc-biblioref" onclick="">2021</a>)</span> show that perceived inauthenticity increases outrage at brands. One core driver of perceived inauthenticity is deception, another one is adulteration (i.e.&nbsp;“enhancing”)</li>
+<li>the <em>uncanny valley</em> effect is perceived as highly unpleasant <span class="citation" data-cites="seyamaUncannyValleyEffect2007">(<a href="#/bibliography" role="doc-biblioref" onclick="">Seyama and Nagayama 2007</a>)</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="legal-grounds-on-disclosure-of-the-use-of-ai" class="slide level2">
+<h2>Legal Grounds on Disclosure of the Use of AI</h2>
+<ul>
+<li>there are no universal provisions to mandate AI disclosure (<a href="https://www.vischer.com/en/knowledge/blog/part-16-how-company-can-ensure-transparency-for-their-use-of-ai/">Vischer, 2024</a>)</li>
+<li>the existing laws leave enough leeway for companies to utilize AI without disclosure, justifying the question as to how consumers react when origin is ambiguous
+<ul>
+<li>GDPR / FADP as part of the duty to inform people when personal data is obtained to be used with any sort of AI system (GDPR Art. 13/14, FADP Art. 19ff) and for which purposes (GDPR Art. 5(1) and FADP Art. 6(2-3)), as well as in the context of consent (GDPR Art. 4(11) &amp; FADP Art. 6(6))</li>
+<li>Swiss Labour Act (Ordinance 3, Art. 26) prohibits behavioral monitoring in the workplace unless required. In that case they must be disclosed (Ordinance 3, Art. 6)</li>
+<li>Federal Act on Cartels and other Restraints of Competition and the Federal Act on Unfair Competition(CH) provides some regulations on transparency, copyright of competitors, and targeting (<a href="https://www.fedlex.admin.ch/eli/cc/1996/546_546_546/en">CartA</a>,<a href="https://www.fedlex.admin.ch/eli/cc/1988/223_223_223/en">UCA</a>)</li>
+<li>The United States have several state-wide bills which regulate some uses of AI (e.g.&nbsp;<a href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB853">AI transparency Act</a> in California or the <a href="https://leg.colorado.gov/sites/default/files/2024a_205_signed.pdf">Colorado AI Act</a>).</li>
+<li>copyright laws</li>
+<li>the AI Act in the EU (see next page for excerpts)</li>
+<li>and more</li>
+</ul></li>
+</ul>
+<h3 id="the-ai-act-eu">The AI Act (EU)</h3>
+<p>Providers shall ensure that AI systems intended to interact directly with natural persons are designed and developed in such a way that the natural persons concerned are informed that they are interacting with an AI system, unless this is obvious from the point of view of a natural person who is reasonably well-informed, observant and circumspect, taking into account the circumstances and the context of use. This obligation shall not apply to AI systems authorised by law to detect, prevent, investigate or prosecute criminal offences, subject to appropriate safeguards for the rights and freedoms of third parties, unless those systems are available for the public to report a criminal offence.</p>
+<p>Providers of AI systems, including general-purpose AI systems, generating synthetic audio, image, video or text content, shall ensure that the outputs of the AI system are marked in a machine-readable format and detectable as artificially generated or manipulated.</p>
+<p>Deployers of an AI system that generates or manipulates image, audio or video content constituting a deep fake, shall disclose that the content has been artificially generated or manipulated. This obligation shall not apply where the use is authorised by law to detect, prevent, investigate or prosecute criminal offence.</p>
+<p>Where the content forms part of an evidently artistic, creative, satirical, fictional or analogous work or programme, the transparency obligations set out in this paragraph are limited to disclosure of the existence of such generated or manipulated content in an appropriate manner that does not hamper the display or enjoyment of the work.</p>
+<p>The information referred to in paragraphs 1 to 4 shall be provided to the natural persons concerned in a clear and distinguishable manner at the latest at the time of the first interaction or exposure.</p>
+<p><a href="https://artificialintelligenceact.eu/article/50/#:~:text=If%20an%20AI%20system%20creates,content%20is%20artistic%20or%20satirical.">AI Act, Art. 50</a></p>
+<h3 id="copyright">Copyright</h3>
+<ul>
+<li>In general, AI generated materials cannot be copyrighted by companies</li>
+</ul>
+</section>
+<section id="identifying-the-gap" class="slide level2">
+<h2>Identifying the Gap</h2>
+<h3 id="what-we-know">What we know</h3>
+<ul>
+<li>People prefer human over AI</li>
+<li>Organizations and Companies tend to prefer AI over human due to efficiency and cost*</li>
+<li>People are bad at identifying AI generated content</li>
+<li>The law does not provide clear regulations on the (mandated) disclosure of AI, and research shows that AI disclosure decreases trust and purchase intention <span class="math inline">\(\rightarrow\)</span> motivation for companies to not disclose the use of AI</li>
+</ul>
+<p>*although it must be noted that many of these AI applications are still works in progress as well, and this sentiment could very well shift</p>
+</section>
+<section id="identifying-the-gap-1" class="slide level2">
+<h2>Identifying the Gap</h2>
+<h3 id="what-is-missing">What is missing?</h3>
+<ul>
+<li>Research on perception of AI- vs.&nbsp;human origin discloses AI vs.&nbsp;human origin <span class="math inline">\(\rightarrow\)</span> this is not the case in the real world</li>
+<li>Does, and if yes, <em>how</em> does response differ in uncertain territory?</li>
+</ul>
+
+<img data-src="../images/areaofinterest.svg" class="r-stretch"></section>
+<section id="identifying-the-gap-2" class="slide level2">
+<h2>Identifying the Gap</h2>
+<h3 id="why-it-matters">Why it matters</h3>
+<ul>
+<li>there is legitimate interest on the side of companies to not disclose AI (negative effects of disclosure: <span class="citation" data-cites="whittakerExaminingConsumerAppraisals2025 schilkeTransparencyDilemmaHow2025 lefkeliSharingInformationAI2024">(<a href="#/bibliography" role="doc-biblioref" onclick="">Whittaker et al. 2025</a>; <a href="#/bibliography" role="doc-biblioref" onclick="">Schilke and Reimann 2025</a>; <a href="#/bibliography" role="doc-biblioref" onclick="">Lefkeli, Karataş, and Gürhan-Canli 2024</a>)</span>)</li>
+<li>To the best of my knowledge, there are not yet any studies analyzing the effect ambiguity of origin has on consumer perception of marketing and products</li>
+<li><strong>(help here needed)</strong></li>
+</ul>
+</section></section>
+<section>
+<section id="moving-forward" class="title-slide slide level1 center">
+<h1>Moving Forward</h1>
 
 </section>
+<section id="next-steps" class="slide level2">
+<h2>Next Steps</h2>
+<ul>
+<li>Is this research area substantial enough to make a project out of it?</li>
+<li>What key considerations are we missing to make a project out of it?</li>
+</ul>
+</section></section>
+<section id="bibliography" class="title-slide slide level1 smaller scrollable">
+<h1>Bibliography</h1>
 
-<section id="title-2" class="title-slide slide level1 center">
-<h1>Title 2</h1>
 
-
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-bedemariamRolesOutcomeRace2023" class="csl-entry" role="listitem">
+Bedemariam, Rewina, and Jennifer L. Wessel. 2023. <span>“The Roles of Outcome and Race on Applicant Reactions to <span>AI</span> Systems.”</span> <em>Computers in Human Behavior</em> 148 (November): 107869. <a href="https://doi.org/10.1016/j.chb.2023.107869">https://doi.org/10.1016/j.chb.2023.107869</a>.
+</div>
+<div id="ref-belancheCustomerReactionsGenerative2025" class="csl-entry" role="listitem">
+Belanche, Daniel, Sergio Ibáñez-Sánchez, Pau Jordán, and Sergio Matas. 2025. <span>“Customer Reactions to Generative <span>AI</span> Vs. Real Images in High-Involvement and Hedonic Services.”</span> <em>International Journal of Information Management</em> 85 (December): 102954. <a href="https://doi.org/10.1016/j.ijinfomgt.2025.102954">https://doi.org/10.1016/j.ijinfomgt.2025.102954</a>.
+</div>
+<div id="ref-bigmanAlgorithmicDiscriminationCauses2022" class="csl-entry" role="listitem">
+Bigman, Yochanan E. 2022. <span>“Algorithmic <span>Discrimination Causes Less Moral Outrage Than Human Discrimination</span>.”</span>
+</div>
+<div id="ref-bonezziCanAlgorithmsLegitimize2021" class="csl-entry" role="listitem">
+Bonezzi, Andrea, and Massimiliano Ostinelli. 2021. <span>“Can Algorithms Legitimize Discrimination?”</span> <em>Journal of Experimental Psychology: Applied</em> 27 (2): 447–59. <a href="https://doi.org/10.1037/xap0000294">https://doi.org/10.1037/xap0000294</a>.
+</div>
+<div id="ref-feldkampJusticeTrustMoral2024" class="csl-entry" role="listitem">
+Feldkamp, Tina, Markus Langer, Leo Wies, and Cornelius J. König. 2024. <span>“Justice, Trust, and Moral Judgements When Personnel Selection Is Supported by Algorithms.”</span> <em>European Journal of Work and Organizational Psychology</em> 33 (2): 130–45. <a href="https://doi.org/10.1080/1359432X.2023.2169140">https://doi.org/10.1080/1359432X.2023.2169140</a>.
+</div>
+<div id="ref-goergenAIAssessmentChanges2025" class="csl-entry" role="listitem">
+Goergen, Jonas, Emanuel De Bellis, and Anne-Kathrin Klesse. 2025. <span>“<span>AI</span> Assessment Changes Human Behavior.”</span> <em>Proceedings of the National Academy of Sciences</em> 122 (25): e2425439122. <a href="https://doi.org/10.1073/pnas.2425439122">https://doi.org/10.1073/pnas.2425439122</a>.
+</div>
+<div id="ref-haOrganicDiffusedCan2024" class="csl-entry" role="listitem">
+Ha, Anna Yoo Jeong, Josephine Passananti, Ronik Bhaskar, Shawn Shan, Reid Southen, Haitao Zheng, and Ben Y. Zhao. 2024. <span>“Organic or <span>Diffused</span>: <span>Can We Distinguish Human Art</span> from <span class="nocase">AI-generated Images</span>?”</span> July 2, 2024. <a href="https://doi.org/10.48550/arXiv.2402.03214">https://doi.org/10.48550/arXiv.2402.03214</a>.
+</div>
+<div id="ref-jungArtificialCreativityLuxury2025" class="csl-entry" role="listitem">
+Jung, Timothy, Maksym Koghut, Eunseo Lee, and Ohbyung Kwon. 2025. <span>“Artificial Creativity in Luxury Advertising: <span>How</span> Trust and Perceived Humanness Drive Consumer Response to <span class="nocase">AI-generated</span> Content.”</span> <em>Journal of Retailing and Consumer Services</em> 87 (October): 104403. <a href="https://doi.org/10.1016/j.jretconser.2025.104403">https://doi.org/10.1016/j.jretconser.2025.104403</a>.
+</div>
+<div id="ref-lefkeliSharingInformationAI2024" class="csl-entry" role="listitem">
+Lefkeli, Deniz, Mustafa Karataş, and Zeynep Gürhan-Canli. 2024. <span>“Sharing Information with <span>AI</span> (Versus a Human) Impairs Brand Trust: <span>The</span> Role of Audience Size Inferences and Sense of Exploitation.”</span> <em>International Journal of Research in Marketing</em> 41 (1): 138–55. <a href="https://doi.org/10.1016/j.ijresmar.2023.08.011">https://doi.org/10.1016/j.ijresmar.2023.08.011</a>.
+</div>
+<div id="ref-milickaHumansCanLearn2025" class="csl-entry" role="listitem">
+Milička, Jiří, Anna Marklová, Ondřej Drobil, and Eva Pospíšilová. 2025. <span>“Humans Can Learn to Detect <span class="nocase">AI-generated</span> Texts, or at Least Learn When They Can’t.”</span> <em>PLOS One</em> 20 (10): e0333007. <a href="https://doi.org/10.1371/journal.pone.0333007">https://doi.org/10.1371/journal.pone.0333007</a>.
+</div>
+<div id="ref-pfeufferIllegallyBeautifulRole2025" class="csl-entry" role="listitem">
+Pfeuffer, Alexander, Haley R. Hatfield, Nathaniel Evans, and Jooyoung Kim. 2025. <span>“Illegally Beautiful? <span>The</span> Role of Trust and Persuasion Knowledge in Online Image Manipulation Disclosure Effects.”</span> <em>International Journal of Advertising</em> 44 (4): 696–717. <a href="https://doi.org/10.1080/02650487.2024.2403311">https://doi.org/10.1080/02650487.2024.2403311</a>.
+</div>
+<div id="ref-porterAIgeneratedPoetryIndistinguishable2024a" class="csl-entry" role="listitem">
+Porter, Brian, and Edouard Machery. 2024. <span>“<span class="nocase">AI-generated</span> Poetry Is Indistinguishable from Human-Written Poetry and Is Rated More Favorably.”</span> <em>Scientific Reports</em> 14 (1): 26133. <a href="https://doi.org/10.1038/s41598-024-76900-1">https://doi.org/10.1038/s41598-024-76900-1</a>.
+</div>
+<div id="ref-schilkeTransparencyDilemmaHow2025" class="csl-entry" role="listitem">
+Schilke, Oliver, and Martin Reimann. 2025. <span>“The Transparency Dilemma: <span>How AI</span> Disclosure Erodes Trust.”</span> <em>Organizational Behavior and Human Decision Processes</em> 188 (May): 104405. <a href="https://doi.org/10.1016/j.obhdp.2025.104405">https://doi.org/10.1016/j.obhdp.2025.104405</a>.
+</div>
+<div id="ref-seyamaUncannyValleyEffect2007" class="csl-entry" role="listitem">
+Seyama, Jun’ichiro, and Ruth S. Nagayama. 2007. <span>“The <span>Uncanny Valley</span>: <span>Effect</span> of <span>Realism</span> on the <span>Impression</span> of <span>Artificial Human Faces</span>.”</span> <em>Presence: Teleoperators and Virtual Environments</em> 16 (4): 337–51. <a href="https://doi.org/10.1162/pres.16.4.337">https://doi.org/10.1162/pres.16.4.337</a>.
+</div>
+<div id="ref-silverInauthenticityAversionMoral2021" class="csl-entry" role="listitem">
+Silver, Ike, George Newman, and Deborah A. Small. 2021. <span>“Inauthenticity Aversion: <span>Moral</span> Reactance Toward Tainted Actors, Actions, and Objects.”</span> <em>Consumer Psychology Review</em> 4 (1): 70–82. <a href="https://doi.org/10.1002/arcp.1064">https://doi.org/10.1002/arcp.1064</a>.
+</div>
+<div id="ref-vukojicicImitationDrawingCan2023" class="csl-entry" role="listitem">
+Vukojičić, Milić, Jovana Krstić, and Mladen Veinović. 2023. <span>“Imitation <span>Drawing</span>: <span>Can We Spot</span> the <span>Difference Between Ai</span> and <span>Human Generated Drawing</span>?”</span> In <em>Proceedings of the <span>International Scientific Conference</span> - <span>Sinteza</span> 2023</em>, 23–27. Beograd, Serbia: Singidunum University. <a href="https://doi.org/10.15308/Sinteza-2023-23-27">https://doi.org/10.15308/Sinteza-2023-23-27</a>.
+</div>
+<div id="ref-whittakerExaminingConsumerAppraisals2025" class="csl-entry" role="listitem">
+Whittaker, Lucas, Rory Mulcahy, Rebekah Russell-Bennett, Kate Letheren, and Jan Kietzmann. 2025. <span>“Examining <span>Consumer Appraisals</span> of <span>Deepfake Advertising</span> and <span>Disclosure</span>: <span>Show Deepfakes</span> as <span>‘<span>Real Life</span>’</span> or <span>Say They</span>’re <span>‘<span>Just Fantasy</span>’</span>?”</span> <em>Journal of Advertising Research</em>, June, 1–22. <a href="https://doi.org/10.1080/00218499.2025.2498830">https://doi.org/10.1080/00218499.2025.2498830</a>.
+</div>
+<div id="ref-youDistinguishingAIImage2024" class="csl-entry" role="listitem">
+You, Xiang-Yi, Tzu-Yun Chen, Yi-Wen Chan, and Rain Chen. 2024. <span>“Distinguishing Between <span>AI Image Creation</span> and <span>Human Image Creation</span>: <span>Creators</span> Vs. <span class="nocase">Non-creators</span>.”</span> In <em>2024 12th <span>International Conference</span> on <span>Information</span> and <span>Education Technology</span> (<span>ICIET</span>)</em>, 197–202. Yamaguchi, Japan: IEEE. <a href="https://doi.org/10.1109/ICIET60671.2024.10542808">https://doi.org/10.1109/ICIET60671.2024.10542808</a>.
+</div>
+</div>
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
@@ -186,7 +409,7 @@ Sabou Rani Stocker
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'jumpToSlide': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":false},
 'smaller': false,
  
         // Display controls in the bottom right corner

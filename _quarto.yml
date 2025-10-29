@@ -5,10 +5,13 @@ project:
 website:
   title: "IBT-HSG - Slides"
   navbar:
+    background: primary
     search: true
     left:
       - text: "Home"
         href: index.qmd
+      - text: "Slides"
+        href: slides.qmd
     right: 
       - icon: github
         href: https://github.com/saboustocker/slides
@@ -16,8 +19,7 @@ website:
 
 format: 
   html:
-    theme: darkly
-    css: styles.scss
+    theme: [darkly, styles.scss]
     
 
 execute:

@@ -1,0 +1,13 @@
+---
+title: "Slides Listing"
+format: html
+listing:
+  contents: 
+    - "slides/*.qmd"
+  type: table
+  fields: [title, subtitle, date, project]
+  sort: date
+  date-format: "DD.MM.YYYY"
+
+lang: En
+---

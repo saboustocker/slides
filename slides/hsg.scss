@@ -12,15 +12,30 @@ $hsg-gelb: #fff04b;  // HSG-Gelb
 
 /*-- scss:rules --*/
 
-.reveal .slide blockquote {
-  border-left: 3px solid $text-muted;
-  padding-left: 0.5em;
-}
-
-.reveal title-slide {
-  background-color: $hsg-dunkelgruen;
+.reveal quarto-title-block {
+  background-color: #004080 !important; /* navy blue */
+  color: white; /* optional: change text color for contrast */
 }
 
 .reveal h1 {
   color: $hsg-beige;
+}
+
+
+.reveal h2 {
+  color: $hsg-beige;
+}
+
+// progress bar and thingamacic 
+.reveal .progress {
+  color: $hsg-gruen;
+  height: 0.5%;
+}
+
+.reveal i {
+  color: $hsg-gruen;
+}
+
+.reveal fa-bars {
+  color: red;
 }
