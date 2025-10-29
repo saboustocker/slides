@@ -11,16 +11,15 @@ website:
       - text: "Home"
         href: index.qmd
       - text: "Slides"
-        href: slides.qmd
+        href: slide_overview.qmd
     right: 
       - icon: github
         href: https://github.com/saboustocker/slides
         aria-label: GitHub
 
-format: 
-  html:
-    theme: [darkly, styles.scss]
-    
-
 execute:
   echo: true
+
+format:
+  html:
+    tempalte: sandstone

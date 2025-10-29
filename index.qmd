@@ -1,4 +1,14 @@
+---
+format: 
+  html:
+    theme: [sandstone, styles.scss]
+---
 
-## Quarto
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+## Slidedecks and Project Collections
+
+On this github page, I collect my slidedecks and project information collections as a knowledge hub for myself. 
+
+While you are welcome to look at this page, please note that the materials uploaded here are not edited to provide stand-alone insights into projects without context, and if you stumbled on here on accident, they might be a bit confusing. 
+
+All materials displayed on this website are my own and do not contain private, sensitive or confidential information.

@@ -1,9 +1,4 @@
-
 /*-- scss:defaults --*/
-
-// This file should 
-
-// HSG Brand Colors
 
 // Greens
 $hsg-gruen: #00802f;      // HSG-Grün
@@ -15,8 +10,9 @@ $hsg-blau: #73a5af;       // HSG-Blau
 $hsg-korall: #eb6969;     // HSG-Korall
 $hsg-gelb: #fff04b;  // HSG-Gelb
 
-/*-- scss:rules --*/
 
+
+/*-- scss:rules --*/
 h1 {
   color: $hsg-gruen;
 }
@@ -25,3 +21,6 @@ h2, h3 {
   color: $hsg-dunkelgruen;
 }
 
+a {
+  color: $hsg-blau;
+}
