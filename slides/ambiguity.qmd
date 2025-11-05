@@ -31,6 +31,11 @@ bibliography: ../bibliography.bib
 [@bigmanAlgorithmicDiscriminationCauses2022]) have been discussed extensively already
 - @pfeufferIllegallyBeautifulRole2025 show that disclosing the alteration of images decreases trust in content creators / brands
 
+> [!NOTE] Notes
+> This is basically "done" at least from the POV of getting any of this published.
+> Trust as an attitude is a pretty basic and thus relatively uninteresting variable imo. It is just a positively valenced variable that can capture both cognitive and affective dimensions, thus it might work as mediator whenever there is either a positive or negative outcome.
+
+
 ### Purchase Intention
 - the use of AI decreases the intention to purchase a product, the product loyalty and the willingness to recommend a product 
   - if communication is perceived to be written by AI [@kirkAIauthorshipEffectUnderstanding2025]
@@ -38,6 +43,10 @@ bibliography: ../bibliography.bib
     - especially for hedonic services [@belancheCustomerReactionsGenerative2025]
   - ... but if people trust AI, the effect is mitigated [@jungArtificialCreativityLuxury2025]
   - ... and perceived humanness of AI increases purchase intention [@jungArtificialCreativityLuxury2025]
+
+
+> [!NOTE] Note
+> My general suggestion would be to look at something that goes beyond purchase/acceptance. The dominant paradigm over the last years has been this aversion vs. acceptance debate. I think we have considerably more upside, if we focus on a more up- or downstream variable along consumers' journeys with AI (which can be a variable with impact on business or consumers' self concept etc.). That means, we think about something that is prior to acceptance or not directly relevant to it or we look at usage/interaction etc.
 
 ### Attribution & Responsibility
 - because AI is perceived as lacking human abilities [@lefkeliSharingInformationAI2024; @bigmanAlgorithmicDiscriminationCauses2022], responsibility is shifted to "humans in the background"
@@ -62,6 +71,14 @@ bibliography: ../bibliography.bib
   - @whittakerExaminingConsumerAppraisals2025 show that perception of AI alteration (with deepfakes) decreases intention to purchase, and humanness of deepfake increases perceived authenticity
   - @silverInauthenticityAversionMoral2021 show that perceived inauthenticity increases outrage at brands. One core driver of perceived inauthenticity is deception, another one is adulteration (i.e. "enhancing")
   - the *uncanny valley* effect is perceived as highly unpleasant [@seyamaUncannyValleyEffect2007]
+
+
+> [!NOTE] Note
+> This is interesting. What does feeling ambiguity related to content origin (or something else in AI realm) do with the consumer? Feeling unease, compensatory behavior (in other domain), outrage, what inferences do consumers draw under ambiguity?, how do consumers deal with ambiguity in general --> we probably fall back on some heuristics, can we identify a new one here and any consequences? 
+
+> [!NOTE] Idea
+> How many people are actually experiencing this kind of ambiguity? Under **TikTok videos (define domain)**, we could probably find references to "Is this AI?" that would be perfect ambiguity markers. **That is descriptive in a first step. But then what other variables could be interesting to look at here?** What does this ambiguity do to the video's performance in terms of engagment etc. (issue will be control group, so potentially just correlative). What are ambiguity markers that consumers mention, **what makes them certain of the origin?** 
+> Where is the marketing relevance? We either do a pure consumer story (it does something with the consumer, wellbeing, self-concept etc.) or we extrapolate to companies that use AI for ads or so: What does ambiguity do with brand attitudes etc. (there is a gap here, I suppose)
 
 ## Legal Grounds on Disclosure of the Use of AI
 - there are no universal provisions to mandate AI disclosure ([Vischer, 2024](https://www.vischer.com/en/knowledge/blog/part-16-how-company-can-ensure-transparency-for-their-use-of-ai/))
