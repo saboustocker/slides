@@ -14,12 +14,20 @@ bibliography: ../bibliography.bib
 ---
 
 # Synthesis of existing Research
-1. Differences in perception of trustworthiness, purchase intention, attribution & responsibility, and behavior 
+1. Differences between Human and AI origin
 2. Ability to differentiate between human origin and AI origin 
 3. Consequences of ambiguity of origin
 4. Legal grounds for disclosure 
 
 ## Differences between Human and AI origin
+
+The difference in pereption of materials with human origin compared to materials with AI origin has been researched on several domains: 
+
+- **Trustworthiness**: generally speaking, people trust humans more than AI
+- **Purchase Intentions**: Generally, people are less willing to purchase a product, are less loyal to a product, and are less willing to recommend a product, if they know that AI has been used in connotation with this product in any way
+- **Attribution & Responsibility**: People think AI is more mechanistic, and therefore attribute less bias and more analytical. They also adapt their behavior in response to it. 
+
+:::{.callout-tip collapse="true"}
 ### Trustworthiness 
 - people trust AI less than humans in various contexts:
   - AI is perceived to lack human abilities [@kirkAIauthorshipEffectUnderstanding2025; @lefkeliSharingInformationAI2024]
@@ -31,11 +39,14 @@ bibliography: ../bibliography.bib
 [@bigmanAlgorithmicDiscriminationCauses2022]) have been discussed extensively already
 - @pfeufferIllegallyBeautifulRole2025 show that disclosing the alteration of images decreases trust in content creators / brands
 
-> [!NOTE] Notes
-> This is basically "done" at least from the POV of getting any of this published.
-> Trust as an attitude is a pretty basic and thus relatively uninteresting variable imo. It is just a positively valenced variable that can capture both cognitive and affective dimensions, thus it might work as mediator whenever there is either a positive or negative outcome.
+:::{.callout-note title ="Note Jonas" icon=false}
+This is basically "done" at least from the POV of getting any of this published.
+Trust as an attitude is a pretty basic and thus relatively uninteresting variable imo. It is just a positively valenced variable that can capture both cognitive and affective dimensions, thus it might work as mediator whenever there is either a positive or negative outcome.
+:::
 
+:::
 
+:::{.callout-tip collapse="true"}
 ### Purchase Intention
 - the use of AI decreases the intention to purchase a product, the product loyalty and the willingness to recommend a product 
   - if communication is perceived to be written by AI [@kirkAIauthorshipEffectUnderstanding2025]
@@ -44,20 +55,32 @@ bibliography: ../bibliography.bib
   - ... but if people trust AI, the effect is mitigated [@jungArtificialCreativityLuxury2025]
   - ... and perceived humanness of AI increases purchase intention [@jungArtificialCreativityLuxury2025]
 
+:::{.callout-note title="Note Jonas" icon=false}
+My general suggestion would be to look at something that goes beyond purchase/acceptance. The dominant paradigm over the last years has been this aversion vs. acceptance debate. I think we have considerably more upside, if we focus on a more up- or downstream variable along consumers' journeys with AI (which can be a variable with impact on business or consumers' self concept etc.). That means, we think about something that is prior to acceptance or not directly relevant to it or we look at usage/interaction etc.
+:::
 
-> [!NOTE] Note
-> My general suggestion would be to look at something that goes beyond purchase/acceptance. The dominant paradigm over the last years has been this aversion vs. acceptance debate. I think we have considerably more upside, if we focus on a more up- or downstream variable along consumers' journeys with AI (which can be a variable with impact on business or consumers' self concept etc.). That means, we think about something that is prior to acceptance or not directly relevant to it or we look at usage/interaction etc.
+:::
 
-### Attribution & Responsibility
+:::{.callout-tip collapse="true"}
+### Attribution, Responsibility & Behavior
+
+#### Attribution
 - because AI is perceived as lacking human abilities [@lefkeliSharingInformationAI2024; @bigmanAlgorithmicDiscriminationCauses2022], responsibility is shifted to "humans in the background"
 - This leads to perceiving AI as less biased ...[@feldkampJusticeTrustMoral2024; @bigmanAlgorithmicDiscriminationCauses2022; @bonezziCanAlgorithmsLegitimize2021; @bedemariamRolesOutcomeRace2023]
 - ... and to less moral outcry when AI makes "biased" decisions [@feldkampJusticeTrustMoral2024; @bigmanAlgorithmicDiscriminationCauses2022; @bonezziCanAlgorithmsLegitimize2021; @bedemariamRolesOutcomeRace2023]
 
-### Behavior
+#### Behavior
 - People display themselves as more analytical when they believe they are assessed by AI instead of humans [@goergenAIAssessmentChanges2025]
 - ... (more phenomena in that direction to be researched)
+:::
+
+As all of these dimensions have become rather saturated in research over the last couple of years, we will **not be focusing our own research on these domains**, but use them as a foundation of research already demonstrating various aspects that are different when it comes to Humans vs. AI. 
 
 ## Ability to Differenciate between Human and AI origin
+
+Humans are generally not good at differenciating between AI and human origin. This research goes back several years. As much of the AI generated materials only gets better and less distinguishable from human origin, it is to be assumed that these effects will become even more pronounced in the future.
+
+:::{.callout-tip title ="Primary Sources on Ability to Differenciate" collapse="true"}
 - “almost 50% of respondents can distinguish between AI and human generated artwork.” [@vukojicicImitationDrawingCan2023]
 - “participants performed below chance levels in identifying AI-generated poems (46.6% accuracy)" [@porterAIgeneratedPoetryIndistinguishable2024a]
 “participants were more likely to judge AI-generated poems as human-authored than actual human-authored poems [@porterAIgeneratedPoetryIndistinguishable2024a]
@@ -65,33 +88,30 @@ bibliography: ../bibliography.bib
 - However, @youDistinguishingAIImage2024 did not find a difference between creators and non-creators in accuracy of identifying images
 - AI generated image detectors (e.g. Hive) had no difficulty detecting AI generated images [@haOrganicDiffusedCan2024]
 - With training, participants were able to correctly identify AI generated text correctyl 65% of the time; without training 55% - i.e. slightly above chance [@milickaHumansCanLearn2025]
-
-## Consequences in Ambiguity of Marketing Materials
-- there is very little research on how ambiguity of origin (and authenticity) affect consumer perception, however: 
-  - @whittakerExaminingConsumerAppraisals2025 show that perception of AI alteration (with deepfakes) decreases intention to purchase, and humanness of deepfake increases perceived authenticity
-  - @silverInauthenticityAversionMoral2021 show that perceived inauthenticity increases outrage at brands. One core driver of perceived inauthenticity is deception, another one is adulteration (i.e. "enhancing")
-  - the *uncanny valley* effect is perceived as highly unpleasant [@seyamaUncannyValleyEffect2007]
-
-
-> [!NOTE] Note
-> This is interesting. What does feeling ambiguity related to content origin (or something else in AI realm) do with the consumer? Feeling unease, compensatory behavior (in other domain), outrage, what inferences do consumers draw under ambiguity?, how do consumers deal with ambiguity in general --> we probably fall back on some heuristics, can we identify a new one here and any consequences? 
-
-> [!NOTE] Idea
-> How many people are actually experiencing this kind of ambiguity? Under **TikTok videos (define domain)**, we could probably find references to "Is this AI?" that would be perfect ambiguity markers. **That is descriptive in a first step. But then what other variables could be interesting to look at here?** What does this ambiguity do to the video's performance in terms of engagment etc. (issue will be control group, so potentially just correlative). What are ambiguity markers that consumers mention, **what makes them certain of the origin?** 
-> Where is the marketing relevance? We either do a pure consumer story (it does something with the consumer, wellbeing, self-concept etc.) or we extrapolate to companies that use AI for ads or so: What does ambiguity do with brand attitudes etc. (there is a gap here, I suppose)
+:::
 
 ## Legal Grounds on Disclosure of the Use of AI
-- there are no universal provisions to mandate AI disclosure ([Vischer, 2024](https://www.vischer.com/en/knowledge/blog/part-16-how-company-can-ensure-transparency-for-their-use-of-ai/))
-- the existing laws leave enough leeway for companies to utilize AI without disclosure, justifying the question as to how consumers react when origin is ambiguous
-  - GDPR / FADP as part of the duty to inform people when personal data is obtained to be used with any sort of AI system (GDPR Art. 13/14, FADP Art. 19ff) and for which purposes (GDPR Art. 5(1) and FADP Art. 6(2-3)), as well as in the context of consent (GDPR Art. 4(11) & FADP Art. 6(6))
-  - Swiss Labour Act (Ordinance 3, Art. 26) prohibits behavioral monitoring in the workplace unless required. In that case they must be disclosed (Ordinance 3, Art. 6)
-  - Federal Act on Cartels and other Restraints of Competition and the Federal Act on Unfair Competition(CH) provides some regulations on transparency, copyright of competitors, and targeting ([CartA](https://www.fedlex.admin.ch/eli/cc/1996/546_546_546/en),[UCA](https://www.fedlex.admin.ch/eli/cc/1988/223_223_223/en))
-  - The United States have several state-wide bills which regulate some uses of AI (e.g. [AI transparency Act](https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB853) in California or the [Colorado AI Act](https://leg.colorado.gov/sites/default/files/2024a_205_signed.pdf)).
-  - copyright laws
-  - the AI Act in the EU (see next page for excerpts)
-  - and more
+Legally, there are **few laws regulating the mandated disclosure of AI when generating materials**. While there are laws, regulations and acts in relation to the use of AI, they are not necessarily applicable to marketing material for several reasons ([Vischer, 2024](https://www.vischer.com/en/knowledge/blog/part-16-how-company-can-ensure-transparency-for-their-use-of-ai/)). 
 
-### The AI Act (EU)
+When it comes to **assessment** or **data manipulation** using AI, there are strict provisions -- at least in the EU (GDPR), Switzerland (FADP), and some other nations (e.g. UK, Australia). While they were not written with the use of AI tools as their primary scope, they apply as soon as personal data is obtained from a consumer, and mandate the disclosure of the use and purpose of this data, as well as any third parties this data is shared with (such as OpenAI when using ChatGPT.)
+
+Many companies increasingly utilize AI when generating marketing and informational materials due to its cost- and time efficiency. At the same time, research indicates that consumers generally trust companies less when the use of AI is disclosed. Therefore, it is to be assumed that there is an **incentive to not diclose the use of AI** on the companies side.
+
+:::{.callout-tip collapse="true"}
+### Regulations pertaining to Personal Data
+- GDPR / FADP as part of the duty to inform people when personal data is obtained to be used with any sort of AI system (GDPR Art. 13/14, FADP Art. 19ff)
+- and for which purposes (GDPR Art. 5(1) and FADP Art. 6(2-3))
+- as well as in the context of consent (GDPR Art. 4(11) & FADP Art. 6(6))
+:::
+
+:::{.callout-tip collapse="true"}
+### Regulations pertaining to Competition
+- Swiss Labour Act (Ordinance 3, Art. 26) prohibits behavioral monitoring in the workplace unless required. In that case they must be disclosed (Ordinance 3, Art. 6)
+- Federal Act on Cartels and other Restraints of Competition and the Federal Act on Unfair Competition(CH) provides some regulations on transparency, copyright of competitors, and targeting ([CartA](https://www.fedlex.admin.ch/eli/cc/1996/546_546_546/en),[UCA](https://www.fedlex.admin.ch/eli/cc/1988/223_223_223/en))
+:::
+
+:::{.callout-tip collapse="true"}
+### The EU AI Act
 Providers shall ensure that AI systems intended to interact directly with natural persons are designed and developed in such a way that the natural persons concerned are informed that they are interacting with an AI system, unless this is obvious from the point of view of a natural person who is reasonably well-informed, observant and circumspect, taking into account the circumstances and the context of use. This obligation shall not apply to AI systems authorised by law to detect, prevent, investigate or prosecute criminal offences, subject to appropriate safeguards for the rights and freedoms of third parties, unless those systems are available for the public to report a criminal offence.
 
 Providers of AI systems, including general-purpose AI systems, generating synthetic audio, image, video or text content, shall ensure that the outputs of the AI system are marked in a machine-readable format and detectable as artificially generated or manipulated.
@@ -104,11 +124,14 @@ The information referred to in paragraphs 1 to 4 shall be provided to the natura
 
 [AI Act, Art. 50](https://artificialintelligenceact.eu/article/50/#:~:text=If%20an%20AI%20system%20creates,content%20is%20artistic%20or%20satirical.)
 
-### Copyright
-- In general, AI generated materials cannot be copyrighted by companies 
+:::
 
-## Identifying the Gap
-### What we know
+:::{.callout-tip collapse="true"}
+### Additional Laws specifically pertaining to AI
+- The United States have several state-wide bills which regulate some uses of AI (e.g. [AI transparency Act](https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB853) in California or the [Colorado AI Act](https://leg.colorado.gov/sites/default/files/2024a_205_signed.pdf)).
+:::
+
+## Summary
 - People prefer human over AI
 - Organizations and Companies tend to prefer AI over human due to efficiency and cost*
 - People are bad at identifying AI generated content
@@ -116,21 +139,206 @@ The information referred to in paragraphs 1 to 4 shall be provided to the natura
 
 *although it must be noted that many of these AI applications are still works in progress as well, and this sentiment could very well shift
 
-### What is missing?
-- Research on perception of AI- vs. human origin discloses AI vs. human origin $\rightarrow$ this is not the case in the real world
-- Does, and if yes, *how* does response differ in uncertain territory?
+**Therefore, we should assume that companies try to incorporate AI without disclosing it to keep their reputation, whereas consumers prefer human-origin content. Giving companies the benefit of the doubt, we should assume that this conflict happens in situations where law does not prescribe unambiguous behavior (i.e. in information, marketing and branding; but not in assessment or evaluation).** 
 
-![](../images/areaofinterest.svg)
+# Ambiguity
 
-### Why it matters
-- there is legitimate interest on the side of companies to not disclose AI (negative effects of disclosure: [@whittakerExaminingConsumerAppraisals2025;@schilkeTransparencyDilemmaHow2025;@lefkeliSharingInformationAI2024])
-- To the best of my knowledge, there are not yet any studies analyzing the effect ambiguity of origin has on consumer perception of marketing and products
-- **(help here needed)**
+## Definitions
+> *Def.* **Ambiguity**: "Ambiguity is the type of meaning in which a phrase, statement, or resolution is not explicitly defined, making for several interpretations; others describe it as a concept or statement that has no real reference. A common aspect of ambiguity is uncertainty. It is thus an attribute of any idea or statement whose intended meaning cannot be definitively resolved, according to a rule or process with a finite number of steps." [Wikipedia](https://en.wikipedia.org/wiki/Ambiguity)
+
+> *Def.* **Origin Ambiguity**: Origin ambiguity occurrs when the origin of something generated (text, speech, video, image, or otherwise) cannot be definively resolved*. (current working definition, definitely subject to change!)
+
+*The term **origin ambiguity** was chosen purposefully over authorship ambiguity, as current law in copyright does not intend for any AI tool to be able to author and therefore own content.
+
+## Ambiguity Aversion
+
+People are generally averse to ambiguity. However, while these effects replicate outside of the lab to some extent, they are not as clear-cut as one would think, especially in situations where the risky situation has low winning probabilities or the situaiton pertains to losses. Furthermore, studies on external validity of the effect reveal mixed results.
+
+:::{.callout-tip title="Primary Sources on Ambiguity Aversion" collapse="true"}
+- introduced with the Ellsberg paradox in 1961
+- in principle, people prefer the less ambiguous (read: uncertain) bet when provided with several options despite the choice being irrational [@machinaAmbiguityAmbiguityAversion2014]
+- The concept of "ambiguity aversion" is not unanimously defined [@machinaAmbiguityAmbiguityAversion2014], however in "traditional literature", it most often means a preference for known risks over unknown risks[@trautmannAmbiguityAttitudes2015]
+  - ambiguity aversion is not universal: when introducing losses or lower likelihoods, ambiguity aversion is neutralized or even sought after [@kocherAmbiguityAversionNot2018] $\rightarrow$ see also: Kocher (2014), Binmore, stewart & Voorhoeve (2012), Kahn & Sarin (1997)
+  - much of this literature has focused on gain-frames (i.e. winning something)
+  - however, when the risky urn is a high risk urn, people seem to prefer the ambiguous urn (Curly & Yates, cited in @trautmannAmbiguityAttitudes2015)
+  - “A significant number of studies found a complete reversal of ambiguity attitudes between the (modest‐likelihood) gain and loss domain, with ambiguity seeking for losses (Abdellaoui, Vossmann, & Weber, 2005; Baillon & Bleichrodt, 2012; Casey & Scholz, 1991; Chakravarty & Roy, 2009; Ho, Keller, & Keltyca, 2002; Kothiyal, Spinu, & Wakker, 2012).” ([Trautmann and Van De Kuilen, 2015, p. 105](zotero://select/library/items/D94SSBIJ)) ([pdf](zotero://open-pdf/library/items/K5W3XKGW?page=17&annotation=WPDGRM79))
+- there are also studies on natural ambiguity (e.g. an American prefers to bet on the Dow Jones index, @trautmannAmbiguityAttitudes2015)
+  - In many of these events, it is shown that people feel more *knowledgeable* about the event(s) they are familiar with, and also assign higher *subjective probabilities* to them
+- ambiguity aversion is contested to be a higher-order effect in itself $\rightarrow$ ambiguity prudence and ambiguity temperance suggested as higher order effects [@baillonMeasuringHigherOrder2018]
+- ambiguity aversion is also subclassified into absolute and relative ambiguity aversion [@baillonTestingConstantAbsolute2019]
+- many potential moderators are suggested for ambiguity attitudes: 
+  - comparative ignorance
+  - peer effects
+  - group decisions
+  - market interaction
+  - many more 
+  [@trautmannAmbiguityAttitudes2015]
+
+:::
+
+## Ambiguity in Marketing 
+
+Ambiguity is a topic that has been discussed in the marketing context extensively and from different lenses. Ambiguity aversion (for general details see above) has shown to correlate to preference for established products [@muthukrishnanAmbiguityAversionPreference2009a], and as a moderator to consumer satisfaction [@yiDeterminantsConsumerSatisfaction1993;@erdemDecisionMakingUncertaintyCapturing1996; and others]. Ambiguity is also discussed as a purposeful marketing tactic [@kovachevaUncertaintyMarketingTactics2024].
+
+:::{.callout-tip collapse="true"}
+
+### Ambiguity Aversion and Preference for Established Products
+- ambiguity aversion correlates with preference for more established / well known brands [@muthukrishnanAmbiguityAversionPreference2009a]
+- induced ambiguity aversion also predicts preference for established products later on [@muthukrishnanAmbiguityAversionPreference2009a]
+- established brands sell stronger in situations where information is presented more ambiguously [@muthukrishnanAmbiguityAversionPreference2009a]
+:::
+
+:::{.callout-tip collapse="true"}
+### Ambiguity as a Moderator of Consumer Satisfaction
+- **ambiguity in product quality** [@yiDeterminantsConsumerSatisfaction1993; @erdemDecisionMakingUncertaintyCapturing1996]: 
+  - product satisfaction = comparing expectations vs. reality $\rightarrow$ confirmation / disconfirmation paradigm [@yiDeterminantsConsumerSatisfaction1993]
+  - ambiguous product experience when the quality of the product is difficult to evaluate [@yiDeterminantsConsumerSatisfaction1993]
+  - consumers evaluate products based on a top-down (expectation and theorizing-driven) approach, when the quality is difficult to evaluate (i.e. ambiguous), but follow a data-driven bottom-up approach when the quality is unambiguous (and neglect expectations) [@yiDeterminantsConsumerSatisfaction1993]
+  - ambiguity about product quality is countered by Bayesian learning through the customer (buying different products and updating quality beliefs about $t-n$ products). Structural modelling of this relationship is better than the Guadagni-Little model, especially the dynamic component appears valuable [@erdemDecisionMakingUncertaintyCapturing1996]
+  - when product quality is ambiguous, consumers rely more on advertising to inform themselves [@hochConsumerLearningAdvertising1986]
+    - this effect is stronger when the ad is shown before showing the product compared to after, implying that there may be some sort of selective retreival of preceding information [@hochConsumerLearningAdvertising1986]
+- **ambiguous marketing offers**: ambiguous marketing offers are more effective under scarcity (Dhar et al., 1999), both resource scarcity and availability scarcity (Dhar et al., 1999; Fan et al., 2019)
+- it also depends on how information is displayed: numeric cognition influences how ambiguity aversion manifests [@lenkovskayaHowNumericalCognition2025] (compression effect & left digit effect)
+:::
+
+:::{.callout-tip collapse="true"}
+### Role Ambiguity
+> *Def.* **Role Ambiguity**: occurs when a person feels that he or she lacks salient information needed to effectively enact his or her role @singhBoundaryRoleAmbiguity1993, p. 12)
+
+- highly discussed construct in marketing & management [@singhBoundaryRoleAmbiguity1993; @hoEthicalCorrelatesRole1997; and others]
+
+$\rightarrow$ not highly relevant to our project 
+:::
+
+:::{.callout-tip collapse="true"}
+### Ambiguous (uncertain) Marketing Tactics
+
+- surprise boxes, buy and reveal deals, random price promotion, teaser ads
+- some classification frameworks, e.g. @kovachevaUncertaintyMarketingTactics2024: 
+  - assortments: e.g. "loot boxes"
+  - promotional: e.g. "incomplete ads"
+  - innovation: e.g. "mystery flavor coke"
+- uncertainty marketing is used to cue consumers' attention and interest [@kovachevaUncertaintyMarketingTactics2024]
+- important for uncertainty marketing: the concealed information is non-negative, i.e. supposed to piqué someone's interest, not worry them about the "catch"
+- the success of uncertainty marketing depends on many intra-personal characteristics
+  - stake: low vs. high
+  - opacity: low vs. high
+    $\rightarrow$ stakes and opacity seem to be independent [@kovachevaUncertaintyMarketingTactics2024]
+  - the concept of "lower stakes" is also discussed in other literature: Arrow (1965) for monetary stakes, Duke et al. (2018) in conjunction with uncertainty (uncertainty is less tolerable in high-stakes situations)
+
+  :::{.callout-note title="Note Sabou" icon="false"}
+  While this is not necessarily what we are after, I think the insights regarding stakes could be interesting independent variables for us, i.e. does it matter how high-stakes something is for people to behave differently?
+  :::
+
+:::
+
+## "Origin Ambiguity"
+While ambiguity in general has been discussed in various aspects (see sections above), origin ambiguity in terms of not knowing the source of a piece of information has hardly been discussed. There are somewhat related streams of research when looking at what purposefully obfuscating parts of informational material in advertising; when looking at deepfakes (although there is very little research on how people act when they *believe* something is a deepfake, only how they act when they *know* it), and (probably most relevant) the uncanny valley effect. 
+
+:::{.callout-tip collapse="true"}
+### (Origin) Ambiguity due to obfuscated Materials
+- Studies analyzing how cropped photos, etc. ellicit ambiguity
+- @peracchioHowAmbiguousCropped1994: visual ambiguity is caused by cropped photos
+  - when viewers lack sufficient motivation to parse cropped object, the product evaluations are based on some easily available heuristic (e.g. what the brand claims: "high quality jeans!") [@peracchioHowAmbiguousCropped1994]
+    - @joharConsumerInvolvementDeception1995 finds similar effects for how the information of an ad is perceived under low- vs. high involvement
+  - it doesn't matter if the important object itself is cropped, or if something else is cropped, the "cropping effect" (i.e. the ambiguity) is what makes people involved in processing given enough motivation [@peracchioHowAmbiguousCropped1994]
+- @hagtvedtImpactIncompleteTypeface2011 finds that incomplete typefaces (where letters are obfuscated or left out) ellicit lower trustworthiness, but higher perceived innovativeness
+  - trustworthiness is related to clarity, whereas innovativeness is related to interestingness ($\rightarrow$ this could be something to explore for AI ads, although this effect here relates to letters of logos!)
+- @sevillaLeavingSomethingImagination2020 find that concealing aspects of an aesthetic product in particular can heighten curiosity and ellicit positive associations
+:::
+
+:::{.callout-tip collapse="true"}
+### Deepfakes
+- deepfakes are generally hard to detect for humans (see primarily @dielHumanPerformanceDetecting2024 for a meta-analysis showing that humans are practically as good as chance)
+- there is very little research on the consequences of *ambiguity* introduced through deepfakes, however: 
+  - @kobisFooledTwicePeople2021 find that people think a video is genuine rather than a Deepfake more often, and they are overconfident in their decisions
+  - @whittakerExaminingConsumerAppraisals2025 show that perception of AI alteration (with deepfakes) decreases intention to purchase, and humanness of deepfake increases perceived authenticity (there is however no ambiguity in this study, as people knew what they were looking at)
+  - @ahmedUnderstandingRoleFear2023 look at the reasons *why* people share deepfake videos and identify FOMO, low cognitive ability, thinking that they are accurate (duh...)
+  - a different study [@soto-sanfielMotivationsNotSharing2024] show that most people who do share deepfakes don't do so for informational purposes, but for hedonic and entertainment
+:::
+
+::: {.callout-tip collapse="true"}
+### The uncanny valley Effect
+- The uncanny valley hypothesis predicts a negative emotional appraisal of human replicas that appear or behave not quite human
+
+![](../images/uncannyvalley.png)
+
+- the *uncanny valley* effect is perceived as highly unpleasant [@seyamaUncannyValleyEffect2007]
+- systematic literature reviews and meta-analyses show moderate support in favor of the following relevant effects: 
+  - eeriness in movement causes more distress than eeriness in still images [@ka$?tsyriReviewEmpiricalEvidence2015]
+  - "categorization ambiguity" causes more distress [@ka$?tsyriReviewEmpiricalEvidence2015]
+  - other studies summarize the ambiguity as "categorical uncertainty hypothesis" [@rauCrossCulturalDesignUser2020]. While there is substantial support in favor of these hypotheses, the uncanny valley effect and its causal mechanisms is still somewhat contested (see for example: [@macdormanReducingConsistencyHuman2016])
+- there are attempts to quantify the predecessants and consequences of the uncanny valley effect, e.g. with a Bayesian framework [@mooreBayesianExplanationUncanny2012]
+- when we are confronted with the eeriness of the uncanny valley, the amount of information processed is suppressed [@shinUncannyValleyNo2019]; however this study looks more at the evaluation *of* the avatars, so maybe not 100% relevant to AI videos
+:::
+
+:::{.callout-tip collapse="true"}
+### Other Related Work
+
+While there is very little (maybe even no?) research on origin ambiguity in marketing, there are a few constructs somewhat relating to it, namely:
+
+- **authenticity**: @silverInauthenticityAversionMoral2021 show that perceived inauthenticity increases outrage at brands. One core driver of perceived inauthenticity is deception, another one is adulteration (i.e. "enhancing")
+- **obfuscation of information**: only providing partial information on a product can go both ways. Research shows that products profiting most are those that have the least to hide (see box on obfuscation above)
+:::
+
+:::{.callout-note title="Note Jonas" icon="false"}
+This is interesting. **What does feeling ambiguity related to content origin (or something else in AI realm) do with the consumer?** Feeling unease, compensatory behavior (in other domain), outrage, what inferences do consumers draw under ambiguity?, how do consumers deal with ambiguity in general --> we probably fall back on some heuristics, can we identify a new one here and any consequences? 
+:::
+
+:::{.callout-note title="Idea Jonas" icon="false"}
+How many people are actually experiencing this kind of ambiguity? Under **TikTok videos (define domain)**, we could probably find references to "Is this AI?" that would be perfect ambiguity markers. **That is descriptive in a first step. But then what other variables could be interesting to look at here?** What does this ambiguity do to the video's performance in terms of engagment etc. (issue will be control group, so potentially just correlative). What are ambiguity markers that consumers mention, **what makes them certain of the origin?** 
+
+Where is the marketing relevance? We either do a pure consumer story (it does something with the consumer, wellbeing, self-concept etc.) or we extrapolate to companies that use AI for ads or so: What does ambiguity do with brand attitudes etc. (there is a gap here, I suppose)
+:::
 
 # Moving Forward
 
-## Next Steps
-- Is this research area substantial enough to make a project out of it? 
-- What key considerations are we missing to make a project out of it? 
+## Possible Research Streams (not mutually exclusive)
+### Stream 1: What causes the origin to be perceived as ambiguous? 
+- We could analyze Reddit data (r/RealorAI, r/isThisAI, ...) ($\rightarrow$ https://www.reddit.com/r/reddit.com/wiki/api/)
+- We could see if there is a similar way to analyze data from TikTok or Instagram (Instagram Graph API for creator and business accounts could be interesting, because these creators essentially use instagram to market themselves $\rightarrow$ https://transparency.meta.com/researchtools/meta-content-library; There also seems to be something for TikTok, but I am not familiar with that platform at all: https://developers.tiktok.com/products/research-api/)
+
+### Stream 2: How do the behaviors of people change if people are no longer sure? 
+- Are people more attentive (parallels to uncanney valley effects)? 
+  - do they watch a video longer? 
+  - do they pay more attention (e.g. operationalize through what they remember about video?)
+- Are people more hesitant/willing to accept information under high/low origin ambiguity?
+- Do preconceptions and attitudes towards a company or product change how ambiguity is perceived? 
+  - hedonic vs. utilitarian products
+  - informative vs. noninformative ads / content
+- How do people re-calibrate their perspective on information when they are unsure about the origin?
+
+:::{.callout-note icon="false" title="Note Sabou"}
+Discussion with a friend with a background in communication sciences came up with the interesting phenomenon that people on TikTok justify the "validity" of a video with "no, it is real, the information comes from a credible source" wherein traditional (print) media regains a status of validity and authority that has been reduced over the last few years. Not sure if we can or want to spin this thought furhter, but I think it could be an interesting angle. 
+:::
+
+### Stream 3: Are ambiguity effects independent of source (written, spoken, image, video)? 
+- self-explanatory
+
+## Dependent Variables / Outcomes
+### Focus on Company
+- willingness to purchase product
+- willingness to pay (does price sensitivity change)
+- image of company (trustworthiness, ...) $\rightarrow$ could borrow some ideas from social sciences with prosocial perception of companies and counterfactuals
+### Focus on Consumer
+- What do people believe? 
+- Do people update their perception / expectation / "reality"? 
+- Perception of content in particular (see note as well)
+- **Why do people care about the origin of a source?** 
+- Does the "uncanny valley effect" exist for AI generated videos, and what does it do depending on the context (more aversion, less information processing or more, ...?)
+
+## Possible Moderators and Mediators to consider
+- technology knowledge & preconceptions $\rightarrow$ many studies already control for "technological ability" (esp. when it comes to AI perception)
+- age $\rightarrow$ can we expect people of different generations to be perceptive to different aspects of ambiguity ("boomers on facebook" phenomenon)
+- motivation (tied into the research by Capiocco and colleagues on the use of heuristics in low- vs. high motivation, especially in image materials (Petty, Cacioppo, and Schumann 1983))
+- further moderators? 
+
+
+:::{.callout-note title="Note Jonas" icon="false"}
+#### AI specific dependent Variables
+- We should check if we find something that is specific to AI (artifically in general) generated content as the DV. 
+- One approach would be the probabilistic nature: do we *actually* ever *know*? Do people think about that and how does this change? 
+:::
+
 
 # Bibliography
