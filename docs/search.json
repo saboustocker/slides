@@ -95,7 +95,7 @@
     "href": "slides/ambiguity.html#dependent-variables-outcomes",
     "title": "Origin Ambiguity",
     "section": "Dependent Variables / Outcomes",
-    "text": "Dependent Variables / Outcomes\n\nFocus on Company\n\nwillingness to purchase product\nwillingness to pay (does price sensitivity change)\nimage of company (trustworthiness, …) \\(\\rightarrow\\) could borrow some ideas from social sciences with prosocial perception of companies and counterfactuals ### Focus on Consumer\nWhat do people believe?\nDo people update their perception / expectation / “reality”?\nPerception of content in particular (see note as well)\nWhy do people care about the origin of a source?\nDoes the “uncanny valley effect” exist for AI generated videos, and what does it do depending on the context (more aversion, less information processing or more, …?)"
+    "text": "Dependent Variables / Outcomes\n\nFocus on Company\n\nwillingness to purchase product\nwillingness to pay (does price sensitivity change)\nimage of company (trustworthiness, …) \\(\\rightarrow\\) could borrow some ideas from social sciences with prosocial perception of companies and counterfactuals\n\n\n\nFocus on Consumer\n\nWhat do people believe?\nDo people update their perception / expectation / “reality”?\nPerception of content in particular (see note as well)\nWhy do people care about the origin of a source?\nDoes the “uncanny valley effect” exist for AI generated videos, and what does it do depending on the context (more aversion, less information processing or more, …?)"
   },
   {
     "objectID": "slides/ambiguity.html#possible-moderators-and-mediators-to-consider",
@@ -103,5 +103,12 @@
     "title": "Origin Ambiguity",
     "section": "Possible Moderators and Mediators to consider",
     "text": "Possible Moderators and Mediators to consider\n\ntechnology knowledge & preconceptions \\(\\rightarrow\\) many studies already control for “technological ability” (esp. when it comes to AI perception)\nage \\(\\rightarrow\\) can we expect people of different generations to be perceptive to different aspects of ambiguity (“boomers on facebook” phenomenon)\nmotivation (tied into the research by Capiocco and colleagues on the use of heuristics in low- vs. high motivation, especially in image materials (Petty, Cacioppo, and Schumann 1983))\nfurther moderators?\n\n\n\n\n\n\n\nNote Jonas\n\n\n\nAI specific dependent Variables\n\nWe should check if we find something that is specific to AI (artifically in general) generated content as the DV.\nOne approach would be the probabilistic nature: do we actually ever know? Do people think about that and how does this change?"
+  },
+  {
+    "objectID": "slides/ambiguity.html#possible-big-questions-to-ask",
+    "href": "slides/ambiguity.html#possible-big-questions-to-ask",
+    "title": "Origin Ambiguity",
+    "section": "Possible “Big Questions” to ask",
+    "text": "Possible “Big Questions” to ask\n\nPlatform Effects\nThis would go less for or against a particular company, but platforms which are used by consumers to make purchase decisions. Here, we could explore how people treat ambiguity depending on platform rather than depending on product or brand. It would be a nice playing ground for comparing e.g. various modalities of origin ambiguity (written, image, video). It would also be interesting to see what effects the perception of the platform itself has (e.g. TikTok could be perceived as more entertainment and there is no expectation of informativeness, whereas a tech review blog is expected to be informative).\n\n\nPerceived Autonomy and Empowerment\nThis is my attempt at getting away from the “classics” of purchasing behavior, WTS, etc. It could be interesting how consumers perceive themselves when confronted with ambiguity? Do they feel “cheated” on, do they feel disempowered / taken advantage of, or do they not care at all?\n\n\nInformation Processing\nThis would tie into research on Deepfakes as well as Uncanny Valley Effects. We could have a look at how people process information depending on perceived ambiguity, and also if they engage with info more or less (e.g. do they click on “more info” or whatever, or do they do the opposite and click away / disregard as soon as they are not sure if it is AI or human anymore?)"
   }
 ]

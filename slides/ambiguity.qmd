@@ -320,6 +320,7 @@ Discussion with a friend with a background in communication sciences came up wit
 - willingness to purchase product
 - willingness to pay (does price sensitivity change)
 - image of company (trustworthiness, ...) $\rightarrow$ could borrow some ideas from social sciences with prosocial perception of companies and counterfactuals
+
 ### Focus on Consumer
 - What do people believe? 
 - Do people update their perception / expectation / "reality"? 
@@ -339,6 +340,17 @@ Discussion with a friend with a background in communication sciences came up wit
 - We should check if we find something that is specific to AI (artifically in general) generated content as the DV. 
 - One approach would be the probabilistic nature: do we *actually* ever *know*? Do people think about that and how does this change? 
 :::
+
+## Possible "Big Questions" to ask
+
+### Platform Effects
+This would go less for or against a particular company, but platforms which are used by consumers to make purchase decisions. Here, we could explore how people treat ambiguity depending on platform rather than depending on product or brand. It would be a nice playing ground for comparing e.g. various modalities of origin ambiguity (written, image, video). It would also be interesting to see what effects the perception of the platform itself has (e.g. TikTok could be perceived as more entertainment and there is no expectation of informativeness, whereas a tech review blog is expected to be informative). 
+
+### Perceived Autonomy and Empowerment 
+This is my attempt at getting away from the "classics" of purchasing behavior, WTS, etc. It could be interesting how consumers perceive themselves when confronted with ambiguity? Do they feel "cheated" on, do they feel disempowered / taken advantage of, or do they not care at all? 
+
+### Information Processing
+This would tie into research on Deepfakes as well as Uncanny Valley Effects. We could have a look at how people process information depending on perceived ambiguity, and also if they engage with info more or less (e.g. do they click on "more info" or whatever, or do they do the opposite and click away / disregard as soon as they are not sure if it is AI or human anymore?)
 
 
 # Bibliography
