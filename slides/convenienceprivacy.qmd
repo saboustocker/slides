@@ -1,0 +1,18 @@
+---
+title: "Convenience-Privacy-Autonomy Trade-Offs"
+author: Sabou Rani Stocker
+date: 2025-11-10
+subtitle: How do the concepts of convenience, autonomy, and privacy relate to each other in digital environments? 
+format:
+  html:  
+    theme: [sandstone, hsg_pages.scss]
+    navbar: false
+title-slide-attributes: 
+  data-background-color: "#0a5f2d"
+project: "Privacy"
+bibliography: ../bibliography.bib
+---
+
+# Attention Economy
+
+# Convenience $\rightarrow$ Attention

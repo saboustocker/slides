@@ -19,7 +19,3 @@ website:
 
 execute:
   echo: true
-
-format:
-  html:
-    tempalte: sandstone

@@ -1,0 +1,50 @@
+---
+title: "Collection of Future Research Endeavors"
+author: Sabou Rani Stocker
+date: 2025-11-10
+subtitle: A random collection of ideas that could or could not be interesting to have a closer look at. 
+format:
+  revealjs:  
+    theme: [dark, hsg_slides.scss]
+    slide-number: c
+title-slide-attributes: 
+  data-background-color: "#0a5f2d"
+project: "collection"
+bibliography: ../bibliography.bib
+---
+
+:::{.section-header-bg}
+# The Attention Economy
+Subtitle
+:::
+
+## Summary
+With the internet, the currency is no longer money, but attention (ads). While this domain has been researched extensively in various aspects, I think it is very interesting and could imagine getting into this more.
+
+# Privacy-Convenience-Paradox
+
+## Summary
+The privacy-convenience paradox has been observed and discussed for a long time, but to this day the psychological mechanisms have not been underpinned conclusively. One aspect that would be very interesting would be comparing computational models of various mechanism specifications based on experimental data (and potentially also branching out to correlative designs with real data). Another interesting aspect is the privacy-paradox specifically in terms of AI. There, I see several domains of application: What type of info is shared with ChatBots, how different knowledge and experiences influence this, how privacy and convenience interrelates with agentic AI (this would also go in the same direction as your project with Melandie Clegg which by the way is super interesting as well).
+
+# The construct ***Convenience***
+*Convenience* is a major factor driving innovation adoption. While
+
+This project could go in many directions:
+
+1. Literature review / meta-analysis: Convenience $\rightarrow$ adoption
+2. Development of a generalistic convenience scale (could then also be used to investigate privacy-convenience-tradeoffs)
+3. ...
+
+
+# Persuasion Bubbles
+
+## Summary
+Inspired by Andrea's presentation at the SAMS conference. How and when are people reaffirmed and/or persuaded to adopt opposing views? In particular, I could see research on: 
+- Algorithmic bubbles 
+- Bots
+- ...
+
+
+
+# 
+

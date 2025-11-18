@@ -1,0 +1,109 @@
+---
+title: "HSG Corporate Template for Quarto"
+author: Sabou Rani Stocker
+date: 2025-11-10
+subtitle: All the slides and styles 
+format:
+  revealjs:  
+    theme: [../styles/hsg_slides.scss]
+    slide-number: c
+title-slide-attributes: 
+  data-background-color: "#0a5f2d"
+
+project: "collection"
+bibliography: ../bibliography.bib
+---
+
+:::{.section-header-bg}
+# Section Title
+:::{.subtitle-p}
+I am an optional subtitle
+:::
+:::
+
+:::{.quote-slide-bg}
+##
+It is possible to commit no mistakes and still lose. That is not a weakness; that is life.
+
+:::{.source-p}
+Jean-Luc Picard
+:::
+
+:::
+
+
+## {.callout-slide-p}
+This is a very interesting fancy callout! 
+
+
+## Normal Slide with content
+This is normal content.
+
+- bullet point 1
+- bullet point 2
+- bullet point 3
+
+## Normal Slide with Subtitles
+### This is a subtitle
+Here, we have some text. Penguins are the cutest animals in the universe! 
+
+### This is another subtitle
+Here we have some more text!! 
+
+:::{.center}
+## Centered Slide
+This slide has the content centered.
+:::
+
+## Slide with Quotes
+This slides has some quote options on it. 
+
+- This bullet point is a statement corroborated by some authors
+
+  :::{.bib-p}
+  @abdurahmanDeepLearningApproach2024; @abramovitchFactorCognitiveDysfunction2021
+  :::
+
+- This bullet point has an inline-citation [@abramovitchFactorCognitiveDysfunction2021]
+
+:::{.quote-p}
+And this is a quote.
+
+:::{.bib-quote-p}
+@abdurahmanDeepLearningApproach2024, p. 34
+:::
+:::
+
+:::{.image-slide-bg}
+## Image Slide
+This slide is when you have light images because they don't always work with dark background.
+
+![I am some caption for this interesting image. I can also have a source [@abdurahmanDeepLearningApproach2024].](../images/uncannyvalley.png){style="max-width: 100%; height: auto;"}
+
+:::
+
+## Another Image Slide
+Of course, you can still use the regular background. 
+
+![This is how an image on the regular slides looks like.](../images/uncannyvalley.png){style="max-width: 100%; height: auto;"}
+
+:::{.question-slide-bg .center}
+## 
+
+:::{.column #vcenter width="30%"}
+
+![](../styles/diskussion.svg){style="max-width: 70%; height: auto;"}
+
+:::
+
+:::{.column #vcenter width="70%" .center}
+:::{.question-slide-p}
+This is a slide where you can ask an important question?
+:::
+:::
+
+:::
+
+
+
+# Bibliography {.scrollable}

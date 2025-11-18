@@ -1,0 +1,31 @@
+---
+title: "Convenience"
+author: Sabou Rani Stocker
+date: 2025-11-20
+subtitle: What does the construct "convenience" even mean in the digital landscape? 
+format:
+  html:  
+    theme: [sandstone, hsg_pages.scss]
+    navbar: false
+title-slide-attributes: 
+  data-background-color: "#0a5f2d"
+project: "Convenience"
+bibliography: ../bibliography.bib
+---
+
+# What is Convenience?
+## Research on Convenience
+### SCOPUS
+- Article title contains *convenience* and field is Social Sciences OR Business, Management & Accounting OR Psychology OR Decision Sciences
+- n = 1'616
+
+### Web of Science
+- Article title contains *convenience* and field is Psychology OR Economics OR Behavioral Science
+
+## Definition
+
+
+## Operationalisations & Measurements
+
+# The Predictors and Consequences of Convenience?
+

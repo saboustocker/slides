@@ -4,7 +4,7 @@
     "href": "slide_overview.html",
     "title": "Slides Listing",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nSubtitle\n\n\n\nDate\n\n\n\nproject\n\n\n\n\n\n\n\n\nOrigin Ambiguity\n\n\nWhat happens if people no longer know if something originates from AI or human authorship?\n\n\n29.10.2025\n\n\nAI assessment\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nSubtitle\n\n\n\nDate\n\n\n\nproject\n\n\n\n\n\n\n\n\nOrigin Ambiguity\n\n\nWhat happens if people no longer know if something originates from AI or human authorship?\n\n\n29.10.2025\n\n\nAI assessment\n\n\n\n\n\n\nCollection of Future Research Endeavors\n\n\nA random collection of ideas that could or could not be interesting to have a closer look at.\n\n\n10.11.2025\n\n\ncollection\n\n\n\n\n\n\nConvenience-Privacy-Autonomy Trade-Offs\n\n\nHow do the concepts of convenience, autonomy, and privacy relate to each other in digital environments?\n\n\n10.11.2025\n\n\nPrivacy\n\n\n\n\n\n\nHSG Corporate Template for Quarto\n\n\nAll the slides and styles\n\n\n10.11.2025\n\n\ncollection\n\n\n\n\n\n\nConvenience\n\n\nWhat does the construct “convenience” even mean in the digital landscape?\n\n\n20.11.2025\n\n\nConvenience\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -110,5 +110,250 @@
     "title": "Origin Ambiguity",
     "section": "Possible “Big Questions” to ask",
     "text": "Possible “Big Questions” to ask\n\nPlatform Effects\nThis would go less for or against a particular company, but platforms which are used by consumers to make purchase decisions. Here, we could explore how people treat ambiguity depending on platform rather than depending on product or brand. It would be a nice playing ground for comparing e.g. various modalities of origin ambiguity (written, image, video). It would also be interesting to see what effects the perception of the platform itself has (e.g. TikTok could be perceived as more entertainment and there is no expectation of informativeness, whereas a tech review blog is expected to be informative).\n\n\nPerceived Autonomy and Empowerment\nThis is my attempt at getting away from the “classics” of purchasing behavior, WTS, etc. It could be interesting how consumers perceive themselves when confronted with ambiguity? Do they feel “cheated” on, do they feel disempowered / taken advantage of, or do they not care at all?\n\n\nInformation Processing\nThis would tie into research on Deepfakes as well as Uncanny Valley Effects. We could have a look at how people process information depending on perceived ambiguity, and also if they engage with info more or less (e.g. do they click on “more info” or whatever, or do they do the opposite and click away / disregard as soon as they are not sure if it is AI or human anymore?)"
+  },
+  {
+    "objectID": "slides/202511_OpenScience.html#timeline-decisions",
+    "href": "slides/202511_OpenScience.html#timeline-decisions",
+    "title": "Open Science",
+    "section": "Timeline Decisions",
+    "text": "Timeline Decisions\n\nVerschieben der Timeline:\n\nA. Dezember / Januar, um Awareness zu schaffen\nB. Januar / Februar nach dem Open Science Kickoff\nC. Februar / März, um zu prüfen, ob wir eingeschlagen haben"
+  },
+  {
+    "objectID": "slides/202511_OpenScience.html#content",
+    "href": "slides/202511_OpenScience.html#content",
+    "title": "Open Science",
+    "section": "Content",
+    "text": "Content"
+  },
+  {
+    "objectID": "slides/202511_OpenScience.html#structure",
+    "href": "slides/202511_OpenScience.html#structure",
+    "title": "Open Science",
+    "section": "Structure",
+    "text": "Structure"
+  },
+  {
+    "objectID": "slides/202511_OpenScience.html#section",
+    "href": "slides/202511_OpenScience.html#section",
+    "title": "Open Science",
+    "section": ".",
+    "text": "."
+  },
+  {
+    "objectID": "slides/202511_OpenScience.html#open-science-group-email",
+    "href": "slides/202511_OpenScience.html#open-science-group-email",
+    "title": "Open Science",
+    "section": "Open Science Group Email",
+    "text": "Open Science Group Email"
+  },
+  {
+    "objectID": "slides/202511_OpenScience.html#open-science-newsletter",
+    "href": "slides/202511_OpenScience.html#open-science-newsletter",
+    "title": "Open Science",
+    "section": "Open Science Newsletter",
+    "text": "Open Science Newsletter"
+  },
+  {
+    "objectID": "slides/collection.html#summary",
+    "href": "slides/collection.html#summary",
+    "title": "Collection of Future Research Endeavors",
+    "section": "Summary",
+    "text": "Summary\nWith the internet, the currency is no longer money, but attention (ads). While this domain has been researched extensively in various aspects, I think it is very interesting and could imagine getting into this more."
+  },
+  {
+    "objectID": "slides/collection.html#summary-1",
+    "href": "slides/collection.html#summary-1",
+    "title": "Collection of Future Research Endeavors",
+    "section": "Summary",
+    "text": "Summary\nThe privacy-convenience paradox has been observed and discussed for a long time, but to this day the psychological mechanisms have not been underpinned conclusively. One aspect that would be very interesting would be comparing computational models of various mechanism specifications based on experimental data (and potentially also branching out to correlative designs with real data). Another interesting aspect is the privacy-paradox specifically in terms of AI. There, I see several domains of application: What type of info is shared with ChatBots, how different knowledge and experiences influence this, how privacy and convenience interrelates with agentic AI (this would also go in the same direction as your project with Melandie Clegg which by the way is super interesting as well)."
+  },
+  {
+    "objectID": "slides/collection.html#summary-2",
+    "href": "slides/collection.html#summary-2",
+    "title": "Collection of Future Research Endeavors",
+    "section": "Summary",
+    "text": "Summary\nInspired by Andrea’s presentation at the SAMS conference. How and when are people reaffirmed and/or persuaded to adopt opposing views? In particular, I could see research on: - Algorithmic bubbles - Bots - …"
+  },
+  {
+    "objectID": "slides/collection.html#potential-avenues",
+    "href": "slides/collection.html#potential-avenues",
+    "title": "Collection of Future Research Endeavors",
+    "section": "Potential Avenues",
+    "text": "Potential Avenues"
+  },
+  {
+    "objectID": "slides/collection.html#the-attention-economy",
+    "href": "slides/collection.html#the-attention-economy",
+    "title": "Collection of Future Research Endeavors",
+    "section": "The Attention Economy",
+    "text": "The Attention Economy"
+  },
+  {
+    "objectID": "slides/collection.html#test-test",
+    "href": "slides/collection.html#test-test",
+    "title": "Collection of Future Research Endeavors",
+    "section": "Test Test",
+    "text": "Test Test\ntest test test"
+  },
+  {
+    "objectID": "slides/collection.html#test",
+    "href": "slides/collection.html#test",
+    "title": "Collection of Future Research Endeavors",
+    "section": "Test",
+    "text": "Test"
+  },
+  {
+    "objectID": "slides/convenience.html",
+    "href": "slides/convenience.html",
+    "title": "Convenience",
+    "section": "",
+    "text": "Article title contains convenience and field is Social Sciences OR Business, Management & Accounting OR Psychology OR Decision Sciences\nn = 1’616\n\n\n\n\n\nArticle title contains convenience and field is Psychology OR Economics OR Behavioral Science"
+  },
+  {
+    "objectID": "slides/convenience.html#research-on-convenience",
+    "href": "slides/convenience.html#research-on-convenience",
+    "title": "Convenience",
+    "section": "",
+    "text": "Article title contains convenience and field is Social Sciences OR Business, Management & Accounting OR Psychology OR Decision Sciences\nn = 1’616\n\n\n\n\n\nArticle title contains convenience and field is Psychology OR Economics OR Behavioral Science"
+  },
+  {
+    "objectID": "slides/convenienceprivacy.html",
+    "href": "slides/convenienceprivacy.html",
+    "title": "Convenience-Privacy-Autonomy Trade-Offs",
+    "section": "",
+    "text": "Attention Economy\n\n\nConvenience \\(\\rightarrow\\) Attention"
+  },
+  {
+    "objectID": "slides/collection.html#test-1",
+    "href": "slides/collection.html#test-1",
+    "title": "Collection of Future Research Endeavors",
+    "section": "test",
+    "text": "test"
+  },
+  {
+    "objectID": "slides/template_presentation.html#callout-slide",
+    "href": "slides/template_presentation.html#callout-slide",
+    "title": "Template",
+    "section": "Callout Slide",
+    "text": "Callout Slide\nsome text here."
+  },
+  {
+    "objectID": "slides/template_presentation.html#section",
+    "href": "slides/template_presentation.html#section",
+    "title": "HSG Corporate Template for Quarto",
+    "section": "",
+    "text": "It is possible to commit no mistakes and still lose. That is not a weakness; that is life.\n\nJean-Luc Picard"
+  },
+  {
+    "objectID": "slides/template_presentation.html#question-slide",
+    "href": "slides/template_presentation.html#question-slide",
+    "title": "HSG Corporate Template for Quarto",
+    "section": "Question Slide",
+    "text": "Question Slide\ninsert question picture here?"
+  },
+  {
+    "objectID": "slides/template_presentation.html#section-1",
+    "href": "slides/template_presentation.html#section-1",
+    "title": "HSG Corporate Template for Quarto",
+    "section": "",
+    "text": "This is a very interesting fancy callout!"
+  },
+  {
+    "objectID": "slides/template_presentation.html#normal-slide-with-content",
+    "href": "slides/template_presentation.html#normal-slide-with-content",
+    "title": "HSG Corporate Template for Quarto",
+    "section": "Normal Slide with content",
+    "text": "Normal Slide with content\nThis is normal content.\n\nbullet point 1\nbullet point 2\nbullet point 3"
+  },
+  {
+    "objectID": "slides/template_presentation.html#image-slide",
+    "href": "slides/template_presentation.html#image-slide",
+    "title": "HSG Corporate Template for Quarto",
+    "section": "Image Slide",
+    "text": "Image Slide\nThis slide is when you have light images because they don’t always work with dark background."
+  },
+  {
+    "objectID": "slides/template_presentation.html#section-2",
+    "href": "slides/template_presentation.html#section-2",
+    "title": "HSG Corporate Template for Quarto",
+    "section": "",
+    "text": "alt\n\n\n\n\nThis is a slide where you can ask an important question?"
+  },
+  {
+    "objectID": "slides/template_presentation.html#normal-slide-with-subtitles",
+    "href": "slides/template_presentation.html#normal-slide-with-subtitles",
+    "title": "HSG Corporate Template for Quarto",
+    "section": "Normal Slide with Subtitles",
+    "text": "Normal Slide with Subtitles\nThis is a subtitle\nHere, we have some text. Penguins are the cutest animals in the universe!\nThis is another subtitle\nHere we have some more text!!"
+  },
+  {
+    "objectID": "slides/template_presentation.html#centered-slide",
+    "href": "slides/template_presentation.html#centered-slide",
+    "title": "HSG Corporate Template for Quarto",
+    "section": "Centered Slide",
+    "text": "Centered Slide\nThis slide has the content centered."
+  },
+  {
+    "objectID": "drafts/template_presentation.html#section",
+    "href": "drafts/template_presentation.html#section",
+    "title": "HSG Corporate Template for Quarto",
+    "section": "",
+    "text": "It is possible to commit no mistakes and still lose. That is not a weakness; that is life.\n\nJean-Luc Picard"
+  },
+  {
+    "objectID": "drafts/template_presentation.html#section-1",
+    "href": "drafts/template_presentation.html#section-1",
+    "title": "HSG Corporate Template for Quarto",
+    "section": "",
+    "text": "This is a very interesting fancy callout!"
+  },
+  {
+    "objectID": "drafts/template_presentation.html#normal-slide-with-content",
+    "href": "drafts/template_presentation.html#normal-slide-with-content",
+    "title": "HSG Corporate Template for Quarto",
+    "section": "Normal Slide with content",
+    "text": "Normal Slide with content\nThis is normal content.\n\nbullet point 1\nbullet point 2\nbullet point 3"
+  },
+  {
+    "objectID": "drafts/template_presentation.html#normal-slide-with-subtitles",
+    "href": "drafts/template_presentation.html#normal-slide-with-subtitles",
+    "title": "HSG Corporate Template for Quarto",
+    "section": "Normal Slide with Subtitles",
+    "text": "Normal Slide with Subtitles\nThis is a subtitle\nHere, we have some text. Penguins are the cutest animals in the universe!\nThis is another subtitle\nHere we have some more text!!"
+  },
+  {
+    "objectID": "drafts/template_presentation.html#centered-slide",
+    "href": "drafts/template_presentation.html#centered-slide",
+    "title": "HSG Corporate Template for Quarto",
+    "section": "Centered Slide",
+    "text": "Centered Slide\nThis slide has the content centered."
+  },
+  {
+    "objectID": "drafts/template_presentation.html#image-slide",
+    "href": "drafts/template_presentation.html#image-slide",
+    "title": "HSG Corporate Template for Quarto",
+    "section": "Image Slide",
+    "text": "Image Slide\nThis slide is when you have light images because they don’t always work with dark background.\n\nI am some caption for this interesting image. I can also have a source (Abdurahman et al. 2024)."
+  },
+  {
+    "objectID": "drafts/template_presentation.html#section-2",
+    "href": "drafts/template_presentation.html#section-2",
+    "title": "HSG Corporate Template for Quarto",
+    "section": "",
+    "text": "This is a slide where you can ask an important question?"
+  },
+  {
+    "objectID": "drafts/template_presentation.html#slide-with-quotes",
+    "href": "drafts/template_presentation.html#slide-with-quotes",
+    "title": "HSG Corporate Template for Quarto",
+    "section": "Slide with Quotes",
+    "text": "Slide with Quotes\nThis slides has some quote options on it.\n\nThis bullet point is a statement corroborated by some authors\n\nAbdurahman et al. (2024); Abramovitch, Short, and Schweiger (2021)\n\nThis bullet point has an inline-citation (Abramovitch, Short, and Schweiger 2021)\n\n\nAnd this is a quote.\n\nAbdurahman et al. (2024), p. 34"
+  },
+  {
+    "objectID": "drafts/template_presentation.html#another-image-slide",
+    "href": "drafts/template_presentation.html#another-image-slide",
+    "title": "HSG Corporate Template for Quarto",
+    "section": "Another Image Slide",
+    "text": "Another Image Slide\nOf course, you can still use the regular background.\n\nThis is how an image on the regular slides looks like."
   }
 ]

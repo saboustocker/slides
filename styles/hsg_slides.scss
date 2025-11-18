@@ -1,0 +1,198 @@
+/*-- scss:defaults --*/
+
+// Greens
+$hsg-gruen: #00802f;      // HSG-Grün
+$hsg-dunkelgruen: #0a5f2d; // HSG-Dunkelgrün
+
+// Neutral / Accent
+$hsg-beige: #e1d7c3;      // HSG-Beige
+$hsg-blau: #73a5af;       // HSG-Blau
+$hsg-korall: #eb6969;     // HSG-Korall
+$hsg-gelb: #fff04b;  // HSG-Gelb
+
+/*-- scss:rules --*/
+
+.slides {
+    font-family: Arial, sans-serif;
+}
+
+.footer {
+  font-family: Arial, sans-serif;
+}
+
+// Title Block
+.reveal quarto-title-block {
+  background-color: #004080 !important; /* navy blue */
+  color: white; /* optional: change text color for contrast */
+}
+
+.subtitle {
+  color: $hsg-beige;
+}
+
+.quarto-title-author {
+  font-size: 0.7em;
+}
+
+.date {
+  font-size: 0.5em;
+}
+
+// Font Styles
+.reveal h1 {
+  color: white;
+}
+
+
+.reveal h2 {
+  color: $hsg-gruen;
+  text-align: end;
+}
+
+.reveal h3 {
+  color: $hsg-dunkelgruen;
+}
+
+.reveal h4 {
+  color: $hsg-dunkelgruen;
+}
+
+
+
+.bib-p p {
+  text-align: end;
+  font-size: 1rem;
+  color: $hsg-gruen;
+}
+
+.quote-p {
+  color: $hsg-blau;
+  font-size: 0.9 em;
+  padding-left: 40px;
+  border-left: 4px solid $hsg-blau;
+}
+
+.bib-quote-p {
+  color: $hsg-blau !important;
+  text-align: end;
+  font-size: 1rem;
+}
+
+// Citations and hyperlinks
+.reveal .citation {
+  color: $hsg-gruen;
+  font-size: 1rem;
+}
+
+.reveal .citation a {
+  color: $hsg-dunkelgruen;
+}
+
+.subtitle-p {
+  color: $hsg-beige;
+  text-align: end;
+}
+
+// progress bar and thingamacic 
+.reveal .progress {
+  color: $hsg-beige;
+  height: 0.5%;
+}
+
+.reveal .slide-menu-button .fa-bars::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgba(255,255,255,255)" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>');
+}
+
+// Backgrounds / Slide styles
+/* Default background for the whole deck */
+body,
+.reveal {
+  background-color: $hsg-beige;
+}
+
+/* Remove RevealJS's own default white background layer */
+.reveal .backgrounds {
+  background: none;
+}
+
+// Section Title 
+.slide-background.slide.level1.section-header-bg.present {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(
+    175deg,          /* angle of the diagonal */
+    $hsg-gruen 0%, 
+    $hsg-gruen 20%,       /* end of white at 30% along the diagonal */
+    $hsg-dunkelgruen 20%, 
+    $hsg-dunkelgruen 100%         /* start red at 30%, continue to 100% */
+  );
+}
+
+// Quote slide 
+.slide-background.slide.level2.quote-slide-bg.present {
+  position: absolute;
+  overflow: hidden; 
+  background: linear-gradient(
+    90deg,
+    $hsg-beige 0%,
+    $hsg-beige 20%,
+    $hsg-dunkelgruen 20%,
+    $hsg-dunkelgruen 100%
+  );
+  
+}
+
+section.quote-slide-bg {
+  color: white !important;
+  padding: 20%;
+  width: 70% !important;
+  text-align: end;
+}
+
+.source-p {
+  color: $hsg-beige;
+  font-size: 0.7em;
+  font-style: oblique;
+  padding-left: 40px;
+}
+
+
+// Callout-slide
+
+.callout-slide-p {
+  color: $hsg-dunkelgruen;
+  padding: 10%;
+  width: 80% !important;
+  font-weight: 110;
+  font-size: 1.5em;
+}
+
+// Image slide
+
+.slide-background.slide.level2.image-slide-bg.present {
+  position: absolute;
+  overflow: hidden; 
+  background: linear-gradient(
+    180deg,
+    white 0%,
+    white 95%,
+    $hsg-beige 95%,
+    $hsg-beige 100%
+  );
+}
+
+.caption {
+  color: $hsg-dunkelgruen;
+  font-size: 0.6em;
+  text-align: center;
+}
+
+// Question Slide 
+.slide-background.slide.level2.question-slide-bg.present {
+  background: $hsg-korall;
+}
+
+.question-slide-p {
+  color: white;
+  font-size: 1.2em;
+}
