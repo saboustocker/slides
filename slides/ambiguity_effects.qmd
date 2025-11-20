@@ -1,0 +1,34 @@
+---
+title: "Origin Ambiguity in Online Media"
+author: Sabou Rani Stocker
+date: 2025-12-10
+subtitle: tbd 
+format:
+  revealjs:  
+    theme: [../styles/hsg_slides.scss]
+    slide-number: c
+title-slide-attributes: 
+  data-background-color: "#0a5f2d"
+
+project: "collection"
+bibliography: ../bibliography.bib
+---
+
+:::{.section-header-bg}
+# Relevance
+:::
+
+## Is this AI?
+
+- add image of reddit
+- add image of TikTok "is this AI?"
+
+## Consequences of 
+
+# Background
+
+# Where we are at
+
+# Input needed
+
+# References

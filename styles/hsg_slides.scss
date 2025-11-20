@@ -196,3 +196,64 @@ section.quote-slide-bg {
   color: white;
   font-size: 1.2em;
 }
+
+
+
+// Alignment Containers
+
+#vcenter {
+  vertical-align: middle;
+}
+
+.center-align {
+  text-align: center;
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+  }
+}
+
+// Tabsets
+
+/* Target the tab list */
+ul.panel-tabset-tabby[role="tablist"] {
+  display: flex;           /* make it flex container */
+  justify-content: flex-start; /* align items to the right */
+  gap: 1rem;               /* optional spacing between tabs */
+  padding: 0;              /* remove default ul padding */
+  margin: 0;               /* remove default ul margin */
+  list-style: none;        /* remove bullets */
+}
+
+/* Optional: style the individual tabs */
+ul.panel-tabset-tabby[role="tablist"] li[role="presentation"] a {
+  color: #ffffff;           /* font color */
+  font-size: 0.4em;          /* font size */
+  background: $hsg-dunkelgruen;      /* background color */
+  padding: 0.5rem 1rem;
+  border-radius: 1px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Style the active tab */
+ul.panel-tabset-tabby[role="tablist"] li[role="presentation"] a[aria-selected="true"] {
+  background: $hsg-gruen;   /* active background color */
+  color: #ffffff;        /* active text color */
+  font-weight: bold;     /* optional emphasis */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* optional */
+}
+
+/* Style inactive tabs */
+ul.panel-tabset-tabby[role="tablist"] li[role="presentation"] a[aria-selected="false"] {
+  background: $hsg-dunkelgruen;
+  color: #ffffff;
+}
+
+/* Hover for inactive tabs */
+ul.panel-tabset-tabby[role="tablist"] li[role="presentation"] a[aria-selected="false"]:hover {
+  background: $hsg-gruen;
+}

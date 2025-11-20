@@ -3,10 +3,8 @@
     "listing": "/slide_overview.html",
     "items": [
       "/slides/ambiguity.html",
-      "/slides/collection.html",
       "/slides/convenienceprivacy.html",
-      "/slides/template_presentation.html",
-      "/slides/convenience.html"
+      "/slides/ambiguity_effects.html"
     ]
   }
 ]
