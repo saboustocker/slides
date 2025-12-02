@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -54,14 +54,15 @@ div.csl-indent {
 <meta name="quarto:offset" content="../">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-5c6e7687765fbf03c25740b5ff442b23.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-8c5ad10b4b6c520e052a64059d9c0edb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -104,7 +105,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -182,12 +183,12 @@ window.Quarto = {
 <li><strong>Attribution &amp; Responsibility</strong>: People think AI is more mechanistic, and therefore attribute less bias and more analytical. They also adapt their behavior in response to it.</li>
 </ul>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Trustworthiness
+<span class="screen-reader-only">Tip</span>Trustworthiness
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -213,7 +214,7 @@ Trustworthiness
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note Jonas
+<span class="screen-reader-only">Note</span>Note Jonas
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -224,12 +225,12 @@ Note Jonas
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Purchase Intention
+<span class="screen-reader-only">Tip</span>Purchase Intention
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -253,7 +254,7 @@ Purchase Intention
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note Jonas
+<span class="screen-reader-only">Note</span>Note Jonas
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -264,12 +265,12 @@ Note Jonas
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Attribution, Responsibility &amp; Behavior
+<span class="screen-reader-only">Tip</span>Attribution, Responsibility &amp; Behavior
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -299,12 +300,12 @@ Attribution, Responsibility &amp; Behavior
 <h2 class="anchored" data-anchor-id="ability-to-differenciate-between-human-and-ai-origin">Ability to Differenciate between Human and AI origin</h2>
 <p>Humans are generally not good at differenciating between AI and human origin. This research goes back several years. As much of the AI generated materials only gets better and less distinguishable from human origin, it is to be assumed that these effects will become even more pronounced in the future.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Primary Sources on Ability to Differenciate">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Primary Sources on Ability to Differenciate
+<span class="screen-reader-only">Tip</span>Primary Sources on Ability to Differenciate
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -328,12 +329,12 @@ Primary Sources on Ability to Differenciate
 <p>When it comes to <strong>assessment</strong> or <strong>data manipulation</strong> using AI, there are strict provisions – at least in the EU (GDPR), Switzerland (FADP), and some other nations (e.g.&nbsp;UK, Australia). While they were not written with the use of AI tools as their primary scope, they apply as soon as personal data is obtained from a consumer, and mandate the disclosure of the use and purpose of this data, as well as any third parties this data is shared with (such as OpenAI when using ChatGPT.)</p>
 <p>Many companies increasingly utilize AI when generating marketing and informational materials due to its cost- and time efficiency. At the same time, research indicates that consumers generally trust companies less when the use of AI is disclosed. Therefore, it is to be assumed that there is an <strong>incentive to not diclose the use of AI</strong> on the companies side.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Regulations pertaining to Personal Data
+<span class="screen-reader-only">Tip</span>Regulations pertaining to Personal Data
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -348,12 +349,12 @@ Regulations pertaining to Personal Data
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Regulations pertaining to Competition
+<span class="screen-reader-only">Tip</span>Regulations pertaining to Competition
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -367,12 +368,12 @@ Regulations pertaining to Competition
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-The EU AI Act
+<span class="screen-reader-only">Tip</span>The EU AI Act
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -388,12 +389,12 @@ The EU AI Act
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Additional Laws specifically pertaining to AI
+<span class="screen-reader-only">Tip</span>Additional Laws specifically pertaining to AI
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -434,12 +435,12 @@ Additional Laws specifically pertaining to AI
 <h2 class="anchored" data-anchor-id="ambiguity-aversion">Ambiguity Aversion</h2>
 <p>People are generally averse to ambiguity. However, while these effects replicate outside of the lab to some extent, they are not as clear-cut as one would think, especially in situations where the risky situation has low winning probabilities or the situaiton pertains to losses. Furthermore, studies on external validity of the effect reveal mixed results.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Primary Sources on Ambiguity Aversion">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Primary Sources on Ambiguity Aversion
+<span class="screen-reader-only">Tip</span>Primary Sources on Ambiguity Aversion
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -478,12 +479,12 @@ Primary Sources on Ambiguity Aversion
 <h2 class="anchored" data-anchor-id="ambiguity-in-marketing">Ambiguity in Marketing</h2>
 <p>Ambiguity is a topic that has been discussed in the marketing context extensively and from different lenses. Ambiguity aversion (for general details see above) has shown to correlate to preference for established products <span class="citation" data-cites="muthukrishnanAmbiguityAversionPreference2009a">(<a href="#ref-muthukrishnanAmbiguityAversionPreference2009a" role="doc-biblioref">Muthukrishnan, Wathieu, and Xu 2009</a>)</span>, and as a moderator to consumer satisfaction [<span class="citation" data-cites="yiDeterminantsConsumerSatisfaction1993">Yi (<a href="#ref-yiDeterminantsConsumerSatisfaction1993" role="doc-biblioref">1993</a>)</span>;<span class="citation" data-cites="erdemDecisionMakingUncertaintyCapturing1996">Erdem and Keane (<a href="#ref-erdemDecisionMakingUncertaintyCapturing1996" role="doc-biblioref">1996</a>)</span>; and others]. Ambiguity is also discussed as a purposeful marketing tactic <span class="citation" data-cites="kovachevaUncertaintyMarketingTactics2024">(<a href="#ref-kovachevaUncertaintyMarketingTactics2024" role="doc-biblioref">Kovacheva and Nikolova 2024</a>)</span>.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Ambiguity Aversion and Preference for Established Products
+<span class="screen-reader-only">Tip</span>Ambiguity Aversion and Preference for Established Products
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -498,12 +499,12 @@ Ambiguity Aversion and Preference for Established Products
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Ambiguity as a Moderator of Consumer Satisfaction
+<span class="screen-reader-only">Tip</span>Ambiguity as a Moderator of Consumer Satisfaction
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -528,12 +529,12 @@ Ambiguity as a Moderator of Consumer Satisfaction
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Role Ambiguity
+<span class="screen-reader-only">Tip</span>Role Ambiguity
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -550,12 +551,12 @@ Role Ambiguity
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Ambiguous (uncertain) Marketing Tactics
+<span class="screen-reader-only">Tip</span>Ambiguous (uncertain) Marketing Tactics
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -583,7 +584,7 @@ Ambiguous (uncertain) Marketing Tactics
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note Sabou
+<span class="screen-reader-only">Note</span>Note Sabou
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -599,12 +600,12 @@ Note Sabou
 <h2 class="anchored" data-anchor-id="origin-ambiguity">“Origin Ambiguity”</h2>
 <p>While ambiguity in general has been discussed in various aspects (see sections above), origin ambiguity in terms of not knowing the source of a piece of information has hardly been discussed. There are somewhat related streams of research when looking at what purposefully obfuscating parts of informational material in advertising; when looking at deepfakes (although there is very little research on how people act when they <em>believe</em> something is a deepfake, only how they act when they <em>know</em> it), and (probably most relevant) the uncanny valley effect.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-(Origin) Ambiguity due to obfuscated Materials
+<span class="screen-reader-only">Tip</span>(Origin) Ambiguity due to obfuscated Materials
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -630,12 +631,12 @@ Note Sabou
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Deepfakes
+<span class="screen-reader-only">Tip</span>Deepfakes
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -655,12 +656,12 @@ Deepfakes
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-The uncanny valley Effect
+<span class="screen-reader-only">Tip</span>The uncanny valley Effect
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -685,12 +686,12 @@ The uncanny valley Effect
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Other Related Work
+<span class="screen-reader-only">Tip</span>Other Related Work
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -710,7 +711,7 @@ Other Related Work
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note Jonas
+<span class="screen-reader-only">Note</span>Note Jonas
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -723,7 +724,7 @@ Note Jonas
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Idea Jonas
+<span class="screen-reader-only">Note</span>Idea Jonas
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -766,7 +767,7 @@ Idea Jonas
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note Sabou
+<span class="screen-reader-only">Note</span>Note Sabou
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -816,7 +817,7 @@ Note Sabou
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note Jonas
+<span class="screen-reader-only">Note</span>Note Jonas
 </div>
 </div>
 <section id="ai-specific-dependent-variables" class="level4 callout-body-container callout-body">
@@ -1036,13 +1037,14 @@ You, Xiang-Yi, Tzu-Yun Chen, Yi-Wen Chan, and Rain Chen. 2024. <span>“Distingu
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

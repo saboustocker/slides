@@ -1,3 +1,4 @@
 
 /.quarto/
 *.bib
+**/*.quarto_ipynb

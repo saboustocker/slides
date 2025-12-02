@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Sabou Rani Stocker">
-<meta name="dcterms.date" content="2025-11-10">
+<meta name="dcterms.date" content="2025-11-21">
 
-<title>Convenience-Privacy-Autonomy Trade-Offs – IBT-HSG - Slides</title>
+<title>Origin Ambiguity – IBT-HSG - Slides</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -42,7 +62,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-8c5ad10b4b6c520e052a64059d9c0edb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-b3cc886893f1576abc94174c78ea1c6d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,53 +91,61 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
-<body class="fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">IBT-HSG - Slides</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../slide_overview.html"> 
+<span class="menu-text">Slides</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/saboustocker/slides"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="Origin_ambiguity.docx"><i class="bi bi-file-word"></i>MS Word</a></li><li><a href="Origin_ambiguity.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Convenience-Privacy-Autonomy Trade-Offs</h1>
-<p class="subtitle lead">How do the concepts of convenience, autonomy, and privacy relate to each other in digital environments?</p>
+<h1 class="title">Origin Ambiguity</h1>
 </div>
 
 
@@ -134,7 +162,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 10, 2025</p>
+      <p class="date">November 21, 2025</p>
     </div>
   </div>
   
@@ -146,16 +174,108 @@ window.Quarto = {
 </header>
 
 
-<section id="attention-economy" class="level1">
-<h1>Attention Economy</h1>
+<section id="abstract" class="level1">
+<h1>Abstract</h1>
+<p>As firms increasingly use generative AI to produce product shoots, video ads, and news-like reels, AI-generated outputs reach near-human quality, making it difficult for viewers to distinguish whether content was created by humans or AI. We take a new perspective on this phenomenon and propose <em>origin ambiguity</em> as a central challenge in such contemporary marketing communication. In the absence of clear regulations, consumers increasingly experience ambiguity related to content origin and pose the question “is this AI or real?”. We ask: what changes when people no longer know if what they are looking at has been generated by a human or by AI? To the best of our knowledge, this question remains unanswered. Existing work suggests that ambiguity is a relevant phenomenon with potentially detrimental effects. Specifically, ambiguity might shift attention away from <em>content deliberation</em> toward deliberation about <em>origin</em>, if consumers are motivated enough to engage in deeper processing (e.g., under high involvement), with implications for marketing persuasiveness, informed decision-making, and affective responses (amongst others).</p>
 </section>
-<section id="convenience-rightarrow-attention" class="level1">
-<h1>Convenience <span class="math inline">\(\rightarrow\)</span> Attention</h1>
+<section id="related-theory-and-phenomenon-in-context" class="level1">
+<h1>Related theory and phenomenon-in-context</h1>
+<section id="ai-and-human-origin" class="level2">
+<h2 class="anchored" data-anchor-id="ai-and-human-origin">AI and Human Origin</h2>
+<p>Much research has studied the consequences of explicit human vs.&nbsp;AI origin under the phenomena of algorithm aversion and appreciation (e.g., <span class="citation" data-cites="bigmanAlgorithmicDiscriminationCauses2022">Bigman (<a href="#ref-bigmanAlgorithmicDiscriminationCauses2022" role="doc-biblioref">2022</a>)</span>). Here, consumers know and/or are informed about the origin of a recommendation, post, or product, and seem to prefer human over AI or vice versa conditional on various factors. Other research demonstrates that people are generally bad at identifying the origin of content (AI or human) (e.g.,&nbsp;<span class="citation" data-cites="vukojicicImitationDrawingCan2023">Vukojičić, Krstić, and Veinović (<a href="#ref-vukojicicImitationDrawingCan2023" role="doc-biblioref">2023</a>)</span>; <span class="citation" data-cites="porterAIgeneratedPoetryIndistinguishable2024a">Porter and Machery (<a href="#ref-porterAIgeneratedPoetryIndistinguishable2024a" role="doc-biblioref">2024</a>)</span>; <span class="citation" data-cites="milickaHumansCanLearn2025">Milička et al. (<a href="#ref-milickaHumansCanLearn2025" role="doc-biblioref">2025</a>)</span>).</p>
+<p>This latter research points at a human-AI generation frontier that is increasingly blurred. As a case in point, multiple forums exist around the question “Is this AI or real/human” (<a href="https://www.reddit.com/r/RealOrAI/">r/RealOrAI</a>), and the comment sections on social media pages are filled with consumers eager to know if what they are looking at is “real” or AI-generated. Importantly, there is no legally mandated disclosure of AI involvement in content generation, resulting in many situations where the origin remains ambiguous.</p>
+</section>
+<section id="ambiguity-in-marketing" class="level2">
+<h2 class="anchored" data-anchor-id="ambiguity-in-marketing">Ambiguity in Marketing</h2>
+<p>Ambiguity in marketing (e.g.&nbsp;surprise boxes) has been shown to affect attention and raise interest, but also result in aversion, especially in high-stakes situations <span class="citation" data-cites="kovachevaUncertaintyMarketingTactics2024">(<a href="#ref-kovachevaUncertaintyMarketingTactics2024" role="doc-biblioref">Kovacheva and Nikolova 2024</a>)</span>. For example, when product quality is ambiguous, consumers rely more on ads <span class="citation" data-cites="hochConsumerLearningAdvertising1986">(<a href="#ref-hochConsumerLearningAdvertising1986" role="doc-biblioref">Hoch and Ha 1986</a>)</span>, and on top-down approaches (i.e.&nbsp;expectations, theories, <span class="citation" data-cites="yiDeterminantsConsumerSatisfaction1993">Yi (<a href="#ref-yiDeterminantsConsumerSatisfaction1993" role="doc-biblioref">1993</a>)</span>); and ambiguity aversion correlates with a preference for established products <span class="citation" data-cites="muthukrishnanAmbiguityAversionPreference2009 hochConsumerLearningAdvertising1986">(<a href="#ref-muthukrishnanAmbiguityAversionPreference2009" role="doc-biblioref">Muthukrishnan, Wathieu, and Xu 2009</a>; <a href="#ref-hochConsumerLearningAdvertising1986" role="doc-biblioref">Hoch and Ha 1986</a>)</span>. Furthermore, research on a distinct, but related phenomenon – the uncanny valley <span class="citation" data-cites="moriUncannyValleyField2012">(<a href="#ref-moriUncannyValleyField2012" role="doc-biblioref">Mori, MacDorman, and Kageki 2012</a>)</span> – gives preliminary evidence that ambiguous stimuli tax cognitive resources <span class="citation" data-cites="shinUncannyValleyNo2019 taoExploringPersonaCharacteristics2022 howardInvestigatingSimulationElements2017">(<a href="#ref-shinUncannyValleyNo2019" role="doc-biblioref">Shin, Kim, and Biocca 2019</a>; <a href="#ref-taoExploringPersonaCharacteristics2022" role="doc-biblioref">Tao et al. 2022</a>; <a href="#ref-howardInvestigatingSimulationElements2017" role="doc-biblioref">Howard 2017</a>)</span>.</p>
+<p>One important moderator for the occurrence of ambiguity effects in general are the stakes of a situation and the resulting motivation of consumers to resolve ambiguity. Marketing tactics strategically using obfuscated materials (i.e.&nbsp;cropping objects, incomplete typefaces, …) show that consumers attempt to resolve these introduced ambiguities only when they are motivated to do so <span class="citation" data-cites="joharConsumerInvolvementDeception1995 peracchioHowAmbiguousCropped1994">Hagtvedt (<a href="#ref-hagtvedtImpactIncompleteTypeface2011" role="doc-biblioref">2011</a>)</span>. We expect that comparable effects occur under origin ambiguity.</p>
+</section>
+</section>
+<section id="relevance" class="level1">
+<h1>Relevance</h1>
+<section id="theoretical" class="level2">
+<h2 class="anchored" data-anchor-id="theoretical">Theoretical</h2>
+<p>This phenomenon integrates several streams of research that to the best of our knowledge have been treated separately so far: research on ambiguity in marketing, on cognitive load theory, and on consumer exposure and reactions to AI-generated content. Extending prior work on AI where origin is known or the variable in question, we study cases where humans face content that is neither declared AI or human or easily determined as one or the other.</p>
+</section>
+<section id="practical" class="level2">
+<h2 class="anchored" data-anchor-id="practical">Practical</h2>
+<p><em>Origin ambiguity</em> holds implications for both marketers and consumers: For marketers, potential backfiring of AI generated ads as well as the resulting trade-offs with efficiency and effectiveness are relevant. For consumers, cognitive resource reallocation might come at the cost of informed decision-making.</p>
+</section>
+</section>
+<section id="research-plan" class="level1">
+<h1>Research Plan</h1>
+<p>Based on the existing literature, we suggest that when people are no longer sure if something has been generated by a human or by AI, they try to resolve this ambiguity. One possible strategy here is more elaboration on the origin and less deliberation on the content resulting in worsened information retention. Additionally or alternatively, we suggest that the ambiguity leads to a negative affective response. Evidenced by previous research, we suggest that people only attempt to resolve ambiguity when they have sufficient motivation to do so, in other words when the stakes are high enough.</p>
+<div id="fig-conceptual-model" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-conceptual-model-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="conceptual_model.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-conceptual-model-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Conceptual Model
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="open-questions" class="level1">
+<h1>Open Questions</h1>
+<ul>
+<li>Is this relevant and theoretically interesting enough in your eyes?</li>
+<li>We mainly believe the IV (origin ambiguity) is interesting to study. We’re less confident that what we propose downstream in terms of the ambiguity resolve strategy (cognitive resources allocated to origin vs content) is the best option available. Maybe you have other ideas what to look at?</li>
+<li>Methodically, one crucial question pertains to the operationalization of the IV. Put simply, people may simply not think about origin without a prompt to do so. Specifically, we were wondering how we can test an origin ambiguity IV <em>as it is naturally occuring</em> as opposed to pointing participants to the ambiguity of some content (which is then a confound).</li>
+<li>A second question to be discussed is whether or not to include the comparison of low origin-ambiguity materials that are clearly AI generated, or if it makes more sense to only compare against clearly human-generated material. (we’d probably need to do so at some point)</li>
+</ul>
+
 
 
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-bigmanAlgorithmicDiscriminationCauses2022" class="csl-entry" role="listitem">
+Bigman, Yochanan E. 2022. <span>“Algorithmic <span>Discrimination Causes Less Moral Outrage Than Human Discrimination</span>.”</span>
+</div>
+<div id="ref-hagtvedtImpactIncompleteTypeface2011" class="csl-entry" role="listitem">
+Hagtvedt, Henrik. 2011. <span>“The <span>Impact</span> of <span>Incomplete Typeface Logos</span> on <span>Perceptions</span> of the <span>Firm</span>.”</span> <em>Journal of Marketing</em> 75 (4): 86–93. <a href="https://doi.org/10.1509/jmkg.75.4.86">https://doi.org/10.1509/jmkg.75.4.86</a>.
+</div>
+<div id="ref-hochConsumerLearningAdvertising1986" class="csl-entry" role="listitem">
+Hoch, Stephen J., and Young-Won Ha. 1986. <span>“Consumer <span>Learning</span>: <span>Advertising</span> and the <span>Ambiguity</span> of <span>Product Experience</span>.”</span> <em>Journal of Consumer Research</em> 13 (2): 221. <a href="https://doi.org/10.1086/209062">https://doi.org/10.1086/209062</a>.
+</div>
+<div id="ref-howardInvestigatingSimulationElements2017" class="csl-entry" role="listitem">
+Howard, Matt C. 2017. <span>“Investigating the Simulation Elements of Environment and Control: <span>Extending</span> the <span>Uncanny Valley Theory</span> to Simulations.”</span> <em>Computers &amp; Education</em> 109 (June): 216–32. <a href="https://doi.org/10.1016/j.compedu.2017.03.005">https://doi.org/10.1016/j.compedu.2017.03.005</a>.
+</div>
+<div id="ref-joharConsumerInvolvementDeception1995" class="csl-entry" role="listitem">
+Johar, Gita Venkataramani. 1995. <span>“Consumer <span>Involvement</span> and <span>Deception</span> from <span>Implied Advertising Claims</span>.”</span> <em>JOURNAL OF MARKETING RESEARCH</em>.
+</div>
+<div id="ref-kovachevaUncertaintyMarketingTactics2024" class="csl-entry" role="listitem">
+Kovacheva, Aleksandra, and Hristina Nikolova. 2024. <span>“Uncertainty Marketing Tactics: <span>An</span> Overview and a Unifying Framework.”</span> <em>Journal of the Academy of Marketing Science</em> 52 (1): 1–22. <a href="https://doi.org/10.1007/s11747-023-00941-7">https://doi.org/10.1007/s11747-023-00941-7</a>.
+</div>
+<div id="ref-milickaHumansCanLearn2025" class="csl-entry" role="listitem">
+Milička, Jiří, Anna Marklová, Ondřej Drobil, and Eva Pospíšilová. 2025. <span>“Humans Can Learn to Detect <span class="nocase">AI-generated</span> Texts, or at Least Learn When They Can’t.”</span> <em>PLOS One</em> 20 (10): e0333007. <a href="https://doi.org/10.1371/journal.pone.0333007">https://doi.org/10.1371/journal.pone.0333007</a>.
+</div>
+<div id="ref-moriUncannyValleyField2012" class="csl-entry" role="listitem">
+Mori, Masahiro, Karl MacDorman, and Norri Kageki. 2012. <span>“The <span>Uncanny Valley</span> [<span>From</span> the <span>Field</span>].”</span> <em>IEEE Robotics &amp; Automation Magazine</em> 19 (2): 98–100. <a href="https://doi.org/10.1109/MRA.2012.2192811">https://doi.org/10.1109/MRA.2012.2192811</a>.
+</div>
+<div id="ref-muthukrishnanAmbiguityAversionPreference2009" class="csl-entry" role="listitem">
+Muthukrishnan, A. V., Luc Wathieu, and Alison Jing Xu. 2009. <span>“Ambiguity <span>Aversion</span> and the <span>Preference</span> for <span>Established Brands</span>.”</span> <em>Management Science</em> 55 (12): 1933–41. <a href="https://doi.org/10.1287/mnsc.1090.1087">https://doi.org/10.1287/mnsc.1090.1087</a>.
+</div>
+<div id="ref-peracchioHowAmbiguousCropped1994" class="csl-entry" role="listitem">
+Peracchio, Laura A., and Joan Meyers-Levy. 1994. <span>“How <span>Ambiguous Cropped Objects</span> in <span>Ad Photos</span> Can <span>Affect Product Evaluations</span>.”</span> <em>Journal of Consumer Research</em> 21 (1): 190. <a href="https://doi.org/10.1086/209392">https://doi.org/10.1086/209392</a>.
+</div>
+<div id="ref-porterAIgeneratedPoetryIndistinguishable2024a" class="csl-entry" role="listitem">
+Porter, Brian, and Edouard Machery. 2024. <span>“<span class="nocase">AI-generated</span> Poetry Is Indistinguishable from Human-Written Poetry and Is Rated More Favorably.”</span> <em>Scientific Reports</em> 14 (1): 26133. <a href="https://doi.org/10.1038/s41598-024-76900-1">https://doi.org/10.1038/s41598-024-76900-1</a>.
+</div>
+<div id="ref-shinUncannyValleyNo2019" class="csl-entry" role="listitem">
+Shin, Mincheol, Se Jung Kim, and Frank Biocca. 2019. <span>“The Uncanny Valley: <span>No</span> Need for Any Further Judgments When an Avatar Looks Eerie.”</span> <em>Computers in Human Behavior</em> 94 (May): 100–109. <a href="https://doi.org/10.1016/j.chb.2019.01.016">https://doi.org/10.1016/j.chb.2019.01.016</a>.
+</div>
+<div id="ref-taoExploringPersonaCharacteristics2022" class="csl-entry" role="listitem">
+Tao, Yayi, Guangli Zhang, Di Zhang, Fang Wang, Yun Zhou, and Tao Xu. 2022. <span>“Exploring <span>Persona Characteristics</span> in <span>Learning</span>: <span>A Review Study</span> of <span>Pedagogical Agents</span>.”</span> <em>Procedia Computer Science</em> 201: 87–94. <a href="https://doi.org/10.1016/j.procs.2022.03.014">https://doi.org/10.1016/j.procs.2022.03.014</a>.
+</div>
+<div id="ref-vukojicicImitationDrawingCan2023" class="csl-entry" role="listitem">
+Vukojičić, Milić, Jovana Krstić, and Mladen Veinović. 2023. <span>“Imitation <span>Drawing</span>: <span>Can We Spot</span> the <span>Difference Between Ai</span> and <span>Human Generated Drawing</span>?”</span> In <em>Proceedings of the <span>International Scientific Conference</span> - <span>Sinteza</span> 2023</em>, 23–27. Beograd, Serbia: Singidunum University. <a href="https://doi.org/10.15308/Sinteza-2023-23-27">https://doi.org/10.15308/Sinteza-2023-23-27</a>.
+</div>
+<div id="ref-yiDeterminantsConsumerSatisfaction1993" class="csl-entry" role="listitem">
+Yi, Youjae. 1993. <span>“The <span>Determinants</span> of <span>Consumer Satisfaction</span>: <span>The Moderating Role</span> of <span>Ambiguity</span>.”</span> <em>Advances in Consumer Research</em> 20: 502–8.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

@@ -1,0 +1,131 @@
+---
+title: "Test PDF in HSG Format"
+subtitle: "This is a test subtitle."
+author: Sabou Rani Stocker
+date: 2025-11-21
+format:
+  pdf: 
+    number-sections: true
+    fig-caption: true
+    citation-package: biblatex
+    documentclass: article      # or book, report
+    fontsize: 12pt             # font size
+    mainfont: "Arial" # requires XeLaTeX or LuaLaTeX
+    sansfont: "Arial"
+    monofont: "Courier New"
+    geometry: margin=1in       # page margins
+    colorlinks: true           # enable colored links
+    header-includes: |
+        \usepackage[HTML]{xcolor}   % allows hex codes like #00802f
+        \usepackage{sectsty}
+        \sectionfont{\color[HTML]{00802f}}   % section header color
+        \subsectionfont{\color[HTML]{0a5f2d}} % subsection color
+        \usepackage{setspace}
+        \onehalfspacing
+        \usepackage{hyperref}
+        \hypersetup{
+            colorlinks=true,
+            linkcolor=[HTML]{00802f},       % internal links (figures, sections)
+            citecolor=[HTML]{0a5f2d},       % citations
+            urlcolor=[HTML]{FFA500}   
+            }
+project: "AI assessment"
+bibliography: ../bibliography.bib
+link-citations: true
+---
+
+# Header 1
+## Header 2
+### Header 3
+#### Header 4
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+# Citations 
+
+## Styles
+
+- callout: @abdurahmanDeepLearningApproach2024
+    - callout with page number: @wagnerGermanSocioeconomicPanel2007 [p. 67]
+- narrative: [@acquistiNudgesPrivacySecurity2018]
+    - narrative with page number: [@abeysekeraMotivationCognitiveLoad2015, p. 15]
+    - several narrative: [@akaMachineLearningModels2022; @amettiFrustrationCognitionPsychophysiology2022]
+- only the year: [-@barnardRelationshipEpistemologicalBeliefs2008]
+    - with page number: [-@paasImplicationsCognitiveLoad2014, p. 78]
+    - several: [-@sablicVideoBasedLearningVBLPast2021;-@baddeleyWORKINGMEMORY1974]
+
+For other styles, e.g. APA, use a CSL
+
+# Images
+
+![Example Figure](download.jpg){#fig-conceptual-model}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Reference to @fig-conceptual-model Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+# Tables
+| col1 | col2 | col3 | col4 |
+|------|------|------|------|
+| 1    | 2    | 3    | 4    |
+| 5    | 6    | 7    | 8    |
+| 9    | 10   | 11   | 12   |
+
+More info: https://quarto.org/docs/authoring/tables.html 
+
+# Code
+
+## Input & Output
+```{r}
+
+# Load required library
+library(ggplot2)
+
+# Create a sample dataframe
+df <- data.frame(
+  category = c("A", "B", "C", "D", "E"),
+  value = c(10, 23, 17, 9, 30)
+)
+
+# Print the dataframe
+print(df)
+
+# Create a bar plot
+ggplot(df, aes(x = category, y = value)) +
+  geom_col() +
+  labs(
+    title = "Sample Bar Plot",
+    x = "Category",
+    y = "Value"
+  ) +
+  theme_minimal()
+
+```
+
+## Only Output
+```{r}
+#| echo: false
+
+# Load required library
+library(ggplot2)
+
+# Create a sample dataframe
+df <- data.frame(
+  category = c("A", "B", "C", "D", "E"),
+  value = c(10, 23, 17, 9, 30)
+)
+
+# Print the dataframe
+print(df)
+
+# Create a bar plot
+ggplot(df, aes(x = category, y = value)) +
+  geom_col() +
+  labs(
+    title = "Sample Bar Plot",
+    x = "Category",
+    y = "Value"
+  ) +
+  theme_minimal()
+
+```
+
+# References

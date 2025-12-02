@@ -1,8 +1,8 @@
 ---
-title: "Origin Ambiguity in Online Media"
+title: "IBT Colloquium"
 author: Sabou Rani Stocker
 date: 2025-12-10
-subtitle: tbd 
+subtitle: Origin Ambiguity in Online Materials // Open Science Office
 format:
   revealjs:  
     theme: [../styles/hsg_slides.scss]
@@ -14,21 +14,106 @@ project: "collection"
 bibliography: ../bibliography.bib
 ---
 
+## Agenda
+### Part 1 (~ 45 min)
+- Origin Ambiguity in Online Materials
+- Phenomenon representation in real life
+- Ideas and Plans
+- Open Discussion points
+
+### Part 2 (~ 15 min)
+- Open Science sais hi! 
+
 :::{.section-header-bg}
-# Relevance
+# Origin Ambiguity
+:::{.authors-p}
+Sabou Rani Stocker, Jonas Görgen, Emanuel de Bellis & Anne-Kathrin Kleese
+:::
 :::
 
-## Is this AI?
+## Real or AI?
 
-- add image of reddit
-- add image of TikTok "is this AI?"
+::: {.r-stack}
+![](../images/aivideo.mp4){width="400"}
 
-## Consequences of 
+![](../images/floridaman.jpg){.fragment width="350"}
 
-# Background
+![](../images/isai.jpg){.fragment width="350"}
+:::
 
-# Where we are at
+:::{.source-p-blue}
+source: [RealstrangeAI](https://www.instagram.com/reel/DP998AIjUqS/?utm_source=ig_web_copy_link) 
+:::
 
-# Input needed
+## Real or AI?
+
+::: {.r-stack}
+![SBB campaign for winter GA has been created using AI.](../images/SBB_plakat.png){width="900"}
+
+![](../images/SBB_headline.png){.fragment width="500"}
+
+:::
+
+:::{.source-p-blue}
+source: [Tagesanzeiger](https://www.tagesanzeiger.ch/sbb-werben-mit-ki-bild-fotografen-kritisieren-winterkampagne-660469800566) 
+:::
+
+## Real or AI?
+
+::: {.r-stack}
+![Advertisment by Vodafone on TikTok](../images/Download.mp4){width="450"}
+
+![](../images/vodaphone.png){.fragment width="900"}
+
+:::
+
+:::{.source-p-blue}
+source: [Vodaphone](https://www.tiktok.com/@vodafonedeutschland/video/7543534062514818326) 
+:::
+
+:::{.quote-slide-bg}
+##
+Today's AI is the worst AI you will ever use.
+
+:::{.source-p}
+Ethan Mollick ([LinkedIn](https://www.linkedin.com/posts/emollick_todays-ai-is-the-worst-ai-you-will-ever-activity-7106305750431322112-Xr7n?utm_source=share&utm_medium=member_desktop&rcm=ACoAADFA1dwBsHPjTu6xag-1tBYDcJm6WYeFn78))
+:::
+:::
+
+:::{.notes}
+**Ethan Mollick**: https://mgmt.wharton.upenn.edu/profile/emollick/ His academic research has been published in leading journals, and his work on AI is widely applied, leading him to be named one of TIME Magazine’s Most Influential People in Artificial Intelligence. Ethan also writes to a wider audience about AI, including in his book, Co-Intelligence, which was a New York Times bestseller and a best book of the year from The Economist and Financial Times.
+:::
+
+## And people are already bad at identifying AI-generated materials
+
+- “**almost 50% of respondents can distinguish between AI and human** generated artwork.” [@vukojicicImitationDrawingCan2023]
+- “participants **performed below chance levels** in identifying AI-generated poems (46.6% accuracy)" [@porterAIgeneratedPoetryIndistinguishable2024a]
+- “participants were more likely to judge AI-generated poems as human-authored than actual human-authored poems [@porterAIgeneratedPoetryIndistinguishable2024a]
+- With training, participants were able to correctly **identify AI generated text correctly 65% of the time**; without training 55% [@milickaHumansCanLearn2025]
+
+## What do we know?
+- what happens when use of AI **is** disclosed? 
+  - aversion (algorithm aversion, ...)
+- ambiguity effects in marketing
+  - justify motivation
+  - justify authenticity
+
+## A Field of Tension
+
+
+
+## Downstream Effects
+1. Cognitive Resources
+2. Trust, Willingness to Pay, and Willingness to Recommend
+3. 
+
+## QUESTION 1
+- 
+
+## Important Questions to Adress
+### Can we find this effect in real life? 
+-> ESF-survey
+
+
 
 # References

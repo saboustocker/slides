@@ -93,6 +93,11 @@ $hsg-gelb: #fff04b;  // HSG-Gelb
   text-align: end;
 }
 
+.authors-p {
+  color: $hsg-beige;
+  font-size: 0.5em;
+}
+
 // progress bar and thingamacic 
 .reveal .progress {
   color: $hsg-beige;
@@ -154,6 +159,13 @@ section.quote-slide-bg {
   font-size: 0.7em;
   font-style: oblique;
   padding-left: 40px;
+}
+
+.source-p-blue {
+  color: $hsg-blau;
+  font-size: 0.4em;
+  font-style: oblique;
+  text-align: end;
 }
 
 
