@@ -109,7 +109,7 @@
     "href": "slides/ambiguity_effects.html#agenda",
     "title": "IBT Colloquium",
     "section": "Agenda",
-    "text": "Agenda\nPart 1 (~ 45 min)\n\nOrigin Ambiguity in Online Materials\nPhenomenon representation in real life\nIdeas and Plans\nOpen Discussion points\n\nPart 2 (~ 15 min)\n\nOpen Science sais hi!"
+    "text": "Agenda\n(1) Origin Ambiguity\n\n ~ 45-60 min\n\n\nPhenomenon & Context\nDownstream Effects\nIntended Contribution & Operationalization\n\n(2) Open Science Office\n\n ~ 15 min\n\n\nOpen Science says hi (will be changed)\n\n\n\nask first: do we have any admin things to discuss today? I will adapt my timeline accordingly\nup to 60 minutes für origin ambiguity"
   },
   {
     "objectID": "documents/Origin_ambiguity.html",
@@ -312,14 +312,14 @@
     "href": "slides/ambiguity_effects.html#section",
     "title": "IBT Colloquium",
     "section": "",
-    "text": "Today’s AI is the worst AI you will ever use.\n\nEthan Mollick (LinkedIn)"
+    "text": "Video\nInstagram reel showing a man riding a taped together fridge strapped to four robot vacuums.\n\n\n\n\n\n\nsource: RealstrangeAI"
   },
   {
     "objectID": "slides/ambiguity_effects.html#real-or-ai",
     "href": "slides/ambiguity_effects.html#real-or-ai",
     "title": "IBT Colloquium",
     "section": "Real or AI?",
-    "text": "Real or AI?\n\nVideo\n\n\n\n\nsource: RealstrangeAI"
+    "text": "Real or AI?\n\n\n\nVideo\nInstagram reel showing a man riding a taped together fridge strapped to four robot vacuums.\n\n\n\n\n\n\nsource: RealstrangeAI"
   },
   {
     "objectID": "slides/ambiguity_effects.html#real-or-ai-1",
@@ -368,14 +368,14 @@
     "href": "slides/ambiguity_effects.html#a-field-of-tension",
     "title": "IBT Colloquium",
     "section": "A Field of Tension",
-    "text": "A Field of Tension"
+    "text": "A Field of Tension\n\nAI disclosure decreases outcomes for companies\nBut people want to know when AI is involved\nAmbiguity can lead to heightened attention, but when ambiguity is caused by the origin of something, do people still pay attention to the right thing?\nBut in other contexts, it leads to reduced cognitive taxes\n\nResearch Question: What are the downstream effects of origin ambiguity on attention and cognitive resources?"
   },
   {
     "objectID": "slides/ambiguity_effects.html#downstream-effects",
     "href": "slides/ambiguity_effects.html#downstream-effects",
     "title": "IBT Colloquium",
     "section": "Downstream Effects",
-    "text": "Downstream Effects\n\nCognitive Resources\nTrust, Willingness to Pay, and Willingness to Recommend"
+    "text": "Downstream Effects\nAmbiguity Resolution\n\nambiguity aversion also occurs in marketing: preference for established products under ambiguous conditions (Muthukrishnan, Wathieu, and Xu 2009)\nambiguous product quality leads to evaluation based on top-down expectations instead of bottom-up data-driven approach (Yi 1993)\nambiguous product quality leads to higher reliance on ads (Hoch and Ha 1986)\nambiguity as an attention grab works (Kovacheva and Nikolova 2024; Peracchio and Meyers-Levy 1994; Johar 1995; Hagtvedt 2011; Sevilla and Meyer 2020), but only when people are motivated to resolve this ambiguity for one reason or another (Johar 1995; Peracchio and Meyers-Levy 1994; Hagtvedt 2011)"
   },
   {
     "objectID": "slides/ambiguity_effects.html#question-1",
@@ -390,5 +390,397 @@
     "title": "IBT Colloquium",
     "section": "Important Questions to Adress",
     "text": "Important Questions to Adress\nCan we find this effect in real life?\n-&gt; ESF-survey"
+  },
+  {
+    "objectID": "slides/ambiguity_effects.html#welcome-to-the-open-science-office",
+    "href": "slides/ambiguity_effects.html#welcome-to-the-open-science-office",
+    "title": "IBT Colloquium",
+    "section": "Welcome to the Open Science Office",
+    "text": "Welcome to the Open Science Office\n(there will be a representative title image here)"
+  },
+  {
+    "objectID": "slides/ambiguity_effects.html#background-and-outset",
+    "href": "slides/ambiguity_effects.html#background-and-outset",
+    "title": "IBT Colloquium",
+    "section": "Background and Outset",
+    "text": "Background and Outset\n\nFunding for ~1 year\nFocus on asynchronous resources \\(\\rightarrow\\) posterity & ease of access\nHomepage for students & staff at HSG: Open Science Office"
+  },
+  {
+    "objectID": "slides/ambiguity_effects.html#context",
+    "href": "slides/ambiguity_effects.html#context",
+    "title": "IBT Colloquium",
+    "section": "Context",
+    "text": "Context\nBackground and Outset\n\nFunding for ~1 year\nFocus on asynchronous resources \\(\\rightarrow\\) posterity & ease of access\nHomepage for students & staff at HSG is currently being built: Open Science Office\n\nWe need your Feedback\n\nIs the information accessible?\nWhat are we missing?\nAnything else you want to share with us?"
+  },
+  {
+    "objectID": "slides/ambiguity_effects.html#is-the-information-accessible",
+    "href": "slides/ambiguity_effects.html#is-the-information-accessible",
+    "title": "IBT Colloquium",
+    "section": "Is the Information Accessible?",
+    "text": "Is the Information Accessible?\n(8’) Goal 1: let you lose unprompted and see if you can find what we want you to\n\nRandomly assign a “scenario” and a short survey (reason behind: we don’t have time to go through everything collectively)\n\nScenarios: 1. You want to find out how HSG supports Open Access publication 2. You want to add some helpful tips about preregistering studies to your course materials 3. You want to book a 1:1 consultation with the Open Science Office 4. You want to know what Open Science practices you can incorporate in the stage of your research process you are currently in\nGoal 2: Structure\n\nFind out if the structure we have makes sense:\n\nthe “open science strategy” thing still bothers me a bit\nare we missing a crucial component?\nare there components that you wonder why we need them?\n\n\n\n\nExpertensicht: vermisst ihr was?\nSRN / swissuniversities / … sehen das alle dann auch\nusability eher machen mit anderer Gruppe :"
+  },
+  {
+    "objectID": "slides/ambiguity_effects.html#what-are-we-missing",
+    "href": "slides/ambiguity_effects.html#what-are-we-missing",
+    "title": "IBT Colloquium",
+    "section": "What are we missing?",
+    "text": "What are we missing?\n(5’) Goal 3: Find the gaps in the information we currently provide \\(\\rightarrow\\) we only know what we know, so tell us what we don’t know\n\nshort plenum-round"
+  },
+  {
+    "objectID": "slides/ambiguity_effects.html#anytheng-else-to-share",
+    "href": "slides/ambiguity_effects.html#anytheng-else-to-share",
+    "title": "IBT Colloquium",
+    "section": "Anytheng else to Share?",
+    "text": "Anytheng else to Share?\n(3’) - short plenum round"
+  },
+  {
+    "objectID": "slides/ambiguity_effects.html#next-steps",
+    "href": "slides/ambiguity_effects.html#next-steps",
+    "title": "IBT Colloquium",
+    "section": "Next Steps",
+    "text": "Next Steps\n\nCompletion of Website\nOpen Science Kickoff in February\nPhD & PostDoc course in FS2026\n\nLong term:\n\nSpeaker Series & recordings on Website\nOpen Science (micro-grants) and list of projects funded by it\nmore to come?"
+  },
+  {
+    "objectID": "slides/ambiguity_effects.html#people-want-to-know-the-difference-between-ai--and-human-generated-content-but-few-feel-confident-they-can",
+    "href": "slides/ambiguity_effects.html#people-want-to-know-the-difference-between-ai--and-human-generated-content-but-few-feel-confident-they-can",
+    "title": "IBT Colloquium",
+    "section": "People want to know the difference between AI- and human-generated content, but few feel confident they can",
+    "text": "People want to know the difference between AI- and human-generated content, but few feel confident they can\n\n\n\n\nSurvey of US adults in 2025 conducted by Pew Research Center\n\n\n\n\n\n“almost 50% of respondents can distinguish between AI and human generated artwork.” (Vukojičić, Krstić, and Veinović 2023)\n“participants performed below chance levels in identifying AI-generated poems (46.6% accuracy)” (Porter and Machery 2024)\n“participants were more likely to judge AI-generated poems as human-authored than actual human-authored poems” (Porter and Machery 2024)\nWith training, participants were able to correctly identify AI generated text correctly 65% of the time; without training 55% (Milička et al. 2025)"
+  },
+  {
+    "objectID": "slides/ambiguity_effects.html#downstream-effects-1",
+    "href": "slides/ambiguity_effects.html#downstream-effects-1",
+    "title": "IBT Colloquium",
+    "section": "Downstream Effects",
+    "text": "Downstream Effects\nUncanny Valley Responses\n\nThe uncanny valley hypothesis predicts a negative emotional appraisal of human replicas that appear or behave not quite human (Mori, MacDorman, and Kageki 2012)\nambiguous stimuli introduce negative affect (Mori, MacDorman, and Kageki 2012; Seyama and Nagayama 2007, and others) …\n… and tax cognitive resources (Shin, Kim, and Biocca 2019; Tao et al. 2022; Howard 2017)\n\n\n\nwe do know that it is not human"
+  },
+  {
+    "objectID": "slides/ambiguity_effects.html#downstream-effects-2",
+    "href": "slides/ambiguity_effects.html#downstream-effects-2",
+    "title": "IBT Colloquium",
+    "section": "Downstream Effects",
+    "text": "Downstream Effects\nUncanny Valley Responses\n\nThe uncanny valley hypothesis predicts a negative emotional appraisal of human replicas that appear or behave not quite human (Mori, MacDorman, and Kageki 2012)\nambiguous stimuli introduce negative affect (Mori, MacDorman, and Kageki 2012; Seyama and Nagayama 2007, and others) …\n… and tax cognitive resources (Shin, Kim, and Biocca 2019; Tao et al. 2022; Howard 2017)"
+  },
+  {
+    "objectID": "slides/ambiguity_effects.html#intended-contribution",
+    "href": "slides/ambiguity_effects.html#intended-contribution",
+    "title": "IBT Colloquium",
+    "section": "Intended Contribution",
+    "text": "Intended Contribution\n\ncombination of previously disjointed streams of research on ambiguity in marketing, on cognitive load theory, and on consumer exposure and reactions to AI-generated content.\nExtending prior work on AI where origin is known or the variable in question, we study cases where humans face content that is neither declared AI or human or easily determined as one or the other\nimplications for both marketers and consumers: For marketers, potential backfiring of AI generated ads as well as the resulting trade-offs with efficiency and effectiveness are relevant. For consumers, cognitive resource reallocation might come at the cost of informed decision-making."
+  },
+  {
+    "objectID": "slides/ambiguity_effects.html#conceptual-model",
+    "href": "slides/ambiguity_effects.html#conceptual-model",
+    "title": "IBT Colloquium",
+    "section": "Conceptual Model",
+    "text": "Conceptual Model\n\n-&gt; will take out affective response and replace with attention\n\n\ntake out again?\nreplace with “very early draft?”\nvisual summary (also make clear that this is not final yet)"
+  },
+  {
+    "objectID": "slides/ambiguity_effects.html#research-plan",
+    "href": "slides/ambiguity_effects.html#research-plan",
+    "title": "IBT Colloquium",
+    "section": "Research Plan",
+    "text": "Research Plan\n\nExploration of existing data: r/RealOrAI, Instagram comments, TikTok comments, …\nCorrelative Phenomenon-exploration: does this effect naturally occur?\nQuasi-experimental and experimental validation\n\n\n\numfrage raus"
+  },
+  {
+    "objectID": "slides/ambiguity_effects.html#people-want-to-know-the-difference-between-ai--and-human-generated-content-but-few-feel-confident-they-can.",
+    "href": "slides/ambiguity_effects.html#people-want-to-know-the-difference-between-ai--and-human-generated-content-but-few-feel-confident-they-can.",
+    "title": "IBT Colloquium",
+    "section": "People want to know the difference between AI- and human-generated content, but few feel confident they can.",
+    "text": "People want to know the difference between AI- and human-generated content, but few feel confident they can.\n\n\n\n\nSurvey of US adults in 2025 conducted by Pew Research Center\n\n\n\n\n\n“almost 50% of respondents can distinguish between AI and human generated artwork.” (Vukojičić, Krstić, and Veinović 2023)\n“participants performed below chance levels in identifying AI-generated poems (46.6% accuracy)” (Porter and Machery 2024)\n“participants were more likely to judge AI-generated poems as human-authored than actual human-authored poems” (Porter and Machery 2024)\nWith training, participants were able to correctly identify AI generated text correctly 65% of the time; without training 55% (Milička et al. 2025)"
+  },
+  {
+    "objectID": "slides/ambiguity_effects.html#what-i-expect",
+    "href": "slides/ambiguity_effects.html#what-i-expect",
+    "title": "IBT Colloquium",
+    "section": "What I expect",
+    "text": "What I expect\n."
+  },
+  {
+    "objectID": "slides/ambiguity_effects.html#what-is-the-phenomenon",
+    "href": "slides/ambiguity_effects.html#what-is-the-phenomenon",
+    "title": "IBT Colloquium",
+    "section": "What is the phenomenon",
+    "text": "What is the phenomenon\nDefinition:"
+  },
+  {
+    "objectID": "slides/ambiguity_effects.html#theoretical-zugang",
+    "href": "slides/ambiguity_effects.html#theoretical-zugang",
+    "title": "IBT Colloquium",
+    "section": "Theoretical “Zugang”",
+    "text": "Theoretical “Zugang”\nPreferences\n\nHumans generally prefer other humans over algorithms & AI (Bigman 2022; Kirk and Givi 2025; Lefkeli, Karataş, and Gürhan-Canli 2024, and others)\nPeople are less willing to purchase products when communication is perceived to be written by AI (e.g., Kirk and Givi 2025), imagery is created by AI (e.g., Belanche et al. 2025)\nDisclosure of use of AI decreases trust (Pfeuffer et al. 2025; Kirk and Givi 2025; Schilke and Reimann 2025)\nhumans alter their behavior in interaction with AI compared to other humans (Goergen, De Bellis, and Klesse 2025; Lefkeli, Karataş, and Gürhan-Canli 2024, and others)\npreference for humans over AI is mitigated when AI-content is perceived as authentic (Silver, Newman, and Small 2021; Whittaker et al. 2025, and others)\n\n\n\nthis has to be shortened"
+  },
+  {
+    "objectID": "slides/ambiguity_effects.html#whats-next",
+    "href": "slides/ambiguity_effects.html#whats-next",
+    "title": "IBT Colloquium",
+    "section": "what’s next",
+    "text": "what’s next\nschaffen wir nicht fertig"
+  },
+  {
+    "objectID": "slides/ambiguity_effects.html#section-1",
+    "href": "slides/ambiguity_effects.html#section-1",
+    "title": "IBT Colloquium",
+    "section": "",
+    "text": "SBB campaign for winter GA has been created using AI.\n\n\n\n\n\nsource: Tagesanzeiger"
+  },
+  {
+    "objectID": "slides/ambiguity_effects.html#section-2",
+    "href": "slides/ambiguity_effects.html#section-2",
+    "title": "IBT Colloquium",
+    "section": "",
+    "text": "Video\nAdvertisment by Vodafone on TikTok\n\n\n\n\n\nsource: Vodaphone"
+  },
+  {
+    "objectID": "slides/ambiguity_effects.html#origin-ambiguity-2",
+    "href": "slides/ambiguity_effects.html#origin-ambiguity-2",
+    "title": "IBT Colloquium",
+    "section": "Origin Ambiguity",
+    "text": "Origin Ambiguity\nWorking Definitions\n\nOrigin Ambiguity: The blurring of provenance that occurs when AI-generated materials become so humanlike that people struggle to tell who (or what) made them.\n\n\nOrigin Inference: A cognitive shift in which people prioritize identifying the source of a work (human or AI) over engaging with its meaning, quality, or message.\n\n\n\nso what are we talking about?\npeople perceive some sort of origin ambiguity, which leads to engaging with the question who did this more than engaging with the question what was done"
+  },
+  {
+    "objectID": "slides/ambiguity_effects.html#section-3",
+    "href": "slides/ambiguity_effects.html#section-3",
+    "title": "IBT Colloquium",
+    "section": "",
+    "text": "Today’s AI is the worst AI you will ever use.\n\n(Mollick 2024)Mollick, 2024"
+  },
+  {
+    "objectID": "slides/ambiguity_effects.html#origin-ambiguity-3",
+    "href": "slides/ambiguity_effects.html#origin-ambiguity-3",
+    "title": "IBT Colloquium",
+    "section": "Origin Ambiguity",
+    "text": "Origin Ambiguity\nPeople want to know the difference between AI- and human-generated content, but few feel confident they can.\n\n\n\n\nSurvey of US adults in 2025 conducted by Pew Research Center (Fuentes 2025)\n\n\n\n\n\nparticipants are about as good as chance (Vukojičić, Krstić, and Veinović 2023) identifying AI-generated images\nand slightly worse than chance (Porter and Machery 2024a) to slightly above chance with training at identifying text (Milička et al. 2025)\n\n\n\n\nmention quote explicitly: *almost 50% of respondents can distinguish between AI and human** generated artwork.\n“almost 50% of respondents can distinguish between AI and human generated artwork.” (Vukojičić, Krstić, and Veinović 2023)\n“participants performed below chance levels in identifying AI-generated poems (46.6% accuracy)” (Porter and Machery 2024b)\n“participants were more likely to judge AI-generated poems as human-authored than actual human-authored poems” (Porter and Machery 2024b)\nWith training, participants were able to correctly identify AI generated text correctly 65% of the time; without training 55% (Milička et al. 2025)"
+  },
+  {
+    "objectID": "slides/ambiguity_effects.html#theoretical-background",
+    "href": "slides/ambiguity_effects.html#theoretical-background",
+    "title": "IBT Colloquium",
+    "section": "Theoretical Background",
+    "text": "Theoretical Background\nPreferences\n\nhumans \\(&gt;\\) algorithms / “AI” (Bigman 2022; Kirk and Givi 2025; Lefkeli, Karataş, and Gürhan-Canli 2024, and others)\nAI-generated content lowers purchase intentions and willingness to recommend a product(Kirk and Givi 2025; Belanche et al. 2025, and others)\nAI-generated content decreases trust (Kirk and Givi 2025; Pfeuffer et al. 2025; Belanche et al. 2025)\n\nBut\n\nnegative effects are reduced if content is perceived as authentic regardless of origin (Silver, Newman, and Small 2021; Whittaker et al. 2025, and others)\n\n\n\nHumans generally prefer other humans over algorithms & AI (Bigman 2022; Kirk and Givi 2025; Lefkeli, Karataş, and Gürhan-Canli 2024, and others)\nPeople are less willing to purchase products when communication is perceived to be written by AI (e.g., Kirk and Givi 2025), imagery is created by AI (e.g., Belanche et al. 2025)\nDisclosure of use of AI decreases trust (Pfeuffer et al. 2025; Kirk and Givi 2025; Schilke and Reimann 2025)\nhumans alter their behavior in interaction with AI compared to other humans (Goergen, De Bellis, and Klesse 2025; Lefkeli, Karataş, and Gürhan-Canli 2024, and others)\npreference for humans over AI is mitigated when AI-content is perceived as authentic (Silver, Newman, and Small 2021; Whittaker et al. 2025, and others)"
+  },
+  {
+    "objectID": "slides/ambiguity_effects.html#theoretical-background-1",
+    "href": "slides/ambiguity_effects.html#theoretical-background-1",
+    "title": "IBT Colloquium",
+    "section": "Theoretical Background",
+    "text": "Theoretical Background\nAmbiguity Resolution in Marketing\n\nambiguity aversion \\(\\rightarrow\\) preference for established products (Muthukrishnan, Wathieu, and Xu 2009)\nambiguous product quality\n\\(\\rightarrow\\) reliance on expectations instead of experience (Yi 1993)\n\\(\\rightarrow\\) more reliance on information from ads (Hoch and Ha 1986)\nambiguity in ads grabs attention (Kovacheva and Nikolova 2024; Peracchio and Meyers-Levy 1994; Johar 1995; Hagtvedt 2011; Sevilla and Meyer 2020) …\n… when people are motivated to resolve this ambiguity for one reason or another (Johar 1995; Peracchio and Meyers-Levy 1994; Hagtvedt 2011)\n\n\n\nambiguity aversion also occurs in marketing: preference for established products under ambiguous conditions (Muthukrishnan, Wathieu, and Xu 2009)\nambiguous product quality leads to evaluation based on top-down expectations instead of bottom-up data-driven approach (Yi 1993)\nambiguous product quality leads to higher reliance on ads (Hoch and Ha 1986)\nambiguity as an attention grab works (Kovacheva and Nikolova 2024; Peracchio and Meyers-Levy 1994; Johar 1995; Hagtvedt 2011; Sevilla and Meyer 2020), but only when people are motivated to resolve this ambiguity for one reason or another (Johar 1995; Peracchio and Meyers-Levy 1994; Hagtvedt 2011)"
+  },
+  {
+    "objectID": "slides/ambiguity_effects.html#theoretical-background-2",
+    "href": "slides/ambiguity_effects.html#theoretical-background-2",
+    "title": "IBT Colloquium",
+    "section": "Theoretical Background",
+    "text": "Theoretical Background\nUncanny Valley Responses\n\nThe uncanny valley hypothesis predicts a negative emotional appraisal of human replicas that appear or behave not quite human (Mori, MacDorman, and Kageki 2012)\nambiguous stimuli introduce negative affect (Mori, MacDorman, and Kageki 2012; Seyama and Nagayama 2007, and others) …\n… and tax cognitive resources (Shin, Kim, and Biocca 2019; Tao et al. 2022; Howard 2017)\n\n\n\nwe do know that it is not human"
+  },
+  {
+    "objectID": "slides/20251210_Colloquium.html#agenda",
+    "href": "slides/20251210_Colloquium.html#agenda",
+    "title": "IBT Colloquium",
+    "section": "Agenda",
+    "text": "Agenda\n(1) Origin Ambiguity\n\n ~ 45-60 min\n\n\nPhenomenon & Context\nDownstream Effects\nIntended Contribution & Operationalization\n\n(2) Open Science Office\n\n ~ 15 min\n\n\nOpen Science says hi (will be changed)\n\n\n\nask first: do we have any admin things to discuss today? I will adapt my timeline accordingly\nup to 60 minutes für origin ambiguity"
+  },
+  {
+    "objectID": "slides/20251210_Colloquium.html#section",
+    "href": "slides/20251210_Colloquium.html#section",
+    "title": "IBT Colloquium",
+    "section": "",
+    "text": "Video\nInstagram reel showing a man riding a taped together fridge strapped to four robot vacuums.\n\n\n\n\n\n\nsource: RealstrangeAI"
+  },
+  {
+    "objectID": "slides/20251210_Colloquium.html#section-1",
+    "href": "slides/20251210_Colloquium.html#section-1",
+    "title": "IBT Colloquium",
+    "section": "",
+    "text": "SBB campaign for winter GA has been created using AI.\n\n\n\n\n\nsource: Tagesanzeiger"
+  },
+  {
+    "objectID": "slides/20251210_Colloquium.html#section-2",
+    "href": "slides/20251210_Colloquium.html#section-2",
+    "title": "IBT Colloquium",
+    "section": "",
+    "text": "Video\nAdvertisment by Vodafone on TikTok\n\n\n\n\n\nsource: Vodaphone"
+  },
+  {
+    "objectID": "slides/20251210_Colloquium.html#origin-ambiguity-2",
+    "href": "slides/20251210_Colloquium.html#origin-ambiguity-2",
+    "title": "IBT Colloquium",
+    "section": "Origin Ambiguity",
+    "text": "Origin Ambiguity\nWorking Definition:\n\nOrigin Ambiguity: The blurring of provenance that occurs when AI-generated content resemble human-created content so closely that people struggle to tell who (or what) made them.\n\n\n\nOrigin Inference: A cognitive shift in which people prioritize identifying the source of a work (human or AI) over engaging with its meaning, quality, or message.\n\n\nso what are we talking about?\npeople perceive some sort of origin ambiguity, which leads to engaging with the question who did this more than engaging with the question what was done"
+  },
+  {
+    "objectID": "slides/20251210_Colloquium.html#origin-ambiguity-3",
+    "href": "slides/20251210_Colloquium.html#origin-ambiguity-3",
+    "title": "IBT Colloquium",
+    "section": "Origin Ambiguity",
+    "text": "Origin Ambiguity\nPeople want to know the difference between AI- and human-generated content, but few feel confident they can.\n\n\n\n\nSurvey of US adults in 2025 conducted by Pew Research Center (Fuentes 2025)\n\n\n\n\n\nparticipants are about as good as chance (Vukojičić, Krstić, and Veinović 2023) identifying AI-generated images\nand slightly worse than chance (Porter and Machery 2024a) to slightly above chance with training at identifying text (Milička et al. 2025)\n\n\n\n\nmention quote explicitly: *almost 50% of respondents can distinguish between AI and human** generated artwork.\n\n“almost 50% of respondents can distinguish between AI and human generated artwork.” (Vukojičić, Krstić, and Veinović 2023)\n“participants performed below chance levels in identifying AI-generated poems (46.6% accuracy)” (Porter and Machery 2024b)\n“participants were more likely to judge AI-generated poems as human-authored than actual human-authored poems” (Porter and Machery 2024b)\nWith training, participants were able to correctly identify AI generated text correctly 65% of the time; without training 55% (Milička et al. 2025)"
+  },
+  {
+    "objectID": "slides/20251210_Colloquium.html#section-3",
+    "href": "slides/20251210_Colloquium.html#section-3",
+    "title": "IBT Colloquium",
+    "section": "",
+    "text": "Today’s AI is the worst AI you will ever use.\n\n(Mollick 2024)Mollick, 2024"
+  },
+  {
+    "objectID": "slides/20251210_Colloquium.html#theoretical-background",
+    "href": "slides/20251210_Colloquium.html#theoretical-background",
+    "title": "IBT Colloquium",
+    "section": "Theoretical Background",
+    "text": "Theoretical Background\nPreferences\n\nhumans \\(&gt;\\) algorithms / “AI” (Bigman 2022; Kirk and Givi 2025; Lefkeli, Karataş, and Gürhan-Canli 2024, and others)\nAI-generated content lowers purchase intentions and willingness to recommend a product (Kirk and Givi 2025; Belanche et al. 2025, and others)\nAI-generated content decreases trust (Kirk and Givi 2025; Pfeuffer et al. 2025; Belanche et al. 2025)\n\nBut\n\nnegative effects are reduced if content is perceived as authentic regardless of origin (Silver, Newman, and Small 2021; Whittaker et al. 2025, and others)\n\n\n\nIt should also be acknowledged that Hartmann, Exner, and Domdey (2025) find that AI images are as good or better in terms of aestethics, realism, and quality, but this does not imply people LIKE them better\nHumans generally prefer other humans over algorithms & AI (Bigman 2022; Kirk and Givi 2025; Lefkeli, Karataş, and Gürhan-Canli 2024, and others)\nPeople are less willing to purchase products when communication is perceived to be written by AI (e.g., Kirk and Givi 2025), imagery is created by AI (e.g., Belanche et al. 2025)\nDisclosure of use of AI decreases trust (Pfeuffer et al. 2025; Kirk and Givi 2025; Schilke and Reimann 2025)\nhumans alter their behavior in interaction with AI compared to other humans (Goergen, De Bellis, and Klesse 2025; Lefkeli, Karataş, and Gürhan-Canli 2024, and others)\npreference for humans over AI is mitigated when AI-content is perceived as authentic (Silver, Newman, and Small 2021; Whittaker et al. 2025, and others)"
+  },
+  {
+    "objectID": "slides/20251210_Colloquium.html#theoretical-background-1",
+    "href": "slides/20251210_Colloquium.html#theoretical-background-1",
+    "title": "IBT Colloquium",
+    "section": "Theoretical Background",
+    "text": "Theoretical Background\nAmbiguity Resolution in Marketing\n\nambiguity aversion \\(\\rightarrow\\) preference for established products (Muthukrishnan, Wathieu, and Xu 2009)\nambiguous product quality\n\\(\\rightarrow\\) reliance on expectations instead of experience (Yi 1993)\n\\(\\rightarrow\\) more reliance on information from ads (Hoch and Ha 1986)\nambiguity in ads grabs attention (Kovacheva and Nikolova 2024; Peracchio and Meyers-Levy 1994; Johar 1995; Hagtvedt 2011; Sevilla and Meyer 2020) …\n… especially when people are motivated to resolve this ambiguity for one reason or another (Johar 1995; Peracchio and Meyers-Levy 1994; Hagtvedt 2011)\n\n\n\nambiguity aversion also occurs in marketing: preference for established products under ambiguous conditions (Muthukrishnan, Wathieu, and Xu 2009)\nambiguous product quality leads to evaluation based on top-down expectations instead of bottom-up data-driven approach (Yi 1993)\nambiguous product quality leads to higher reliance on ads (Hoch and Ha 1986)\nambiguity as an attention grab works (Kovacheva and Nikolova 2024; Peracchio and Meyers-Levy 1994; Johar 1995; Hagtvedt 2011; Sevilla and Meyer 2020), but only when people are motivated to resolve this ambiguity for one reason or another (Johar 1995; Peracchio and Meyers-Levy 1994; Hagtvedt 2011)"
+  },
+  {
+    "objectID": "slides/20251210_Colloquium.html#theoretical-background-2",
+    "href": "slides/20251210_Colloquium.html#theoretical-background-2",
+    "title": "IBT Colloquium",
+    "section": "Theoretical Background",
+    "text": "Theoretical Background\nCognitive Tax of Ambiguity\n\nambiguity introduces cognitive taxes (Franceschetti et al. 2024; Shin, Kim, and Biocca 2019; Tao et al. 2022; Howard 2017)\n\\(\\rightarrow\\) cognitive taxes have a negative effect on evidence encoding and ability to retain information (e.g., Shou and Smithson 2015)\nambiguous stimuli (uncanny valley) introduce negative affect (Mori, MacDorman, and Kageki 2012; Seyama and Nagayama 2007, and others) and tax cognitive resources (Shin, Kim, and Biocca 2019; Tao et al. 2022; Howard 2017)\n\n\n\nfurthermore, there is evidence that different personality types have different needs to resolve ambiguous and obfuscated materials (Guigon, Villeval, and Dreher 2024; Kristofferson and Dunn 2023; Iannello et al. 2017)\nwe do know that it is not human\n\nThe uncanny valley hypothesis predicts a negative emotional appraisal of human replicas that appear or behave not quite human (Mori, MacDorman, and Kageki 2012)\n\nambiguous stimuli introduce negative affect (Mori, MacDorman, and Kageki 2012; Seyama and Nagayama 2007, and others) …\n… and tax cognitive resources (Shin, Kim, and Biocca 2019; Tao et al. 2022; Howard 2017)"
+  },
+  {
+    "objectID": "slides/20251210_Colloquium.html#theoretical-background-3",
+    "href": "slides/20251210_Colloquium.html#theoretical-background-3",
+    "title": "IBT Colloquium",
+    "section": "Theoretical Background",
+    "text": "Theoretical Background\nGraphical Summary\n\nGraphical summary on related literature."
+  },
+  {
+    "objectID": "slides/20251210_Colloquium.html#a-field-of-tension",
+    "href": "slides/20251210_Colloquium.html#a-field-of-tension",
+    "title": "IBT Colloquium",
+    "section": "A Field of Tension",
+    "text": "A Field of Tension\n\nAI disclosure decreases outcomes for companies\nBut people want to know when AI is involved\nAmbiguity can lead to heightened attention, but when ambiguity is caused by the origin of something, do people still pay attention to the right thing?\nBut in other contexts, it leads to reduced cognitive taxes\n\nResearch Question: What are the downstream effects of origin ambiguity on attention and cognitive resources?"
+  },
+  {
+    "objectID": "slides/20251210_Colloquium.html#intended-contribution",
+    "href": "slides/20251210_Colloquium.html#intended-contribution",
+    "title": "IBT Colloquium",
+    "section": "Intended Contribution",
+    "text": "Intended Contribution\n\ncombination of streams of research: ambiguity in marketing (materials), cognitive load theory, and consumer-reaction to AI-generated content\nrelevance for both consumer-perspective and marketer-perspective:\n\ndoes AI-generated content harm informed decision-making?\nis AI-generated content effective?\n\n\n\n\ncombination of previously disjointed streams of research on ambiguity in marketing, on cognitive load theory, and on consumer exposure and reactions to AI-generated content.\nExtending prior work on AI where origin is known or the variable in question, we study cases where humans face content that is neither declared AI or human or easily determined as one or the other\nimplications for both marketers and consumers: For marketers, potential backfiring of AI generated ads as well as the resulting trade-offs with efficiency and effectiveness are relevant. For consumers, cognitive resource reallocation might come at the cost of informed decision-making."
+  },
+  {
+    "objectID": "slides/20251210_Colloquium.html#conceptual-model",
+    "href": "slides/20251210_Colloquium.html#conceptual-model",
+    "title": "IBT Colloquium",
+    "section": "Conceptual Model",
+    "text": "Conceptual Model\n\n-&gt; will take out affective response and replace with attention\n\n\ntake out again?\nreplace with “very early draft?”\nvisual summary (also make clear that this is not final yet)"
+  },
+  {
+    "objectID": "slides/20251210_Colloquium.html#research-plan",
+    "href": "slides/20251210_Colloquium.html#research-plan",
+    "title": "IBT Colloquium",
+    "section": "Research Plan",
+    "text": "Research Plan\n\n\n\n\nHow could we or should we explore the phenomenon of origin ambiguity?\n\n\n\numfrage raus\n\n\nExploration of existing data: r/RealOrAI, Instagram comments, TikTok comments, …\nCorrelative Phenomenon-exploration: does this effect naturally occur?\nQuasi-experimental and experimental validation"
+  },
+  {
+    "objectID": "slides/20251210_Colloquium.html#welcome-to-the-open-science-office",
+    "href": "slides/20251210_Colloquium.html#welcome-to-the-open-science-office",
+    "title": "IBT Colloquium",
+    "section": "Welcome to the Open Science Office",
+    "text": "Welcome to the Open Science Office\n(there will be a representative title image here)"
+  },
+  {
+    "objectID": "slides/20251210_Colloquium.html#context",
+    "href": "slides/20251210_Colloquium.html#context",
+    "title": "IBT Colloquium",
+    "section": "Context",
+    "text": "Context\nBackground and Outset\n\nFunding for ~1 year\nFocus on asynchronous resources \\(\\rightarrow\\) posterity & ease of access\nHomepage for students & staff at HSG is currently being built: Open Science Office\n\nWe need your Feedback\n\nIs the information accessible?\nWhat are we missing?\nAnything else you want to share with us?"
+  },
+  {
+    "objectID": "slides/20251210_Colloquium.html#is-the-information-accessible",
+    "href": "slides/20251210_Colloquium.html#is-the-information-accessible",
+    "title": "IBT Colloquium",
+    "section": "Is the Information Accessible?",
+    "text": "Is the Information Accessible?\n(8’) Goal 1: let you lose unprompted and see if you can find what we want you to\n\nRandomly assign a “scenario” and a short survey (reason behind: we don’t have time to go through everything collectively)\n\nScenarios: 1. You want to find out how HSG supports Open Access publication 2. You want to add some helpful tips about preregistering studies to your course materials 3. You want to book a 1:1 consultation with the Open Science Office 4. You want to know what Open Science practices you can incorporate in the stage of your research process you are currently in\nGoal 2: Structure\n\nFind out if the structure we have makes sense:\n\nthe “open science strategy” thing still bothers me a bit\nare we missing a crucial component?\nare there components that you wonder why we need them?\n\n\n\n\nExpertensicht: vermisst ihr was?\nSRN / swissuniversities / … sehen das alle dann auch\nusability eher machen mit anderer Gruppe :"
+  },
+  {
+    "objectID": "slides/20251210_Colloquium.html#what-are-we-missing",
+    "href": "slides/20251210_Colloquium.html#what-are-we-missing",
+    "title": "IBT Colloquium",
+    "section": "What are we missing?",
+    "text": "What are we missing?\n(5’) Goal 3: Find the gaps in the information we currently provide \\(\\rightarrow\\) we only know what we know, so tell us what we don’t know\n\nshort plenum-round"
+  },
+  {
+    "objectID": "slides/20251210_Colloquium.html#anytheng-else-to-share",
+    "href": "slides/20251210_Colloquium.html#anytheng-else-to-share",
+    "title": "IBT Colloquium",
+    "section": "Anytheng else to Share?",
+    "text": "Anytheng else to Share?\n(3’) - short plenum round"
+  },
+  {
+    "objectID": "slides/20251210_Colloquium.html#whats-next",
+    "href": "slides/20251210_Colloquium.html#whats-next",
+    "title": "IBT Colloquium",
+    "section": "what’s next",
+    "text": "what’s next\nschaffen wir nicht fertig"
+  },
+  {
+    "objectID": "slides/20251210_Colloquium.html#next-steps",
+    "href": "slides/20251210_Colloquium.html#next-steps",
+    "title": "IBT Colloquium",
+    "section": "Next Steps",
+    "text": "Next Steps\n\nCompletion of Website\nOpen Science Kickoff in February\nPhD & PostDoc course in FS2026\n\nLong term:\n\nSpeaker Series & recordings on Website\nOpen Science (micro-grants) and list of projects funded by it\nmore to come?"
+  },
+  {
+    "objectID": "slides/20251210_Colloquium.html#discussion",
+    "href": "slides/20251210_Colloquium.html#discussion",
+    "title": "IBT Colloquium",
+    "section": "Discussion",
+    "text": "Discussion"
+  },
+  {
+    "objectID": "slides/20251210_Colloquium.html#section-4",
+    "href": "slides/20251210_Colloquium.html#section-4",
+    "title": "IBT Colloquium",
+    "section": "",
+    "text": "What are the downstream effects of origin ambiguity?\n\n\nGraphical summary on related literature."
+  },
+  {
+    "objectID": "slides/20251210_Colloquium.html#what-are-the-downstream-effects-of-origin-ambiguity",
+    "href": "slides/20251210_Colloquium.html#what-are-the-downstream-effects-of-origin-ambiguity",
+    "title": "IBT Colloquium",
+    "section": "What are the downstream effects of origin ambiguity?",
+    "text": "What are the downstream effects of origin ambiguity?\n\n\nGraphical summary on related literature."
+  },
+  {
+    "objectID": "slides/20251210_Colloquium.html#suggested-consequences",
+    "href": "slides/20251210_Colloquium.html#suggested-consequences",
+    "title": "IBT Colloquium",
+    "section": "Suggested Consequences",
+    "text": "Suggested Consequences\n\n\nSuggested downstream effect of origin ambiguity: origin inference.\n  Note: This schematic is a visual summary of potential causes and effects, and not to be read as a finalized model."
+  },
+  {
+    "objectID": "slides/20251210_Colloquium.html#suggested-consequences-1",
+    "href": "slides/20251210_Colloquium.html#suggested-consequences-1",
+    "title": "IBT Colloquium",
+    "section": "Suggested Consequences",
+    "text": "Suggested Consequences\nIntended Contribution\n\ncombination of streams of research: ambiguity in marketing (materials), cognitive load theory, and consumer-reaction to AI-generated content\nrelevance for both consumer-perspective and marketer-perspective:\n\ndoes AI-generated content harm informed decision-making?\nis AI-generated content effective?\n\n\n\n\ncombination of previously disjointed streams of research on ambiguity in marketing, on cognitive load theory, and on consumer exposure and reactions to AI-generated content.\nExtending prior work on AI where origin is known or the variable in question, we study cases where humans face content that is neither declared AI or human or easily determined as one or the other\nimplications for both marketers and consumers: For marketers, potential backfiring of AI generated ads as well as the resulting trade-offs with efficiency and effectiveness are relevant. For consumers, cognitive resource reallocation might come at the cost of informed decision-making."
+  },
+  {
+    "objectID": "slides/20251210_Colloquium.html#origin-inference-as-a-consequence-of-origin-ambiguity",
+    "href": "slides/20251210_Colloquium.html#origin-inference-as-a-consequence-of-origin-ambiguity",
+    "title": "IBT Colloquium",
+    "section": "Origin Inference as a Consequence of Origin Ambiguity",
+    "text": "Origin Inference as a Consequence of Origin Ambiguity\n\n\nSuggested downstream effect of origin ambiguity: origin inference.\n  Note: This schematic is a visual summary of potential causes and effects, and not to be read as a finalized model."
+  },
+  {
+    "objectID": "slides/20251210_Colloquium.html#section-5",
+    "href": "slides/20251210_Colloquium.html#section-5",
+    "title": "IBT Colloquium",
+    "section": "",
+    "text": "Thank you!"
+  },
+  {
+    "objectID": "slides/20251210_Colloquium.html#todays-goal",
+    "href": "slides/20251210_Colloquium.html#todays-goal",
+    "title": "IBT Colloquium",
+    "section": "Today’s Goal",
+    "text": "Today’s Goal\n\nWhat are the downstream consequences of origin ambiguity?\nHow can we effectively measure origin ambiguity & its consequences in experimental setups and the real world?"
   }
 ]

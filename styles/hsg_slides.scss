@@ -43,7 +43,6 @@ $hsg-gelb: #fff04b;  // HSG-Gelb
   color: white;
 }
 
-
 .reveal h2 {
   color: $hsg-gruen;
   text-align: end;
@@ -57,8 +56,10 @@ $hsg-gelb: #fff04b;  // HSG-Gelb
   color: $hsg-dunkelgruen;
 }
 
-
-
+.reveal figcaption {
+  text-align: center;
+  color: $hsg-dunkelgruen;
+}
 .bib-p p {
   text-align: end;
   font-size: 1rem;
@@ -78,9 +79,20 @@ $hsg-gelb: #fff04b;  // HSG-Gelb
   font-size: 1rem;
 }
 
+.rightalign-p {
+  color: $hsg-blau; 
+  font-size: 0.8em;
+}
+
+.slides blockquote {
+  color: $hsg-dunkelgruen;
+  border-left: 4px solid $hsg-dunkelgruen;
+}
+
+
 // Citations and hyperlinks
 .reveal .citation {
-  color: $hsg-gruen;
+  color: $hsg-dunkelgruen;
   font-size: 1rem;
 }
 
@@ -199,15 +211,31 @@ section.quote-slide-bg {
   text-align: center;
 }
 
-// Question Slide 
-.slide-background.slide.level2.question-slide-bg.present {
+// Color Slides
+.slide-background.slide.level2.red-slide-bg.present {
   background: $hsg-korall;
 }
+
+.slide-background.slide.level2.blue-slide-bg.present {
+  background: $hsg-blau;
+}
+
+.slide-background.slide.level2.green-slide-bg.present {
+  background: $hsg-gruen;
+}
+
+.slide-background.slide.level2.yellow-slide-bg.present {
+  background: $hsg-gelb;
+}
+
+
 
 .question-slide-p {
   color: white;
   font-size: 1.2em;
 }
+
+
 
 
 
