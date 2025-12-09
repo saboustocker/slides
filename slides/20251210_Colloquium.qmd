@@ -161,7 +161,7 @@ Today's AI is the worst AI you will ever use.
 **Ethan Mollick**: https://mgmt.wharton.upenn.edu/profile/emollick/ His academic research has been published in leading journals, and his work on AI is widely applied, leading him to be named one of TIME Magazine’s Most Influential People in Artificial Intelligence. Ethan also writes to a wider audience about AI, including in his book, Co-Intelligence, which was a New York Times bestseller and a best book of the year from The Economist and Financial Times.
 :::
 
-## Theoretical Background
+## Theoretical Background {.smaller}
 ### Preferences
 - humans $>$ algorithms / "AI" [@bigmanAlgorithmicDiscriminationCauses2022;@kirkAIauthorshipEffectUnderstanding2025;@lefkeliSharingInformationAI2024, and others]
 - AI-generated content lowers purchase intentions and willingness to recommend a product [@kirkAIauthorshipEffectUnderstanding2025; @belancheCustomerReactionsGenerative2025, and others]
@@ -184,7 +184,7 @@ Today's AI is the worst AI you will ever use.
 - preference for humans over AI is mitigated when AI-content is perceived as **authentic** [@silverInauthenticityAversionMoral2021;@whittakerExaminingConsumerAppraisals2025, and others]
 :::
 
-## Theoretical Background
+## Theoretical Background {.smaller}
 ### Ambiguity Resolution in Marketing
 - ambiguity aversion $\rightarrow$ preference for established products [@muthukrishnanAmbiguityAversionPreference2009]
 - ambiguous product quality 
@@ -203,7 +203,7 @@ Today's AI is the worst AI you will ever use.
 - ambiguity as an attention grab works [@kovachevaUncertaintyMarketingTactics2024; @peracchioHowAmbiguousCropped1994; @joharConsumerInvolvementDeception1995; @hagtvedtImpactIncompleteTypeface2011; @sevillaLeavingSomethingImagination2020], but only when people are **motivated** to resolve this ambiguity for one reason or another [@joharConsumerInvolvementDeception1995;@peracchioHowAmbiguousCropped1994;@hagtvedtImpactIncompleteTypeface2011]
 :::
 
-## Theoretical Background
+## Theoretical Background {.smaller}
 ### Cognitive Tax of Ambiguity
 - ambiguity introduces cognitive taxes [@franceschettiExploringCognitiveEffects2024; @shinUncannyValleyNo2019; @taoExploringPersonaCharacteristics2022; @howardInvestigatingSimulationElements2017]
   
