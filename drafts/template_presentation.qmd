@@ -86,7 +86,7 @@ Of course, you can still use the regular background.
 
 ![This is how an image on the regular slides looks like.](../images/uncannyvalley.png){style="max-width: 100%; height: auto;"}
 
-:::{.question-slide-bg .center}
+:::{.red-slide-bg .center}
 ## 
 
 :::{.column #vcenter width="30%"}
