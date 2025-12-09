@@ -372,7 +372,7 @@ Jana Berkessel & Sabou Rani Stocker
 - Awareness
 - Education
 - Support
-- Connections & outrach
+- Connections & outreach
 :::
 
 ::: {.column width="50%"}
@@ -485,7 +485,7 @@ Jana Berkessel & Sabou Rani Stocker
 
 :::{.column width="60%"}
 
-- **contingent on funding**
+- **!! contingent on funding**
 - how to apply for (micro)-grants to fund Open Science endeavors
 - List of funded projects
 - ... 
@@ -549,6 +549,17 @@ Jana Berkessel & Sabou Rani Stocker
 
 :::{.red-slide-bg .center}
 ## Thank you (again)!
+
+:::{.white-text-p}
+<br>
+<br>
+Slides: 
+<a href="https://saboustocker.github.io/slides/slides/20251210_Colloquium.html#/title-slide" target="_blank" rel="noopener">
+  <img src="..\images\github-mark-white.svg"
+       alt="Open slide on GitHub Pages" style="height:36px; vertical-align:middle;">
+</a>
 :::
 
-# References
+:::
+
+# References {.smaller}
