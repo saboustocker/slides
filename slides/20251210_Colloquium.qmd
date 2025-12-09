@@ -14,6 +14,7 @@ format:
           <script src="https://kit.fontawesome.com/c7ccd7afd8.js" crossorigin="anonymous"></script>
     title-slide-attributes:
       data-background-color: "#0a5f2d"
+    auto-play-media: true
 
 project: "collection"
 bibliography: ../bibliography.bib
@@ -22,7 +23,7 @@ bibliography: ../bibliography.bib
 ## Agenda
 
 ### (1) Origin Ambiguity 
-:::{.rightalign-p}
+:::{.green-p}
 <i class="fa-regular fa-clock"></i> ~ 45-60 min
 :::
 
@@ -32,11 +33,11 @@ bibliography: ../bibliography.bib
 
 
 ### (2) Open Science Office
-:::{.rightalign-p}
+:::{.green-p}
 <i class="fa-regular fa-clock"></i> ~ 15 min
 :::
 
-- Open Science says hi (will be changed)
+- Discussion of Structure and high level Content Open Science Office
 
 :::{.notes}
 
@@ -92,11 +93,17 @@ source: [Tagesanzeiger](https://www.tagesanzeiger.ch/sbb-werben-mit-ki-bild-foto
 source: [Vodaphone](https://www.tiktok.com/@vodafonedeutschland/video/7543534062514818326) 
 :::
 
-:::{.blue-slide-bg}
+:::{.blue-slide-bg .center}
 ## Today's Goal 
 
-1. What are the **downstream consequences** of origin ambiguity?
-2. How can we **effectively measure** origin ambiguity & its consequences in experimental setups and the real world?
+:::{.white-text-p}
+1. What are possible **downstream consequences** of origin ambiguity?
+2. How can we **effectively measure** origin ambiguity & its consequences 
+
+    - ... in experimental setups?
+    - ... and the real world?
+
+:::
 
 :::
 
@@ -108,6 +115,8 @@ source: [Vodaphone](https://www.tiktok.com/@vodafonedeutschland/video/7543534062
 
 :::{.notes}
 
+- of note: ambiguity can also happen elsewhere, for example if you wonder if the content is fake
+
 > **Origin Inference**: A cognitive shift in which people prioritize identifying the source of a work (human or AI) over engaging with its meaning, quality, or message.
 
 - so what are we talking about? 
@@ -115,7 +124,6 @@ source: [Vodaphone](https://www.tiktok.com/@vodafonedeutschland/video/7543534062
 :::
 
 ## Origin Ambiguity
-### People want to know the difference between AI- and human-generated content, but few feel confident they can.{.smaller}
 
 :::{.fragment .fade-in-then-out}
 
@@ -124,6 +132,7 @@ source: [Vodaphone](https://www.tiktok.com/@vodafonedeutschland/video/7543534062
 :::
 
 :::{.fragment .fade-in}
+### People **want** to know the origin, but few are able to identify it
 - participants are about as good as chance [@vukojicicImitationDrawingCan2023] identifying AI-generated images
 - and slightly worse than chance [@porterAIgeneratedPoetryIndistinguishable2024] to slightly above chance with training at identifying text [@milickaHumansCanLearn2025]
 :::
@@ -158,8 +167,10 @@ Today's AI is the worst AI you will ever use.
 - AI-generated content lowers purchase intentions and willingness to recommend a product [@kirkAIauthorshipEffectUnderstanding2025; @belancheCustomerReactionsGenerative2025, and others]
 - AI-generated content decreases trust [@kirkAIauthorshipEffectUnderstanding2025; @pfeufferIllegallyBeautifulRole2025; @belancheCustomerReactionsGenerative2025]
 
+:::{.smaller}
 #### But
 - negative effects are reduced if content is perceived as **authentic** regardless of origin [@silverInauthenticityAversionMoral2021;@whittakerExaminingConsumerAppraisals2025, and others]
+:::
 
 :::{.notes}
 
@@ -218,13 +229,9 @@ Today's AI is the worst AI you will ever use.
 :::
 
 :::{.blue-slide-bg}
-## 
+## What are possible **downstream effects** of origin ambiguity?
 
-:::{.question-slide-p}
-What are the **downstream effects** of origin ambiguity?
-:::
-
-![Graphical summary on related literature.](../images/graphical_summary_question_bg.svg){width="500"}
+![Graphical summary on related literature.](../images/graphical_summary_question.svg){width="500"}
 
 :::
 
@@ -263,7 +270,7 @@ What are the **downstream effects** of origin ambiguity?
 <br>
 
 :::{.question-slide-p}
-How could we or should we explore the phenomenon of **origin ambiguity**?
+$\rightarrow$ How could we or should we explore the phenomenon of **origin ambiguity**?
 :::
 
 :::{.notes}
@@ -277,11 +284,60 @@ How could we or should we explore the phenomenon of **origin ambiguity**?
 
 :::
 
-:::{.red-slide-bg .center}
-##
-:::{.question-slide-p}
-Thank you!
+## Research Plan {.smaller}
+### Detailed Information 
+
+:::{.panel-tabset}
+### ESF-Survey
+
+$\rightarrow$ Students in the ESF course are asked to scroll on TikTok and are asked how they perceive their media feed after.
+
+**Dimensions**: 
+
+1. Origin ambiguity: To what extent do students question the origin of content?
+2. Ambiguity Outcomes: To what extent does ambiguity influence enjoyment, trust, attention focus?
+3. Differentiation: To what extent is "realness vs. fakeness" different from "human-made vs. AI generated"?
+
+### Correlational Data
+
+$\rightarrow$ Demonstrate the occurrence and relevance of origin ambiguity in real life through existing correlational data
+
+**Possible Avenues**: 
+
+1. What type of content is most susceptible to being questioned? Systematic searches on TikTok, Instagram (and co.) and subsequent classification
+2. What type of user is most likely to question the origin? 
+3. Are these effect content- or platform-specific? 
+
+### Experimental Setup
+
+$\rightarrow$ Demonstrate downstream effects of origin ambiguity through an experimental setup 
+
+**Possible Downstream Effects**: 
+
+1. Demonstrate reduced recall of content when participants are shown ambiguous marketing material
+2. Demonstrate heightened attention (through eye-tracking, behavior tracking, ...) when participants are exposed to ambiguous marketing material
+3. ...?
+
+**Possible Setups**: 
+
+1. One-by-Two Designs: low vs. high origin
+2. Naturalistic designs: DICE [@roggenkampEXPRESSDICEAdvancing2025] to simulate more naturalistic environment
+3. ...? 
+
+### Naturalistic Setup
+
+$\rightarrow$ Harness collaboration with real-life institution or industry partner to assess effects of origin ambiguity in real life
+
+**Possible Avenues**:
+
+1. Impressions, Clickthrough rates etc. of real-ads (A/B testing)
+2. Recall of information for low vs. high origin ambiguity in target groups (e.g. through subscriptions, mailinglist, ...)
+3. ...?
+
 :::
+
+:::{.red-slide-bg .center}
+## Thank you!
 :::
 
 
@@ -306,10 +362,7 @@ Jana Berkessel & Sabou Rani Stocker
 
 ##
 
-<div style="text-align:center;">
-  <video src="../images/openscience_startpage.mp4" autoplay loop muted playsinline width="800">
-  </video>
-</div>
+![](../images/openscience_startpage.mp4)
 
 ## Welcome to the Open Science Office! 
 :::: {.columns}
@@ -351,10 +404,7 @@ Jana Berkessel & Sabou Rani Stocker
 
 :::{.column width="40%"}
 
-<div style="text-align:center;">
-  <video src="../images/aboutopenscience.mp4" autoplay loop muted playsinline>
-  </video>
-</div>
+![](../images/aboutopenscience.mp4)
 
 :::
 ::::
@@ -377,10 +427,7 @@ Jana Berkessel & Sabou Rani Stocker
 
 :::{.column width="40%"}
 
-<div style="text-align:center;">
-  <video src="../images/opensciencestrategy.mp4" autoplay loop muted playsinline>
-  </video>
-</div>
+![](../images/opensciencestrategy.mp4)
 
 :::
 ::::
@@ -402,10 +449,7 @@ Jana Berkessel & Sabou Rani Stocker
 
 :::{.column width="40%"}
 
-<div style="text-align:center;">
-  <video src="../images/events.mp4" autoplay loop muted playsinline>
-  </video>
-</div>
+![](../images/events.mp4)
 
 :::
 ::::
@@ -427,10 +471,7 @@ Jana Berkessel & Sabou Rani Stocker
 
 :::{.column width="40%"}
 
-<div style="text-align:center;">
-  <video src="../images/educationalresources.mp4" autoplay loop muted playsinline>
-  </video>
-</div>
+![](../images/educationalresources.mp4)
 
 :::
 ::::
@@ -453,10 +494,7 @@ Jana Berkessel & Sabou Rani Stocker
 
 :::{.column width="40%"}
 
-<div style="text-align:center;">
-  <video src="../images/grants.mp4" autoplay loop muted playsinline>
-  </video>
-</div>
+![](../images/grants.mp4)
 
 :::
 ::::
@@ -478,10 +516,7 @@ Jana Berkessel & Sabou Rani Stocker
 
 :::{.column width="40%"}
 
-<div style="text-align:center;">
-  <video src="../images/consultation.mp4" autoplay loop muted playsinline>
-  </video>
-</div>
+![](../images/consultation.mp4)
 
 :::
 ::::

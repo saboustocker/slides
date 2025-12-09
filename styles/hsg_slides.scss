@@ -228,6 +228,20 @@ section.level2.blue-slide-bg h2 {
   color: white !important;
 }
 
+section.level2.blue-slide-bg figcaption {
+  color: white !important;
+  font-size: 0.6em;
+  text-align: center;
+
+}
+
+section.level2.blue-slide-bg figcaption,
+section.level2.blue-slide-bg .quarto-figure-caption {
+  color: white !important;
+  font-size: 0.6em;
+  text-align: center;
+}
+
 
 
 .slide-background.slide.level2.green-slide-bg.present {
@@ -248,8 +262,19 @@ section.level2.green-slide-bg h2 {
   font-size: 1.2em;
 }
 
+// Text-colors
 .white-text-p {
   color: white;
+  font-size: 1em;
+}
+
+.darkgreen-p {
+  color: $hsg-dunkelgruen;
+  font-size: 1em;
+}
+
+.green-p {
+  color: $hsg-gruen;
   font-size: 1em;
 }
 

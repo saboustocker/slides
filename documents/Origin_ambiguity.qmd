@@ -5,8 +5,6 @@ date: 2025-11-21
 format:
   html:
     theme: [sandstone, ../styles/hsg_pages.scss]
-  docx: default
-  pdf: default
 project: "AI assessment"
 bibliography: ../bibliography.bib
 ---

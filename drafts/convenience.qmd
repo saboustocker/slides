@@ -5,7 +5,7 @@ date: 2025-11-20
 subtitle: What does the construct "convenience" even mean in the digital landscape? 
 format:
   html:  
-    theme: [sandstone, hsg_pages.scss]
+    theme: [sandstone, ../styles/hsg_pages.scss]
     navbar: false
 title-slide-attributes: 
   data-background-color: "#0a5f2d"

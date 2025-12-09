@@ -5,7 +5,7 @@ date: 2025-11-10
 subtitle: A random collection of ideas that could or could not be interesting to have a closer look at. 
 format:
   revealjs:  
-    theme: [dark, hsg_slides.scss]
+    theme: [../styles/hsg_slides.scss]
     slide-number: c
 title-slide-attributes: 
   data-background-color: "#0a5f2d"
