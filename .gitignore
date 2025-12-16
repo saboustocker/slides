@@ -2,3 +2,4 @@
 /.quarto/
 *.bib
 **/*.quarto_ipynb
+/rawdata/
