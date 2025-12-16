@@ -1,0 +1,987 @@
+---
+title: "Analysis ESF-Survey"
+format: 
+    html:
+        theme: [sandstone, ../styles/hsg_pages.scss]
+        self-contained: true
+execute:
+  echo: false      # hide code
+  warning: false   # hide warnings
+  error: false     # hide errors
+  message: false   # hide messages
+---
+
+```{r}
+## data preparation
+
+library(dplyr)
+library(readxl)
+library(stringr)
+library(DT)
+library(ggplot2)
+library(patchwork)
+library(tidyr)
+
+if (file.exists("./rawdata/ESF_full_responses.xlsx")) {
+  full_data <- read_xlsx("./rawdata/ESF_full_responses.xlsx")
+  partial_data <- read_xlsx("./rawdata/ESF_partial_responses.xlsx")
+} else {
+  full_data <- read_xlsx("/rawdata/ESF_full_responses.xlsx")
+  partial_data <- read_xlsx("/rawdata/ESF_partial_responses.xlsx")
+}
+
+data <- rbind(full_data, partial_data)[-1,]
+
+data$StartDate <- as.numeric(data$StartDate)
+data$EndDate <- as.numeric(data$EndDate)
+data$Progress <- as.numeric(data$Progress)
+data$Finished <- as.numeric(data$Finished)
+data <- data %>%
+    mutate(platforms_behavior_tiktok =
+           if_else(str_detect(platforms_behavior, "1"), 1L, 0L)) %>%
+    mutate(platforms_behavior_instagram =
+           if_else(str_detect(platforms_behavior, "2"), 1L, 0L)) %>%
+    mutate(platforms_behavior_other =
+           if_else(str_detect(platforms_behavior, "3"), 1L, 0L)) %>%
+    mutate(across(recall_selfreport_1:aid_specific_3, as.numeric)) %>%
+    mutate(x1_modality = as.numeric(x1_modality)) %>%
+    mutate(x1_type = as.numeric(x1_type)) %>%
+    mutate(x1_certainty_1 = as.numeric(x1_certainty_1)) %>%
+    mutate(x1_involved_1 = as.numeric(x1_involved_1)) %>%
+    mutate(x2_modality = as.numeric(x2_modality)) %>%
+    mutate(x2_type = as.numeric(x2_type)) %>%
+    mutate(x2_certainty_1 = as.numeric(x2_certainty_1)) %>%
+    mutate(x2_involved_1 = as.numeric(x2_involved_1)) %>%
+    mutate(x3_modality = as.numeric(x3_modality)) %>%
+    mutate(x3_type = as.numeric(x3_type)) %>%
+    mutate(x3_certainty_1 = as.numeric(x3_certainty_1)) %>%
+    mutate(x3_involved_1 = as.numeric(x3_involved_1)) %>%
+    mutate(relevance_personal = as.numeric(relevance_personal)) %>%
+    mutate(use_AI = as.numeric(use_AI)) %>%
+    mutate(use_SM = as.numeric(use_SM)) %>% 
+    mutate(shop_online = as.numeric(shop_online)) %>%
+    mutate(age = as.numeric(age)) %>%
+    mutate(gender = as.numeric(gender)) %>%
+    mutate(gender = case_when(
+        gender == 1 ~ "male",
+        gender == 2 ~ "female",
+        gender == 3 ~ "non-binary",
+        gender == 4 ~ "do not want to say",
+        gender == 5 ~ "other",
+        TRUE ~ NA_character_)) %>%
+    mutate(x1_reaction_content_attention = 
+           if_else(str_detect(x1_reaction_content, "1"), 1L, 0L)) %>%
+    mutate(x1_reaction_content_contentfocus = 
+           if_else(str_detect(x1_reaction_content, "2"), 1L, 0L)) %>%
+    mutate(x1_reaction_content_information_comments = 
+           if_else(str_detect(x1_reaction_content, "3"), 1L, 0L)) %>%
+    mutate(x1_reaction_content_information_else = 
+           if_else(str_detect(x1_reaction_content, "4"), 1L, 0L)) %>%
+    mutate(x1_reaction_content_ignore = 
+           if_else(str_detect(x1_reaction_content, "5"), 1L, 0L)) %>%
+    mutate(x1_reaction_content_save = 
+           if_else(str_detect(x1_reaction_content, "5"), 1L, 0L)) %>%
+    mutate(x1_reaction_content_click = 
+           if_else(str_detect(x1_reaction_content, "6"), 1L, 0L)) %>%
+    mutate(x2_reaction_content_attention = 
+           if_else(str_detect(x2_reaction_content, "1"), 1L, 0L)) %>%
+    mutate(x2_reaction_content_contentfocus = 
+           if_else(str_detect(x2_reaction_content, "2"), 1L, 0L)) %>%
+    mutate(x2_reaction_content_information_comments = 
+           if_else(str_detect(x2_reaction_content, "3"), 1L, 0L)) %>%
+    mutate(x2_reaction_content_information_else = 
+           if_else(str_detect(x2_reaction_content, "4"), 1L, 0L)) %>%
+    mutate(x2_reaction_content_ignore = 
+           if_else(str_detect(x2_reaction_content, "5"), 1L, 0L)) %>%
+    mutate(x2_reaction_content_save = 
+           if_else(str_detect(x2_reaction_content, "5"), 1L, 0L)) %>%
+    mutate(x2_reaction_content_click = 
+           if_else(str_detect(x2_reaction_content, "6"), 1L, 0L)) %>%
+    mutate(x3_reaction_content_attention = 
+           if_else(str_detect(x3_reaction_content, "1"), 1L, 0L)) %>%
+    mutate(x3_reaction_content_contentfocus = 
+           if_else(str_detect(x3_reaction_content, "2"), 1L, 0L)) %>%
+    mutate(x3_reaction_content_information_comments = 
+           if_else(str_detect(x3_reaction_content, "3"), 1L, 0L)) %>%
+    mutate(x3_reaction_content_information_else = 
+           if_else(str_detect(x3_reaction_content, "4"), 1L, 0L)) %>%
+    mutate(x3_reaction_content_ignore = 
+           if_else(str_detect(x3_reaction_content, "5"), 1L, 0L)) %>%
+    mutate(x3_reaction_content_save = 
+           if_else(str_detect(x3_reaction_content, "5"), 1L, 0L)) %>%
+    mutate(x3_reaction_content_click = 
+           if_else(str_detect(x3_reaction_content, "6"), 1L, 0L)) %>%
+    filter(str_detect(DistributionChannel, "anonymous")) %>%
+    filter(StartDate > 46003.47)
+```
+
+## General Survey Info
+
+- number of participants: `r nrow(data)`
+    - of which finished: `r sum(data$Progress == 100, na.rm = TRUE)`
+- self-reported number of participants from classroom: `r sum(data$participation == "2.0", na.rm = TRUE)`
+- self-reported number of participatns from home: `r sum(data$participation == "1.0", na.rm = TRUE)`
+
+### Progress throughout Survey
+
+```{r}
+ggplot(data, aes(x = Progress)) +
+  geom_density(fill = "#00802f", color = "#0a5f2d", alpha = 0.5) +
+  scale_x_continuous(limits = c(0, 100), breaks = seq(0, 100, 10)) +
+  labs(
+    title = "Participants' Progress throughout Survey",
+    x = "Progress (%)",
+    y = "Density"
+  ) +
+  theme_minimal(base_size = 14)
+```
+
+- mean participant progression: `r round(mean(data$Progress, na.rm = TRUE),3)`%
+- two small peaks: some participants started but did not make it past the first two open-ended questions (number of participants stopping at or before 30%: $n = `r sum(data$Progress <= 30)`$), and many participants made it to the last page (participants reaching at least 90%: $n = `r sum(data$Progress >= 90)`$)
+
+### Scrolling Behavior
+
+- counterintuitively to our expectation, not many participants actually used TikTok: $n_\text{TikTok} = `r sum(data$platforms_behavior_tiktok,na.rm=TRUE)`$ ($`r round(sum(data$platforms_behavior_tiktok,na.rm=TRUE) / nrow(data),3)*100`\%$)
+- the majority of participants used Instagram: $n_\text{Instagram} = `r sum(data$platforms_behavior_instagram,na.rm=TRUE)`$ ($`r round(sum(data$platforms_behavior_instagram,na.rm=TRUE) / nrow(data),3)*100`\%$)
+- and a minority used a platform other than instagram or TikTok: $n_\text{other} = `r sum(data$platforms_behavior_other,na.rm=TRUE)`$ ($`r round(sum(data$platforms_behavior_other,na.rm=TRUE) / nrow(data),3)*100`\%$)
+
+## Open Associations
+### When you browsed through your social media feed, which content-related thoughts crossed your mind?
+
+$n = `r sum(!is.na(data$considerations_open))`$ answered this question.
+
+#### Summary
+When we just ask about *content-related thoughts*, there is little to no associations with origin, origin ambiguity or AI in particular. 
+
+```{r}
+DT::datatable(
+    data.frame(
+        Considerations = data$considerations_open[!is.na(data$considerations_open)],
+        TikTok = data$platforms_behavior_tiktok[!is.na(data$considerations_open)],
+        Instagram = data$platforms_behavior_instagram[!is.na(data$considerations_open)],
+        Other = data$platforms_behavior_other[!is.na(data$considerations_open)]
+    ),
+    filter = "top",
+    options = list(
+        pageLength = 10,
+        autoWidth = TRUE)
+    )
+```
+
+
+### Social media content can be created in different ways. When browsing your social media feed, did you wonder how some of the content was created?
+
+$n = `r sum(!is.na(data$evaluation_open))`$ answered this question.
+
+#### Summary
+When asking specifically about *creation of content*, we do get some associations with AI: 
+
+- "AI generated Memes, Edits, Animated videos, Picture-Slideshows"
+- "at some point yes, because some videos are most likely created with artificial intelligence. But nowadays sometimes you can‘t tell if the content is real or made up."
+- " Sometimes there are AI created content, thats more interesting but this time that wasn‘t the case"
+- and others
+
+```{r}
+DT::datatable(
+   data.frame(
+        Evaluations = data$evaluation_open[!is.na(data$evaluation_open)],
+        TikTok = data$platforms_behavior_tiktok[!is.na(data$evaluation_open)],
+        Instagram = data$platforms_behavior_instagram[!is.na(data$evaluation_open)],
+        Other = data$platforms_behavior_other[!is.na(data$evaluation_open)]
+    ),
+    filter = "top",
+    options = list(
+        pageLength = 10,
+        autoWidth = TRUE)
+    )
+```
+
+### How much of the content you consumed in the last few minutes do you remember?
+
+```{r}
+ggplot(data, aes(x = recall_selfreport_1)) +
+  geom_density(fill = "#00802f", color = "#0a5f2d", alpha = 0.5) +
+  labs(
+    title = "Distribution of self-reported Recall of Content",
+    x = "Recall (in %)",
+    y = ""
+  ) +
+  theme_minimal(base_size = 14)
+```
+
+In general, participants reported to not recall much of the content they had just consumed (just under 50%: $mean_\text{Recall} = `r round(mean(data$recall_selfreport_1,na.rm=TRUE),3)`$, ($SD_\text{Recall} = `r round(sd(data$recall_selfreport_1,na.rm=TRUE),3)`$).
+
+There is a peak around 25%, and a second, smaller peak at 75%. 
+
+Recall did not significantly differ between platforms (TikTok, Instagram, Other).
+
+```{r}
+recall_long <- data %>%
+  select(recall_selfreport_1, platforms_behavior_tiktok, platforms_behavior_instagram, platforms_behavior_other) %>%
+  pivot_longer(
+    cols = starts_with("platforms_behavior"),
+    names_to = "platform",
+    values_to = "active"
+  ) %>%
+  filter(active == 1) %>%
+  mutate(platform = case_when(
+    platform == "platforms_behavior_tiktok" ~ "TikTok",
+    platform == "platforms_behavior_instagram" ~ "Instagram",
+    platform == "platforms_behavior_other" ~ "Other"
+  ))
+
+ggplot(recall_long, aes(x = recall_selfreport_1, color = platform, fill = platform)) +
+  geom_density(alpha = 0.3, size = 1) +
+  labs(
+    title = "Distribution of Self-reported Recall by Platform",
+    x = "Recall (in %)",
+    y = "Density",
+    color = "Platform",
+    fill = "Platform"
+  ) +
+  scale_fill_manual(values = c("#1DA1F2", "#C13584", "#00802f")) + # custom fill colors
+  scale_color_manual(values = c("#1DA1F2", "#C13584", "#0a5f2d")) + # custom line colors
+  theme_minimal(base_size = 14)
+
+kruskal.test(recall_selfreport_1 ~ platform, data = recall_long)
+
+```
+
+### Origin Ambiguity
+
+We asked a total of 6 questions pertaining to origin ambiguity: 
+
+```{r}
+#| fig-width: 10
+#| fig-height: 15
+
+p1 <- ggplot(data, aes(x = closed_associations_1)) +
+    geom_bar(fill="#00802f",color="#00802f",alpha=0.7)+
+    geom_vline(xintercept = mean(data$closed_associations_1,na.rm=TRUE), color = "#0a5f2d", linetype = "solid", size = 1) +
+    labs(
+        title = "I found it difficult to know \nwho or what created \nthe content I was \nlooking at.",
+        x = "Response",
+        y = "Frequency"
+    ) +
+    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5)) + 
+    theme_minimal()
+
+p2 <- ggplot(data, aes(x = closed_associations_2)) +
+    geom_bar(fill="#00802f",color="#00802f",alpha=0.7)+
+    geom_vline(xintercept = mean(data$closed_associations_2,na.rm=TRUE), color = "#0a5f2d", linetype = "solid", size = 1) +
+    labs(
+        title = "I found it difficult to know \nif the content I was \nlooking at was real.",
+        x = "Response",
+        y = "Frequency"
+    ) +
+    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5)) + 
+    theme_minimal()
+
+p3 <- ggplot(data, aes(x = closed_associations_3)) +
+    geom_bar(fill="#00802f",color="#00802f",alpha=0.7)+
+    geom_vline(xintercept = mean(data$closed_associations_3,na.rm=TRUE), color = "#0a5f2d", linetype = "solid", size = 1) +
+    labs(
+        title = "I cared about who or what \ncreated the content \nI was looking at.",
+        x = "Response",
+        y = "Frequency"
+    ) +
+    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5)) + 
+    theme_minimal()
+
+p4 <- ggplot(data, aes(x = closed_associations_4)) +
+    geom_bar(fill="#00802f",color="#00802f",alpha=0.7)+
+    geom_vline(xintercept = mean(data$closed_associations_4,na.rm=TRUE), color = "#0a5f2d", linetype = "solid", size = 1) +
+    labs(
+        title = "I liked the content \nI was looking at.",
+        x = "Response",
+        y = "Frequency"
+    ) +
+    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5)) + 
+    theme_minimal()
+
+p5 <- ggplot(data, aes(x = closed_associations_5)) +
+    geom_bar(fill="#00802f",color="#00802f",alpha=0.7)+
+    geom_vline(xintercept = mean(data$closed_associations_5,na.rm=TRUE), color = "#0a5f2d", linetype = "solid", size = 1) +
+    labs(
+        title = "I paid attention to clues about \nwho or what created the content \nI was looking at.",
+        x = "Response",
+        y = "Frequency"
+    ) +
+    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5)) + 
+    theme_minimal()
+
+p6 <- ggplot(data, aes(x = closed_associations_6)) +
+    geom_bar(fill="#00802f",color="#00802f",alpha=0.7)+
+    geom_vline(xintercept = mean(data$closed_associations_6,na.rm=TRUE), color = "#0a5f2d", linetype = "solid", size = 1) +
+    labs(
+        title = "I was cautious about the veracity \nof the content I was \nlooking at.",
+        x = "Response",
+        y = "Frequency"
+    ) +
+    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5)) + 
+    theme_minimal()
+
+(p1 + p2) / (p3 + p4) / (p5 + p6)
+```
+
+Most responses were neither skewed in one or the other direction, implying moderate agreement. Surprisingly, our results show a tendency to rather not have experienced origin ambiguity in the past couple of minutes, as indicated by a mean of $mean_\text{real} = `r round(mean(data$closed_associations_2,na.rm=TRUE),3)`$ ($SD_\text{real} = `r round(sd(data$closed_associations_2,na.rm=TRUE),3)`$). 
+
+## General Perception
+The subsequent questions were asked about participants' **social media feed overall**, not the past two minutes. 
+
+### Thinking about your social media feed overall, what proportion of the content you see is …
+
+```{r}
+#| fig-width: 10
+#| fig-height: 8
+proportion_creation_long <- data %>%
+  select(proportion_creation_1:proportion_creation_3) %>%
+  pivot_longer(
+    cols = everything(),
+    names_to = "category",
+    values_to = "proportion"
+  ) %>% mutate(
+   category = case_when(
+    category == "proportion_creation_1" ~ "definitely human",
+    category == "proportion_creation_2" ~ "definitely AI",
+    category == "proportion_creation_3" ~ "difficult to tell",
+   ) 
+  )
+
+p1 <- ggplot(proportion_creation_long, aes(x = "", y = proportion, fill = category)) +
+  geom_bar(stat = "identity", width = 0.5) +
+  coord_polar(theta = "y") +  # pie chart
+  scale_y_continuous(labels = scales::percent_format(scale = 1)) +
+  labs(title = "Certainty of Origin") +
+  theme_void() +
+   scale_fill_manual(
+    values = c(
+      "definitely human" = "#00802f",
+      "definitely AI" = "#eb6969",
+      "difficult to tell" = "#73a5af"
+    ))
+
+p2 <- ggplot(data, aes(x = proportion_creation_1)) +
+  geom_density(fill = "#00802f", alpha = 0.5) +
+  labs(
+    title = "Distribution of Definitely human",
+    x = "% of feed",
+    y = "Density"
+  ) +
+  theme_minimal(base_size = 14)
+
+p3 <- ggplot(data, aes(x = proportion_creation_2)) +
+  geom_density(fill = "#00802f", alpha = 0.5) +
+  labs(
+    title = "Distribution of Definitely AI",
+    x = "% of feed",
+    y = "Density"
+  ) +
+  theme_minimal(base_size = 14)
+
+p4 <- ggplot(data, aes(x = proportion_creation_3)) +
+  geom_density(fill = "#00802f", alpha = 0.5) +
+  labs(
+    title = "Distribution of Difficult to Tell",
+    x = "% of feed",
+    y = "Density"
+  ) +
+  theme_minimal(base_size = 14)
+
+p1 + (p2 / p3 / p4)
+
+
+prop_involvement_long <- data %>%
+  select(prop_involvement_1:prop_involvement_3) %>%
+  pivot_longer(
+    cols = everything(),
+    names_to = "category",
+    values_to = "proportion"
+  ) %>% mutate(
+    category = case_when(
+        category == "prop_involvement_1" ~ "made only by a human",
+        category == "prop_involvement_2" ~ "at least augmented by AI", 
+        category == "prop_involvement_3" ~ "fully AI generated", 
+    )
+  )
+
+p1 <- ggplot(prop_involvement_long, aes(x = "", y = proportion, fill = category)) +
+  geom_bar(stat = "identity", width = 0.5) +
+  coord_polar(theta = "y") +  # pie chart
+  scale_y_continuous(labels = scales::percent_format(scale = 1)) +
+  labs(title = "Proportion of Augmented Content on Feed") +
+  theme_void() +
+    scale_fill_manual(
+    values = c(
+      "made only by a human" = "#00802f",
+      "at least augmented by AI" = "#eb6969",
+      "fully AI generated" = "#73a5af"
+    ))
+
+p2 <- ggplot(data, aes(x = prop_involvement_1)) +
+  geom_density(fill = "#00802f", alpha = 0.5) +
+  labs(
+    title = "Distribution of made only by a human",
+    x = "Recall Score",
+    y = "Density"
+  ) +
+  theme_minimal(base_size = 14)
+
+p3 <- ggplot(data, aes(x = prop_involvement_2)) +
+  geom_density(fill = "#00802f", alpha = 0.5) +
+  labs(
+    title = "Distribution of at least augmented by AI",
+    x = "Recall Score",
+    y = "Density"
+  ) +
+  theme_minimal(base_size = 14)
+
+p4 <- ggplot(data, aes(x = prop_involvement_3)) +
+  geom_density(fill = "#00802f", alpha = 0.5) +
+  labs(
+    title = "Distribution of fully AI generated",
+    x = "Recall Score",
+    y = "Density"
+  ) +
+  theme_minimal(base_size = 14)
+
+p1 + (p2 / p3 / p4)
+```
+
+It appears that people think a majority of the content they consume has been created by a human. However, when asked about the involvement of AI, much of the content is perceived as at least augmented by AI. This dichotomy could be resolved in several ways. One possiblity is that participants misunderstood the first question and interpreted "definitely made by AI" as meaning 100% bot accounts without any human involvement. The second possibility is that participants perceive content based on a human-written prompt or base image (augmentation) as still clearly made by a human, although the human had help from AI. 
+
+### When I am not sure about the origin of the content, I ...
+
+```{r}
+#| fig-width: 10
+#| fig-height: 5
+
+p1 <- ggplot(data, aes(x = react_ambiguity_1)) +
+    geom_bar(fill="#00802f",color="#00802f",alpha=0.7)+
+     geom_vline(xintercept = mean(data$react_ambiguity_1,na.rm=TRUE), color = "#0a5f2d", linetype = "solid", size = 1) +
+    labs(
+        title = "I pay more attention to certain clues in the \ncontent (e.g., inconsistencies) that could help \nme identify the origin.",
+        x = "Response",
+        y = "Frequency"
+    ) +
+    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5)) + 
+    theme_minimal()
+
+p2 <- ggplot(data, aes(x = react_ambiguity_2)) +
+    geom_bar(fill="#00802f",color="#00802f",alpha=0.7)+
+     geom_vline(xintercept = mean(data$react_ambiguity_2,na.rm=TRUE), color = "#0a5f2d", linetype = "solid", size = 1) +
+    labs(
+        title = "I pay less attention to the content itself.",
+        x = "Response",
+        y = "Frequency"
+    ) +
+    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5)) + 
+    theme_minimal()
+
+p3 <- ggplot(data, aes(x = react_ambiguity_3)) +
+    geom_bar(fill="#00802f",color="#00802f",alpha=0.7)+
+     geom_vline(xintercept = mean(data$react_ambiguity_3,na.rm=TRUE), color = "#0a5f2d", linetype = "solid", size = 1) +
+    labs(
+        title = "I look for more information in the \ncomments below the post.",
+        x = "Response",
+        y = "Frequency"
+    ) +
+    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5)) + 
+    theme_minimal()
+
+p4 <- ggplot(data, aes(x = react_ambiguity_4)) +
+    geom_bar(fill="#00802f",color="#00802f",alpha=0.7)+
+     geom_vline(xintercept = mean(data$react_ambiguity_4,na.rm=TRUE), color = "#0a5f2d", linetype = "solid", size = 1) +
+    labs(
+        title = "I look for more information from other sources.",
+        x = "Response",
+        y = "Frequency"
+    ) +
+    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5)) + 
+    theme_minimal()
+
+p5 <- ggplot(data, aes(x = react_ambiguity_5)) +
+    geom_bar(fill="#00802f",color="#00802f",alpha=0.7)+
+     geom_vline(xintercept = mean(data$react_ambiguity_5,na.rm=TRUE), color = "#0a5f2d", linetype = "solid", size = 1) +
+    labs(
+        title = "I ignore the content.",
+        x = "Response",
+        y = "Frequency"
+    ) +
+    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5)) + 
+    theme_minimal()
+
+p6 <- ggplot(data, aes(x = react_ambiguity_6)) +
+    geom_bar(fill="#00802f",color="#00802f",alpha=0.7)+
+     geom_vline(xintercept = mean(data$react_ambiguity_6,na.rm=TRUE), color = "#0a5f2d", linetype = "solid", size = 1) +
+    labs(
+        title = "I save and/or share the \ncontent with someone.",
+        x = "Response",
+        y = "Frequency"
+    ) +
+    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5)) + 
+    theme_minimal()
+
+p7 <- ggplot(data, aes(x = react_ambiguity_7)) +
+    geom_bar(fill="#00802f",color="#00802f",alpha=0.7)+
+     geom_vline(xintercept = mean(data$react_ambiguity_7,na.rm=TRUE), color = "#0a5f2d", linetype = "solid", size = 1) +
+    labs(
+        title = "I click to learn more \nabout the content.",
+        x = "Response",
+        y = "Frequency"
+    ) +
+    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5)) + 
+    theme_minimal()
+
+p1 + p2
+
+p3 + p4
+
+p5 + p6 + p7
+
+```
+
+While people generally seem to experience origin ambiguity infrequently (as indicated by the questions above), *when* they experience it, their behavior follows some of the core patterns we hypothesized: People pay more attention to context clues, slightly less attention to the content itself, and go to the comments to inform themselves.
+
+## Specific Questions
+
+The following questions were asked about participants' perception of their social media feed they scrolled through **just now**.
+
+
+### Thinking about your social media feed you scrolled through in the last few minutes, what proportion of the content you saw was …
+
+```{r}
+#| fig-width: 10
+#| fig-height: 8
+ 
+proportion_creation_long <- data %>%
+  select(proportion_specific_1:proportion_specific_3) %>%
+  pivot_longer(
+    cols = everything(),
+    names_to = "category",
+    values_to = "proportion"
+  ) %>% mutate(
+   category = case_when(
+    category == "proportion_specific_1" ~ "definitely human",
+    category == "proportion_specific_2" ~ "definitely AI",
+    category == "proportion_specific_3" ~ "difficult to tell",
+   ) 
+  )
+
+p1 <- ggplot(proportion_creation_long, aes(x = "", y = proportion, fill = category)) +
+  geom_bar(stat = "identity", width = 0.5) +
+  coord_polar(theta = "y") +  # pie chart
+  scale_y_continuous(labels = scales::percent_format(scale = 1)) +
+  labs(title = "Certainty of Origin") +
+  theme_void() +
+   scale_fill_manual(
+    values = c(
+      "definitely human" = "#00802f",
+      "definitely AI" = "#eb6969",
+      "difficult to tell" = "#73a5af"
+    ))
+
+p2 <- ggplot(data, aes(x = proportion_specific_1)) +
+  geom_density(fill = "#00802f", alpha = 0.5) +
+  labs(
+    title = "Distribution of Definitely human",
+    x = "% of feed",
+    y = "Density"
+  ) +
+  theme_minimal(base_size = 14)
+
+p3 <- ggplot(data, aes(x = proportion_specific_2)) +
+  geom_density(fill = "#00802f", alpha = 0.5) +
+  labs(
+    title = "Distribution of Definitely AI",
+    x = "% of feed",
+    y = "Density"
+  ) +
+  theme_minimal(base_size = 14)
+
+p4 <- ggplot(data, aes(x = proportion_specific_3)) +
+  geom_density(fill = "#00802f", alpha = 0.5) +
+  labs(
+    title = "Distribution of Difficult to Tell",
+    x = "% of feed",
+    y = "Density"
+  ) +
+  theme_minimal(base_size = 14)
+
+p1 + (p2 / p3 / p4)
+
+
+prop_involvement_long <- data %>%
+  select(aid_specific_1:aid_specific_3) %>%
+  pivot_longer(
+    cols = everything(),
+    names_to = "category",
+    values_to = "proportion"
+  ) %>% mutate(
+    category = case_when(
+        category == "aid_specific_1" ~ "made only by a human",
+        category == "aid_specific_2" ~ "at least augmented by AI", 
+        category == "aid_specific_3" ~ "fully AI generated", 
+    )
+  )
+
+p1 <- ggplot(prop_involvement_long, aes(x = "", y = proportion, fill = category)) +
+  geom_bar(stat = "identity", width = 0.5) +
+  coord_polar(theta = "y") +  # pie chart
+  scale_y_continuous(labels = scales::percent_format(scale = 1)) +
+  labs(title = "Proportion of Augmented Content on Feed") +
+  theme_void() +
+    scale_fill_manual(
+    values = c(
+      "made only by a human" = "#00802f",
+      "at least augmented by AI" = "#eb6969",
+      "fully AI generated" = "#73a5af"
+    ))
+
+p2 <- ggplot(data, aes(x = aid_specific_1)) +
+  geom_density(fill = "#00802f", alpha = 0.5) +
+  labs(
+    title = "Distribution of made only by a human",
+    x = "Recall Score",
+    y = "Density"
+  ) +
+  theme_minimal(base_size = 14)
+
+p3 <- ggplot(data, aes(x = aid_specific_2)) +
+  geom_density(fill = "#00802f", alpha = 0.5) +
+  labs(
+    title = "Distribution of at least augmented by AI",
+    x = "Recall Score",
+    y = "Density"
+  ) +
+  theme_minimal(base_size = 14)
+
+p4 <- ggplot(data, aes(x = aid_specific_3)) +
+  geom_density(fill = "#00802f", alpha = 0.5) +
+  labs(
+    title = "Distribution of fully AI generated",
+    x = "Recall Score",
+    y = "Density"
+  ) +
+  theme_minimal(base_size = 14)
+
+p1 + (p2 / p3 / p4)
+```
+
+When asking participants about the content they just watched, the patterns regarding origin assumptions and augmentation remain the same. 
+
+### Specific Instances
+
+```{r}
+data <- data %>% 
+    mutate(number_instances = case_when(
+        str_detect(confirm_workaround, "3") ~ 3,
+        str_detect(confirm_workaround, "2") ~ 2,
+        str_detect(confirm_workaround, "1") ~ 1
+    ))
+```
+
+Of all respondents, $n = `r sum(data$AI_content == "1.0", na.rm = TRUE)`$ reported that they recalled a specific instance of content they wondered was generated by AI. $n = `r sum(data$AI_content == "2.0", na.rm = TRUE)`$ did report that there was no content generated by AI. In total, $n = `r sum(data$number_instances,na.rm=TRUE)`$ instances were reported, meaning that some participants recalled more than one instance. The following charts summarize responses across all instances, meaning that certain participants repeat. 
+
+### Description of the Instance(s)
+```{r}
+
+dataframe_instances <- data %>%
+  select(specific_inst_1:specific_inst_3) %>%
+  pivot_longer(
+    cols = everything(),
+    names_to = "instance",
+    values_to = "description"
+  ) %>% filter(!is.na(description))
+
+
+DT::datatable(
+    data.frame(instances = dataframe_instances$description),
+    filter = "top",
+    options = list(
+        pageLength = 10,
+        autoWidth = TRUE)
+    )
+
+```
+
+### Reasons Given
+```{r}
+
+df_x1 <- data %>% select(starts_with("x1")) %>% rename_with(~ str_remove(.x, "^x1_"))
+df_x2 <- data %>% select(starts_with("x2")) %>% rename_with(~ str_remove(.x, "^x2_"))
+df_x3 <- data %>% select(starts_with("x3")) %>% rename_with(~ str_remove(.x, "^x3_"))
+
+df_specific <- rbind(df_x1, df_x2, df_x3) %>% mutate(
+        modality = case_when(
+            modality == 1 ~ "image",
+            modality == 2 ~ "video",
+            modality == 3 ~ "text", 
+            modality == 4 ~ "other"
+        )
+    ) %>%  mutate(
+        type = case_when(
+            type == "1" ~ "influencer post", 
+            type == "2" ~ "advertisment",
+            type == "3" ~ "news",
+            type == "4" ~ "entertainment", 
+            type == "5" ~ "educational", 
+            type == "6" ~ "other"
+        )
+    )
+
+DT::datatable(
+    data.frame(reason = df_specific$reason[!is.na(df_specific$reason)]),
+    filter = "top",
+    options = list(
+        pageLength = 10,
+        autoWidth = TRUE)
+    )
+
+```
+
+### Modality and Type
+
+Looking at the modality of content, the overwhelming majority of examples given seems to be videos. Almost all examples stem from the entertainment domain. 
+
+```{r}
+p1 <- df_specific %>% filter(!is.na(modality)) %>%
+  count(modality) %>%
+  ggplot(aes(x = reorder(modality, n), y = n)) +
+  geom_bar(stat = "identity", fill = "#00802f") +
+  coord_flip() +
+  labs(
+    title = "What modality of content was this?",
+    x = "Modality",
+    y = ""
+  ) + scale_y_continuous(
+    limits = c(0, 15),
+    breaks = seq(0, 15, by = 1)
+  ) +
+  theme_minimal(base_size = 14)
+
+p2 <- df_specific %>% filter(!is.na(type)) %>%
+  count(type) %>%
+  ggplot(aes(x = reorder(type, n), y = n)) +
+  geom_bar(stat = "identity", fill = "#00802f") +
+  coord_flip() +
+  labs(
+    title = "What type of content was this?",
+    x = "Type",
+    y = ""
+  ) + scale_y_continuous(
+    limits = c(0, 15),
+    breaks = seq(0, 15, by = 1)
+  ) +
+  theme_minimal(base_size = 14)
+
+p1 + p2
+```
+
+### Certainty and Involvement
+On average, participants were $mean_\text{certainty} = `r round(mean(df_specific$certainty_1, na.rm=TRUE),3)`, SD_\text{certainty} = `r round(sd(df_specific$certainty_1, na.rm=TRUE),3)`$ certain that the content they were referring to was AI-generated. Additionally, participants tended to say AI was rather more involved than less ($mean_\text{involvement} = `r round(mean(df_specific$involved_1, na.rm=TRUE),3)`, SD_\text{certainty} = `r round(sd(df_specific$involved_1, na.rm=TRUE),3)`$). The correlation between certainty and involvement is $r = `r cor(df_specific$certainty_1, df_specific$involved_1, use = "pairwise.complete.obs")`$. However, as visualized in the plot, the number of data points is low and the dispersion is large.
+
+```{r}
+
+
+ggplot(df_specific, aes(x = certainty_1)) +
+  geom_density(fill = "#00802f", alpha = 0.5) +
+  scale_x_continuous(
+    limits = c(0, 100),
+    breaks = seq(0, 100, 10)
+  ) +
+  labs(
+    title = "How certain are you that this content was \ncreated by AI?",
+    x = "Certainty (0–100)",
+    y = "Density"
+  ) +
+  theme_minimal(base_size = 14)
+
+ggplot(df_specific, aes(x = involved_1)) +
+  geom_density(fill = "#00802f", alpha = 0.5) +
+  scale_x_continuous(
+    limits = c(0, 100),
+    breaks = seq(0, 100, 10)
+  ) +
+  labs(
+    title = "How strongly do you think AI was involved \nin the creation of this content?",
+    x = "Strength of Involvement (0–100)",
+    y = "Density"
+  ) +
+  theme_minimal(base_size = 14)
+
+df_specific %>% 
+    filter(!is.na(certainty_1),!is.na(involved_1)) %>% 
+    ggplot(aes(x = certainty_1, y = involved_1)) +
+  geom_point(color = "#73a5af") +
+  geom_smooth(method = "lm", se = TRUE, color = "#00802f") +
+  scale_x_continuous(limits = c(0, 100)) +
+  scale_y_continuous(limits = c(0, 100)) +
+  labs(
+    title = "Certainty vs Involvement in AI-Created Content",
+    x = "Certainty (0–100)",
+    y = "Involvement (0–100)"
+  ) +
+  theme_minimal(base_size = 14)
+
+```
+
+### Reactions
+After seeing the content, I ...
+```{r}
+reaction_long <- df_specific %>%
+    select(reaction_content_attention:reaction_content_click) %>%
+        pivot_longer(
+            cols = everything(),
+            names_to = "type",
+            values_to = "count"
+        ) %>% filter(!is.na(count)) %>%
+            mutate(type = case_when(
+                type == "reaction_content_attention" ~ "paid more attention to context cues", 
+                type == "reaction_content_click" ~ "clicked to learn more", 
+                type == "reaction_content_contentfocus" ~ "focused less on the content", 
+                type == "reaction_content_ignore" ~ "ignored the content", 
+                type == "reaction_content_information_comments" ~ "looked for more info in the comments", 
+                type == "reaction_content_information_else" ~ "looked for more information elsewhere", 
+                type == "reaction_content_save" ~ "saved or shared the content"
+            ))
+
+reaction_long %>%
+  filter(count == 1) %>%
+  count(type) %>%
+  ggplot(aes(x = reorder(type, n), y = n)) +
+  geom_bar(stat = "identity", fill = "#00802f") +
+  coord_flip() +
+  labs(
+    title = "Reactions to the Content",
+    x = "Reaction",
+    y = "Number of respondents"
+  ) +
+  theme_minimal(base_size = 14)
+```
+
+Reactions to the content again demonstrate that at least some effects we hypothesize seem to occurr: Paying attention to context cues, and looking for additional information. 
+
+## Demographics & Controls
+
+```{r}
+p1 <- ggplot(data, aes(x = relevance_personal)) +
+    geom_bar(fill="#00802f",color="black")+
+    labs(
+        title = "How much does it matter to you who or what created online content?",
+        x = "Response",
+        y = "Frequency"
+    ) +
+    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5)) + 
+    theme_minimal()
+p1
+
+data <- data %>% mutate(
+    use_AI_t = case_when(
+        use_AI == 1 ~ "less than once a week",
+        use_AI == 2 ~ "at least once a week", 
+        use_AI == 3 ~ "several days a week", 
+        use_AI == 4 ~ "at least once a day", 
+        use_AI == 5 ~ "several times a day",
+        TRUE ~ NA_character_
+    ),
+    use_AI_t = factor(
+        use_AI_t, 
+        levels = c(
+            "less than once a week",
+        "at least once a week",
+        "several days a week",
+        "at least once a day",
+        "several times a day"
+        )
+    )) %>% mutate(
+        use_SM_t = case_when(
+            use_SM == 1 ~ "less than once a week",
+            use_SM == 2 ~ "at least once a week", 
+            use_SM == 3 ~ "several days a week", 
+            use_SM == 4 ~ "at least once a day", 
+            use_SM == 5 ~ "several times a day",
+            TRUE ~ NA_character_
+        ),
+        use_SM_t = factor(
+            use_SM_t, 
+            levels = c(
+                "less than once a week",
+        "at least once a week",
+        "several days a week",
+        "at least once a day",
+        "several times a day"
+            )
+        )
+    ) %>% mutate(
+        shop_online_t = case_when(
+            shop_online == 1 ~ "less than 1x / month",
+            shop_online == 2 ~ "at least 1x / month",
+            shop_online == 3 ~ "several times / month",
+            shop_online == 4 ~ "at least 1 / week", 
+            shop_online == 5 ~ "more than 1 / week"
+        ),
+        shop_online_t = factor(
+            shop_online_t,
+            levels = c(
+                "less than 1x / month",
+                "at least 1x / month",
+                "several times / month",
+                "at least 1 / week", 
+                "more than 1 / week"
+            )))
+
+p2 <- data %>% filter(!is.na(use_AI_t)) %>% ggplot(aes(x = use_AI_t)) +
+    geom_bar(fill="#00802f")+
+    labs(
+        title = "How often do you use generative AI tools (e.g., ChatGPT, Gemini, Sora, Midjourney)?",
+        x = "Response",
+        y = "Frequency"
+    ) +
+    theme_minimal()
+
+
+p3 <- data %>% filter(!is.na(use_SM_t)) %>% ggplot(aes(x = use_SM_t)) +
+    geom_bar(fill="#00802f",color="black")+
+    labs(
+        title = "How often do you use Social Media?",
+        x = "Response",
+        y = "Frequency"
+    ) +
+    theme_minimal()
+
+
+p4 <- data %>% filter(!is.na(shop_online_t)) %>% ggplot(aes(x = shop_online_t)) +
+    geom_bar(fill="#00802f",color="black")+
+    labs(
+        title = "How often do you shop online?",
+        x = "Response",
+        y = "Frequency"
+    ) +
+    theme_minimal()
+
+(p1 + p2) / (p3 + p4)
+
+ggplot(data, aes(x = age)) +
+  geom_density(fill = "#00802f", alpha = 0.5) +
+  labs(
+    title = "Age Distribution",
+    x = "Self-reported Age",
+    y = ""
+  ) +
+  theme_minimal(base_size = 14)
+
+gender_counts <- data %>%
+  count(gender) %>%
+  filter(!is.na(gender))
+
+ggplot(gender_counts, aes(x = reorder(gender, n), y = n)) +
+  geom_bar(stat = "identity", fill = "#00802f") +
+  coord_flip() +  # horizontal bars for readability
+  labs(
+    title = "Gender Distribution",
+    x = "Gender"
+  ) +
+  theme_minimal(base_size = 14)
+
+```
