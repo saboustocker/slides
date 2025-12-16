@@ -116,12 +116,14 @@ data <- data %>%
     filter(StartDate > 46003.47)
 ```
 
-## General Survey Info
+## Summary and General Info
 
+- data collection between 12. - 15. december
+- sample: students from the course *Empirische Sozialforschung (ESF)*
 - number of participants: `r nrow(data)`
     - of which finished: `r sum(data$Progress == 100, na.rm = TRUE)`
 - self-reported number of participants from classroom: `r sum(data$participation == "2.0", na.rm = TRUE)`
-- self-reported number of participatns from home: `r sum(data$participation == "1.0", na.rm = TRUE)`
+- self-reported number of participants from home: `r sum(data$participation == "1.0", na.rm = TRUE)`
 
 ### Progress throughout Survey
 
@@ -935,11 +937,14 @@ data <- data %>% mutate(
 p2 <- data %>% filter(!is.na(use_AI_t)) %>% ggplot(aes(x = use_AI_t)) +
     geom_bar(fill="#00802f")+
     labs(
-        title = "How often do you use generative AI tools (e.g., ChatGPT, Gemini, Sora, Midjourney)?",
+        title = "How often do you use generative AI tools \n(e.g., ChatGPT, Gemini, Sora, Midjourney)?",
         x = "Response",
         y = "Frequency"
     ) +
-    theme_minimal()
+    theme_minimal() +
+    theme(
+    axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1)
+  )
 
 
 p3 <- data %>% filter(!is.na(use_SM_t)) %>% ggplot(aes(x = use_SM_t)) +
@@ -949,7 +954,10 @@ p3 <- data %>% filter(!is.na(use_SM_t)) %>% ggplot(aes(x = use_SM_t)) +
         x = "Response",
         y = "Frequency"
     ) +
-    theme_minimal()
+    theme_minimal() +     
+    theme(
+    axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1)
+  )
 
 
 p4 <- data %>% filter(!is.na(shop_online_t)) %>% ggplot(aes(x = shop_online_t)) +
@@ -959,9 +967,12 @@ p4 <- data %>% filter(!is.na(shop_online_t)) %>% ggplot(aes(x = shop_online_t)) 
         x = "Response",
         y = "Frequency"
     ) +
-    theme_minimal()
+    theme_minimal() +     
+    theme(
+    axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1)
+  )
 
-(p1 + p2) / (p3 + p4)
+p2 / (p3 + p4)
 
 ggplot(data, aes(x = age)) +
   geom_density(fill = "#00802f", alpha = 0.5) +
