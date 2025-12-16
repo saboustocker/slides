@@ -13,6 +13,8 @@ website:
         href: index.qmd
       - text: "Slides"
         href: slide_overview.qmd
+      - text: "Documents"
+        href: docs_overview.qmd
     right: 
       - icon: github
         href: https://github.com/saboustocker/slides

@@ -126,6 +126,55 @@
     "text": "Article title contains convenience and field is Social Sciences OR Business, Management & Accounting OR Psychology OR Decision Sciences\nn = 1’616\n\n\n\n\n\nArticle title contains convenience and field is Psychology OR Economics OR Behavioral Science"
   },
   {
+    "objectID": "documents/analysis_esf.html",
+    "href": "documents/analysis_esf.html",
+    "title": "Analysis ESF-Survey",
+    "section": "",
+    "text": "number of participants: 82\n\nof which finished: 31\n\nself-reported number of participants from classroom: 42\nself-reported number of participatns from home: 15\n\n\n\n\n\n\n\n\n\n\n\n\n\nmean participant progression: 75.341%\ntwo small peaks: some participants started but did not make it past the first two open-ended questions (number of participants stopping at or before 30%: \\(n = 17\\)), and many participants made it to the last page (participants reaching at least 90%: \\(n = 57\\))\n\n\n\n\n\ncounterintuitively to our expectation, not many participants actually used TikTok: \\(n_\\text{TikTok} = 21\\) (\\(25.6\\%\\))\nthe majority of participants used Instagram: \\(n_\\text{Instagram} = 44\\) (\\(53.7\\%\\))\nand a minority used a platform other than instagram or TikTok: \\(n_\\text{other} = 11\\) (\\(13.4\\%\\))"
+  },
+  {
+    "objectID": "documents/analysis_esf.html#general-survey-info",
+    "href": "documents/analysis_esf.html#general-survey-info",
+    "title": "Analysis ESF-Survey",
+    "section": "",
+    "text": "number of participants: 82\n\nof which finished: 31\n\nself-reported number of participants from classroom: 42\nself-reported number of participatns from home: 15\n\n\n\n\n\n\n\n\n\n\n\n\n\nmean participant progression: 75.341%\ntwo small peaks: some participants started but did not make it past the first two open-ended questions (number of participants stopping at or before 30%: \\(n = 17\\)), and many participants made it to the last page (participants reaching at least 90%: \\(n = 57\\))\n\n\n\n\n\ncounterintuitively to our expectation, not many participants actually used TikTok: \\(n_\\text{TikTok} = 21\\) (\\(25.6\\%\\))\nthe majority of participants used Instagram: \\(n_\\text{Instagram} = 44\\) (\\(53.7\\%\\))\nand a minority used a platform other than instagram or TikTok: \\(n_\\text{other} = 11\\) (\\(13.4\\%\\))"
+  },
+  {
+    "objectID": "documents/analysis_esf.html#open-associations",
+    "href": "documents/analysis_esf.html#open-associations",
+    "title": "Analysis ESF-Survey",
+    "section": "Open Associations",
+    "text": "Open Associations\n\nWhen you browsed through your social media feed, which content-related thoughts crossed your mind?\n\\(n = 68\\) answered this question.\n\nSummary\nWhen we just ask about content-related thoughts, there is little to no associations with origin, origin ambiguity or AI in particular.\n\n\n\n\n\n\n\n\n\nSocial media content can be created in different ways. When browsing your social media feed, did you wonder how some of the content was created?\n\\(n = 68\\) answered this question.\n\nSummary\nWhen asking specifically about creation of content, we do get some associations with AI:\n\n“AI generated Memes, Edits, Animated videos, Picture-Slideshows”\n“at some point yes, because some videos are most likely created with artificial intelligence. But nowadays sometimes you can‘t tell if the content is real or made up.”\n” Sometimes there are AI created content, thats more interesting but this time that wasn‘t the case”\nand others\n\n\n\n\n\n\n\n\n\n\nHow much of the content you consumed in the last few minutes do you remember?\n\n\n\n\n\n\n\n\n\nIn general, participants reported to not recall much of the content they had just consumed (just under 50%: \\(mean_\\text{Recall} = 45.877\\), (\\(SD_\\text{Recall} = 27.112\\)).\nThere is a peak around 25%, and a second, smaller peak at 75%.\nRecall did not significantly differ between platforms (TikTok, Instagram, Other).\n\n\n\n\n\n\n\n\n\n\n    Kruskal-Wallis rank sum test\n\ndata:  recall_selfreport_1 by platform\nKruskal-Wallis chi-squared = 0.81301, df = 2, p-value = 0.666\n\n\n\n\nOrigin Ambiguity\nWe asked a total of 6 questions pertaining to origin ambiguity:\n\n\n\n\n\n\n\n\n\nMost responses were neither skewed in one or the other direction, implying moderate agreement. Surprisingly, our results show a tendency to rather not have experienced origin ambiguity in the past couple of minutes, as indicated by a mean of \\(mean_\\text{real} = 2.338\\) (\\(SD_\\text{real} = 1.428\\))."
+  },
+  {
+    "objectID": "documents/analysis_esf.html#general-perception",
+    "href": "documents/analysis_esf.html#general-perception",
+    "title": "Analysis ESF-Survey",
+    "section": "General Perception",
+    "text": "General Perception\nThe subsequent questions were asked about participants’ social media feed overall, not the past two minutes.\n\nThinking about your social media feed overall, what proportion of the content you see is …\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIt appears that people think a majority of the content they consume has been created by a human. However, when asked about the involvement of AI, much of the content is perceived as at least augmented by AI. This dichotomy could be resolved in several ways. One possiblity is that participants misunderstood the first question and interpreted “definitely made by AI” as meaning 100% bot accounts without any human involvement. The second possibility is that participants perceive content based on a human-written prompt or base image (augmentation) as still clearly made by a human, although the human had help from AI.\n\n\nWhen I am not sure about the origin of the content, I …\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhile people generally seem to experience origin ambiguity infrequently (as indicated by the questions above), when they experience it, their behavior follows some of the core patterns we hypothesized: People pay more attention to context clues, slightly less attention to the content itself, and go to the comments to inform themselves."
+  },
+  {
+    "objectID": "documents/analysis_esf.html#specific-questions",
+    "href": "documents/analysis_esf.html#specific-questions",
+    "title": "Analysis ESF-Survey",
+    "section": "Specific Questions",
+    "text": "Specific Questions\nThe following questions were asked about participants’ perception of their social media feed they scrolled through just now.\n\nThinking about your social media feed you scrolled through in the last few minutes, what proportion of the content you saw was …\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhen asking participants about the content they just watched, the patterns regarding origin assumptions and augmentation remain the same.\n\n\nSpecific Instances\nOf all respondents, \\(n = 15\\) reported that they recalled a specific instance of content they wondered was generated by AI. \\(n = 48\\) did report that there was no content generated by AI. In total, \\(n = 22\\) instances were reported, meaning that some participants recalled more than one instance. The following charts summarize responses across all instances, meaning that certain participants repeat.\n\n\nDescription of the Instance(s)\n\n\n\n\n\n\n\n\nReasons Given\n\n\n\n\n\n\n\n\nModality and Type\nLooking at the modality of content, the overwhelming majority of examples given seems to be videos. Almost all examples stem from the entertainment domain.\n\n\n\n\n\n\n\n\n\n\n\nCertainty and Involvement\nOn average, participants were \\(mean_\\text{certainty} = 61.474, SD_\\text{certainty} = 24.939\\) certain that the content they were referring to was AI-generated. Additionally, participants tended to say AI was rather more involved than less (\\(mean_\\text{involvement} = 68.053, SD_\\text{certainty} = 31.722\\)). The correlation between certainty and involvement is \\(r = 0.579964\\). However, as visualized in the plot, the number of data points is low and the dispersion is large.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReactions\nAfter seeing the content, I …\n\n\n\n\n\n\n\n\n\nReactions to the content again demonstrate that at least some effects we hypothesize seem to occurr: Paying attention to context cues, and looking for additional information."
+  },
+  {
+    "objectID": "documents/analysis_esf.html#demographics-controls",
+    "href": "documents/analysis_esf.html#demographics-controls",
+    "title": "Analysis ESF-Survey",
+    "section": "Demographics & Controls",
+    "text": "Demographics & Controls"
+  },
+  {
+    "objectID": "docs_overview.html",
+    "href": "docs_overview.html",
+    "title": "Documents Listing",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nSubtitle\n\n\n\nDate\n\n\n\nproject\n\n\n\n\n\n\n\n\nOrigin Ambiguity\n\n\n \n\n\n21.11.2025\n\n\nAI assessment\n\n\n\n\n\n\nTest PDF in HSG Format\n\n\nThis is a test subtitle.\n\n\n21.11.2025\n\n\nAI assessment\n\n\n\n\n\n\nAnalysis ESF-Survey\n\n\n \n\n\n \n\n\n[object Object]\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "documents/Origin_ambiguity.html",
     "href": "documents/Origin_ambiguity.html",
     "title": "Origin Ambiguity",
@@ -276,8 +325,8 @@
     "objectID": "slides/20251210_Colloquium.html#agenda",
     "href": "slides/20251210_Colloquium.html#agenda",
     "title": "IBT Colloquium",
-    "section": "",
-    "text": "~ 45-60 min\n\n\nPhenomenon & Context\nDownstream Effects\nIntended Contribution & Operationalization\n\n\n\n\n\n ~ 15 min\n\n\nDiscussion of Structure and high level Content Open Science Office\n\n\n\nask first: do we have any admin things to discuss today? I will adapt my timeline accordingly\nup to 60 minutes für origin ambiguity"
+    "section": "Agenda",
+    "text": "Agenda\n(1) Origin Ambiguity\n\n ~ 45-60 min\n\n\nPhenomenon & Context\nDownstream Effects\nIntended Contribution & Operationalization\n\n(2) Open Science Office\n\n ~ 15 min\n\n\nDiscussion of Structure and high level Content Open Science Office\n\n\n\nask first: do we have any admin things to discuss today? I will adapt my timeline accordingly\nup to 60 minutes für origin ambiguity"
   },
   {
     "objectID": "slides/20251210_Colloquium.html#section",
@@ -319,7 +368,7 @@
     "href": "slides/20251210_Colloquium.html#origin-ambiguity-3",
     "title": "IBT Colloquium",
     "section": "Origin Ambiguity",
-    "text": "Origin Ambiguity\n\n\n\n\nSurvey of US adults in 2025 conducted by Pew Research Center (Fuentes 2025)\n\n\n\n\n\nPeople want to know the origin, but few are able to identify it\n\nparticipants are about as good as chance (Vukojičić, Krstić, and Veinović 2023) identifying AI-generated images\nand slightly worse than chance (Porter and Machery 2024a) to slightly above chance with training at identifying text (Milička et al. 2025)\n\n\n\n\n\nmention quote explicitly: *almost 50% of respondents can distinguish between AI and human** generated artwork.\n\n“almost 50% of respondents can distinguish between AI and human generated artwork.” (Vukojičić, Krstić, and Veinović 2023)\n“participants performed below chance levels in identifying AI-generated poems (46.6% accuracy)” (Porter and Machery 2024b)\n“participants were more likely to judge AI-generated poems as human-authored than actual human-authored poems” (Porter and Machery 2024b)\nWith training, participants were able to correctly identify AI generated text correctly 65% of the time; without training 55% (Milička et al. 2025)"
+    "text": "Origin Ambiguity\n\n\n\n\nSurvey of US adults in 2025 conducted by Pew Research Center (Fuentes 2025)\n\n\n\n\nPeople want to know the origin, but few are able to identify it\n\nparticipants are about as good as chance (Vukojičić, Krstić, and Veinović 2023) identifying AI-generated images\nand slightly worse than chance (Porter and Machery 2024a) to slightly above chance with training at identifying text (Milička et al. 2025)\n\n\n\n\nmention quote explicitly: *almost 50% of respondents can distinguish between AI and human** generated artwork.\n\n“almost 50% of respondents can distinguish between AI and human generated artwork.” (Vukojičić, Krstić, and Veinović 2023)\n“participants performed below chance levels in identifying AI-generated poems (46.6% accuracy)” (Porter and Machery 2024b)\n“participants were more likely to judge AI-generated poems as human-authored than actual human-authored poems” (Porter and Machery 2024b)\nWith training, participants were able to correctly identify AI generated text correctly 65% of the time; without training 55% (Milička et al. 2025)"
   },
   {
     "objectID": "slides/20251210_Colloquium.html#section-3",
@@ -333,42 +382,42 @@
     "href": "slides/20251210_Colloquium.html#theoretical-background",
     "title": "IBT Colloquium",
     "section": "Theoretical Background",
-    "text": "Theoretical Background\n\nPreferences\n\nhumans \\(&gt;\\) algorithms / “AI” (Bigman 2022; Kirk and Givi 2025; Lefkeli, Karataş, and Gürhan-Canli 2024, and others)\nAI-generated content lowers purchase intentions and willingness to recommend a product (Kirk and Givi 2025; Belanche et al. 2025, and others)\nAI-generated content decreases trust (Kirk and Givi 2025; Pfeuffer et al. 2025; Belanche et al. 2025)\n\n\nBut\n\nnegative effects are reduced if content is perceived as authentic regardless of origin (Silver, Newman, and Small 2021; Whittaker et al. 2025, and others)\n\n\n\n\nIt should also be acknowledged that Hartmann, Exner, and Domdey (2025) find that AI images are as good or better in terms of aestethics, realism, and quality, but this does not imply people LIKE them better\nHumans generally prefer other humans over algorithms & AI (Bigman 2022; Kirk and Givi 2025; Lefkeli, Karataş, and Gürhan-Canli 2024, and others)\nPeople are less willing to purchase products when communication is perceived to be written by AI (e.g., Kirk and Givi 2025), imagery is created by AI (e.g., Belanche et al. 2025)\nDisclosure of use of AI decreases trust (Pfeuffer et al. 2025; Kirk and Givi 2025; Schilke and Reimann 2025)\nhumans alter their behavior in interaction with AI compared to other humans (Goergen, De Bellis, and Klesse 2025; Lefkeli, Karataş, and Gürhan-Canli 2024, and others)\npreference for humans over AI is mitigated when AI-content is perceived as authentic (Silver, Newman, and Small 2021; Whittaker et al. 2025, and others)"
+    "text": "Theoretical Background\nPreferences\n\nhumans \\(&gt;\\) algorithms / “AI” (Bigman 2022; Kirk and Givi 2025; Lefkeli, Karataş, and Gürhan-Canli 2024, and others)\nAI-generated content lowers purchase intentions and willingness to recommend a product (Kirk and Givi 2025; Belanche et al. 2025, and others)\nAI-generated content decreases trust (Kirk and Givi 2025; Pfeuffer et al. 2025; Belanche et al. 2025)\n\n\nBut\n\nnegative effects are reduced if content is perceived as authentic regardless of origin (Silver, Newman, and Small 2021; Whittaker et al. 2025, and others)\n\n\n\n\nIt should also be acknowledged that Hartmann, Exner, and Domdey (2025) find that AI images are as good or better in terms of aestethics, realism, and quality, but this does not imply people LIKE them better\nHumans generally prefer other humans over algorithms & AI (Bigman 2022; Kirk and Givi 2025; Lefkeli, Karataş, and Gürhan-Canli 2024, and others)\nPeople are less willing to purchase products when communication is perceived to be written by AI (e.g., Kirk and Givi 2025), imagery is created by AI (e.g., Belanche et al. 2025)\nDisclosure of use of AI decreases trust (Pfeuffer et al. 2025; Kirk and Givi 2025; Schilke and Reimann 2025)\nhumans alter their behavior in interaction with AI compared to other humans (Goergen, De Bellis, and Klesse 2025; Lefkeli, Karataş, and Gürhan-Canli 2024, and others)\npreference for humans over AI is mitigated when AI-content is perceived as authentic (Silver, Newman, and Small 2021; Whittaker et al. 2025, and others)"
   },
   {
     "objectID": "slides/20251210_Colloquium.html#theoretical-background-1",
     "href": "slides/20251210_Colloquium.html#theoretical-background-1",
     "title": "IBT Colloquium",
     "section": "Theoretical Background",
-    "text": "Theoretical Background\n\nAmbiguity Resolution in Marketing\n\nambiguity aversion \\(\\rightarrow\\) preference for established products (Muthukrishnan, Wathieu, and Xu 2009)\nambiguous product quality\n\\(\\rightarrow\\) reliance on expectations instead of experience (Yi 1993)\n\\(\\rightarrow\\) more reliance on information from ads (Hoch and Ha 1986)\nambiguity in ads grabs attention (Kovacheva and Nikolova 2024; Peracchio and Meyers-Levy 1994; Johar 1995; Hagtvedt 2011; Sevilla and Meyer 2020) …\n… especially when people are motivated to resolve this ambiguity for one reason or another (Johar 1995; Peracchio and Meyers-Levy 1994; Hagtvedt 2011)\n\n\n\nambiguity aversion also occurs in marketing: preference for established products under ambiguous conditions (Muthukrishnan, Wathieu, and Xu 2009)\nambiguous product quality leads to evaluation based on top-down expectations instead of bottom-up data-driven approach (Yi 1993)\nambiguous product quality leads to higher reliance on ads (Hoch and Ha 1986)\nambiguity as an attention grab works (Kovacheva and Nikolova 2024; Peracchio and Meyers-Levy 1994; Johar 1995; Hagtvedt 2011; Sevilla and Meyer 2020), but only when people are motivated to resolve this ambiguity for one reason or another (Johar 1995; Peracchio and Meyers-Levy 1994; Hagtvedt 2011)"
+    "text": "Theoretical Background\nAmbiguity Resolution in Marketing\n\nambiguity aversion \\(\\rightarrow\\) preference for established products (Muthukrishnan, Wathieu, and Xu 2009)\nambiguous product quality\n\\(\\rightarrow\\) reliance on expectations instead of experience (Yi 1993)\n\\(\\rightarrow\\) more reliance on information from ads (Hoch and Ha 1986)\nambiguity in ads grabs attention (Kovacheva and Nikolova 2024; Peracchio and Meyers-Levy 1994; Johar 1995; Hagtvedt 2011; Sevilla and Meyer 2020) …\n… especially when people are motivated to resolve this ambiguity for one reason or another (Johar 1995; Peracchio and Meyers-Levy 1994; Hagtvedt 2011)\n\n\n\nambiguity aversion also occurs in marketing: preference for established products under ambiguous conditions (Muthukrishnan, Wathieu, and Xu 2009)\nambiguous product quality leads to evaluation based on top-down expectations instead of bottom-up data-driven approach (Yi 1993)\nambiguous product quality leads to higher reliance on ads (Hoch and Ha 1986)\nambiguity as an attention grab works (Kovacheva and Nikolova 2024; Peracchio and Meyers-Levy 1994; Johar 1995; Hagtvedt 2011; Sevilla and Meyer 2020), but only when people are motivated to resolve this ambiguity for one reason or another (Johar 1995; Peracchio and Meyers-Levy 1994; Hagtvedt 2011)"
   },
   {
     "objectID": "slides/20251210_Colloquium.html#theoretical-background-2",
     "href": "slides/20251210_Colloquium.html#theoretical-background-2",
     "title": "IBT Colloquium",
     "section": "Theoretical Background",
-    "text": "Theoretical Background\n\nCognitive Tax of Ambiguity\n\nambiguity introduces cognitive taxes (Franceschetti et al. 2024; Shin, Kim, and Biocca 2019; Tao et al. 2022; Howard 2017)\n\\(\\rightarrow\\) cognitive taxes have a negative effect on evidence encoding and ability to retain information (e.g., Shou and Smithson 2015)\nambiguous stimuli (uncanny valley) introduce negative affect (Mori, MacDorman, and Kageki 2012; Seyama and Nagayama 2007, and others) and tax cognitive resources (Shin, Kim, and Biocca 2019; Tao et al. 2022; Howard 2017)\n\n\n\nfurthermore, there is evidence that different personality types have different needs to resolve ambiguous and obfuscated materials (Guigon, Villeval, and Dreher 2024; Kristofferson and Dunn 2023; Iannello et al. 2017)\nwe do know that it is not human\n\nThe uncanny valley hypothesis predicts a negative emotional appraisal of human replicas that appear or behave not quite human (Mori, MacDorman, and Kageki 2012)\n\nambiguous stimuli introduce negative affect (Mori, MacDorman, and Kageki 2012; Seyama and Nagayama 2007, and others) …\n… and tax cognitive resources (Shin, Kim, and Biocca 2019; Tao et al. 2022; Howard 2017)"
+    "text": "Theoretical Background\nCognitive Tax of Ambiguity\n\nambiguity introduces cognitive taxes (Franceschetti et al. 2024; Shin, Kim, and Biocca 2019; Tao et al. 2022; Howard 2017)\n\\(\\rightarrow\\) cognitive taxes have a negative effect on evidence encoding and ability to retain information (e.g., Shou and Smithson 2015)\nambiguous stimuli (uncanny valley) introduce negative affect (Mori, MacDorman, and Kageki 2012; Seyama and Nagayama 2007, and others) and tax cognitive resources (Shin, Kim, and Biocca 2019; Tao et al. 2022; Howard 2017)\n\n\n\nfurthermore, there is evidence that different personality types have different needs to resolve ambiguous and obfuscated materials (Guigon, Villeval, and Dreher 2024; Kristofferson and Dunn 2023; Iannello et al. 2017)\nwe do know that it is not human\n\nThe uncanny valley hypothesis predicts a negative emotional appraisal of human replicas that appear or behave not quite human (Mori, MacDorman, and Kageki 2012)\n\nambiguous stimuli introduce negative affect (Mori, MacDorman, and Kageki 2012; Seyama and Nagayama 2007, and others) …\n… and tax cognitive resources (Shin, Kim, and Biocca 2019; Tao et al. 2022; Howard 2017)"
   },
   {
     "objectID": "slides/20251210_Colloquium.html#theoretical-background-3",
     "href": "slides/20251210_Colloquium.html#theoretical-background-3",
     "title": "IBT Colloquium",
     "section": "Theoretical Background",
-    "text": "Theoretical Background\n\nGraphical Summary\n\n\n\nGraphical summary on related literature."
+    "text": "Theoretical Background\nGraphical Summary\n\nGraphical summary on related literature."
   },
   {
     "objectID": "slides/20251210_Colloquium.html#what-are-possible-downstream-effects-of-origin-ambiguity",
     "href": "slides/20251210_Colloquium.html#what-are-possible-downstream-effects-of-origin-ambiguity",
     "title": "IBT Colloquium",
     "section": "What are possible downstream effects of origin ambiguity?",
-    "text": "What are possible downstream effects of origin ambiguity?\n\n\n\nGraphical summary on related literature."
+    "text": "What are possible downstream effects of origin ambiguity?\n\nGraphical summary on related literature."
   },
   {
     "objectID": "slides/20251210_Colloquium.html#origin-inference-as-a-consequence-of-origin-ambiguity",
     "href": "slides/20251210_Colloquium.html#origin-inference-as-a-consequence-of-origin-ambiguity",
     "title": "IBT Colloquium",
     "section": "Origin Inference as a Consequence of Origin Ambiguity",
-    "text": "Origin Inference as a Consequence of Origin Ambiguity\n\n\n\n\nSuggested downstream effect of origin ambiguity: origin inference.\n\n\n\n  Note: This schematic is a visual summary of potential causes and effects, and not to be read as a finalized model."
+    "text": "Origin Inference as a Consequence of Origin Ambiguity\n\n\nSuggested downstream effect of origin ambiguity: origin inference.\n  Note: This schematic is a visual summary of potential causes and effects, and not to be read as a finalized model."
   },
   {
     "objectID": "slides/20251210_Colloquium.html#intended-contribution",
@@ -389,7 +438,7 @@
     "href": "slides/20251210_Colloquium.html#research-plan-1",
     "title": "IBT Colloquium",
     "section": "Research Plan",
-    "text": "Research Plan\n\nDetailed Information\n\nESF-SurveyCorrelational DataExperimental SetupNaturalistic Setup\n\n\n\\(\\rightarrow\\) Students in the ESF course are asked to scroll on TikTok and are asked how they perceive their media feed after.\nDimensions:\n\nOrigin ambiguity: To what extent do students question the origin of content?\nAmbiguity Outcomes: To what extent does ambiguity influence enjoyment, trust, attention focus?\nDifferentiation: To what extent is “realness vs. fakeness” different from “human-made vs. AI generated”?\n\n\n\n\\(\\rightarrow\\) Demonstrate the occurrence and relevance of origin ambiguity in real life through existing correlational data\nPossible Avenues:\n\nWhat type of content is most susceptible to being questioned? Systematic searches on TikTok, Instagram (and co.) and subsequent classification\nWhat type of user is most likely to question the origin?\nAre these effect content- or platform-specific?\n\n\n\n\\(\\rightarrow\\) Demonstrate downstream effects of origin ambiguity through an experimental setup\nPossible Downstream Effects:\n\nDemonstrate reduced recall of content when participants are shown ambiguous marketing material\nDemonstrate heightened attention (through eye-tracking, behavior tracking, …) when participants are exposed to ambiguous marketing material\n…?\n\nPossible Setups:\n\nOne-by-Two Designs: low vs. high origin\nNaturalistic designs: DICE (Roggenkamp, Boegershausen, and Hildebrand 2025) to simulate more naturalistic environment\n…?\n\n\n\n\\(\\rightarrow\\) Harness collaboration with real-life institution or industry partner to assess effects of origin ambiguity in real life\nPossible Avenues:\n\nImpressions, Clickthrough rates etc. of real-ads (A/B testing)\nRecall of information for low vs. high origin ambiguity in target groups (e.g. through subscriptions, mailinglist, …)\n…?"
+    "text": "Research Plan\nDetailed Information\n\nESF-SurveyCorrelational DataExperimental SetupNaturalistic Setup\n\n\n\\(\\rightarrow\\) Students in the ESF course are asked to scroll on TikTok and are asked how they perceive their media feed after.\nDimensions:\n\nOrigin ambiguity: To what extent do students question the origin of content?\nAmbiguity Outcomes: To what extent does ambiguity influence enjoyment, trust, attention focus?\nDifferentiation: To what extent is “realness vs. fakeness” different from “human-made vs. AI generated”?\n\n\n\n\\(\\rightarrow\\) Demonstrate the occurrence and relevance of origin ambiguity in real life through existing correlational data\nPossible Avenues:\n\nWhat type of content is most susceptible to being questioned? Systematic searches on TikTok, Instagram (and co.) and subsequent classification\nWhat type of user is most likely to question the origin?\nAre these effect content- or platform-specific?\n\n\n\n\\(\\rightarrow\\) Demonstrate downstream effects of origin ambiguity through an experimental setup\nPossible Downstream Effects:\n\nDemonstrate reduced recall of content when participants are shown ambiguous marketing material\nDemonstrate heightened attention (through eye-tracking, behavior tracking, …) when participants are exposed to ambiguous marketing material\n…?\n\nPossible Setups:\n\nOne-by-Two Designs: low vs. high origin\nNaturalistic designs: DICE (Roggenkamp, Boegershausen, and Hildebrand 2025) to simulate more naturalistic environment\n…?\n\n\n\n\\(\\rightarrow\\) Harness collaboration with real-life institution or industry partner to assess effects of origin ambiguity in real life\nPossible Avenues:\n\nImpressions, Clickthrough rates etc. of real-ads (A/B testing)\nRecall of information for low vs. high origin ambiguity in target groups (e.g. through subscriptions, mailinglist, …)\n…?"
   },
   {
     "objectID": "slides/20251210_Colloquium.html#thank-you",
@@ -417,7 +466,7 @@
     "href": "slides/20251210_Colloquium.html#welcome-to-the-open-science-office",
     "title": "IBT Colloquium",
     "section": "Welcome to the Open Science Office!",
-    "text": "Welcome to the Open Science Office!\n\n\n\nWhat?\n\nAwareness\nEducation\nSupport\nConnections & outreach\n\n\n\n\nHow?\n\nJana 🥳\nswissuniversities grant (~1 year)\nattached to PRF"
+    "text": "Welcome to the Open Science Office!\n\n\nWhat?\n\nAwareness\nEducation\nSupport\nConnections & outreach\n\n\nHow?\n\nJana 🥳\nswissuniversities grant (~1 year)\nattached to PRF"
   },
   {
     "objectID": "slides/20251210_Colloquium.html#offers",
@@ -431,42 +480,42 @@
     "href": "slides/20251210_Colloquium.html#offers-1",
     "title": "IBT Colloquium",
     "section": "Offers",
-    "text": "Offers\n\nAbout Open Science\n\n\n\nIntro to Open Science\nPrimer on relevant topics and Aspects\nLinks to read on\n…\n\n\nVideo\n\n\n\n\n\n\n\n\n\nAbout Open Science\n\n\n\n\n\n\n\n\n\n\n\nOpen Science Strategy\n\n\n\n\n\n\n\n\n\n\n\nEvents\n\n\n\n\n\n\n\n\n\n\n\nEducational Resources\n\n\n\n\n\n\n\n\n\n\n\nGrants\n\n\n\n\n\n\n\n\n\n\n\nConsultation"
+    "text": "Offers\nAbout Open Science\n\n\n\nIntro to Open Science\nPrimer on relevant topics and Aspects\nLinks to read on\n…\n\n\nVideo\n\n\n\n\n\n\n\n\nAbout Open Science\n\n\n\n\n\n\n\n\n\n\n\nOpen Science Strategy\n\n\n\n\n\n\n\n\n\n\n\nEvents\n\n\n\n\n\n\n\n\n\n\n\nEducational Resources\n\n\n\n\n\n\n\n\n\n\n\nGrants\n\n\n\n\n\n\n\n\n\n\n\nConsultation"
   },
   {
     "objectID": "slides/20251210_Colloquium.html#offers-2",
     "href": "slides/20251210_Colloquium.html#offers-2",
     "title": "IBT Colloquium",
     "section": "Offers",
-    "text": "Offers\n\nOpen Science Strategy\n\n\n\nInformation about Open Science along the research process\nTips and further resources along every step\nTestimonials how Open Science is practiced at HSG\n…\n\n\nVideo\n\n\n\n\n\n\n\n\n\nAbout Open Science\n\n\n\n\n\n\n\n\n\n\n\nOpen Science Strategy\n\n\n\n\n\n\n\n\n\n\n\nEvents\n\n\n\n\n\n\n\n\n\n\n\nEducational Resources\n\n\n\n\n\n\n\n\n\n\n\nGrants\n\n\n\n\n\n\n\n\n\n\n\nConsultation"
+    "text": "Offers\nOpen Science Strategy\n\n\n\nInformation about Open Science along the research process\nTips and further resources along every step\nTestimonials how Open Science is practiced at HSG\n…\n\n\nVideo\n\n\n\n\n\n\n\n\nAbout Open Science\n\n\n\n\n\n\n\n\n\n\n\nOpen Science Strategy\n\n\n\n\n\n\n\n\n\n\n\nEvents\n\n\n\n\n\n\n\n\n\n\n\nEducational Resources\n\n\n\n\n\n\n\n\n\n\n\nGrants\n\n\n\n\n\n\n\n\n\n\n\nConsultation"
   },
   {
     "objectID": "slides/20251210_Colloquium.html#offers-3",
     "href": "slides/20251210_Colloquium.html#offers-3",
     "title": "IBT Colloquium",
     "section": "Offers",
-    "text": "Offers\n\nEvents\n\n\n\nList of upcoming and past events\nExternal links to event pages\n…\n\n\nVideo\n\n\n\n\n\n\n\n\n\nAbout Open Science\n\n\n\n\n\n\n\n\n\n\n\nOpen Science Strategy\n\n\n\n\n\n\n\n\n\n\n\nEvents\n\n\n\n\n\n\n\n\n\n\n\nEducational Resources\n\n\n\n\n\n\n\n\n\n\n\nGrants\n\n\n\n\n\n\n\n\n\n\n\nConsultation"
+    "text": "Offers\nEvents\n\n\n\nList of upcoming and past events\nExternal links to event pages\n…\n\n\nVideo\n\n\n\n\n\n\n\n\nAbout Open Science\n\n\n\n\n\n\n\n\n\n\n\nOpen Science Strategy\n\n\n\n\n\n\n\n\n\n\n\nEvents\n\n\n\n\n\n\n\n\n\n\n\nEducational Resources\n\n\n\n\n\n\n\n\n\n\n\nGrants\n\n\n\n\n\n\n\n\n\n\n\nConsultation"
   },
   {
     "objectID": "slides/20251210_Colloquium.html#offers-4",
     "href": "slides/20251210_Colloquium.html#offers-4",
     "title": "IBT Colloquium",
     "section": "Offers",
-    "text": "Offers\n\nEducational Resources\n\n\n\nList of educational resources\nSeparation: within HSG and further resources\n…\n\n\nVideo\n\n\n\n\n\n\n\n\n\nAbout Open Science\n\n\n\n\n\n\n\n\n\n\n\nOpen Science Strategy\n\n\n\n\n\n\n\n\n\n\n\nEvents\n\n\n\n\n\n\n\n\n\n\n\nEducational Resources\n\n\n\n\n\n\n\n\n\n\n\nGrants\n\n\n\n\n\n\n\n\n\n\n\nConsultation"
+    "text": "Offers\nEducational Resources\n\n\n\nList of educational resources\nSeparation: within HSG and further resources\n…\n\n\nVideo\n\n\n\n\n\n\n\n\nAbout Open Science\n\n\n\n\n\n\n\n\n\n\n\nOpen Science Strategy\n\n\n\n\n\n\n\n\n\n\n\nEvents\n\n\n\n\n\n\n\n\n\n\n\nEducational Resources\n\n\n\n\n\n\n\n\n\n\n\nGrants\n\n\n\n\n\n\n\n\n\n\n\nConsultation"
   },
   {
     "objectID": "slides/20251210_Colloquium.html#offers-5",
     "href": "slides/20251210_Colloquium.html#offers-5",
     "title": "IBT Colloquium",
     "section": "Offers",
-    "text": "Offers\n\nGrants\n\n\n\n!! contingent on funding\nhow to apply for (micro)-grants to fund Open Science endeavors\nList of funded projects\n…\n\n\nVideo\n\n\n\n\n\n\n\n\n\nAbout Open Science\n\n\n\n\n\n\n\n\n\n\n\nOpen Science Strategy\n\n\n\n\n\n\n\n\n\n\n\nEvents\n\n\n\n\n\n\n\n\n\n\n\nEducational Resources\n\n\n\n\n\n\n\n\n\n\n\nGrants\n\n\n\n\n\n\n\n\n\n\n\nConsultation"
+    "text": "Offers\nGrants\n\n\n\n!! contingent on funding\nhow to apply for (micro)-grants to fund Open Science endeavors\nList of funded projects\n…\n\n\nVideo\n\n\n\n\n\n\n\n\nAbout Open Science\n\n\n\n\n\n\n\n\n\n\n\nOpen Science Strategy\n\n\n\n\n\n\n\n\n\n\n\nEvents\n\n\n\n\n\n\n\n\n\n\n\nEducational Resources\n\n\n\n\n\n\n\n\n\n\n\nGrants\n\n\n\n\n\n\n\n\n\n\n\nConsultation"
   },
   {
     "objectID": "slides/20251210_Colloquium.html#offers-6",
     "href": "slides/20251210_Colloquium.html#offers-6",
     "title": "IBT Colloquium",
     "section": "Offers",
-    "text": "Offers\n\nConsultation\n\n\n\none-on-one consultation about all things Open Science\nindividual support for specific needs\n…\n\n\nVideo\n\n\n\n\n\n\n\n\n\nAbout Open Science\n\n\n\n\n\n\n\n\n\n\n\nOpen Science Strategy\n\n\n\n\n\n\n\n\n\n\n\nEvents\n\n\n\n\n\n\n\n\n\n\n\nEducational Resources\n\n\n\n\n\n\n\n\n\n\n\nGrants\n\n\n\n\n\n\n\n\n\n\n\nConsultation"
+    "text": "Offers\nConsultation\n\n\n\none-on-one consultation about all things Open Science\nindividual support for specific needs\n…\n\n\nVideo\n\n\n\n\n\n\n\n\nAbout Open Science\n\n\n\n\n\n\n\n\n\n\n\nOpen Science Strategy\n\n\n\n\n\n\n\n\n\n\n\nEvents\n\n\n\n\n\n\n\n\n\n\n\nEducational Resources\n\n\n\n\n\n\n\n\n\n\n\nGrants\n\n\n\n\n\n\n\n\n\n\n\nConsultation"
   },
   {
     "objectID": "slides/20251210_Colloquium.html#section-5",
@@ -480,7 +529,7 @@
     "href": "slides/20251210_Colloquium.html#whats-next",
     "title": "IBT Colloquium",
     "section": "What’s next?",
-    "text": "What’s next?\n\nCompletion of Website\nContent-testing with external stakeholders\nOpen Science Kickoff in February\nPhD & PostDoc course in FS2026\n\n\nLong term:\n\nSpeaker Series & recordings on Website\nOpen Science (micro-grants) and list of projects funded by it\nmore to come?"
+    "text": "What’s next?\n\nCompletion of Website\nContent-testing with external stakeholders\nOpen Science Kickoff in February\nPhD & PostDoc course in FS2026\n\nLong term:\n\nSpeaker Series & recordings on Website\nOpen Science (micro-grants) and list of projects funded by it\nmore to come?"
   },
   {
     "objectID": "slides/20251210_Colloquium.html#thank-you-again",
@@ -495,54 +544,5 @@
     "title": "Convenience-Privacy-Autonomy Trade-Offs",
     "section": "",
     "text": "Attention Economy\n\n\nConvenience \\(\\rightarrow\\) Attention"
-  },
-  {
-    "objectID": "documents/analysis_esf.html",
-    "href": "documents/analysis_esf.html",
-    "title": "Analysis ESF-Survey",
-    "section": "",
-    "text": "number of participants: 82\n\nof which finished: 31\n\nself-reported number of participants from classroom: 42\nself-reported number of participatns from home: 15\n\n\n\n\n\n\n\n\n\n\n\n\n\nmean participant progression: 75.341%\ntwo small peaks: some participants started but did not make it past the first two open-ended questions (number of participants stopping at or before 30%: \\(n = 17\\)), and many participants made it to the last page (participants reaching at least 90%: \\(n = 57\\))\n\n\n\n\n\ncounterintuitively to our expectation, not many participants actually used TikTok: \\(n_\\text{TikTok} = 21\\) (\\(25.6\\%\\))\nthe majority of participants used Instagram: \\(n_\\text{Instagram} = 44\\) (\\(53.7\\%\\))\nand a minority used a platform other than instagram or TikTok: \\(n_\\text{other} = 11\\) (\\(13.4\\%\\))"
-  },
-  {
-    "objectID": "documents/analysis_esf.html#general-survey-info",
-    "href": "documents/analysis_esf.html#general-survey-info",
-    "title": "Analysis ESF-Survey",
-    "section": "",
-    "text": "number of participants: 82\n\nof which finished: 31\n\nself-reported number of participants from classroom: 42\nself-reported number of participatns from home: 15\n\n\n\n\n\n\n\n\n\n\n\n\n\nmean participant progression: 75.341%\ntwo small peaks: some participants started but did not make it past the first two open-ended questions (number of participants stopping at or before 30%: \\(n = 17\\)), and many participants made it to the last page (participants reaching at least 90%: \\(n = 57\\))\n\n\n\n\n\ncounterintuitively to our expectation, not many participants actually used TikTok: \\(n_\\text{TikTok} = 21\\) (\\(25.6\\%\\))\nthe majority of participants used Instagram: \\(n_\\text{Instagram} = 44\\) (\\(53.7\\%\\))\nand a minority used a platform other than instagram or TikTok: \\(n_\\text{other} = 11\\) (\\(13.4\\%\\))"
-  },
-  {
-    "objectID": "documents/analysis_esf.html#open-associations",
-    "href": "documents/analysis_esf.html#open-associations",
-    "title": "Analysis ESF-Survey",
-    "section": "Open Associations",
-    "text": "Open Associations\n\nWhen you browsed through your social media feed, which content-related thoughts crossed your mind?\n\\(n = 68\\) answered this question.\n\nSummary\nWhen we just ask about content-related thoughts, there is little to no associations with origin, origin ambiguity or AI in particular.\n\n\n\n\n\n\n\n\n\nSocial media content can be created in different ways. When browsing your social media feed, did you wonder how some of the content was created?\n\\(n = 68\\) answered this question.\n\nSummary\nWhen asking specifically about creation of content, we do get some associations with AI:\n\n“AI generated Memes, Edits, Animated videos, Picture-Slideshows”\n“at some point yes, because some videos are most likely created with artificial intelligence. But nowadays sometimes you can‘t tell if the content is real or made up.”\n” Sometimes there are AI created content, thats more interesting but this time that wasn‘t the case”\nand others\n\n\n\n\n\n\n\n\n\n\nHow much of the content you consumed in the last few minutes do you remember?\n\n\n\n\n\n\n\n\n\nIn general, participants reported to not recall much of the content they had just consumed (just under 50%: \\(mean_\\text{Recall} = 45.877\\), (\\(SD_\\text{Recall} = 27.112\\)).\nThere is a peak around 25%, and a second, smaller peak at 75%.\nRecall did not significantly differ between platforms (TikTok, Instagram, Other).\n\n\n\n\n\n\n\n\n\n\n    Kruskal-Wallis rank sum test\n\ndata:  recall_selfreport_1 by platform\nKruskal-Wallis chi-squared = 0.81301, df = 2, p-value = 0.666\n\n\n\n\nOrigin Ambiguity\nWe asked a total of 6 questions pertaining to origin ambiguity:\n\n\n\n\n\n\n\n\n\nMost responses were neither skewed in one or the other direction, implying moderate agreement. Surprisingly, our results show a tendency to rather not have experienced origin ambiguity in the past couple of minutes, as indicated by a mean of \\(mean_\\text{real} = 2.338\\) (\\(SD_\\text{real} = 1.428\\))."
-  },
-  {
-    "objectID": "documents/analysis_esf.html#general-perception",
-    "href": "documents/analysis_esf.html#general-perception",
-    "title": "Analysis ESF-Survey",
-    "section": "General Perception",
-    "text": "General Perception\nThe subsequent questions were asked about participants’ social media feed overall, not the past two minutes.\n\nThinking about your social media feed overall, what proportion of the content you see is …\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIt appears that people think a majority of the content they consume has been created by a human. However, when asked about the involvement of AI, much of the content is perceived as at least augmented by AI. This dichotomy could be resolved in several ways. One possiblity is that participants misunderstood the first question and interpreted “definitely made by AI” as meaning 100% bot accounts without any human involvement. The second possibility is that participants perceive content based on a human-written prompt or base image (augmentation) as still clearly made by a human, although the human had help from AI.\n\n\nWhen I am not sure about the origin of the content, I …\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhile people generally seem to experience origin ambiguity infrequently (as indicated by the questions above), when they experience it, their behavior follows some of the core patterns we hypothesized: People pay more attention to context clues, slightly less attention to the content itself, and go to the comments to inform themselves."
-  },
-  {
-    "objectID": "documents/analysis_esf.html#specific-questions",
-    "href": "documents/analysis_esf.html#specific-questions",
-    "title": "Analysis ESF-Survey",
-    "section": "Specific Questions",
-    "text": "Specific Questions\nThe following questions were asked about participants’ perception of their social media feed they scrolled through just now.\n\nThinking about your social media feed you scrolled through in the last few minutes, what proportion of the content you saw was …\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhen asking participants about the content they just watched, the patterns regarding origin assumptions and augmentation remain the same.\n\n\nSpecific Instances\nOf all respondents, \\(n = 15\\) reported that they recalled a specific instance of content they wondered was generated by AI. \\(n = 48\\) did report that there was no content generated by AI. In total, \\(n = 22\\) instances were reported, meaning that some participants recalled more than one instance. The following charts summarize responses across all instances, meaning that certain participants repeat.\n\n\nDescription of the Instance(s)\n\n\n\n\n\n\n\n\nReasons Given\n\n\n\n\n\n\n\n\nModality and Type\nLooking at the modality of content, the overwhelming majority of examples given seems to be videos. Almost all examples stem from the entertainment domain.\n\n\n\n\n\n\n\n\n\n\n\nCertainty and Involvement\nOn average, participants were \\(mean_\\text{certainty} = 61.474, SD_\\text{certainty} = 24.939\\) certain that the content they were referring to was AI-generated. Additionally, participants tended to say AI was rather more involved than less (\\(mean_\\text{involvement} = 68.053, SD_\\text{certainty} = 31.722\\)). The correlation between certainty and involvement is \\(r = 0.579964\\). However, as visualized in the plot, the number of data points is low and the dispersion is large.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReactions\nAfter seeing the content, I …\n\n\n\n\n\n\n\n\n\nReactions to the content again demonstrate that at least some effects we hypothesize seem to occurr: Paying attention to context cues, and looking for additional information."
-  },
-  {
-    "objectID": "documents/analysis_esf.html#demographics-controls",
-    "href": "documents/analysis_esf.html#demographics-controls",
-    "title": "Analysis ESF-Survey",
-    "section": "Demographics & Controls",
-    "text": "Demographics & Controls"
-  },
-  {
-    "objectID": "slides/20251210_Colloquium.html",
-    "href": "slides/20251210_Colloquium.html",
-    "title": "IBT Colloquium",
-    "section": "",
-    "text": "~ 45-60 min\n\n\nPhenomenon & Context\nDownstream Effects\nIntended Contribution & Operationalization\n\n\n\n\n\n ~ 15 min\n\n\nDiscussion of Structure and high level Content Open Science Office\n\n\n\nask first: do we have any admin things to discuss today? I will adapt my timeline accordingly\nup to 60 minutes für origin ambiguity"
   }
 ]

@@ -1,0 +1,14 @@
+---
+title: "Documents Listing"
+format: 
+  html:
+    theme: [sandstone, styles.scss]
+listing:
+  contents: 
+    - "documents/*.qmd"
+  type: table
+  fields: [title, subtitle, date, project]
+  sort: date
+  date-format: "DD.MM.YYYY"
+lang: En
+---
