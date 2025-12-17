@@ -148,6 +148,44 @@ ggplot(data, aes(x = Progress)) +
 - the majority of participants used Instagram: $n_\text{Instagram} = `r sum(data$platforms_behavior_instagram,na.rm=TRUE)`$ ($`r round(sum(data$platforms_behavior_instagram,na.rm=TRUE) / nrow(data),3)*100`\%$)
 - and a minority used a platform other than instagram or TikTok: $n_\text{other} = `r sum(data$platforms_behavior_other,na.rm=TRUE)`$ ($`r round(sum(data$platforms_behavior_other,na.rm=TRUE) / nrow(data),3)*100`\%$)
 
+```{r}
+#| output: false
+#| 
+tiktok <- sum(data$platforms_behavior_tiktok,na.rm=TRUE)
+instagram <- sum(data$platforms_behavior_instagram,na.rm=TRUE)
+other <- sum(data$platforms_behavior_other,na.rm=TRUE)
+
+platforms <- data.frame(
+  tiktok = sum(data$platforms_behavior_tiktok,na.rm=TRUE),
+  instagram = sum(data$platforms_behavior_instagram,na.rm=TRUE),
+  other = sum(data$platforms_behavior_other,na.rm=TRUE)
+)
+
+# Convert to long format
+platforms_long <- platforms %>%
+  pivot_longer(cols = everything(), names_to = "Platform", values_to = "Count")
+
+# Plot pie chart
+ggplot(platforms_long, aes(x = 2, y = Count, fill = Platform)) +
+  geom_bar(stat = "identity", width = 1, color = "white") +  # color="white" for slice separation
+  coord_polar(theta = "y") +
+  xlim(0.5, 2.5) + 
+  scale_fill_manual(values = c("tiktok" = "#00802f", "instagram" = "#73a5af", "other" = "#eb6969")) +
+  geom_text(aes(label = Count), 
+            position = position_stack(vjust = 0.5), 
+            color = "white", size = 5) +  # changed color to white
+  labs(title = "Genutzte Plattform") +
+  theme_void() +
+  theme(
+    legend.position = "bottom",
+    legend.text = element_text(size = 20),
+    legend.title = element_text(size = 20, face="bold"),
+    rect = element_rect(fill = "transparent"),
+    plot.title = element_text(size = 24)  # bigger title
+  )
+ggsave("images/plattformen.svg", width = 6, height = 6, bg = "transparent")
+```
+
 ## Open Associations
 ### When you browsed through your social media feed, which content-related thoughts crossed your mind?
 
@@ -169,6 +207,7 @@ DT::datatable(
         pageLength = 10,
         autoWidth = TRUE)
     )
+
 ```
 
 
@@ -316,15 +355,25 @@ p5 <- ggplot(data, aes(x = closed_associations_5)) +
 p6 <- ggplot(data, aes(x = closed_associations_6)) +
     geom_bar(fill="#00802f",color="#00802f",alpha=0.7)+
     geom_vline(xintercept = mean(data$closed_associations_6,na.rm=TRUE), color = "#0a5f2d", linetype = "solid", size = 1) +
+    annotate("text", x = mean(data$closed_associations_6,na.rm=TRUE), y = max(table(data$closed_associations_6)) + 2,
+    label = paste0("Mean = ", round(mean(data$closed_associations_6,na.rm=TRUE), 2)),
+    color = "#0a5f2d",
+    fontface = "bold",
+    hjust = 0.5
+  ) +
     labs(
         title = "I was cautious about the veracity \nof the content I was \nlooking at.",
         x = "Response",
         y = "Frequency"
     ) +
     scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5)) + 
+    scale_y_continuous(breaks = c(5,10,15,20,25,30),limits=c(0,31)) + 
     theme_minimal()
 
 (p1 + p2) / (p3 + p4) / (p5 + p6)
+
+ggsave("images/plotsambiguity.svg",height=6,width=8, bg="transparent")
+
 ```
 
 Most responses were neither skewed in one or the other direction, implying moderate agreement. Surprisingly, our results show a tendency to rather not have experienced origin ambiguity in the past couple of minutes, as indicated by a mean of $mean_\text{real} = `r round(mean(data$closed_associations_2,na.rm=TRUE),3)`$ ($SD_\text{real} = `r round(sd(data$closed_associations_2,na.rm=TRUE),3)`$). 
@@ -997,3 +1046,44 @@ ggplot(gender_counts, aes(x = reorder(gender, n), y = n)) +
   theme_minimal(base_size = 14)
 
 ```
+
+# Correlations and Relations
+
+## General Origin Ambiguity Perception
+
+### Correlations within Closed Associations about Origin Ambiguity
+```{r}
+cordata <- data %>% select(closed_associations_1:closed_associations_6)
+
+colnames(cordata) <- c("difficulty knowing", "difficulty knowing what's real", "cared about origin", "liked content", "paid attention to clues", "cautious about veracity")
+
+cormat_ambiguity <- as.data.frame(cor(cordata, use="pairwise.complete.obs"))
+
+cormat_ambiguity
+```
+
+**Summary**
+
+- People who found themselves looking for clues about the origin of something also found themselves to wonder about the veracity of content ($r = `r cor(data$closed_associations_5,data$closed_associations_6,use="pairwise.complete.obs")`$)
+- people who **cared** about who or what created the content also paid attention to context cues ($r = `r cor(data$closed_associations_3,data$closed_associations_5,use="pairwise.complete.obs")`$) and cared about the veracity of the content ($r = `r cor(data$closed_associations_3,data$closed_associations_6,use="pairwise.complete.obs")`$)
+
+### Correlation between perceived Ambiguity in the last 2 minutes and Recall of Content
+
+The self-reported recall of content in percent did not correlate strongly with the perceived content having been created by AI ($r = `r cor(data$recall_selfreport_1,data$proportion_specific_1,use="pairwise.complete.obs")`$), by a human ($r = `r cor(data$recall_selfreport_1,data$proportion_specific_2,use="pairwise.complete.obs")`$) or ambiguous ($r = `r cor(data$recall_selfreport_1,data$proportion_specific_3,use="pairwise.complete.obs")`$). 
+
+### Correlation within General Statements about Reactions to Origin Ambiguity
+
+```{r}
+cordata <- data %>% select(react_ambiguity_1:react_ambiguity_7)
+
+colnames(cordata) <- c("clues","less attention to content", "more info comments", "more info elsewhere", "ignore", "save or share", "learn more")
+
+cor_mat <- cor(cordata, use="pairwise.complete.obs")
+cor_mat
+```
+
+**Summary**
+
+- people who find themselves looking for context clues are also looking for additional info in the comments ($r = 0.417$), or elsewhere ($r = 0.374$). 
+- unsurprisingly, people who say they pay less attention to content also tend to ignore the content ($r = 0.51$)
+- people who look for more info elsewhere also tend to click to learn more ($r = 0.487$) but surprisingly the correlation with the self-reported looking for info in comments is not as high ($r = 0.257$)
