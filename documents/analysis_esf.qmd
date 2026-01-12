@@ -171,19 +171,18 @@ ggplot(platforms_long, aes(x = 2, y = Count, fill = Platform)) +
   coord_polar(theta = "y") +
   xlim(0.5, 2.5) + 
   scale_fill_manual(values = c("tiktok" = "#00802f", "instagram" = "#73a5af", "other" = "#eb6969")) +
-  geom_text(aes(label = Count), 
+  geom_text(aes(label = paste("n =",Count)), 
             position = position_stack(vjust = 0.5), 
-            color = "white", size = 5) +  # changed color to white
-  labs(title = "Genutzte Plattform") +
+            color = "white", size = 4) +  # changed color to white
+  labs(title = "Platform Used") +
   theme_void() +
   theme(
     legend.position = "bottom",
-    legend.text = element_text(size = 20),
-    legend.title = element_text(size = 20, face="bold"),
+    legend.title = element_text(face="bold"),
     rect = element_rect(fill = "transparent"),
-    plot.title = element_text(size = 24)  # bigger title
   )
-ggsave("images/plattformen.svg", width = 6, height = 6, bg = "transparent")
+ggsave("images/plattformen.svg", width = 4, height = 4, bg = "transparent")
+
 ```
 
 ## Open Associations
@@ -300,62 +299,97 @@ We asked a total of 6 questions pertaining to origin ambiguity:
 p1 <- ggplot(data, aes(x = closed_associations_1)) +
     geom_bar(fill="#00802f",color="#00802f",alpha=0.7)+
     geom_vline(xintercept = mean(data$closed_associations_1,na.rm=TRUE), color = "#0a5f2d", linetype = "solid", size = 1) +
+        annotate("text", x = mean(data$closed_associations_1,na.rm=TRUE) + 0.9, y = max(table(data$closed_associations_1)) + 5,
+    label = paste0("Mean = ", round(mean(data$closed_associations_1,na.rm=TRUE), 2)),
+    color = "#0a5f2d",
+    fontface = "bold",
+    hjust = 0.5
+  ) +
     labs(
         title = "I found it difficult to know \nwho or what created \nthe content I was \nlooking at.",
         x = "Response",
         y = "Frequency"
     ) +
     scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5)) + 
+    scale_y_continuous(breaks = c(5,10,15,20,25,30),limits=c(0,31)) + 
     theme_minimal()
 
 p2 <- ggplot(data, aes(x = closed_associations_2)) +
     geom_bar(fill="#00802f",color="#00802f",alpha=0.7)+
     geom_vline(xintercept = mean(data$closed_associations_2,na.rm=TRUE), color = "#0a5f2d", linetype = "solid", size = 1) +
+        annotate("text", x = mean(data$closed_associations_2,na.rm=TRUE) + 0.9, y = max(table(data$closed_associations_6)) + 5,
+    label = paste0("Mean = ", round(mean(data$closed_associations_2,na.rm=TRUE), 2)),
+    color = "#0a5f2d",
+    fontface = "bold",
+    hjust = 0.5
+  ) +
     labs(
         title = "I found it difficult to know \nif the content I was \nlooking at was real.",
         x = "Response",
         y = "Frequency"
     ) +
     scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5)) + 
+    scale_y_continuous(breaks = c(5,10,15,20,25,30),limits=c(0,31)) + 
     theme_minimal()
 
 p3 <- ggplot(data, aes(x = closed_associations_3)) +
     geom_bar(fill="#00802f",color="#00802f",alpha=0.7)+
     geom_vline(xintercept = mean(data$closed_associations_3,na.rm=TRUE), color = "#0a5f2d", linetype = "solid", size = 1) +
+        annotate("text", x = mean(data$closed_associations_3,na.rm=TRUE) + 0.9, y = max(table(data$closed_associations_3)) + 5,
+    label = paste0("Mean = ", round(mean(data$closed_associations_3,na.rm=TRUE), 2)),
+    color = "#0a5f2d",
+    fontface = "bold",
+    hjust = 0.5
+  ) +
     labs(
         title = "I cared about who or what \ncreated the content \nI was looking at.",
         x = "Response",
         y = "Frequency"
     ) +
     scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5)) + 
+    scale_y_continuous(breaks = c(5,10,15,20,25,30),limits=c(0,31)) + 
     theme_minimal()
 
 p4 <- ggplot(data, aes(x = closed_associations_4)) +
     geom_bar(fill="#00802f",color="#00802f",alpha=0.7)+
     geom_vline(xintercept = mean(data$closed_associations_4,na.rm=TRUE), color = "#0a5f2d", linetype = "solid", size = 1) +
+        annotate("text", x = mean(data$closed_associations_4,na.rm=TRUE) + 0.9, y = max(table(data$closed_associations_4)) + 5,
+    label = paste0("Mean = ", round(mean(data$closed_associations_4,na.rm=TRUE), 2)),
+    color = "#0a5f2d",
+    fontface = "bold",
+    hjust = 0.5
+  ) +
     labs(
         title = "I liked the content \nI was looking at.",
         x = "Response",
         y = "Frequency"
     ) +
     scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5)) + 
+    scale_y_continuous(breaks = c(5,10,15,20,25,30),limits=c(0,31)) + 
     theme_minimal()
 
 p5 <- ggplot(data, aes(x = closed_associations_5)) +
     geom_bar(fill="#00802f",color="#00802f",alpha=0.7)+
     geom_vline(xintercept = mean(data$closed_associations_5,na.rm=TRUE), color = "#0a5f2d", linetype = "solid", size = 1) +
+        annotate("text", x = mean(data$closed_associations_5,na.rm=TRUE) + 0.9, y = max(table(data$closed_associations_6)) + 5,
+    label = paste0("Mean = ", round(mean(data$closed_associations_5,na.rm=TRUE), 2)),
+    color = "#0a5f2d",
+    fontface = "bold",
+    hjust = 0.5
+  ) +
     labs(
         title = "I paid attention to clues about \nwho or what created the content \nI was looking at.",
         x = "Response",
         y = "Frequency"
     ) +
-    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5)) + 
+    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5)) +
+    scale_y_continuous(breaks = c(5,10,15,20,25,30),limits=c(0,31)) + 
     theme_minimal()
 
 p6 <- ggplot(data, aes(x = closed_associations_6)) +
     geom_bar(fill="#00802f",color="#00802f",alpha=0.7)+
     geom_vline(xintercept = mean(data$closed_associations_6,na.rm=TRUE), color = "#0a5f2d", linetype = "solid", size = 1) +
-    annotate("text", x = mean(data$closed_associations_6,na.rm=TRUE), y = max(table(data$closed_associations_6)) + 2,
+    annotate("text", x = mean(data$closed_associations_6,na.rm=TRUE) + 0.9, y = max(table(data$closed_associations_6)) + 5,
     label = paste0("Mean = ", round(mean(data$closed_associations_6,na.rm=TRUE), 2)),
     color = "#0a5f2d",
     fontface = "bold",
@@ -376,12 +410,111 @@ ggsave("images/plotsambiguity.svg",height=6,width=8, bg="transparent")
 
 ```
 
+```{r}
+#| output: false
+
+plot1_data <- data %>% pivot_longer(
+  cols = c(closed_associations_1,closed_associations_2,closed_associations_5),
+  names_to = "question",
+  values_to = "response"
+) %>% mutate(
+  question = case_when(
+    question == "closed_associations_1" ~ "(1)", 
+    question == "closed_associations_2" ~ "(2)", 
+    question == "closed_associations_5" ~ "(3)")
+)
+
+ggplot(plot1_data, aes(x = question, y = response)) +
+  geom_violin(
+    trim = FALSE,
+    fill = "#73a5af",  
+    color = "#73a5af",
+    alpha = 0.5  
+  ) +
+  stat_summary(
+    fun.data = function(x) {
+      m <- mean(x, na.rm = TRUE)
+      s <- sd(x, na.rm = TRUE)
+      data.frame(y = m, ymin = max(1, m - s), ymax = m + s)
+    },
+    geom = "errorbar",
+    width = 0.1,
+    color = "#00802f"
+  ) +
+  stat_summary(
+    fun = mean,
+    geom = "point",
+    size = 5,
+    color = "#0a5f2d"
+  ) +
+  scale_y_continuous(
+  breaks = 1:7,
+  labels = c(
+    "Completely\nDisagree", "", "", "", "", "", "Completely\nAgree"
+  ),
+  limits = c(1, 7)
+  ) + 
+  labs(
+    title = "Occurrence of Origin Ambiguity",
+    x = "Question",
+    y = "Distribution of Responses"
+  ) +
+  theme_minimal()
+
+ggsave("images/violinplot_specific.svg",height=4,width=6)
+
+round(mean(data$closed_associations_1,na.rm=TRUE),2)
+round(sd(data$closed_associations_1,na.rm=TRUE),2)
+
+round(mean(data$closed_associations_2,na.rm=TRUE),2)
+round(sd(data$closed_associations_2,na.rm=TRUE),2)
+
+round(mean(data$closed_associations_5,na.rm=TRUE),2)
+round(sd(data$closed_associations_5,na.rm=TRUE),2)
+```
+
 Most responses were neither skewed in one or the other direction, implying moderate agreement. Surprisingly, our results show a tendency to rather not have experienced origin ambiguity in the past couple of minutes, as indicated by a mean of $mean_\text{real} = `r round(mean(data$closed_associations_2,na.rm=TRUE),3)`$ ($SD_\text{real} = `r round(sd(data$closed_associations_2,na.rm=TRUE),3)`$). 
 
 ## General Perception
 The subsequent questions were asked about participants' **social media feed overall**, not the past two minutes. 
 
 ### Thinking about your social media feed overall, what proportion of the content you see is …
+
+```{r}
+#| output: false
+#| 
+proportion_creation_long <- data %>%
+  select(proportion_creation_1:proportion_creation_3) %>%
+  pivot_longer(
+    cols = everything(),
+    names_to = "Kategorie",
+    values_to = "proportion"
+  ) %>% mutate(
+   Kategorie = case_when(
+    Kategorie == "proportion_creation_1" ~ "definitely human",
+    Kategorie == "proportion_creation_2" ~ "definitely AI",
+    Kategorie == "proportion_creation_3" ~ "difficult to tell"
+   ) 
+  )
+
+ggplot(proportion_creation_long, aes(x = "", y = proportion, fill = Kategorie)) +
+  geom_bar(stat = "identity", width = 0.5) +
+  coord_polar(theta = "y") +  # pie chart
+  scale_y_continuous(labels = scales::percent_format(scale = 1)) +
+  labs(title = "Sicherheit über Herkunft") +
+  theme_void() +
+   scale_fill_manual(
+    values = c(
+      "definitely human" = "#00802f",
+      "definitely AI" = "#73a5af",
+      "difficult to tell" = "#eb6969"
+    )) 
+ggsave("images/verteilung.svg", height=4, width=6)
+
+def_human <- mean(data$proportion_creation_1,na.rm=TRUE)
+def_AI <- mean(data$proportion_creation_2,na.rm=TRUE)
+def_ambiguous <- mean(data$proportion_creation_3,na.rm=TRUE)
+```
 
 ```{r}
 #| fig-width: 10
@@ -399,6 +532,245 @@ proportion_creation_long <- data %>%
     category == "proportion_creation_3" ~ "difficult to tell",
    ) 
   )
+
+
+p1 <- ggplot(proportion_creation_long, aes(x = "", y = proportion, fill = category)) +
+  geom_bar(stat = "identity", width = 0.5) +
+  coord_polar(theta = "y") +  # pie chart
+  scale_y_continuous(labels = scales::percent_format(scale = 1)) +
+  labs(title = "Certainty of Origin") +
+  theme_void() +
+   scale_fill_manual(
+    values = c(
+      "definitely human" = "#00802f",
+      "definitely AI" = "#eb6969",
+      "difficult to tell" = "#73a5af"
+    ))
+
+p2 <- ggplot(data, aes(x = proportion_creation_1)) +
+  geom_density(fill = "#00802f", alpha = 0.5) +
+  labs(
+    title = "Distribution of Definitely human",
+    x = "% of feed",
+    y = "Density"
+  ) +
+  theme_minimal(base_size = 14)
+
+p3 <- ggplot(data, aes(x = proportion_creation_2)) +
+  geom_density(fill = "#00802f", alpha = 0.5) +
+  labs(
+    title = "Distribution of Definitely AI",
+    x = "% of feed",
+    y = "Density"
+  ) +
+  theme_minimal(base_size = 14)
+
+p4 <- ggplot(data, aes(x = proportion_creation_3)) +
+  geom_density(fill = "#00802f", alpha = 0.5) +
+  labs(
+    title = "Distribution of Difficult to Tell",
+    x = "% of feed",
+    y = "Density"
+  ) +
+  theme_minimal(base_size = 14)
+
+p1 + (p2 / p3 / p4)
+
+
+prop_involvement_long <- data %>%
+  select(prop_involvement_1:prop_involvement_3) %>%
+  pivot_longer(
+    cols = everything(),
+    names_to = "category",
+    values_to = "proportion"
+  ) %>% mutate(
+    category = case_when(
+        category == "prop_involvement_1" ~ "made only by a human",
+        category == "prop_involvement_2" ~ "at least augmented by AI", 
+        category == "prop_involvement_3" ~ "fully AI generated", 
+    )
+  )
+
+p1 <- ggplot(prop_involvement_long, aes(x = "", y = proportion, fill = category)) +
+  geom_bar(stat = "identity", width = 0.5) +
+  coord_polar(theta = "y") +  # pie chart
+  scale_y_continuous(labels = scales::percent_format(scale = 1)) +
+  labs(title = "Proportion of Augmented Content on Feed") +
+  theme_void() +
+    scale_fill_manual(
+    values = c(
+      "made only by a human" = "#00802f",
+      "at least augmented by AI" = "#eb6969",
+      "fully AI generated" = "#73a5af"
+    ))
+
+p2 <- ggplot(data, aes(x = prop_involvement_1)) +
+  geom_density(fill = "#00802f", alpha = 0.5) +
+  labs(
+    title = "Distribution of made only by a human",
+    x = "Recall Score",
+    y = "Density"
+  ) +
+  theme_minimal(base_size = 14)
+
+p3 <- ggplot(data, aes(x = prop_involvement_2)) +
+  geom_density(fill = "#00802f", alpha = 0.5) +
+  labs(
+    title = "Distribution of at least augmented by AI",
+    x = "Recall Score",
+    y = "Density"
+  ) +
+  theme_minimal(base_size = 14)
+
+p4 <- ggplot(data, aes(x = prop_involvement_3)) +
+  geom_density(fill = "#00802f", alpha = 0.5) +
+  labs(
+    title = "Distribution of fully AI generated",
+    x = "Recall Score",
+    y = "Density"
+  ) +
+  theme_minimal(base_size = 14)
+
+p1 + (p2 / p3 / p4)
+```
+
+#### Instagram Only
+```{r}
+#| fig-width: 10
+#| fig-height: 8
+proportion_creation_long <- data %>% filter(platforms_behavior_instagram == 1) %>%
+  select(proportion_creation_1:proportion_creation_3) %>%
+  pivot_longer(
+    cols = everything(),
+    names_to = "category",
+    values_to = "proportion"
+  ) %>% mutate(
+   category = case_when(
+    category == "proportion_creation_1" ~ "definitely human",
+    category == "proportion_creation_2" ~ "definitely AI",
+    category == "proportion_creation_3" ~ "difficult to tell",
+   ) 
+  )
+
+
+p1 <- ggplot(proportion_creation_long, aes(x = "", y = proportion, fill = category)) +
+  geom_bar(stat = "identity", width = 0.5) +
+  coord_polar(theta = "y") +  # pie chart
+  scale_y_continuous(labels = scales::percent_format(scale = 1)) +
+  labs(title = "Certainty of Origin") +
+  theme_void() +
+   scale_fill_manual(
+    values = c(
+      "definitely human" = "#00802f",
+      "definitely AI" = "#eb6969",
+      "difficult to tell" = "#73a5af"
+    ))
+
+p2 <- ggplot(data, aes(x = proportion_creation_1)) +
+  geom_density(fill = "#00802f", alpha = 0.5) +
+  labs(
+    title = "Distribution of Definitely human",
+    x = "% of feed",
+    y = "Density"
+  ) +
+  theme_minimal(base_size = 14)
+
+p3 <- ggplot(data, aes(x = proportion_creation_2)) +
+  geom_density(fill = "#00802f", alpha = 0.5) +
+  labs(
+    title = "Distribution of Definitely AI",
+    x = "% of feed",
+    y = "Density"
+  ) +
+  theme_minimal(base_size = 14)
+
+p4 <- ggplot(data, aes(x = proportion_creation_3)) +
+  geom_density(fill = "#00802f", alpha = 0.5) +
+  labs(
+    title = "Distribution of Difficult to Tell",
+    x = "% of feed",
+    y = "Density"
+  ) +
+  theme_minimal(base_size = 14)
+
+p1 + (p2 / p3 / p4)
+
+
+prop_involvement_long <- data %>%
+  select(prop_involvement_1:prop_involvement_3) %>%
+  pivot_longer(
+    cols = everything(),
+    names_to = "category",
+    values_to = "proportion"
+  ) %>% mutate(
+    category = case_when(
+        category == "prop_involvement_1" ~ "made only by a human",
+        category == "prop_involvement_2" ~ "at least augmented by AI", 
+        category == "prop_involvement_3" ~ "fully AI generated", 
+    )
+  )
+
+p1 <- ggplot(prop_involvement_long, aes(x = "", y = proportion, fill = category)) +
+  geom_bar(stat = "identity", width = 0.5) +
+  coord_polar(theta = "y") +  # pie chart
+  scale_y_continuous(labels = scales::percent_format(scale = 1)) +
+  labs(title = "Proportion of Augmented Content on Feed") +
+  theme_void() +
+    scale_fill_manual(
+    values = c(
+      "made only by a human" = "#00802f",
+      "at least augmented by AI" = "#eb6969",
+      "fully AI generated" = "#73a5af"
+    ))
+
+p2 <- ggplot(data, aes(x = prop_involvement_1)) +
+  geom_density(fill = "#00802f", alpha = 0.5) +
+  labs(
+    title = "Distribution of made only by a human",
+    x = "Recall Score",
+    y = "Density"
+  ) +
+  theme_minimal(base_size = 14)
+
+p3 <- ggplot(data, aes(x = prop_involvement_2)) +
+  geom_density(fill = "#00802f", alpha = 0.5) +
+  labs(
+    title = "Distribution of at least augmented by AI",
+    x = "Recall Score",
+    y = "Density"
+  ) +
+  theme_minimal(base_size = 14)
+
+p4 <- ggplot(data, aes(x = prop_involvement_3)) +
+  geom_density(fill = "#00802f", alpha = 0.5) +
+  labs(
+    title = "Distribution of fully AI generated",
+    x = "Recall Score",
+    y = "Density"
+  ) +
+  theme_minimal(base_size = 14)
+
+p1 + (p2 / p3 / p4)
+```
+
+#### TikTok Only
+```{r}
+#| fig-width: 10
+#| fig-height: 8
+proportion_creation_long <- data %>% filter(platforms_behavior_tiktok == 1) %>%
+  select(proportion_creation_1:proportion_creation_3) %>%
+  pivot_longer(
+    cols = everything(),
+    names_to = "category",
+    values_to = "proportion"
+  ) %>% mutate(
+   category = case_when(
+    category == "proportion_creation_1" ~ "definitely human",
+    category == "proportion_creation_2" ~ "definitely AI",
+    category == "proportion_creation_3" ~ "difficult to tell",
+   ) 
+  )
+
 
 p1 <- ggplot(proportion_creation_long, aes(x = "", y = proportion, fill = category)) +
   geom_bar(stat = "identity", width = 0.5) +
@@ -849,6 +1221,8 @@ ggplot(df_specific, aes(x = certainty_1)) +
   ) +
   theme_minimal(base_size = 14)
 
+
+
 ggplot(df_specific, aes(x = involved_1)) +
   geom_density(fill = "#00802f", alpha = 0.5) +
   scale_x_continuous(
@@ -903,6 +1277,12 @@ reaction_long %>%
   count(type) %>%
   ggplot(aes(x = reorder(type, n), y = n)) +
   geom_bar(stat = "identity", fill = "#00802f") +
+  geom_text(
+    aes(label = paste("n =",n)),
+    color = "white",
+    hjust = 1.1,   # positions text just inside the bar
+    size = 4
+  ) +
   coord_flip() +
   labs(
     title = "Reactions to the Content",
@@ -910,6 +1290,7 @@ reaction_long %>%
     y = "Number of respondents"
   ) +
   theme_minimal(base_size = 14)
+ggsave("images/reactionspecific.svg",height=6,width=8,bg="transparent")
 ```
 
 Reactions to the content again demonstrate that at least some effects we hypothesize seem to occurr: Paying attention to context cues, and looking for additional information. 
@@ -924,9 +1305,17 @@ p1 <- ggplot(data, aes(x = relevance_personal)) +
         x = "Response",
         y = "Frequency"
     ) +
-    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5)) + 
+    geom_vline(xintercept = mean(data$relevance_personal,na.rm=TRUE), color = "#0a5f2d", size=1.5) + 
+    annotate("text", x = mean(data$relevance_personal,na.rm=TRUE) + 0.5, y = max(table(data$relevance_personal)) + 1,
+    label = paste0("Mean = ", round(mean(data$relevance_personal,na.rm=TRUE), 2)),
+    color = "#0a5f2d",
+    fontface = "bold",
+    hjust = 0.5
+  ) +
+    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5),labels=c("not at all","","","","","","very much")) + 
     theme_minimal()
 p1
+ggsave("images/matters.svg",bg="transparent",height=6,width=8)
 
 data <- data %>% mutate(
     use_AI_t = case_when(
@@ -1030,21 +1419,84 @@ ggplot(data, aes(x = age)) +
     x = "Self-reported Age",
     y = ""
   ) +
+  geom_vline(xintercept = mean(data$age,na.rm=TRUE), color = "#0a5f2d", size=1.5) + 
+    annotate("text", x = mean(data$age,na.rm=TRUE) + 1,  y=0.2,
+    label = paste0("Mean = ", round(mean(data$age,na.rm=TRUE), 2)),
+    color = "#0a5f2d",
+    fontface = "bold",
+    hjust = 0.5
+  ) +
   theme_minimal(base_size = 14)
+ggsave("images/age.svg",height=4,width=6,bg="transparent")
 
 gender_counts <- data %>%
   count(gender) %>%
   filter(!is.na(gender))
 
+
 ggplot(gender_counts, aes(x = reorder(gender, n), y = n)) +
   geom_bar(stat = "identity", fill = "#00802f") +
-  coord_flip() +  # horizontal bars for readability
+  geom_text(
+    data = subset(gender_counts, gender != "other"),
+    aes(label = paste0("n = ", n)),
+    color = "white",
+    hjust = 1.2,
+    size = 4
+  ) +
+  geom_text(
+    data = subset(gender_counts, gender == "other"),
+    aes(label = paste0("n = ", n)),
+    color = "black",
+    hjust = -0.2,   # pushes text outside the bar
+    size = 4
+  ) +
+  coord_flip() +
   labs(
     title = "Gender Distribution",
-    x = "Gender"
+    x = "Gender",
+    y = NULL
   ) +
-  theme_minimal(base_size = 14)
+  theme_minimal(base_size = 14) +
+  expand_limits(y = max(gender_counts$n) * 1.15)
 
+ggsave("images/gender.svg",height=4,width=6)
+
+## from home / from hörsaal
+
+data <- data %>% mutate(
+  participation = case_when(
+    participation == "1.0" ~ "from home", 
+    participation == "2.0" ~ "from the lecture",
+    TRUE ~ participation
+  )
+)
+
+# Count participation
+participation_counts <- data %>% filter(!is.na(participation)) %>%
+  count(participation)
+
+# Custom colors
+participation_colors <- c(
+  "from home" = "#73a5af",
+  "from the lecture" = "#e1d7c3"
+)
+
+# Donut chart
+ggplot(participation_counts, aes(x = 2, y = n, fill = participation)) +
+  geom_bar(stat = "identity", width = 1, color = "white") +
+  coord_polar(theta = "y") +
+  geom_text(
+    aes(label = paste0("n = ", n)),
+    position = position_stack(vjust = 0.5),
+    color = "white",
+    size = 4
+  ) +
+  scale_fill_manual(values = participation_colors) +
+  xlim(0.5, 2.5) +  # creates the hole
+  theme_void(base_size = 14) +
+  labs(title = "Participation Mode") +
+  theme(legend.title = element_blank())
+ggsave("images/participationmode.svg",height=4,width=8)
 ```
 
 # Correlations and Relations

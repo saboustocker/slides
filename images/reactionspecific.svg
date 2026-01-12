@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='576.00pt' height='432.00pt' viewBox='0 0 576.00 432.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: none;'/>
+<defs>
+  <clipPath id='cpMC4wMHw1NzYuMDB8MC4wMHw0MzIuMDA='>
+    <rect x='0.00' y='0.00' width='576.00' height='432.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw1NzYuMDB8MC4wMHw0MzIuMDA=)'>
+<rect x='0.000000000000064' y='0.00' width='576.00' height='432.00' style='stroke-width: 1.36; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMjE5Ljg5fDU2OS4wM3wyOS41MXwzOTEuOTM='>
+    <rect x='219.89' y='29.51' width='349.13' height='362.41' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMjE5Ljg5fDU2OS4wM3wyOS41MXwzOTEuOTM=)'>
+<polyline points='288.66,391.93 288.66,29.51 ' style='stroke-width: 0.68; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='394.46,391.93 394.46,29.51 ' style='stroke-width: 0.68; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='500.26,391.93 500.26,29.51 ' style='stroke-width: 0.68; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='219.89,356.86 569.03,356.86 ' style='stroke-width: 1.36; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='219.89,298.40 569.03,298.40 ' style='stroke-width: 1.36; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='219.89,239.95 569.03,239.95 ' style='stroke-width: 1.36; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='219.89,181.49 569.03,181.49 ' style='stroke-width: 1.36; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='219.89,123.04 569.03,123.04 ' style='stroke-width: 1.36; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='219.89,64.59 569.03,64.59 ' style='stroke-width: 1.36; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='235.76,391.93 235.76,29.51 ' style='stroke-width: 1.36; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='341.56,391.93 341.56,29.51 ' style='stroke-width: 1.36; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='447.36,391.93 447.36,29.51 ' style='stroke-width: 1.36; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='553.16,391.93 553.16,29.51 ' style='stroke-width: 1.36; stroke: #EBEBEB; stroke-linecap: butt;' />
+<rect x='235.76' y='272.10' width='264.50' height='52.61' style='stroke-width: 1.36; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #00802F;' />
+<rect x='235.76' y='213.64' width='264.50' height='52.61' style='stroke-width: 1.36; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #00802F;' />
+<rect x='235.76' y='96.74' width='317.39' height='52.61' style='stroke-width: 1.36; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #00802F;' />
+<rect x='235.76' y='330.55' width='105.80' height='52.61' style='stroke-width: 1.36; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #00802F;' />
+<rect x='235.76' y='38.28' width='317.39' height='52.61' style='stroke-width: 1.36; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #00802F;' />
+<rect x='235.76' y='155.19' width='264.50' height='52.61' style='stroke-width: 1.36; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #00802F;' />
+<text x='497.70' y='302.47' text-anchor='end' style='font-size: 11.38px;fill: #FFFFFF; font-family: "Arial";' textLength='25.61px' lengthAdjust='spacingAndGlyphs'>n = 5</text>
+<text x='497.70' y='244.02' text-anchor='end' style='font-size: 11.38px;fill: #FFFFFF; font-family: "Arial";' textLength='25.61px' lengthAdjust='spacingAndGlyphs'>n = 5</text>
+<text x='550.60' y='127.11' text-anchor='end' style='font-size: 11.38px;fill: #FFFFFF; font-family: "Arial";' textLength='25.61px' lengthAdjust='spacingAndGlyphs'>n = 6</text>
+<text x='339.00' y='360.93' text-anchor='end' style='font-size: 11.38px;fill: #FFFFFF; font-family: "Arial";' textLength='25.61px' lengthAdjust='spacingAndGlyphs'>n = 2</text>
+<text x='550.60' y='68.66' text-anchor='end' style='font-size: 11.38px;fill: #FFFFFF; font-family: "Arial";' textLength='25.61px' lengthAdjust='spacingAndGlyphs'>n = 6</text>
+<text x='497.70' y='185.57' text-anchor='end' style='font-size: 11.38px;fill: #FFFFFF; font-family: "Arial";' textLength='25.61px' lengthAdjust='spacingAndGlyphs'>n = 5</text>
+</g>
+<g clip-path='url(#cpMC4wMHw1NzYuMDB8MC4wMHw0MzIuMDA=)'>
+<text x='213.62' y='360.86' text-anchor='end' style='font-size: 11.20px;fill: #4D4D4D; font-family: "Arial";' textLength='190.19px' lengthAdjust='spacingAndGlyphs'>looked for more information elsewhere</text>
+<text x='213.62' y='302.41' text-anchor='end' style='font-size: 11.20px;fill: #4D4D4D; font-family: "Arial";' textLength='136.17px' lengthAdjust='spacingAndGlyphs'>focused less on the content</text>
+<text x='213.62' y='243.95' text-anchor='end' style='font-size: 11.20px;fill: #4D4D4D; font-family: "Arial";' textLength='95.75px' lengthAdjust='spacingAndGlyphs'>ignored the content</text>
+<text x='213.62' y='185.50' text-anchor='end' style='font-size: 11.20px;fill: #4D4D4D; font-family: "Arial";' textLength='138.64px' lengthAdjust='spacingAndGlyphs'>saved or shared the content</text>
+<text x='213.62' y='127.05' text-anchor='end' style='font-size: 11.20px;fill: #4D4D4D; font-family: "Arial";' textLength='183.98px' lengthAdjust='spacingAndGlyphs'>looked for more info in the comments</text>
+<text x='213.62' y='68.59' text-anchor='end' style='font-size: 11.20px;fill: #4D4D4D; font-family: "Arial";' textLength='174.08px' lengthAdjust='spacingAndGlyphs'>paid more attention to context cues</text>
+<text x='235.76' y='406.22' text-anchor='middle' style='font-size: 11.20px;fill: #4D4D4D; font-family: "Arial";' textLength='6.22px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text x='341.56' y='406.22' text-anchor='middle' style='font-size: 11.20px;fill: #4D4D4D; font-family: "Arial";' textLength='6.22px' lengthAdjust='spacingAndGlyphs'>2</text>
+<text x='447.36' y='406.22' text-anchor='middle' style='font-size: 11.20px;fill: #4D4D4D; font-family: "Arial";' textLength='6.22px' lengthAdjust='spacingAndGlyphs'>4</text>
+<text x='553.16' y='406.22' text-anchor='middle' style='font-size: 11.20px;fill: #4D4D4D; font-family: "Arial";' textLength='6.22px' lengthAdjust='spacingAndGlyphs'>6</text>
+<text x='394.46' y='422.08' text-anchor='middle' style='font-size: 14.00px; font-family: "Arial";' textLength='146.23px' lengthAdjust='spacingAndGlyphs'>Number of respondents</text>
+<text transform='translate(17.00,210.72) rotate(-90)' text-anchor='middle' style='font-size: 14.00px; font-family: "Arial";' textLength='55.23px' lengthAdjust='spacingAndGlyphs'>Reaction</text>
+<text x='219.89' y='19.01' style='font-size: 16.80px; font-family: "Arial";' textLength='184.95px' lengthAdjust='spacingAndGlyphs'>Reactions to the Content</text>
+</g>
+</g>
+</svg>
