@@ -10,6 +10,7 @@ execute:
   error: false     # hide errors
   message: false   # hide messages
 navbar: false
+project: "Origin Ambiguity"
 ---
 
 ```{r}
@@ -307,10 +308,10 @@ p1 <- ggplot(data, aes(x = closed_associations_1)) +
   ) +
     labs(
         title = "I found it difficult to know \nwho or what created \nthe content I was \nlooking at.",
-        x = "Response",
+        x = "",
         y = "Frequency"
     ) +
-    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5)) + 
+    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5),labels=c("Completely Disagree","","","","","","Completely Agree")) + 
     scale_y_continuous(breaks = c(5,10,15,20,25,30),limits=c(0,31)) + 
     theme_minimal()
 
@@ -325,10 +326,10 @@ p2 <- ggplot(data, aes(x = closed_associations_2)) +
   ) +
     labs(
         title = "I found it difficult to know \nif the content I was \nlooking at was real.",
-        x = "Response",
+        x = "",
         y = "Frequency"
     ) +
-    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5)) + 
+    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5),labels=c("Completely Disagree","","","","","","Completely Agree")) + 
     scale_y_continuous(breaks = c(5,10,15,20,25,30),limits=c(0,31)) + 
     theme_minimal()
 
@@ -379,10 +380,10 @@ p5 <- ggplot(data, aes(x = closed_associations_5)) +
   ) +
     labs(
         title = "I paid attention to clues about \nwho or what created the content \nI was looking at.",
-        x = "Response",
+        x = "",
         y = "Frequency"
     ) +
-    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5)) +
+    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5),labels=c("Completely Disagree","","","","","","Completely Agree")) +
     scale_y_continuous(breaks = c(5,10,15,20,25,30),limits=c(0,31)) + 
     theme_minimal()
 
@@ -406,6 +407,8 @@ p6 <- ggplot(data, aes(x = closed_associations_6)) +
 
 (p1 + p2) / (p3 + p4) / (p5 + p6)
 
+p1 / p2 / p5
+ggsave("images/ambiguityplot.svg",bg="transparent",height=8,width=6)
 ggsave("images/plotsambiguity.svg",height=6,width=8, bg="transparent")
 
 ```
@@ -883,78 +886,120 @@ It appears that people think a majority of the content they consume has been cre
 p1 <- ggplot(data, aes(x = react_ambiguity_1)) +
     geom_bar(fill="#00802f",color="#00802f",alpha=0.7)+
      geom_vline(xintercept = mean(data$react_ambiguity_1,na.rm=TRUE), color = "#0a5f2d", linetype = "solid", size = 1) +
+     annotate("text", x = mean(data$react_ambiguity_1,na.rm=TRUE) + 0.9, y = max(table(data$react_ambiguity_1)) + 5,
+    label = paste0("Mean = ", round(mean(data$react_ambiguity_1,na.rm=TRUE), 2)),
+    color = "#0a5f2d",
+    fontface = "bold",
+    hjust = 0.5
+  ) +
     labs(
         title = "I pay more attention to certain clues in the \ncontent (e.g., inconsistencies) that could help \nme identify the origin.",
-        x = "Response",
+        x = "",
         y = "Frequency"
     ) +
-    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5)) + 
+    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5),labels=c("Completely Disagree","","","","","","Completely Agree")) + 
     theme_minimal()
 
 p2 <- ggplot(data, aes(x = react_ambiguity_2)) +
     geom_bar(fill="#00802f",color="#00802f",alpha=0.7)+
      geom_vline(xintercept = mean(data$react_ambiguity_2,na.rm=TRUE), color = "#0a5f2d", linetype = "solid", size = 1) +
+     annotate("text", x = mean(data$react_ambiguity_2,na.rm=TRUE) + 0.9, y = max(table(data$react_ambiguity_2)) + 5,
+    label = paste0("Mean = ", round(mean(data$react_ambiguity_2,na.rm=TRUE), 2)),
+    color = "#0a5f2d",
+    fontface = "bold",
+    hjust = 0.5
+  ) +
     labs(
         title = "I pay less attention to the content itself.",
-        x = "Response",
+        x = "",
         y = "Frequency"
     ) +
-    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5)) + 
+    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5),labels=c("Completely Disagree","","","","","","Completely Agree")) + 
     theme_minimal()
 
 p3 <- ggplot(data, aes(x = react_ambiguity_3)) +
     geom_bar(fill="#00802f",color="#00802f",alpha=0.7)+
      geom_vline(xintercept = mean(data$react_ambiguity_3,na.rm=TRUE), color = "#0a5f2d", linetype = "solid", size = 1) +
+     annotate("text", x = mean(data$react_ambiguity_3,na.rm=TRUE) + 0.9, y = max(table(data$react_ambiguity_3)) + 5,
+    label = paste0("Mean = ", round(mean(data$react_ambiguity_3,na.rm=TRUE), 2)),
+    color = "#0a5f2d",
+    fontface = "bold",
+    hjust = 0.5
+  ) +
     labs(
         title = "I look for more information in the \ncomments below the post.",
-        x = "Response",
+        x = "",
         y = "Frequency"
     ) +
-    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5)) + 
+    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5),labels=c("Completely Disagree","","","","","","Completely Agree")) + 
     theme_minimal()
 
 p4 <- ggplot(data, aes(x = react_ambiguity_4)) +
     geom_bar(fill="#00802f",color="#00802f",alpha=0.7)+
      geom_vline(xintercept = mean(data$react_ambiguity_4,na.rm=TRUE), color = "#0a5f2d", linetype = "solid", size = 1) +
+     annotate("text", x = mean(data$react_ambiguity_4,na.rm=TRUE) + 0.9, y = max(table(data$react_ambiguity_4)) + 5,
+    label = paste0("Mean = ", round(mean(data$react_ambiguity_4,na.rm=TRUE), 2)),
+    color = "#0a5f2d",
+    fontface = "bold",
+    hjust = 0.5
+  ) +
     labs(
-        title = "I look for more information from other sources.",
-        x = "Response",
+        title = "I look for more information from \nother sources.",
+        x = "",
         y = "Frequency"
     ) +
-    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5)) + 
+    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5),labels=c("Completely Disagree","","","","","","Completely Agree")) + 
     theme_minimal()
 
 p5 <- ggplot(data, aes(x = react_ambiguity_5)) +
     geom_bar(fill="#00802f",color="#00802f",alpha=0.7)+
      geom_vline(xintercept = mean(data$react_ambiguity_5,na.rm=TRUE), color = "#0a5f2d", linetype = "solid", size = 1) +
+     annotate("text", x = mean(data$react_ambiguity_5,na.rm=TRUE) + 0.9, y = max(table(data$react_ambiguity_5)) + 5,
+    label = paste0("Mean = ", round(mean(data$react_ambiguity_5,na.rm=TRUE), 2)),
+    color = "#0a5f2d",
+    fontface = "bold",
+    hjust = 0.5
+  ) +
     labs(
         title = "I ignore the content.",
-        x = "Response",
+        x = "",
         y = "Frequency"
     ) +
-    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5)) + 
+    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5),labels=c("Completely Disagree","","","","","","Completely Agree")) + 
     theme_minimal()
 
 p6 <- ggplot(data, aes(x = react_ambiguity_6)) +
     geom_bar(fill="#00802f",color="#00802f",alpha=0.7)+
      geom_vline(xintercept = mean(data$react_ambiguity_6,na.rm=TRUE), color = "#0a5f2d", linetype = "solid", size = 1) +
+     annotate("text", x = mean(data$react_ambiguity_6,na.rm=TRUE) + 0.9, y = max(table(data$react_ambiguity_6)) + 5,
+    label = paste0("Mean = ", round(mean(data$react_ambiguity_6,na.rm=TRUE), 2)),
+    color = "#0a5f2d",
+    fontface = "bold",
+    hjust = 0.5
+  ) +
     labs(
         title = "I save and/or share the \ncontent with someone.",
-        x = "Response",
+        x = "",
         y = "Frequency"
     ) +
-    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5)) + 
+    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5),labels=c("Completely Disagree","","","","","","Completely Agree")) + 
     theme_minimal()
 
 p7 <- ggplot(data, aes(x = react_ambiguity_7)) +
     geom_bar(fill="#00802f",color="#00802f",alpha=0.7)+
      geom_vline(xintercept = mean(data$react_ambiguity_7,na.rm=TRUE), color = "#0a5f2d", linetype = "solid", size = 1) +
+     annotate("text", x = mean(data$react_ambiguity_7,na.rm=TRUE) + 0.9, y = max(table(data$react_ambiguity_7)) + 5,
+    label = paste0("Mean = ", round(mean(data$react_ambiguity_7,na.rm=TRUE), 2)),
+    color = "#0a5f2d",
+    fontface = "bold",
+    hjust = 0.5
+  ) +
     labs(
         title = "I click to learn more \nabout the content.",
-        x = "Response",
+        x = "",
         y = "Frequency"
     ) +
-    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5)) + 
+    scale_x_continuous(breaks = 1:7, limits = c(0.5, 7.5),labels=c("Completely Disagree","","","","","","Completely Agree")) + 
     theme_minimal()
 
 p1 + p2
@@ -962,6 +1007,10 @@ p1 + p2
 p3 + p4
 
 p5 + p6 + p7
+
+p1 / p2 / p3
+ggsave("images/promptedambiguity.svg",bg="transparent",height=8,width=6)
+p3 + p4
 
 ```
 
@@ -1209,7 +1258,7 @@ On average, participants were $mean_\text{certainty} = `r round(mean(df_specific
 
 
 ggplot(df_specific, aes(x = certainty_1)) +
-  geom_density(fill = "#00802f", alpha = 0.5) +
+  geom_density(fill = "#73a5af", alpha = 0.5) +
   scale_x_continuous(
     limits = c(0, 100),
     breaks = seq(0, 100, 10)
@@ -1221,6 +1270,38 @@ ggplot(df_specific, aes(x = certainty_1)) +
   ) +
   theme_minimal(base_size = 14)
 
+ggplot(df_specific, aes(x = factor(1), y = certainty_1)) +
+  geom_violin(fill = "#73a5af",color="#73a5af", alpha = 0.3, width = 0.8) +
+  geom_jitter(width = 0.1, size = 2, alpha = 0.6, color = "#004d1a") +
+  stat_summary(
+    fun.data = function(x) {
+      m <- mean(x, na.rm = TRUE)
+      s <- sd(x, na.rm = TRUE)
+      data.frame(y = m, ymin = max(1, m - s), ymax = m + s)
+    },
+    geom = "errorbar",
+    width = 0.1,
+    color = "#00802f"
+  ) +
+  stat_summary(
+    fun = mean,
+    geom = "point",
+    size = 5,
+    color = "#0a5f2d"
+  ) +
+  scale_y_continuous(
+    limits = c(0, 100),
+    breaks = seq(0, 100, 10)
+  ) +
+  labs(
+    title = "How certain are you that this content was \ncreated by AI?",
+    x = "",
+    y = "Certainty (0–100)"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(axis.text.x = element_blank(),  # remove the dummy x-axis label
+        axis.ticks.x = element_blank())
+ggsave("images/distributionviolin.svg",height=8,width=5)
 
 
 ggplot(df_specific, aes(x = involved_1)) +

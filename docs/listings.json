@@ -2,7 +2,6 @@
   {
     "listing": "/slide_overview.html",
     "items": [
-      "/slides/ambiguity.html",
       "/slides/convenienceprivacy.html",
       "/slides/20251210_Colloquium.html"
     ]
@@ -10,8 +9,9 @@
   {
     "listing": "/docs_overview.html",
     "items": [
+      "/documents/ambiguity.html",
       "/documents/Origin_ambiguity.html",
-      "/documents/test_pdf.pdf",
+      "/documents/algorithm_awareness.html",
       "/documents/analysis_esf.html"
     ]
   }
