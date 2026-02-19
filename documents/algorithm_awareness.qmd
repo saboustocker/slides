@@ -1,155 +1,256 @@
 ---
-title: "Algorithm Awareness"
+title: "Algorithmic Persuasion Knowledge Model"
 subtitle: "Summary of related literature and exploratory survey design"
 author: Sabou Rani Stocker
-date: 2026-02-15
+date: 2026-02-19
 format:
   html:
     theme: [sandstone, ../styles/hsg_pages.scss]
 project: "aPKM"
 bibliography: ../bibliography.bib
+navbar: false
 ---
 
-Living in a digital world, we interact with vast amounts of data every day. By the end of 2025, Instagram was estimated to have 34 billion posts uploaded in that year alone [@HowManyInstagram2024]. Amazon lists approximately 350 million products [@HowManyProducts], and on YouTube about 360 hours of content are uploaded every minute [@admin-hartonYouTubeStatsEverything2025]. Given this scale, consumers cannot realistically navigate these systems without algorithmic recommendation. Digital environments are therefore structured by algorithmic curation: From social media feeds to product recommendations, consumers rarely encounter neutral choice sets; instead, they interact with selections shaped by systems that continuously learn from their past behavior. While recommender systems research primarily evaluates prediction accuracy and optimization performance [e.g., @garapatiRecommenderSystemsDigital2025; @razaComprehensiveReviewRecommender2026], far less attention has been paid to the cognitive and behavioral impact on consumers:
+This document provides a structured overview of the existing literature on algorithmic persuasion knowledge models (aPKM) and related constructs. Although recommender systems have been examined extensively from a technical perspective -- and, to a lesser extent, from the standpoint of consumer satisfaction -- research remains limited research on how consumers cognitively behaviorally respond to algorithmic recommendations.
+
+To advance understanding of the psychological processes underlying such responses, this document develops a set of exploratory questions grounded in established phenomena concerning how consumers think, feel, and act when they perceive themselves as being observed and/or persuaded, but applied to the construct of aPKM.
+
+## Introduction
+:::{.panel-tabset}
+
+## Summary of Literature
+Living in a digital world, we interact with vast amounts of data every day. By the end of 2025, Instagram was estimated to have 34 billion posts uploaded in that year alone [@HowManyInstagram2024]. Amazon lists approximately 350 million products [@HowManyProducts], and on YouTube about 360 hours of content are uploaded every minute [@admin-hartonYouTubeStatsEverything2025]. Given this scale, consumers cannot realistically navigate these systems without algorithmic recommendation. 
+
+Digital environments are therefore structured by algorithmic curation: From social media feeds to product recommendations, consumers rarely encounter neutral choice sets; instead, they interact with selections shaped by systems that continuously learn from their past behavior. While recommender systems research primarily evaluates prediction accuracy and optimization performance [e.g., @garapatiRecommenderSystemsDigital2025; @razaComprehensiveReviewRecommender2026], far less attention has been paid to the cognitive and behavioral impact on consumers:
 
 **What happens when consumers know that algorithms are observing and learning from them?**
 
-### Exploratory Questions
 
-*The following exploratory questions aim to understand if consumers are aware of this recommender-system landscape at all. I strongly assume that awareness will be high.*
+## Exploratory Questions
 
-How do you think platforms like Instagram, YouTube, or Amazon decide what to show you?
+:::{.explanation-p}
+The following exploratory questions aim to understand if consumers are aware of this recommender-system landscape at all. We assume that awareness will be high, but want to ask the open questions to explore if participants come up with "folk theories" unprompted, and if so, what they entail. 
+:::
 
-> open-ended question
-
-In what ways, if any, do you think your past behavior influences what you see on these platforms?
-
-> open-ended question
-
-What do you think these systems “know” about you, if anything?
+**How do you think platforms like Instagram, YouTube, or Amazon decide what to show you?**
 
 > open-ended question
 
-I am aware that my actions on a platform (e.g., clicks, views, purchases) influence what is shown to me later.
+**In what ways, if any, do you think your past behavior influences what you see on these platforms?**
 
+> open-ended question
+
+**What do you think these systems “know” about you, if anything?**
+
+> open-ended question
+
+**I am aware that my actions on a platform (e.g., clicks, views, purchases) influence what is shown to me later.**
+
+:::{.manual-blockquote}
+
+:::{.even-cols}
 | strongly disagree |     |     |     |     |     | strongly agree |
 |-------------------|-----|-----|-----|-----|-----|----------------|
 | 1                 | 2   | 3   | 4   | 5   | 6   | 7              |
+:::
+:::
 
-I believe platforms infer characteristics about me based on my past behavior.
+**I believe platforms infer characteristics about me based on my past behavior.**
 
+:::{.manual-blockquote}
+
+:::{.even-cols}
 | strongly disagree |     |     |     |     |     | strongly agree |
 |-------------------|-----|-----|-----|-----|-----|----------------|
 | 1                 | 2   | 3   | 4   | 5   | 6   | 7              |
+:::
+:::
 
-I believe the platform forms a profile of me based on my past activity.
+**I believe the platform forms a profile of me based on my past activity.**
 
+:::{.manual-blockquote}
+
+:::{.even-cols}
 | strongly disagree |     |     |     |     |     | strongly agree |
 |-------------------|-----|-----|-----|-----|-----|----------------|
 | 1                 | 2   | 3   | 4   | 5   | 6   | 7              |
+:::
+:::
+
+:::
+
 
 ## Folk Theories about (Algorithmic) Persuasion and Recommendation
 
-Most people are aware that their online experience is strongly shaped by algorithmic curation and recommendation. "The algorithm" is a regular topic of discussion (and disdain) on various online platforms [@mungerTheAlgorithm2024; @youtubersTheAlgorithm2026; and many more]. It is however also apparent that few consumers' understanding of "the algorithm" is rooted in the mathematical bases recommender systems are built on [@devitoAlgorithmsRuinEverything2017; @raderUnderstandingUserBeliefs2015]. One possible explanation is rooted in the literature on persuasion knowledge in consumer research, and related streams of literature applying this concept to recommender systems.
+:::{.panel-tabset}
+
+### Summary of Literature
+Most people are aware that their online experience is strongly shaped by algorithmic curation and recommendation. "The algorithm" is a regular topic of discussion (and disdain) on various online platforms (@mungerTheAlgorithm2024, @youtubersTheAlgorithm2026; and many more). It is however also apparent that few consumers' understanding of "the algorithm" is rooted in the mathematical bases recommender systems are built on [@devitoAlgorithmsRuinEverything2017; @raderUnderstandingUserBeliefs2015]. One possible explanation is rooted in the **literature on persuasion knowledge in consumer research**, and related streams of literature applying this concept to recommender systems.
 
 The Persuasion Knowledge Model (PKM) formalizes how consumers’ beliefs about persuasion attempts shape their responses (@friestadPersuasionKnowledgeModel1994). In this framework, consumers (“targets”) and marketers (“agents”) each draw on topic knowledge, persuasion knowledge, and knowledge about the other party. Persuasion knowledge comprises beliefs about psychological mediators, marketer tactics, one’s own coping strategies, the effectiveness and appropriateness of tactics, and both parties’ goals. Crucially, these beliefs are subjective and vary across individuals and contexts (@friestadPersuasionKnowledgeModel1994).
 
-This framework can be extended to an algorithmic persuasion knowledge model (aPKM). Although algorithms differ from human marketers, their functional goal is comparable: encouraging desired behaviors such as scrolling, clicking, sharing, or purchasing. Folk theories about algorithmic persuasion are widespread. @raderUnderstandingUserBeliefs2015 analyze intuitive theories about Facebook’s newsfeed algorithm, while @devitoAlgorithmsRuinEverything2017 show that inaccurate beliefs about algorithms shape resistance to algorithmic change. Moreover, making different recommendation rationales salient (e.g., similarity to other users vs. similarity to items) alters engagement behavior (@gaiMakingRecommendationsMore2019).
+This framework can be extended to an algorithmic persuasion knowledge model (aPKM). Although algorithms differ from human marketers, their functional goal is comparable: encouraging desired behaviors such as scrolling, clicking, sharing, or purchasing -- in other words: persuading consumers to act in a desired manner. Folk theories about algorithmic persuasion are widespread. @raderUnderstandingUserBeliefs2015 analyze intuitive theories about Facebook’s newsfeed algorithm, while @devitoAlgorithmsRuinEverything2017 show that inaccurate beliefs about algorithms shape resistance to algorithmic change. Moreover, making different recommendation rationales salient (e.g., similarity to other users vs. similarity to items) alters engagement behavior (@gaiMakingRecommendationsMore2019).
 
-Together, these findings suggest that consumers' subjective beliefs about algorithms; whether they see them as observers, persuaders, or epistemic authorities; shape how algorithmic pre-selection influences autonomy, preference construction, and behavioral responses.
+Together, these findings suggest that consumers' subjective beliefs about algorithms shape how algorithmic pre-selection influences perceived autonomy, preference construction, and behavioral responses.
 
 ### Exploratory Questions
 
-*The following questions are designed to get a better understanding of what consumers think "the altgorithm" actually is.*
+:::{.explanation-p}
+The following questions are designed to get a better understanding of what consumers think "the altgorithm" actually is, and if they attribute a locus of action to it.
+:::
 
-What do you think the platform is trying to achieve when it recommends certain content or products to you?
+The following questions are worded in a general form referring to "a platform". By platforms, we refer to social media platforms such as Instagram or Facebook, but also online shopping platforms such as Amazon. 
+
+**What do you think a platform is trying to achieve when it recommends certain content or products to you?**
 
 > open-ended question
 
-How, if at all, do you adjust your behavior because you know recommendations are generated by an algorithm?
+**How, if at all, do you adjust your behavior because you know recommendations are generated by an algorithm?**
 
 > open-ended question
 
-I believe recommendations are designed to steer my behavior in certain directions.
+**I believe recommendations are designed to steer my behavior in certain directions.**
 
+:::{.manual-blockquote}
+
+:::{.even-cols}
 | strongly disagree |     |     |     |     |     | strongly agree |
 |-------------------|-----|-----|-----|-----|-----|----------------|
 | 1                 | 2   | 3   | 4   | 5   | 6   | 7              |
+:::
+:::
 
-When I see a recommendation, I think about why it is being shown to me.
+**When I see a recommendation, I think about why it is being shown to me.**
 
+:::{.manual-blockquote}
+
+:::{.even-cols}
 | strongly disagree |     |     |     |     |     | strongly agree |
 |-------------------|-----|-----|-----|-----|-----|----------------|
 | 1                 | 2   | 3   | 4   | 5   | 6   | 7              |
+:::
+:::
+
+:::
+
+
 
 ## Feeling Perceived by the Algorithm
 
+:::{.panel-tabset}
+## Summary of Literature
 Folk theories about how algorithms work build the basis on which consumers construct their awareness of algorithmic recommendation and presence, and how they adapt their behavior accordingly. This modified behavior however presumes that consumers feel "perceived by the algorithm" at all.
 
-While recommender systems research typically focuses on optimizing algorithmic performance and improving prediction accuracy and customer retention [@garapatiRecommenderSystemsDigital2025; @razaComprehensiveReviewRecommender2026], consumer research has examined how individuals respond to algorithmic pre-selection. Work in this domain investigates reactance to algorithmic curation, consumers’ folk theories about algorithms (e.g., their presumed inability to weigh relative importance of preferences; Anne), and the ways in which algorithmic cues influence judgments. For instance, consumers anchor their product evaluations on recommender system outputs when these are made explicit: @adomaviciusRecommenderSystemsManipulate2013 show that participants adjust their own ratings toward an algorithm’s predicted rating (“Our algorithm thinks that you would rate the show you are about to see as 1.5/5.”, p. 962). These anchoring effects occur even when the recommendation stems from a fake algorithm, indicating that actual knowledge about the consumer is not necessary to influence perceived ratings.
+While recommender systems research typically focuses on optimizing algorithmic performance and improving prediction accuracy and customer retention [@garapatiRecommenderSystemsDigital2025; @razaComprehensiveReviewRecommender2026], consumer research has examined how individuals respond to algorithmic pre-selection. Work in this domain investigates reactance to algorithmic curation, consumers’ folk theories about algorithms (e.g., their presumed inability to weigh relative importance of preferences; Anne), and the ways in which algorithmic cues influence judgments. For instance, consumers anchor their product evaluations on recommender system outputs when these are made explicit: @adomaviciusRecommenderSystemsManipulate2013 show that participants adjust their own ratings toward an algorithm’s predicted rating (“Our algorithm thinks that you would rate the show you are about to see as 1.5/5.”, p. 962). These anchoring effects occur even when the recommendation stems from a fake algorithm, indicating that actual knowledge about the consumer is not necessary to elicit this anchoring effect.
 
 ### Feeling Observed changes how we Act and Decide
 
-A substantial body of research in social psychology, consumer research, and marketing has examined the effects of observation—or even the mere presence of others—on decision-making (e.g., @zwebnerMyOwnAversion2020). In general, individuals show aversion to the feeling of being observed (@zwebnerMyOwnAversion2020), particularly when observation threatens their sense of autonomy. The question is whether such findings extend to algorithms: do personalized recommendations elicit a feeling that one’s past actions have been observed?
+A substantial body of research in social psychology, consumer research, and marketing has examined the effects of observation—or even the mere presence of others—on decision-making (e.g., @zwebnerMyOwnAversion2020).  The question is whether such findings extend to algorithms: do personalized recommendations elicit a feeling that one’s past actions have been observed? 
+Integrating this stream of literature with research demonstrating that making an algorithm salient can alter consumer behavior [e.g., @adomaviciusRecommenderSystemsManipulate2013], an open question is whether algorithmic salience produces effects that are similar or comparable to those observed when the presence of other people is made salient. 
 
-There is evidence that perceived observation reduces felt decision autonomy, for instance by increasing pressure to conform to defaults (@zwebnerMyOwnAversion2020). Similarly, perceived autonomy over data sharing affects behavioral responses: although the ad-targeting mechanism remained unchanged, when consumers felt they had control over how much personal information they displayed, click-through rates doubled (from .1% to .25%) (@tuckerSocialNetworksPersonalized2014). Thus, perceived control—rather than objective system properties—shapes consumer reactions.
+In general, individuals show aversion to the feeling of being observed (@zwebnerMyOwnAversion2020), particularly when observation threatens their sense of autonomy. There is evidence that perceived observation reduces felt decision autonomy, for instance by increasing pressure to conform to defaults (@zwebnerMyOwnAversion2020). Similarly, perceived autonomy over data sharing affects behavioral responses: although the ad-targeting mechanism remained unchanged, when consumers felt they had control over how much personal information they displayed, click-through rates doubled (from .1% to .25%) (@tuckerSocialNetworksPersonalized2014). Thus, perceived control—rather than objective system properties—shapes consumer reactions.
 
-### Exploratory Questions
+## Exploratory Questions
 
-*These questions try to see if and how consumers feel "seen" by an algorithm, and how they (report to) modify their behavior accordingly.*
+:::{.explanation-p}
+These questions try to see if and how consumers feel "seen" by an algorithm, and how they (report to) modify their behavior accordingly.
+:::
 
-How do you think platforms respond when you engage with something outside your usual interests?
+The following questions are worded in a general form referring to “a platform”. By platforms, we refer to social media platforms such as Instagram or Facebook, but also online shopping platforms such as Amazon.
+
+**How do you think platforms respond when you engage with something outside your usual interests?**
 
 > open-ended question
 
-Does knowing that your activity is tracked influence how you behave on digital platforms? If so, how?
+**Does knowing that your activity is tracked influence how you behave on digital platforms? If so, how?**
 
 > open-ended question
 
-If I engage with content that differs from my usual interests, I expect my future recommendations to change.
+**If I engage with content that differs from my usual interests, I expect my future recommendations to change.**
 
+:::{.manual-blockquote}
+
+:::{.even-cols}
 | strongly disagree |     |     |     |     |     | strongly agree |
 |-------------------|-----|-----|-----|-----|-----|----------------|
 | 1                 | 2   | 3   | 4   | 5   | 6   | 7              |
+:::
+:::
 
-I feel that the platform is continuously updating its understanding of me.
+**I feel that the platform is continuously updating its understanding of me.**
 
+:::{.manual-blockquote}
+
+:::{.even-cols}
 | strongly disagree |     |     |     |     |     | strongly agree |
 |-------------------|-----|-----|-----|-----|-----|----------------|
 | 1                 | 2   | 3   | 4   | 5   | 6   | 7              |
+:::
+:::
 
-Even a single action (e.g., one click or view) can influence what I see afterward.
+**Even a single action (e.g., one click or view) can influence what I see afterward.**
 
+:::{.manual-blockquote}
+
+:::{.even-cols}
 | strongly disagree |     |     |     |     |     | strongly agree |
 |-------------------|-----|-----|-----|-----|-----|----------------|
 | 1                 | 2   | 3   | 4   | 5   | 6   | 7              |
+:::
+:::
 
-I am more careful about what I click or watch because I know it affects future recommendations.
+**I am more careful about what I click or watch because I know it affects future recommendations.**
 
+:::{.manual-blockquote}
+
+:::{.even-cols}
 | strongly disagree |     |     |     |     |     | strongly agree |
 |-------------------|-----|-----|-----|-----|-----|----------------|
 | 1                 | 2   | 3   | 4   | 5   | 6   | 7              |
+:::
+:::
 
-I avoid engaging with content because I do not want it to shape my recommendations.
+**I avoid engaging with content because I do not want it to shape my recommendations.**
 
-| never |     |     |     |     |     | very often |
-|-------|-----|-----|-----|-----|-----|------------|
-| 1     | 2   | 3   | 4   | 5   | 6   | 7          |
+:::{.manual-blockquote}
 
-I have taken steps (e.g., private mode, deleting history) to influence how a platform profiles me.
-
-| never |     |     |     |     |     | very often |
-|-------|-----|-----|-----|-----|-----|------------|
-| 1     | 2   | 3   | 4   | 5   | 6   | 7          |
-
-I feel observed when using personalized platforms.
-
+:::{.even-cols}
 | strongly disagree |     |     |     |     |     | strongly agree |
 |-------------------|-----|-----|-----|-----|-----|----------------|
 | 1                 | 2   | 3   | 4   | 5   | 6   | 7              |
+:::
+:::
+
+**I have taken steps (e.g., private mode, deleting history) to influence how a platform profiles me.**
+
+:::{.manual-blockquote}
+
+:::{.even-cols}
+| strongly disagree |     |     |     |     |     | strongly agree |
+|-------------------|-----|-----|-----|-----|-----|----------------|
+| 1                 | 2   | 3   | 4   | 5   | 6   | 7              |
+:::
+:::
+
+**I feel observed when using personalized platforms.**
+
+:::{.manual-blockquote}
+
+:::{.even-cols}
+| strongly disagree |     |     |     |     |     | strongly agree |
+|-------------------|-----|-----|-----|-----|-----|----------------|
+| 1                 | 2   | 3   | 4   | 5   | 6   | 7              |
+:::
+:::
+
+:::
+
 
 ## Is Algorithmic Pre-Selection Perceived as a Reduction of Autonomy?
 
+:::{.panel-tabset}
+
+## Summary of Literature
 The cognitve and behavioral reactions to feeling seen by an algorithm may even go further than situational reactions, and influence how consumers perceive their fundamental autonomy in chosing their digital experience.
 
 If algorithmic personalization is experienced as observation, it may also be perceived as constraining autonomy. Research shows that observation can undermine decision autonomy (@zwebnerMyOwnAversion2020). This raises the possibility that algorithmic pre-selection is interpreted as narrowing one’s choice space or subtly pressuring certain decisions.
@@ -158,25 +259,44 @@ At the same time, consumers do not uniformly attribute strong knowledge or autho
 
 However, other evidence suggests skepticism toward algorithmic knowledge: people often perceive algorithms as less capable of truly knowing who they are (Anne’s unpublished study; algorithm aversion literature). Thus, algorithms may simultaneously be seen as powerful observers and as epistemically limited systems.
 
-### Exploratory Questions
+## Exploratory Questions
 
-How does personalized recommendation make you feel about your freedom to choose? \> open-ended question
+**How does personalized recommendation make you feel about your freedom to choose?**
 
-Personalized recommendations make me feel that my choices are somewhat guided.
+> open-ended question
 
+**Personalized recommendations make me feel that my choices are  guided.**
+
+:::{.manual-blockquote}
+
+:::{.even-cols}
+| strongly disagree |     |     |   somewhat  |     |     | strongly agree |
+|-------------------|-----|-----|-----|-----|-----|----------------|
+| 1                 | 2   | 3   | 4   | 5   | 6   | 7              |
+:::
+:::
+
+**I feel fully autonomous when choosing from personalized recommendations.** 
+(reverse-coded)
+
+:::{.manual-blockquote}
+
+:::{.even-cols}
 | strongly disagree |     |     |     |     |     | strongly agree |
 |-------------------|-----|-----|-----|-----|-----|----------------|
 | 1                 | 2   | 3   | 4   | 5   | 6   | 7              |
+:::
+:::
 
-I feel fully autonomous when choosing from personalized recommendations. (reverse-coded)
-
-| strongly disagree |     |     |     |     |     | strongly agree |
-|-------------------|-----|-----|-----|-----|-----|----------------|
-| 1                 | 2   | 3   | 4   | 5   | 6   | 7              |
+:::
 
 ## Who Has the Final Ownership of Knowledge?
 
-This loss of autonomy and shaping of an experience "by the algorithm" might even have more fundamental effects affecting the perceived sense of identity or self by the consumer. Literature suggesting both directions - feeling threatened by a mismatch in self-perception and algorithmic recommendation, as well as updating one's own ideas and beliefs based on algorithmic recommendation, have been discussed in literature.
+:::{.panel-tabset}
+
+## Summary of Literature
+
+This loss of autonomy and shaping of an experience "by the algorithm" might even have more fundamental effects affecting the perceived sense of identity or self by the consumer. Literature suggesting both directions -- feeling threatened by a mismatch in self-perception and algorithmic recommendation, as well as updating one's own ideas and beliefs based on algorithmic recommendation, have been discussed in literature. In essence, one could ask if consumers attribute *epistemic authority* to the algorithm, or themselves, and to what degree [@kruglanski2005says].
 
 The tension between perceived algorithmic knowledge and personal self-knowledge becomes particularly relevant when considering the relationship between choices and preferences. Research on self-control shows that exerting self-control weakens the perceived correspondence between choice and preference (@selaHowSelfControlShapes2017). For example, if one exerts self-control to avoid wearing pajamas to the office, wearing a suit feels less preference-consistent. These effects spill over into unrelated domains, such as food choices.
 
@@ -184,48 +304,82 @@ Importantly, lay theories about self-control moderate this relationship. Most in
 
 In algorithmic contexts, this raises the question of whether consumers interpret algorithmic suggestions as aligned with their “true” preferences or as external pressures acting against the self. Studies such as @rifkinVarietySelfExpressionUndermines2019 suggest that consumers' see algorithmic deviation from their perceived concept of (stable) self as undesireable and unpleasant, and furthermore also as going against their perceived self.
 
-### Exploratory Questions
+## Exploratory Questions
 
-*here, we must define "the algorithm" if we ask the questions like this*.
+:::{.explanation-p}
+here, we must define "the algorithm" if we ask the questions like this.
+:::
 
-Have you ever consciously changed your preferences based on what your feed recommends you? If so, when and how?
+**Have you ever consciously changed your preferences based on what your feed recommends you? If so, when and how?**
 
 > open question
 
-The algorithm understands my preferences well.
+**The algorithm understands my preferences well.**
 
+:::{.manual-blockquote}
+
+:::{.even-cols}
 | strongly disagree |     |     |     |     |     | strongly agree |
 |-------------------|-----|-----|-----|-----|-----|----------------|
 | 1                 | 2   | 3   | 4   | 5   | 6   | 7              |
+:::
+:::
 
 I understand my preferences better than the algorithm does.
 
+:::{.manual-blockquote}
+
+:::{.even-cols}
 | strongly disagree |     |     |     |     |     | strongly agree |
 |-------------------|-----|-----|-----|-----|-----|----------------|
 | 1                 | 2   | 3   | 4   | 5   | 6   | 7              |
+:::
+:::
 
 Sometimes the algorithm seems to know what I want before I consciously realize it.
 
+:::{.manual-blockquote}
+
+:::{.even-cols}
 | strongly disagree |     |     |     |     |     | strongly agree |
 |-------------------|-----|-----|-----|-----|-----|----------------|
 | 1                 | 2   | 3   | 4   | 5   | 6   | 7              |
+:::
+:::
 
 It bothers me when recommendations do not match how I see myself.
 
+:::{.manual-blockquote}
+
+:::{.even-cols}
 | strongly disagree |     |     |     |     |     | strongly agree |
 |-------------------|-----|-----|-----|-----|-----|----------------|
 | 1                 | 2   | 3   | 4   | 5   | 6   | 7              |
+:::
+:::
 
 I care about whether my digital profile reflects my “true” interests.
 
+:::{.manual-blockquote}
+
+:::{.even-cols}
 | strongly disagree |     |     |     |     |     | strongly agree |
 |-------------------|-----|-----|-----|-----|-----|----------------|
 | 1                 | 2   | 3   | 4   | 5   | 6   | 7              |
+:::
+:::
 
 My recommendation feed feels like an accurate representation of who I am.
 
+:::{.manual-blockquote}
+
+:::{.even-cols}
 | strongly disagree |     |     |     |     |     | strongly agree |
 |-------------------|-----|-----|-----|-----|-----|----------------|
 | 1                 | 2   | 3   | 4   | 5   | 6   | 7              |
+:::
+:::
+
+:::
 
 # Bibliography

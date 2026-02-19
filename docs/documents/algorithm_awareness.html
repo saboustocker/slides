@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Sabou Rani Stocker">
-<meta name="dcterms.date" content="2026-02-15">
+<meta name="dcterms.date" content="2026-02-19">
 
-<title>Algorithm Awareness – IBT-HSG - Slides</title>
+<title>Algorithmic Persuasion Knowledge Model – IBT-HSG - Slides</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -62,7 +62,7 @@ div.csl-indent {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-b3cc886893f1576abc94174c78ea1c6d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-4b4feeeca198dc229f4d1184ae9ec6bb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -94,51 +94,11 @@ div.csl-indent {
 
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">IBT-HSG - Slides</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../slide_overview.html"> 
-<span class="menu-text">Slides</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../docs_overview.html"> 
-<span class="menu-text">Documents</span></a>
-  </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/saboustocker/slides"> <i class="bi bi-github" role="img" aria-label="GitHub">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
-</div>
-      </div> <!-- /container-fluid -->
-    </nav>
-</header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
@@ -147,7 +107,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Algorithm Awareness</h1>
+<h1 class="title">Algorithmic Persuasion Knowledge Model</h1>
 <p class="subtitle lead">Summary of related literature and exploratory survey design</p>
 </div>
 
@@ -165,7 +125,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 15, 2026</p>
+      <p class="date">February 19, 2026</p>
     </div>
   </div>
   
@@ -177,24 +137,37 @@ div.csl-indent {
 </header>
 
 
-<p>Living in a digital world, we interact with vast amounts of data every day. By the end of 2025, Instagram was estimated to have 34 billion posts uploaded in that year alone <span class="citation" data-cites="HowManyInstagram2024">(<a href="#ref-HowManyInstagram2024" role="doc-biblioref">Go Beyond 2024</a>)</span>. Amazon lists approximately 350 million products <span class="citation" data-cites="HowManyProducts">(<a href="#ref-HowManyProducts" role="doc-biblioref">Capital One Shopping 2025</a>)</span>, and on YouTube about 360 hours of content are uploaded every minute <span class="citation" data-cites="admin-hartonYouTubeStatsEverything2025">(<a href="#ref-admin-hartonYouTubeStatsEverything2025" role="doc-biblioref">moodive 2025</a>)</span>. Given this scale, consumers cannot realistically navigate these systems without algorithmic recommendation. Digital environments are therefore structured by algorithmic curation: From social media feeds to product recommendations, consumers rarely encounter neutral choice sets; instead, they interact with selections shaped by systems that continuously learn from their past behavior. While recommender systems research primarily evaluates prediction accuracy and optimization performance <span class="citation" data-cites="garapatiRecommenderSystemsDigital2025 razaComprehensiveReviewRecommender2026">(e.g., <a href="#ref-garapatiRecommenderSystemsDigital2025" role="doc-biblioref">Garapati and Chakraborty 2025</a>; <a href="#ref-razaComprehensiveReviewRecommender2026" role="doc-biblioref">Raza et al. 2026</a>)</span>, far less attention has been paid to the cognitive and behavioral impact on consumers:</p>
+<p>This document provides a structured overview of the existing literature on algorithmic persuasion knowledge models (aPKM) and related constructs. Although recommender systems have been examined extensively from a technical perspective – and, to a lesser extent, from the standpoint of consumer satisfaction – research remains limited research on how consumers cognitively behaviorally respond to algorithmic recommendations.</p>
+<p>To advance understanding of the psychological processes underlying such responses, this document develops a set of exploratory questions grounded in established phenomena concerning how consumers think, feel, and act when they perceive themselves as being observed and/or persuaded, but applied to the construct of aPKM.</p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Summary of Literature</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Exploratory Questions</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>Living in a digital world, we interact with vast amounts of data every day. By the end of 2025, Instagram was estimated to have 34 billion posts uploaded in that year alone <span class="citation" data-cites="HowManyInstagram2024">(<a href="#ref-HowManyInstagram2024" role="doc-biblioref">Go Beyond 2024</a>)</span>. Amazon lists approximately 350 million products <span class="citation" data-cites="HowManyProducts">(<a href="#ref-HowManyProducts" role="doc-biblioref">Capital One Shopping 2025</a>)</span>, and on YouTube about 360 hours of content are uploaded every minute <span class="citation" data-cites="admin-hartonYouTubeStatsEverything2025">(<a href="#ref-admin-hartonYouTubeStatsEverything2025" role="doc-biblioref">moodive 2025</a>)</span>. Given this scale, consumers cannot realistically navigate these systems without algorithmic recommendation.</p>
+<p>Digital environments are therefore structured by algorithmic curation: From social media feeds to product recommendations, consumers rarely encounter neutral choice sets; instead, they interact with selections shaped by systems that continuously learn from their past behavior. While recommender systems research primarily evaluates prediction accuracy and optimization performance <span class="citation" data-cites="garapatiRecommenderSystemsDigital2025 razaComprehensiveReviewRecommender2026">(e.g., <a href="#ref-garapatiRecommenderSystemsDigital2025" role="doc-biblioref">Garapati and Chakraborty 2025</a>; <a href="#ref-razaComprehensiveReviewRecommender2026" role="doc-biblioref">Raza et al. 2026</a>)</span>, far less attention has been paid to the cognitive and behavioral impact on consumers:</p>
 <p><strong>What happens when consumers know that algorithms are observing and learning from them?</strong></p>
-<section id="exploratory-questions" class="level3">
-<h3 class="anchored" data-anchor-id="exploratory-questions">Exploratory Questions</h3>
-<p><em>The following exploratory questions aim to understand if consumers are aware of this recommender-system landscape at all. I strongly assume that awareness will be high.</em></p>
-<p>How do you think platforms like Instagram, YouTube, or Amazon decide what to show you?</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="explanation-p">
+<p>The following exploratory questions aim to understand if consumers are aware of this recommender-system landscape at all. We assume that awareness will be high, but want to ask the open questions to explore if participants come up with “folk theories” unprompted, and if so, what they entail.</p>
+</div>
+<p><strong>How do you think platforms like Instagram, YouTube, or Amazon decide what to show you?</strong></p>
 <blockquote class="blockquote">
 <p>open-ended question</p>
 </blockquote>
-<p>In what ways, if any, do you think your past behavior influences what you see on these platforms?</p>
+<p><strong>In what ways, if any, do you think your past behavior influences what you see on these platforms?</strong></p>
 <blockquote class="blockquote">
 <p>open-ended question</p>
 </blockquote>
-<p>What do you think these systems “know” about you, if anything?</p>
+<p><strong>What do you think these systems “know” about you, if anything?</strong></p>
 <blockquote class="blockquote">
 <p>open-ended question</p>
 </blockquote>
-<p>I am aware that my actions on a platform (e.g., clicks, views, purchases) influence what is shown to me later.</p>
+<p><strong>I am aware that my actions on a platform (e.g., clicks, views, purchases) influence what is shown to me later.</strong></p>
+<div class="manual-blockquote">
+<div class="even-cols">
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -219,7 +192,11 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
-<p>I believe platforms infer characteristics about me based on my past behavior.</p>
+</div>
+</div>
+<p><strong>I believe platforms infer characteristics about me based on my past behavior.</strong></p>
+<div class="manual-blockquote">
+<div class="even-cols">
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -244,7 +221,11 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
-<p>I believe the platform forms a profile of me based on my past activity.</p>
+</div>
+</div>
+<p><strong>I believe the platform forms a profile of me based on my past activity.</strong></p>
+<div class="manual-blockquote">
+<div class="even-cols">
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -269,25 +250,39 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="folk-theories-about-algorithmic-persuasion-and-recommendation" class="level2">
 <h2 class="anchored" data-anchor-id="folk-theories-about-algorithmic-persuasion-and-recommendation">Folk Theories about (Algorithmic) Persuasion and Recommendation</h2>
-<p>Most people are aware that their online experience is strongly shaped by algorithmic curation and recommendation. “The algorithm” is a regular topic of discussion (and disdain) on various online platforms [<span class="citation" data-cites="mungerTheAlgorithm2024">Munger (<a href="#ref-mungerTheAlgorithm2024" role="doc-biblioref">2024</a>)</span>; <span class="citation" data-cites="youtubersTheAlgorithm2026">r/youtubers (<a href="#ref-youtubersTheAlgorithm2026" role="doc-biblioref">2026</a>)</span>; and many more]. It is however also apparent that few consumers’ understanding of “the algorithm” is rooted in the mathematical bases recommender systems are built on <span class="citation" data-cites="devitoAlgorithmsRuinEverything2017 raderUnderstandingUserBeliefs2015">(<a href="#ref-devitoAlgorithmsRuinEverything2017" role="doc-biblioref">DeVito, Gergle, and Birnholtz 2017</a>; <a href="#ref-raderUnderstandingUserBeliefs2015" role="doc-biblioref">Rader and Gray 2015</a>)</span>. One possible explanation is rooted in the literature on persuasion knowledge in consumer research, and related streams of literature applying this concept to recommender systems.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Summary of Literature</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Exploratory Questions</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p>Most people are aware that their online experience is strongly shaped by algorithmic curation and recommendation. “The algorithm” is a regular topic of discussion (and disdain) on various online platforms (<span class="citation" data-cites="mungerTheAlgorithm2024">Munger (<a href="#ref-mungerTheAlgorithm2024" role="doc-biblioref">2024</a>)</span>, <span class="citation" data-cites="youtubersTheAlgorithm2026">r/youtubers (<a href="#ref-youtubersTheAlgorithm2026" role="doc-biblioref">2026</a>)</span>; and many more). It is however also apparent that few consumers’ understanding of “the algorithm” is rooted in the mathematical bases recommender systems are built on <span class="citation" data-cites="devitoAlgorithmsRuinEverything2017 raderUnderstandingUserBeliefs2015">(<a href="#ref-devitoAlgorithmsRuinEverything2017" role="doc-biblioref">DeVito, Gergle, and Birnholtz 2017</a>; <a href="#ref-raderUnderstandingUserBeliefs2015" role="doc-biblioref">Rader and Gray 2015</a>)</span>. One possible explanation is rooted in the <strong>literature on persuasion knowledge in consumer research</strong>, and related streams of literature applying this concept to recommender systems.</p>
 <p>The Persuasion Knowledge Model (PKM) formalizes how consumers’ beliefs about persuasion attempts shape their responses (<span class="citation" data-cites="friestadPersuasionKnowledgeModel1994">Friestad and Wright (<a href="#ref-friestadPersuasionKnowledgeModel1994" role="doc-biblioref">1994</a>)</span>). In this framework, consumers (“targets”) and marketers (“agents”) each draw on topic knowledge, persuasion knowledge, and knowledge about the other party. Persuasion knowledge comprises beliefs about psychological mediators, marketer tactics, one’s own coping strategies, the effectiveness and appropriateness of tactics, and both parties’ goals. Crucially, these beliefs are subjective and vary across individuals and contexts (<span class="citation" data-cites="friestadPersuasionKnowledgeModel1994">Friestad and Wright (<a href="#ref-friestadPersuasionKnowledgeModel1994" role="doc-biblioref">1994</a>)</span>).</p>
-<p>This framework can be extended to an algorithmic persuasion knowledge model (aPKM). Although algorithms differ from human marketers, their functional goal is comparable: encouraging desired behaviors such as scrolling, clicking, sharing, or purchasing. Folk theories about algorithmic persuasion are widespread. <span class="citation" data-cites="raderUnderstandingUserBeliefs2015">Rader and Gray (<a href="#ref-raderUnderstandingUserBeliefs2015" role="doc-biblioref">2015</a>)</span> analyze intuitive theories about Facebook’s newsfeed algorithm, while <span class="citation" data-cites="devitoAlgorithmsRuinEverything2017">DeVito, Gergle, and Birnholtz (<a href="#ref-devitoAlgorithmsRuinEverything2017" role="doc-biblioref">2017</a>)</span> show that inaccurate beliefs about algorithms shape resistance to algorithmic change. Moreover, making different recommendation rationales salient (e.g., similarity to other users vs.&nbsp;similarity to items) alters engagement behavior (<span class="citation" data-cites="gaiMakingRecommendationsMore2019">Gai and Klesse (<a href="#ref-gaiMakingRecommendationsMore2019" role="doc-biblioref">2019</a>)</span>).</p>
-<p>Together, these findings suggest that consumers’ subjective beliefs about algorithms; whether they see them as observers, persuaders, or epistemic authorities; shape how algorithmic pre-selection influences autonomy, preference construction, and behavioral responses.</p>
-<section id="exploratory-questions-1" class="level3">
-<h3 class="anchored" data-anchor-id="exploratory-questions-1">Exploratory Questions</h3>
-<p><em>The following questions are designed to get a better understanding of what consumers think “the altgorithm” actually is.</em></p>
-<p>What do you think the platform is trying to achieve when it recommends certain content or products to you?</p>
+<p>This framework can be extended to an algorithmic persuasion knowledge model (aPKM). Although algorithms differ from human marketers, their functional goal is comparable: encouraging desired behaviors such as scrolling, clicking, sharing, or purchasing – in other words: persuading consumers to act in a desired manner. Folk theories about algorithmic persuasion are widespread. <span class="citation" data-cites="raderUnderstandingUserBeliefs2015">Rader and Gray (<a href="#ref-raderUnderstandingUserBeliefs2015" role="doc-biblioref">2015</a>)</span> analyze intuitive theories about Facebook’s newsfeed algorithm, while <span class="citation" data-cites="devitoAlgorithmsRuinEverything2017">DeVito, Gergle, and Birnholtz (<a href="#ref-devitoAlgorithmsRuinEverything2017" role="doc-biblioref">2017</a>)</span> show that inaccurate beliefs about algorithms shape resistance to algorithmic change. Moreover, making different recommendation rationales salient (e.g., similarity to other users vs.&nbsp;similarity to items) alters engagement behavior (<span class="citation" data-cites="gaiMakingRecommendationsMore2019">Gai and Klesse (<a href="#ref-gaiMakingRecommendationsMore2019" role="doc-biblioref">2019</a>)</span>).</p>
+<p>Together, these findings suggest that consumers’ subjective beliefs about algorithms shape how algorithmic pre-selection influences perceived autonomy, preference construction, and behavioral responses.</p>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div class="explanation-p">
+<p>The following questions are designed to get a better understanding of what consumers think “the altgorithm” actually is, and if they attribute a locus of action to it.</p>
+</div>
+<p>The following questions are worded in a general form referring to “a platform”. By platforms, we refer to social media platforms such as Instagram or Facebook, but also online shopping platforms such as Amazon.</p>
+<p><strong>What do you think a platform is trying to achieve when it recommends certain content or products to you?</strong></p>
 <blockquote class="blockquote">
 <p>open-ended question</p>
 </blockquote>
-<p>How, if at all, do you adjust your behavior because you know recommendations are generated by an algorithm?</p>
+<p><strong>How, if at all, do you adjust your behavior because you know recommendations are generated by an algorithm?</strong></p>
 <blockquote class="blockquote">
 <p>open-ended question</p>
 </blockquote>
-<p>I believe recommendations are designed to steer my behavior in certain directions.</p>
+<p><strong>I believe recommendations are designed to steer my behavior in certain directions.</strong></p>
+<div class="manual-blockquote">
+<div class="even-cols">
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -312,7 +307,11 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
-<p>When I see a recommendation, I think about why it is being shown to me.</p>
+</div>
+</div>
+<p><strong>When I see a recommendation, I think about why it is being shown to me.</strong></p>
+<div class="manual-blockquote">
+<div class="even-cols">
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -337,29 +336,42 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
-</section>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="feeling-perceived-by-the-algorithm" class="level2">
 <h2 class="anchored" data-anchor-id="feeling-perceived-by-the-algorithm">Feeling Perceived by the Algorithm</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Summary of Literature</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">Exploratory Questions</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
 <p>Folk theories about how algorithms work build the basis on which consumers construct their awareness of algorithmic recommendation and presence, and how they adapt their behavior accordingly. This modified behavior however presumes that consumers feel “perceived by the algorithm” at all.</p>
-<p>While recommender systems research typically focuses on optimizing algorithmic performance and improving prediction accuracy and customer retention <span class="citation" data-cites="garapatiRecommenderSystemsDigital2025 razaComprehensiveReviewRecommender2026">(<a href="#ref-garapatiRecommenderSystemsDigital2025" role="doc-biblioref">Garapati and Chakraborty 2025</a>; <a href="#ref-razaComprehensiveReviewRecommender2026" role="doc-biblioref">Raza et al. 2026</a>)</span>, consumer research has examined how individuals respond to algorithmic pre-selection. Work in this domain investigates reactance to algorithmic curation, consumers’ folk theories about algorithms (e.g., their presumed inability to weigh relative importance of preferences; Anne), and the ways in which algorithmic cues influence judgments. For instance, consumers anchor their product evaluations on recommender system outputs when these are made explicit: <span class="citation" data-cites="adomaviciusRecommenderSystemsManipulate2013">Adomavicius et al. (<a href="#ref-adomaviciusRecommenderSystemsManipulate2013" role="doc-biblioref">2013</a>)</span> show that participants adjust their own ratings toward an algorithm’s predicted rating (“Our algorithm thinks that you would rate the show you are about to see as 1.5/5.”, p.&nbsp;962). These anchoring effects occur even when the recommendation stems from a fake algorithm, indicating that actual knowledge about the consumer is not necessary to influence perceived ratings.</p>
+<p>While recommender systems research typically focuses on optimizing algorithmic performance and improving prediction accuracy and customer retention <span class="citation" data-cites="garapatiRecommenderSystemsDigital2025 razaComprehensiveReviewRecommender2026">(<a href="#ref-garapatiRecommenderSystemsDigital2025" role="doc-biblioref">Garapati and Chakraborty 2025</a>; <a href="#ref-razaComprehensiveReviewRecommender2026" role="doc-biblioref">Raza et al. 2026</a>)</span>, consumer research has examined how individuals respond to algorithmic pre-selection. Work in this domain investigates reactance to algorithmic curation, consumers’ folk theories about algorithms (e.g., their presumed inability to weigh relative importance of preferences; Anne), and the ways in which algorithmic cues influence judgments. For instance, consumers anchor their product evaluations on recommender system outputs when these are made explicit: <span class="citation" data-cites="adomaviciusRecommenderSystemsManipulate2013">Adomavicius et al. (<a href="#ref-adomaviciusRecommenderSystemsManipulate2013" role="doc-biblioref">2013</a>)</span> show that participants adjust their own ratings toward an algorithm’s predicted rating (“Our algorithm thinks that you would rate the show you are about to see as 1.5/5.”, p.&nbsp;962). These anchoring effects occur even when the recommendation stems from a fake algorithm, indicating that actual knowledge about the consumer is not necessary to elicit this anchoring effect.</p>
 <section id="feeling-observed-changes-how-we-act-and-decide" class="level3">
 <h3 class="anchored" data-anchor-id="feeling-observed-changes-how-we-act-and-decide">Feeling Observed changes how we Act and Decide</h3>
-<p>A substantial body of research in social psychology, consumer research, and marketing has examined the effects of observation—or even the mere presence of others—on decision-making (e.g., <span class="citation" data-cites="zwebnerMyOwnAversion2020">Zwebner and Schrift (<a href="#ref-zwebnerMyOwnAversion2020" role="doc-biblioref">2020</a>)</span>). In general, individuals show aversion to the feeling of being observed (<span class="citation" data-cites="zwebnerMyOwnAversion2020">Zwebner and Schrift (<a href="#ref-zwebnerMyOwnAversion2020" role="doc-biblioref">2020</a>)</span>), particularly when observation threatens their sense of autonomy. The question is whether such findings extend to algorithms: do personalized recommendations elicit a feeling that one’s past actions have been observed?</p>
-<p>There is evidence that perceived observation reduces felt decision autonomy, for instance by increasing pressure to conform to defaults (<span class="citation" data-cites="zwebnerMyOwnAversion2020">Zwebner and Schrift (<a href="#ref-zwebnerMyOwnAversion2020" role="doc-biblioref">2020</a>)</span>). Similarly, perceived autonomy over data sharing affects behavioral responses: although the ad-targeting mechanism remained unchanged, when consumers felt they had control over how much personal information they displayed, click-through rates doubled (from .1% to .25%) (<span class="citation" data-cites="tuckerSocialNetworksPersonalized2014">Tucker (<a href="#ref-tuckerSocialNetworksPersonalized2014" role="doc-biblioref">2014</a>)</span>). Thus, perceived control—rather than objective system properties—shapes consumer reactions.</p>
+<p>A substantial body of research in social psychology, consumer research, and marketing has examined the effects of observation—or even the mere presence of others—on decision-making (e.g., <span class="citation" data-cites="zwebnerMyOwnAversion2020">Zwebner and Schrift (<a href="#ref-zwebnerMyOwnAversion2020" role="doc-biblioref">2020</a>)</span>). The question is whether such findings extend to algorithms: do personalized recommendations elicit a feeling that one’s past actions have been observed? Integrating this stream of literature with research demonstrating that making an algorithm salient can alter consumer behavior <span class="citation" data-cites="adomaviciusRecommenderSystemsManipulate2013">(e.g., <a href="#ref-adomaviciusRecommenderSystemsManipulate2013" role="doc-biblioref">Adomavicius et al. 2013</a>)</span>, an open question is whether algorithmic salience produces effects that are similar or comparable to those observed when the presence of other people is made salient.</p>
+<p>In general, individuals show aversion to the feeling of being observed (<span class="citation" data-cites="zwebnerMyOwnAversion2020">Zwebner and Schrift (<a href="#ref-zwebnerMyOwnAversion2020" role="doc-biblioref">2020</a>)</span>), particularly when observation threatens their sense of autonomy. There is evidence that perceived observation reduces felt decision autonomy, for instance by increasing pressure to conform to defaults (<span class="citation" data-cites="zwebnerMyOwnAversion2020">Zwebner and Schrift (<a href="#ref-zwebnerMyOwnAversion2020" role="doc-biblioref">2020</a>)</span>). Similarly, perceived autonomy over data sharing affects behavioral responses: although the ad-targeting mechanism remained unchanged, when consumers felt they had control over how much personal information they displayed, click-through rates doubled (from .1% to .25%) (<span class="citation" data-cites="tuckerSocialNetworksPersonalized2014">Tucker (<a href="#ref-tuckerSocialNetworksPersonalized2014" role="doc-biblioref">2014</a>)</span>). Thus, perceived control—rather than objective system properties—shapes consumer reactions.</p>
 </section>
-<section id="exploratory-questions-2" class="level3">
-<h3 class="anchored" data-anchor-id="exploratory-questions-2">Exploratory Questions</h3>
-<p><em>These questions try to see if and how consumers feel “seen” by an algorithm, and how they (report to) modify their behavior accordingly.</em></p>
-<p>How do you think platforms respond when you engage with something outside your usual interests?</p>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<div class="explanation-p">
+<p>These questions try to see if and how consumers feel “seen” by an algorithm, and how they (report to) modify their behavior accordingly.</p>
+</div>
+<p>The following questions are worded in a general form referring to “a platform”. By platforms, we refer to social media platforms such as Instagram or Facebook, but also online shopping platforms such as Amazon.</p>
+<p><strong>How do you think platforms respond when you engage with something outside your usual interests?</strong></p>
 <blockquote class="blockquote">
 <p>open-ended question</p>
 </blockquote>
-<p>Does knowing that your activity is tracked influence how you behave on digital platforms? If so, how?</p>
+<p><strong>Does knowing that your activity is tracked influence how you behave on digital platforms? If so, how?</strong></p>
 <blockquote class="blockquote">
 <p>open-ended question</p>
 </blockquote>
-<p>If I engage with content that differs from my usual interests, I expect my future recommendations to change.</p>
+<p><strong>If I engage with content that differs from my usual interests, I expect my future recommendations to change.</strong></p>
+<div class="manual-blockquote">
+<div class="even-cols">
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -384,7 +396,11 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
-<p>I feel that the platform is continuously updating its understanding of me.</p>
+</div>
+</div>
+<p><strong>I feel that the platform is continuously updating its understanding of me.</strong></p>
+<div class="manual-blockquote">
+<div class="even-cols">
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -409,7 +425,11 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
-<p>Even a single action (e.g., one click or view) can influence what I see afterward.</p>
+</div>
+</div>
+<p><strong>Even a single action (e.g., one click or view) can influence what I see afterward.</strong></p>
+<div class="manual-blockquote">
+<div class="even-cols">
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -434,7 +454,11 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
-<p>I am more careful about what I click or watch because I know it affects future recommendations.</p>
+</div>
+</div>
+<p><strong>I am more careful about what I click or watch because I know it affects future recommendations.</strong></p>
+<div class="manual-blockquote">
+<div class="even-cols">
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -459,57 +483,11 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
-<p>I avoid engaging with content because I do not want it to shape my recommendations.</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>never</th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th>very often</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td>2</td>
-<td>3</td>
-<td>4</td>
-<td>5</td>
-<td>6</td>
-<td>7</td>
-</tr>
-</tbody>
-</table>
-<p>I have taken steps (e.g., private mode, deleting history) to influence how a platform profiles me.</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>never</th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th>very often</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td>2</td>
-<td>3</td>
-<td>4</td>
-<td>5</td>
-<td>6</td>
-<td>7</td>
-</tr>
-</tbody>
-</table>
-<p>I feel observed when using personalized platforms.</p>
+</div>
+</div>
+<p><strong>I avoid engaging with content because I do not want it to shape my recommendations.</strong></p>
+<div class="manual-blockquote">
+<div class="even-cols">
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -534,18 +512,127 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
-</section>
+</div>
+</div>
+<p><strong>I have taken steps (e.g., private mode, deleting history) to influence how a platform profiles me.</strong></p>
+<div class="manual-blockquote">
+<div class="even-cols">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>strongly disagree</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th>strongly agree</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><strong>I feel observed when using personalized platforms.</strong></p>
+<div class="manual-blockquote">
+<div class="even-cols">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>strongly disagree</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th>strongly agree</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="is-algorithmic-pre-selection-perceived-as-a-reduction-of-autonomy" class="level2">
 <h2 class="anchored" data-anchor-id="is-algorithmic-pre-selection-perceived-as-a-reduction-of-autonomy">Is Algorithmic Pre-Selection Perceived as a Reduction of Autonomy?</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">Summary of Literature</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">Exploratory Questions</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
 <p>The cognitve and behavioral reactions to feeling seen by an algorithm may even go further than situational reactions, and influence how consumers perceive their fundamental autonomy in chosing their digital experience.</p>
 <p>If algorithmic personalization is experienced as observation, it may also be perceived as constraining autonomy. Research shows that observation can undermine decision autonomy (<span class="citation" data-cites="zwebnerMyOwnAversion2020">Zwebner and Schrift (<a href="#ref-zwebnerMyOwnAversion2020" role="doc-biblioref">2020</a>)</span>). This raises the possibility that algorithmic pre-selection is interpreted as narrowing one’s choice space or subtly pressuring certain decisions.</p>
 <p>At the same time, consumers do not uniformly attribute strong knowledge or authority to algorithms. Discussions about who “knows” the consumer better—the consumer or the algorithm—span multiple domains. Popular narratives suggest that platforms such as Amazon can detect pregnancy before individuals do themselves (source), and philosophical discussions propose that algorithmic curation may shape identity (“If Instagram shows me x content, I must be x.”; <span class="citation" data-cites="brownRecommendedSelvesAuthenticity2025">Brown (<a href="#ref-brownRecommendedSelvesAuthenticity2025" role="doc-biblioref">2025</a>)</span>).</p>
 <p>However, other evidence suggests skepticism toward algorithmic knowledge: people often perceive algorithms as less capable of truly knowing who they are (Anne’s unpublished study; algorithm aversion literature). Thus, algorithms may simultaneously be seen as powerful observers and as epistemically limited systems.</p>
-<section id="exploratory-questions-3" class="level3">
-<h3 class="anchored" data-anchor-id="exploratory-questions-3">Exploratory Questions</h3>
-<p>How does personalized recommendation make you feel about your freedom to choose? &gt; open-ended question</p>
-<p>Personalized recommendations make me feel that my choices are somewhat guided.</p>
+</div>
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<p><strong>How does personalized recommendation make you feel about your freedom to choose?</strong></p>
+<blockquote class="blockquote">
+<p>open-ended question</p>
+</blockquote>
+<p><strong>Personalized recommendations make me feel that my choices are guided.</strong></p>
+<div class="manual-blockquote">
+<div class="even-cols">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>strongly disagree</th>
+<th></th>
+<th></th>
+<th>somewhat</th>
+<th></th>
+<th></th>
+<th>strongly agree</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><strong>I feel fully autonomous when choosing from personalized recommendations.</strong> (reverse-coded)</p>
+<div class="manual-blockquote">
+<div class="even-cols">
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -570,47 +657,34 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
-<p>I feel fully autonomous when choosing from personalized recommendations. (reverse-coded)</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>strongly disagree</th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th>strongly agree</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td>2</td>
-<td>3</td>
-<td>4</td>
-<td>5</td>
-<td>6</td>
-<td>7</td>
-</tr>
-</tbody>
-</table>
-</section>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="who-has-the-final-ownership-of-knowledge" class="level2">
 <h2 class="anchored" data-anchor-id="who-has-the-final-ownership-of-knowledge">Who Has the Final Ownership of Knowledge?</h2>
-<p>This loss of autonomy and shaping of an experience “by the algorithm” might even have more fundamental effects affecting the perceived sense of identity or self by the consumer. Literature suggesting both directions - feeling threatened by a mismatch in self-perception and algorithmic recommendation, as well as updating one’s own ideas and beliefs based on algorithmic recommendation, have been discussed in literature.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true" href="">Summary of Literature</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false" href="">Exploratory Questions</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
+<p>This loss of autonomy and shaping of an experience “by the algorithm” might even have more fundamental effects affecting the perceived sense of identity or self by the consumer. Literature suggesting both directions – feeling threatened by a mismatch in self-perception and algorithmic recommendation, as well as updating one’s own ideas and beliefs based on algorithmic recommendation, have been discussed in literature. In essence, one could ask if consumers attribute <em>epistemic authority</em> to the algorithm, or themselves, and to what degree <span class="citation" data-cites="kruglanski2005says">(<a href="#ref-kruglanski2005says" role="doc-biblioref">Kruglanski et al. 2005</a>)</span>.</p>
 <p>The tension between perceived algorithmic knowledge and personal self-knowledge becomes particularly relevant when considering the relationship between choices and preferences. Research on self-control shows that exerting self-control weakens the perceived correspondence between choice and preference (<span class="citation" data-cites="selaHowSelfControlShapes2017">Sela, Berger, and Kim (<a href="#ref-selaHowSelfControlShapes2017" role="doc-biblioref">2017</a>)</span>). For example, if one exerts self-control to avoid wearing pajamas to the office, wearing a suit feels less preference-consistent. These effects spill over into unrelated domains, such as food choices.</p>
 <p>Importantly, lay theories about self-control moderate this relationship. Most individuals view self-control as acting against the self (overriding impulses), while a minority perceive it as acting with the self (enabling long-term goals). Only the former group exhibits weakened choice–preference correspondence when self-control is salient (<span class="citation" data-cites="selaHowSelfControlShapes2017">Sela, Berger, and Kim (<a href="#ref-selaHowSelfControlShapes2017" role="doc-biblioref">2017</a>)</span>, Study 3).</p>
 <p>In algorithmic contexts, this raises the question of whether consumers interpret algorithmic suggestions as aligned with their “true” preferences or as external pressures acting against the self. Studies such as <span class="citation" data-cites="rifkinVarietySelfExpressionUndermines2019">Rifkin and Etkin (<a href="#ref-rifkinVarietySelfExpressionUndermines2019" role="doc-biblioref">2019</a>)</span> suggest that consumers’ see algorithmic deviation from their perceived concept of (stable) self as undesireable and unpleasant, and furthermore also as going against their perceived self.</p>
-<section id="exploratory-questions-4" class="level3">
-<h3 class="anchored" data-anchor-id="exploratory-questions-4">Exploratory Questions</h3>
-<p><em>here, we must define “the algorithm” if we ask the questions like this</em>.</p>
-<p>Have you ever consciously changed your preferences based on what your feed recommends you? If so, when and how?</p>
+</div>
+<div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
+<div class="explanation-p">
+<p>here, we must define “the algorithm” if we ask the questions like this.</p>
+</div>
+<p><strong>Have you ever consciously changed your preferences based on what your feed recommends you? If so, when and how?</strong></p>
 <blockquote class="blockquote">
 <p>open question</p>
 </blockquote>
-<p>The algorithm understands my preferences well.</p>
+<p><strong>The algorithm understands my preferences well.</strong></p>
+<div class="manual-blockquote">
+<div class="even-cols">
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -635,7 +709,11 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
+</div>
+</div>
 <p>I understand my preferences better than the algorithm does.</p>
+<div class="manual-blockquote">
+<div class="even-cols">
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -660,7 +738,11 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
+</div>
+</div>
 <p>Sometimes the algorithm seems to know what I want before I consciously realize it.</p>
+<div class="manual-blockquote">
+<div class="even-cols">
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -685,7 +767,11 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
+</div>
+</div>
 <p>It bothers me when recommendations do not match how I see myself.</p>
+<div class="manual-blockquote">
+<div class="even-cols">
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -710,7 +796,11 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
+</div>
+</div>
 <p>I care about whether my digital profile reflects my “true” interests.</p>
+<div class="manual-blockquote">
+<div class="even-cols">
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -735,7 +825,11 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
+</div>
+</div>
 <p>My recommendation feed feels like an accurate representation of who I am.</p>
+<div class="manual-blockquote">
+<div class="even-cols">
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -760,7 +854,11 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
-</section>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="bibliography" class="level1">
 
@@ -793,6 +891,9 @@ Garapati, Rajesh, and Manomita Chakraborty. 2025. <span>“Recommender Systems i
 </div>
 <div id="ref-HowManyInstagram2024" class="csl-entry" role="listitem">
 Go Beyond. 2024. <span>“How <span>Many Instagram Posts</span> Are <span>There</span> in 2025? - <span>Go Beyond</span>.”</span> December 3, 2024. <a href="https:////www.go-beyond.biz/social-media/instagram/how-many-instagram-posts-are-there">//www.go-beyond.biz/social-media/instagram/how-many-instagram-posts-are-there</a>.
+</div>
+<div id="ref-kruglanski2005says" class="csl-entry" role="listitem">
+Kruglanski, Arie W, Amiram Raviv, Daniel Bar-Tal, Alona Raviv, Keren Sharvit, Shmuel Ellis, L Mannetti, et al. 2005. <span>“Says Who? <span>Epistemic</span> Authority Effects in Social Judgment.”</span> <em>Advances in Experimental Social Psychology</em> 37 (37): 345–92.
 </div>
 <div id="ref-admin-hartonYouTubeStatsEverything2025" class="csl-entry" role="listitem">
 moodive. 2025. <span>“<span>YouTube Stats</span>: <span>Everything You Need</span> to <span>Know In</span> 2025!”</span> Moodive. May 2, 2025. <a href="https://moodive.com/youtube-stats-everything-you-need-to-know-in-2025/">https://moodive.com/youtube-stats-everything-you-need-to-know-in-2025/</a>.

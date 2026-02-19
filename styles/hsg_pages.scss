@@ -24,3 +24,31 @@ h2, h3 {
 a {
   color: $hsg-blau;
 }
+
+.explanation-p {
+  color: $hsg-blau;
+  font-size: 0.9em;
+}
+
+.blockquote {
+  color: $hsg-dunkelgruen;
+  border-left: 4px solid $hsg-dunkelgruen;
+}
+
+.manual-blockquote {
+  color: $hsg-dunkelgruen;
+  border-left: 4px solid $hsg-dunkelgruen;
+}
+
+.even-cols {
+  table-layout: fixed;
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.even-cols th,
+.even-cols td {
+  width: 1%;
+}
