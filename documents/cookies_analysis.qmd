@@ -11,35 +11,40 @@ execute:
   warning: false   # hide warnings
   error: false     # hide errors
   message: false   # hide messages
-project: "aPKM"
+project: "Open Science Office"
 bibliography: ../bibliography.bib
 navbar: false
 ---
 
-# Executive Summary
+# Summary
+
+The Open Science Office Kick-off was a success overall. Around 25 participants attended in person and 4 online, with only a small no-show rate. The main event finished almost exactly on time (~65 minutes), and the apéro extended to about an hour suggesting strong informal engagement. Formal interaction, however, is modest so far, with only two audience questions and no follow-up feedback so far.
+
+The open science muffin and cookie showdown hypotheses revealed mixed results. No one asked for the cookie recipe (H1 rejected, flat survival curve confirmed). Muffins were consumed proportionally faster than cookies (H2 rejected). Blueberry muffins were eaten faster than apricot muffins, providing partial support for H3. One person scanned the QR code (H4 confirmed).
 
 # Main Event
 
-The main event was an overall success with 4 participants online and approximately 25 participants in person. Some fun statistics: 
+The main event was an overall success with 4 participants online and approximately 25 participants in person. While slightly more people had registered for the event (6 online, 30 in person), the no-show rate was low. Almost all guests stayed for the apéro and enjoyed some coffee and cake. Nonetheless, the IBT enjoyed some leftovers after the event. 
 
-- 
+While on-site engagement was high, and the fast-paced event seemed to be received well, the feedback and response was very low, with only two questions from the public and (1 day after the event) no feedback on the event so far. Therefore, especially the feedback part will also be re-stated in our follow-up communication. 
+
 
 ## Timing
 
-Our timing-planning was surprisingly accurate. 
+One big worry that concerned us before the event was the timing. Surprisingly, none of our speakers used up substantially more time than expected, and the main event concluded after ~65 minutes. People were very engaged in discussions at the Apéro which lasted for about an hour, so longer than the anticipated 30-45 minutes.
+
 ```{r}
 library(ggplot2)
 library(tidyr)
 library(dplyr)
 
 timing_main <- data.frame(
-  section = c("Speech","Intro","Office","Library","Alexandria","Speaker1","Speaker2","Speaker3","Discussion","Ending"),
-  estimates = c(3,10,5,3,3,3,3,3,15,5),
-  actual = c(5,12,4,4,4,4,3,4,20,3)
+  section = c("Speech","Intro","Office","Library","Alexandria","Speaker1","Speaker2","Speaker3","Discussion","Ending","Apero"),
+  estimates = c(3,10,5,3,3,3,3,3,15,5,45),
+  actual = c(5,12,4,4,4,4,3,4,20,3,60)
 )
 
-timing_main$section <- factor(timing_main$section, 
-                              levels = timing_main$section)
+timing_main$section <- factor(timing_main$section, levels = timing_main$section)
 
 # reshape to long format
 timing_long <- timing_main %>%
@@ -52,9 +57,13 @@ ggplot(timing_long, aes(x = section, y = minutes,
                         color = type, group = type)) +
   geom_line() +
   geom_point(size = 3) +
-  labs(x = "Section", y = "Minutes",
+  labs(title = "Estimated and actual Time used for each Sequence", x = "Section", y = "Minutes",
        color = "Legend") +
   theme_minimal() +
+  scale_color_manual(values = c(
+    "#00802f",  # HSG-Grün
+    "#eb6969"   # HSG-Korall
+  ))+
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 timing_long <- timing_main %>%
@@ -69,75 +78,152 @@ ggplot(timing_long, aes(x = section, y = cum_minutes,
                         color = type, group = type)) +
   geom_line() +
   geom_point(size = 3) +
-  labs(x = "Section", y = "Cumulative Minutes", color = "") +
+  labs(title = "Cumulative estimated and actual Time used for each Sequence",x = "Section", y = "Cumulative Minutes", color = "") +
   theme_minimal() +
+    scale_color_manual(values = c(
+    "#00802f",  # HSG-Grün
+    "#eb6969"   # HSG-Korall
+  ))+
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
-## Feedback Main Event
-
-none yet. 
-
 # Apéro
 
-## Hypothesis 1
-At least one person will ask for the recipe for the cookies.
+## Hypotheses
+The following hypotheses were preregistered prior to the Open Science Office Kickoff and are evaluated in accordance with the predefined decision rules outlined in the study protocol. The preregistration can be found on [OSF](https://osf.io/dbr84/overview?view_only=ea9191ee2dd648aeb03c2464ce431dd2). 
+
+### Hypothesis 1
+
+> At least one person will ask for the recipe for the cookies.
 
 ```{r}
 h1_df <- data.frame(
   oc_question = c(0,0,0,0,0),
   time_question = c(0,0,0,0,0)
 )
+
+h1_survival <- data.frame(
+  time = c(0, 60),
+  survival = c(1, 1)
+)
+
+ggplot(h1_survival, aes(x = time, y = survival)) +
+  geom_line(size = 1.3, color = "#00802f") +       # HSG-Grün
+  geom_point(size = 3, color = "#0a5f2d") +        # HSG-Dunkelgrün
+  labs(
+    title = "Survival Analysis of Recipe Requests (N = 0 events)",
+    subtitle = "Probability that no one asked for the cookie recipe",
+    x = "Minutes Since Apéro Start",
+    y = "Survival Probability"
+  ) +
+  ylim(0, 1.05) +
+  theme_minimal(base_size = 14) +
+  theme(
+    panel.grid.minor = element_blank()
+  )
 ```
 
-The hypothesis was not accepted. While there were a lot of people complimenting the baked goods, noone asked for the recipe. The theory that people ask for a recipe to be polite has been rejected. 
+In line with the preregistered decision rule, H1 would be accepted if the number of people asking for the cookie recipe was strictly greater than zero. Across the full duration of the apéro (approximately 60 minutes), the observed number of recipe requests was zero. Consequently, H1 is rejected. A Kaplan-Meyer survival curve further corroborates this conclusion indicating that the probability of *not* being asked for the cookie recipe remains at 1 across the entire duration of the event, indicating that noone asked for the cookie recipe.
 
-## Hypothesis 2
-The cookies will be gone before the muffins.
+### Hypothesis 2
+
+> The cookies will be gone before the muffins.
+
+According to the preregistered decision rule, H2 would be accepted if the time $t$ at which the number of cookies reached zero was strictly smaller than the time $t$ at which the number of muffins reached zero.
+
+This condition was not met. Neither stimulus category was fully depleted by the end of the apéro. At the final observation (65 minutes), 22 of 40 cookies had been eaten (18 remaining), whereas 27 of 36 muffins had been eaten (9 remaining: 5 raspberry, 2 apricot, 2 blueberry).
+
+When accounting for different initial quantities, $\frac{17}{40} = 0.425$ cookies remained, and $\frac{9}{36} = 0.25$ muffins remained, therefore rejecting hypothesis 2 both in absolute quantities as well as in relative quantities. 
+
 
 ```{r}
 h2_df <- data.frame(
-  count_cookies = c(5,10,15,20,25,30,35,40),
+  n_cookies = c(5,10,15,20,25,30,35,40),
   time_cookies = c(10,15,35,65,0,0,0,0)
 )
 
-# remove zero-time rows
-h2_df_clean <- h2_df %>%
-  filter(time_cookies > 0)
-
-ggplot(h2_df_clean, aes(x = time_cookies, y = count_cookies)) +
-  geom_line() +
-  geom_point(size = 3) +
-  labs(x = "Time (minutes)", 
-       y = "Cookies eaten (cumulative)") +
-  theme_minimal()
-```
-
-Surprisingly based on previous data from the IBT, Hypothesis 2 was rejected. While neither cookies nor muffins were completely finished, after 65 minutes, 18 cookies were left (22 cookies were eaten), while only 9 muffins were left (5 raspberry, 2 apricot, 2 blueberry). Accounting for the different amount of cookies vs. muffins, $\frac{17}{40} = 0.425$ cookies remained, and $frac{9}{36} = 0.25$ muffins remained. 
-
-## Hypothesis 3
-The blueberry muffins and/or the raspberry muffins will be eaten faster than the apricot muffins.
-
-```{r}
-h3_df <- data.frame(
-  type_muffins = c("Raspberry","Raspberry","Raspberry","Blueberry","Blueberry","Blueberry","Apricot","Apricot","Apricot"),
-  count_muffins = c(6,9,10,6,9,12,6,9,12),
-  time_muffins = c(45,0,0,30,0,0,20,50,0)
+remaining_df <- data.frame(
+  time = c(5,10,15,20,25,30,35,40,45,50,55,60,65),
+  muffins_raspberry = c(12,11,9,8,8,8,7,5,5,5,5,5,5),
+  muffins_blueberry = c(11,9,8,8,7,6,5,4,3,2,2,2,2),
+  muffins_apricot   = c(11,10,8,7,6,5,5,4,4,4,4,3,2),
+  muffins_total     = c(34,30,25,23,21,19,17,13,12,11,11,10,9),
+  cookies_total     = c(40,35,35,30,30,25,25,25,20,20,20,20,17)
 )
 
-h3_clean <- h3_df %>%
-  filter(time_muffins > 0)
+remaining_prop_df <- data.frame(
+  time = c(5,10,15,20,25,30,35,40,45,50,55,60,65),
+  muffins_raspberry = c(1,0.916666667,0.75,0.666666667,0.666666667,0.666666667,
+                        0.583333333,0.416666667,0.416666667,0.416666667,
+                        0.416666667,0.416666667,0.416666667),
+  muffins_blueberry = c(0.916666667,0.75,0.666666667,0.666666667,0.583333333,
+                        0.5,0.416666667,0.333333333,0.25,0.166666667,
+                        0.166666667,0.166666667,0.166666667),
+  muffins_apricot = c(0.916666667,0.833333333,0.666666667,0.583333333,
+                      0.5,0.416666667,0.416666667,0.333333333,
+                      0.333333333,0.333333333,0.333333333,
+                      0.25,0.166666667),
+  muffins_total = c(0.944444444,0.833333333,0.694444444,0.638888889,
+                    0.583333333,0.527777778,0.472222222,0.361111111,
+                    0.333333333,0.305555556,0.305555556,
+                    0.277777778,0.25),
+  cookies_total = c(1,0.875,0.875,0.75,0.75,0.625,0.625,0.625,
+                    0.5,0.5,0.5,0.5,0.425)
+)
 
-ggplot(h3_clean, aes(x = time_muffins, 
-                     y = count_muffins, 
-                     color = type_muffins,
-                     group = type_muffins)) +
-  geom_line() +
-  geom_point(size = 3) +
-  labs(x = "Time (minutes)",
-       y = "Muffins eaten (cumulative)",
-       color = "Muffin type") +
-  theme_minimal()
+remaining_prop_long <- remaining_prop_df %>%
+  pivot_longer(
+    cols = -time,
+    names_to = "Type",
+    values_to = "Proportion_Remaining"
+  )
+
+
+ggplot(remaining_prop_long,
+       aes(x = time,
+           y = Proportion_Remaining,
+           color = Type,
+           group = Type,
+           alpha = Type)) +
+  geom_line(size = 1.2) +
+  geom_point(size = 2) +
+  scale_color_manual(values = c(
+    muffins_raspberry = "#eb6969",   # HSG-Korall
+    muffins_blueberry = "#73a5af",   # HSG-Blau
+    muffins_apricot   = "#fff04b",   # HSG-Gelb
+    muffins_total     = "#0a5f2d",   # HSG-Dunkelgrün
+    cookies_total     = "#00802f"    # HSG-Grün
+  )) +
+  scale_alpha_manual(values = c(
+    muffins_raspberry = 0.5,
+    muffins_blueberry = 0.5,
+    muffins_apricot   = 0.5,
+    muffins_total     = 1,
+    cookies_total     = 1
+  ), guide = "none") +
+  labs(
+    title = "Proportion of Baked Goods Remaining Over Time",
+    x = "Time (minutes)",
+    y = "Proportion Remaining",
+    color = "Group"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    panel.grid.minor = element_blank()
+  )
+```
+
+### Hypothesis 3
+
+> The blueberry muffins and/or the raspberry muffins will be eaten faster than the apricot muffins.
+
+According to the preregistered criterion, H3 is accepted if the time t at which either the raspberry or blueberry muffins reach zero is strictly smaller than the time  t at which the apricot muffins reach zero. 
+
+In the observed data, none of the muffin types were fully depleted during the apéro. However, relative consumption speed differed descriptively across flavors. Blueberry muffins reached higher cumulative consumption levels earlier than apricot muffins. In particular, the ninth apricot muffin was only consumed after approximately 65 minutes, whereas blueberry muffins showed consistently earlier uptake across intermediate thresholds. Raspberry muffins exhibited slower early acceleration and were not fully depleted either. At the end of the observation window, two blueberry and two apricot muffins remained.
+
+Because the preregistered decision rule required full depletion for strict acceptance, the hypothesis cannot be fully accepted. However, descriptively, the consumption trajectories provide partial support: blueberry muffins were consumed at a faster rate than apricot muffins across much of the observation period.
+
+```{r}
 
 muffins_df <- data.frame(
   N_Muffins = 1:12,
@@ -157,19 +243,28 @@ ggplot(muffins_long,
            y = N_Muffins,
            color = Type,
            group = Type)) +
-  geom_line() +
+  geom_line(size = 1.2) +
   geom_point(size = 3) +
+  scale_color_manual(values = c(
+    "Raspberry" = "#eb6969",  # HSG-Korall
+    "Blueberry" = "#73a5af",  # HSG-Blau
+    "Apricot"   = "#fff04b"   # HSG-Gelb
+  )) +
   labs(x = "Time (minutes)",
        y = "Number of Muffins Eaten",
-       color = "Muffin Type") +
-  theme_minimal()
+       color = "Muffin Type",
+       title = "Trajectories of Muffins eaten by Time, split by Type") +
+  theme_minimal(base_size = 14) +
+  theme(
+    panel.grid.minor = element_blank()
+  )
 
 ```
 
-This hypothesis was partially accepted. While two blueberry muffins and two apricot mufffins remained in the end, the blueberry muffins were eaten faster than the apricot muffins. Only after ~65 minutes, the 9th apricot muffin was eaten. 
 
-## Hypothesis 4
-At least one person will scan the QR code explaining the badges.
+### Hypothesis 4
+
+> At least one person will scan the QR code explaining the badges.
 
 ```{r}
 h4_df <- data.frame(
@@ -178,14 +273,18 @@ h4_df <- data.frame(
 )
 ```
 
-Hypothesis 4 was confirmed. Exactly one person scanned the QR code. 
+Hypothesis 4 was confirmed. Exactly one person scanned the QR code about 20 minutes into the apéro.
 
 # After-Effects
 
 ## Newsletter Sign-up
 
+As of right now, we have a handfull of newsletter subscribers, however it should be assumed that the IBT and affiliated researchers make up the majority of it.
+
 ## Emails
 
-## Websitenbesuche
+As of right now, no e-mails have reached us yet, which was expected.
 
-Directly after the kick-off, 7 people visited the website, of which 2 people had IP addresses from Germany (presumably David and someone else). 
+## Website Visits
+
+Directly after the kick-off, 7 people visited the website, of which 2 people had IP addresses from Germany (presumably David and someone else). The day after the kick-off (25th of February), a total of 16 visitors had been recorded on the website.

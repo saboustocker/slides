@@ -9,7 +9,7 @@ format:
     navbar: false
 title-slide-attributes: 
   data-background-color: "#0a5f2d"
-project: "AI assessment"
+project: "Origin Ambiguity"
 bibliography: ../bibliography.bib
 ---
 

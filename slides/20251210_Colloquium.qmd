@@ -16,7 +16,7 @@ format:
       data-background-color: "#0a5f2d"
     auto-play-media: true
 
-project: "collection"
+project: "IBT-Colloquium"
 bibliography: ../bibliography.bib
 ---
 

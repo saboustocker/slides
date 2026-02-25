@@ -5,7 +5,7 @@ date: 2025-11-21
 format:
   html:
     theme: [sandstone, ../styles/hsg_pages.scss]
-project: "AI assessment"
+project: "Origin Ambiguity"
 bibliography: ../bibliography.bib
 ---
 

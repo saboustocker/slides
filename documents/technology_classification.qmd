@@ -1,7 +1,7 @@
 ---
 title: "Classifying Technology and its Adoption Rates"
 subtitle: "Comparison of Suggestions"
-author: Sabou Rani Stocker, Anush Sridhar
+author: Sabou Rani Stocker & Anush Sridhar
 date: 2026-02-25
 format:
   html:
@@ -249,7 +249,7 @@ Using ISIC to classify technologies would involve assigning each technology to t
 +-------------------------------------------------------------+-------------------------------------------------------------------------+
 
 ### Technologies
-$n_min = 22, n_max = 830$
+$n_{min} = 22, n_{max} = 830$
 
 *Filter for "Level 1" to see the overarching levels ($n = 22$), or lower levels to see more granular perspectives. Filters must be typed in the text box above the column.*
 
@@ -368,6 +368,8 @@ DT::datatable(
 If none of the options above (or a combination thereof) fulfill the requirements we have to classify technologies, we might have to come up with our own, pragmatic, classification schema.
 
 ### Procedure
+
+The following diagram displays a suggested procedure that could be employed. Decisions re: validation are made on a consensus-basis.
 
 ![](../images/technologyclassification.drawio.svg)
 
