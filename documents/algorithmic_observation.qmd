@@ -13,12 +13,18 @@ navbar: false
 
 # Summary
 
-(not finished)
-Living in a digital world, we interact with vast amounts of data every day. By the end of 2025, Instagram was estimated to have 34 billion posts uploaded in that year alone [@HowManyInstagram2024]. Amazon lists approximately 350 million products [@HowManyProducts], and on YouTube about 360 hours of content are uploaded every minute [@admin-hartonYouTubeStatsEverything2025]. Given this scale, consumers cannot realistically navigate these systems without algorithmic recommendation.
+Living in a digital world, we interact with vast amounts of data every day. By the end of 2025, Instagram was estimated to have had 34 billion posts uploaded in that year alone [@HowManyInstagram2024]. Amazon lists approximately 350 million products [@HowManyProducts], and about 360 hours of content are uploaded to YouTube every minute [@admin-hartonYouTubeStatsEverything2025]. Given this scale, consumers cannot realistically navigate these systems without algorithmic recommendations.
 
-## A New Era of Consumption: AI-Mediated Recommendations
+These recommendations are formed through continuous observation and the updating of models of user behavior. As a result, consumers’ cognition and behavior are shaped by perceived monitoring and by the resulting algorithmic representations of the self. Interaction with recommender systems embeds individuals in ongoing processes of data collection and inference, often conceptualized as dataveillance. Awareness of such observation can affect perceived autonomy and induce behavioral adjustment.
 
-Possible Extension / Novel Contribution
+Consumers rely on folk theories about how algorithms work, using them to interpret personalized outputs and guide their interactions. These interpretations shape how recommendations are evaluated and whether users align with or resist system inferences.
+
+The dynamic interplay between algorithmic representations and self-concept creates a feedback loop: behavior informs algorithmic models, which in turn shape subsequent preferences and actions. This reciprocal process underlies the central research question of how constant algorithmic observation and model updating affect consumers’ cognitive and behavioral reactions.
+
+As digital systems evolve toward more conversational and adaptive interfaces, AI-mediated recommendations provide a valuable framing device for exploring these dynamics. In AI-mediated environments, where large language models and semi-autonomous agents interpret and act on user information, the salience of observation and the construction of algorithmic selves become central to understanding how constant monitoring and model updating impact consumer cognition and behavior, in particular in the formation of "their algorithmic consumer". This possible research angle based on general recommender systems literature is referenced under the callouts "AI mediated environments". 
+
+:::{.callout-note collapse="true"}
+## A New Era of Consumption: AI-Mediated Recommendation Environments
 
 :::{.explanation-p}
 After last meeting's discussion on agentic systems and the implications on perception of recommender systems, I have put some more thought into this angle. One possible way to follow this idea further is outlined along every "what we know in general"-section. 
@@ -33,6 +39,8 @@ This secondary role differs fundamentally from traditional interactions with rec
 This representational dynamic intensifies as system autonomy increases. In conversational LLM contexts, consumers remain the primary decision-makers, using the model as an advisory interface. However, in the case of more autonomous agents that can evaluate alternatives and interact with providers on the consumer's behalf, the stakes of self-representation become higher. As delegation increases, so does the importance of how the consumer is modeled within the system, since this representation may directly guide search, evaluation, and potentially transactional behavior. Consequently, the need to consider how one is “represented by the algorithm” becomes more salient as systems move from advisory tools to semi-autonomous actors.
 
 Understanding these dynamics has important implications for both consumer experience and marketing strategy.
+
+:::
 
 ## Living under Constant Observation
 
