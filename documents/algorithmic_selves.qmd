@@ -1,0 +1,70 @@
+---
+title: "Algorithmic Reflections of the Self"
+subtitle: "What effects does living in a digital world where being monitored to be understood and catered to have on the consumer?"
+author: Sabou Rani Stocker
+date: 2026-02-19
+format:
+  html:
+    theme: [sandstone, ../styles/hsg_pages.scss]
+project: "aPKM"
+bibliography: ../bibliography.bib
+navbar: false
+---
+
+# Existing Literature on related Phenomena
+
+## Dataveillance
+
+Dataveillance is not ubiquitously defined, and sometimes used for observation through private actors (such as google or facebook), but also for state actors where people's online presence is used to create political profiles of them. 
+
+1. The more accurate my digital profile (perceived), the hiher my feelings of surveillance: 
+
+“‘dataveillance’ to signal the shifts in the market, and in modes of surveillance that increasingly monitor users through social media and online communication technologies by means of sophisticated tracking technologies (Raley 2013, p. 124).” ([Ruckenstein and Granroth, 2020, p. 13](zotero://select/library/items/WHRG6ETM)) ([pdf](zotero://open-pdf/library/items/ZE3LPQ9E?page=3&annotation=SSW5SNLL))
+
+“Given that an algorithmic profile is “a compilation of data referring to an individual” (Büchi et al., 2020, p. 2), perceived accuracy of algorithmic profiling can be defined as the extent to which users perceive the algorithmic profile to reflect themselves as individuals.” ([Zhang et al., 2025, p. 2](zotero://select/library/items/XNRQFXCK)) ([pdf](zotero://open-pdf/library/items/D7U98EA3?page=2&annotation=9ALAT8JV))
+
+- coping with perceived surveillance: “rivacy protection behavioral intention, privacy cynicism, self-empowerment, downplaying dataveillance cost, and sympathizing with the corporation.” ([Zhang et al., 2025, p. 3](zotero://select/library/items/XNRQFXCK)) ([pdf](zotero://open-pdf/library/items/D7U98EA3?page=3&annotation=AR5HM3XW))
+“the more accurate one perceived their algorithmic profile to be, the more likely they felt surveilled by Google, b\* = 0.31, p < .001, 95% CI [0.24, 0.37]” ([Zhang et al., 2025, p. 7](zotero://select/library/items/XNRQFXCK)) ([pdf](zotero://open-pdf/library/items/D7U98EA3?page=7&annotation=BT8GBW93))“Perceived surveillance had positive relationships with intention to adjust ad settings (b\* = 0.32, p < .001, 95% CI [0.25, 0.39]) and privacy cynicism (b\* = 0.09, p = .024, 95% CI [0.01, 0.18]), supporting H2a and H2b.” ([Zhang et al., 2025, p. 7](zotero://select/library/items/XNRQFXCK)) ([pdf](zotero://open-pdf/library/items/D7U98EA3?page=7&annotation=B77XGPHI))“not related to selfempowerment (b\* = 0.03, p = .479, 95% CI [ 0.05, 0.10])” ([Zhang et al., 2025, p. 7](zotero://select/library/items/XNRQFXCK)) ([pdf](zotero://open-pdf/library/items/D7U98EA3?page=7&annotation=BNT9YM2H))“sympathizing with the corporation (b\* = 0.01, p = .832, 95% CI [ 0.09, 0.07]” ([Zhang et al., 2025, p. 8](zotero://select/library/items/XNRQFXCK)) ([pdf](zotero://open-pdf/library/items/D7U98EA3?page=8&annotation=U8Q7BARX))
+
+“Quite paradoxically, this means that people who felt surveilled by Google were not only more likely to adjust their ad settings, but also more likely to feel that privacy protections are futile.” ([Zhang et al., 2025, p. 7](zotero://select/library/items/XNRQFXCK)) ([pdf](zotero://open-pdf/library/items/D7U98EA3?page=7&annotation=ZJPZZJH2))
+
+“Regarding the moderating role of online privacy literacy on the relationships between perceived surveillance and the coping strategies (H4 and RQ1), opposite from H4b, online privacy literacy positively moderated the relationship between perceived surveillance and (b) privacy cynicism, b\* = 0.08, p = .024, 95% CI [0.01, 0.15]. Meanwhile, there was a negative relationship between online privacy literacy and privacy cynicism, b\* = 0.16, p < .001, 95% CI [ 0.23, 0.09]” ([Zhang et al., 2025, p. 8](zotero://select/library/items/XNRQFXCK)) ([pdf](zotero://open-pdf/library/items/D7U98EA3?page=8&annotation=UBBHS3V4)) “objective accuracy had positive relationships with perceived surveillance (bsociodemo\* = 0.11; binterest\* = 0.14), but the relationships were weaker than the relationship between perceived accuracy and perceived surveillance (bperceived\* = 0.31).” ([Zhang et al., 2025, p. 9](zotero://select/library/items/XNRQFXCK)) ([pdf](zotero://open-pdf/library/items/D7U98EA3?page=9&annotation=TWKH8MW5)) <- important to demonstrate that the perception is most important 
+
+“This study makes its first theoretical contribution by demonstrating that perceived accuracy of algorithmic profiling is a key driver for perceived surveillance and multiple types of individual coping.” ([Zhang et al., 2025, p. 11](zotero://select/library/items/XNRQFXCK)) ([pdf](zotero://open-pdf/library/items/D7U98EA3?page=11&annotation=VH5MEGEN))
+
+2. The higher my sense of being digitally surveilled, the higher my self-censorship. 
+
+“chilling effects are here defined as the selfinhibition of (legitimate) behaviors, such as expressing one’s opinion online (including low-threshold participation like “liking”) or searching the web for (sensitive) information.” ([Büchi et al., 2022, p. 2](zotero://select/library/items/AAGEM629)) ([pdf](zotero://open-pdf/library/items/Z6QQWH7N?page=2&annotation=DJWBZUGB))
+
+“Beyond active content creation or “liking” and “following,” merely being online produces persistent digital traces and data. The growing collection and analysis of this (big) data (van Dijck, 2014) is automated, continuous, inexpensive, and opaque.” ([Büchi et al., 2022, p. 2](zotero://select/library/items/AAGEM629)) ([pdf](zotero://open-pdf/library/items/Z6QQWH7N?page=2&annotation=4DJJ3HYH))“In the early 21st century, the nonstop generation of vast amounts of digital traces related to people’s everyday digital communication surged with the establishment of Google, Facebook, and other platform companies.” ([Büchi et al., 2022, p. 3](zotero://select/library/items/AAGEM629)) ([pdf](zotero://open-pdf/library/items/Z6QQWH7N?page=3&annotation=ABC57EY4))“2013, documents leaked by Edward Snowden revealed the extent of global dataveillance, yet interest in privacy and self-protection in everyday digital media use was shortlived (Preibusch, 2015).” ([Büchi et al., 2022, p. 3](zotero://select/library/items/AAGEM629)) ([pdf](zotero://open-pdf/library/items/Z6QQWH7N?page=3&annotation=E3G9C8GF))
+
+digital surveillance also has self-censoring effects in other, non-political domains: Algorithmic Consumers“data-driven identity and self-worth, in which participants linked their personal value to metrics and digital achievements” ([Demetrovics et al., 2025, p. 1](zotero://select/library/items/8F3WMXK2)) ([pdf](zotero://open-pdf/library/items/2YSC74WF?page=1&annotation=RNL7LWPX)) for health monitoring
+
+### intimate surveillance
+“The concept of ‘intimate surveillance’ refers to the scrutiny of children and young people by parents, caretakers, and friends (Leaver 2015), or technologically enabled control of women by their husbands (Hannaford 2015).” ([Ruckenstein and Granroth, 2020, p. 14](zotero://select/library/items/WHRG6ETM)) ([pdf](zotero://open-pdf/library/items/ZE3LPQ9E?page=4&annotation=MM79PMCS))“normalization of surveillance as care (Leaver 2017) and suggestions that parental monitoring of babies and infants contributes to a surveillance culture wherein choosing not to survey can be read as a failure of good parenting” ([Ruckenstein and Granroth, 2020, p. 14](zotero://select/library/items/WHRG6ETM)) ([pdf](zotero://open-pdf/library/items/ZE3LPQ9E?page=4&annotation=2IFGXKHS))
+“Those interviewees who did not share fearful reactions in terms of dataveillance, held it unlikely that their information would be misused.” ([Ruckenstein and Granroth, 2020, p. 18](zotero://select/library/items/WHRG6ETM)) ([pdf](zotero://open-pdf/library/items/ZE3LPQ9E?page=8&annotation=YD43UM8D))
+
+## Digital Twins 
+
+
+# Agentic AI: From algorithmic curators to algorithmic consumers
+With the rise of agentic AI agents, consumers move from a world where digital profiling and recommendations were the 
+
+# Exploratory Survey 
+
+## Self-Censorship 
+- surveillance
+- algorithmic chilling effects
+
+### Self-control
+- as a specific subset of self-censorship 
+
+## Self-Updating
+- epistemic authority of algorithms -> "google knows me too well!"
+- ... 
+- "intimate surveillance" -> surveillance as care? Cater to consumers? 
+
+
+## Agency-"Privacy" Discrepancy
+- drift between the empirically demonstrated effects (surveillance leads to less self-disclosure) and the want to have as optimal of an algorithmic self
+- 
