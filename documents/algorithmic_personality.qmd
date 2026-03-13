@@ -1,0 +1,134 @@
+---
+title: "Shaping my Algorithmic Self"
+subtitle: "How do Consumers shape their Algorithmic Personality in LLM Mediated Consumption Environments?"
+author: Sabou Rani Stocker
+date: 2026-03-13
+format:
+  html:
+    theme: [sandstone, ../styles/hsg_pages.scss]
+    toc: true
+project: "algorithmic consumers"
+bibliography: ../bibliography.bib
+navbar: false
+---
+
+**To nöget: This is an early draft. Your job is to read it and tell me which ideas are good and make for a good story. Think of how i can test them as well.**
+
+# Summary
+
+LLMs create a new action environment in which people increasingly do not act directly, but act through a personalized algorithmic intermediary. Prior digital environments mainly asked consumers to choose directly from options that platforms ranked for them. LLM environments are different: they ask people to become legible to a system and to configure that system as an intermediary that speaks, recommends, and sometimes acts on their behalf. 
+
+Because this intermediary logic appears across domains—from shopping to email to life decisions—LLMs unify previously separate activities under one new behavioral condition: delegated, personalized algorithmic action. What changes is not the object of choice, but the architecture of action.
+
+LLM-mediated environments rely on several layers through which users become legible to the system: persistent instructions or system prompts, memory features, uploaded preference files, and interaction histories. Together, these layers allow the system to form a representation of the user. Unlike traditional recommender systems, where the consumer profile is largely inferred from observed behavior, LLMs invite users to actively participate in building this representation through language (**sources needed**). This suggests that the algorithmic self in such environments is more declarative, more salient, and more mouldable by the consumer, giving them a sense of control and autonomy.
+
+At the same time, users do not only construct a self for the system; they also construct the system that will interpret and enact that self. Through prompts, personas, rules, and behavioral instructions, consumers shape the intermediary’s tone, priorities, and decision logic. This adds a second layer to LLM-mediated action: people must now decide not only who they are to the system, but also what kind of intermediary the system should be for them. As a result, the outcomes of AI mediation depend on the joint construction of both the algorithmic self and the algorithmic intermediary.
+
+This structure appears across highly different domains. In consumption-oriented contexts, users ask what to eat, what to buy, or where to travel. In professional contexts, they ask the system to draft emails, prepare negotiations, or phrase difficult messages. In personal contexts, they seek advice on relationships, careers, or self-development. Despite their surface differences, these cases share a common underlying condition: the user must supply a machine-readable version of themselves and often specify how the intermediary should reason or act on their behalf.
+
+A central question is whether LLM-mediated action relies primarily on a stable underlying self or on context-specific preference construction. Persistent memory, user files, and long-term prompts suggest an enduring profile that travels across tasks. In contrast, many actual interactions are highly situational and involve temporary goals, constraints, and identities. This raises the question of whether consumers maintain one coherent algorithmic self across domains or reconstruct themselves anew depending on the immediate context. One possibility is that stable traits are encoded in memory, while situational preferences are supplied in prompts; another is that even seemingly stable selves are continuously renegotiated through use. [**very unsure about this argumentation because I doubt many consumers are actually aware of this.**]
+
+The degree of autonomy likely changes how carefully and deeply consumers construct both themselves and the system. When the LLM merely advises, users may provide local, task-specific preferences. When it acts with greater autonomy, they may feel a stronger need to encode enduring values, boundaries, and identity claims, because the costs of misrepresentation are higher. Greater autonomy may therefore increase both the salience of the algorithmic self and the strategic pressure to idealize, discipline, or otherwise edit it.
+
+## Expected Mechanisms?? 
+
+$\rightarrow$ This needs to be workshopped, because I think it is not realistic enough and we will not find it.
+
+1. People construct a system (consisting of self and assistant) that is more idealist than their true self. 
+Let's now say we find that consumers construct a form of the self that is more idealist, and they construct actors (i.e. systems) that are more moral, virtuous etc. than they truly are. What are the implications for the consumer environemtn? Why is this bad? 
+
+2. People don't actually want to be forced to live by their idealist construction and override the decisions to realign with their true self. 
+Let's also say that they afterwards override their idealist suggested selves because they want immediate gratification. How could this pan out and whare the implications? 
+
+3. Models updating 
+What happens if the models update their understanding of the core model based on the actual behavior, instead of the instructed behavior? The model will move closer to the true self, but will the consumer be more or less satisfied? 
+
+## Dependent Variables
+Decision ownership matters beyond purchasing because LLMs increasingly do not just help people choose products; they help them choose how to act. If an LLM drafts an email to your boss, helps you decide whether to move cities, or tells you how to handle a friendship conflict, the key question is still: do I feel that this was my decision? In the long run, low ownership matters because it can erode self-efficacy, increase passive delegation, and blur responsibility for consequential life outcomes.
+
+Outcome satisfaction also generalizes well because people use LLMs to pursue outcomes, not just purchases. A “good outcome” could be a well-written email, a vacation plan, a career choice, or a difficult conversation handled smoothly. Satisfaction matters because it predicts whether people will reuse the tool, trust it, and build it into their routines. Long term, repeated satisfaction can normalize AI mediation in everyday life; repeated dissatisfaction can trigger rejection even if the advice was objectively sound.
+
+Authenticity may be the most important one outside purchasing. In many LLM uses, the issue is not “did I buy the right thing?” but did this action still feel like me? That matters for emails, social messages, self-descriptions, and life decisions especially strongly. Someone may send a better email with AI help but later feel: “that was polished, but not really me.” Long term, that matters because repeated inauthentic mediation can create self-alienation, while authentic mediation can help people stabilize a coherent sense of self across human and AI-assisted action.
+
+
+
+# Background and Relevant Literature
+
+## Shifting from traditional Recommender Systems to LLM Mediated Consumption Environments
+
+In a world where the use of LLMs has been normalized over the last two years (sources), and agentic assistants are on the rise (e.g. Openclaw), consumers no longer experience the digital choice space in the same way as before the rise of LLMs. LLMs -- both in their more common form of Chatbots, as well as in their upcoming form as digital assistants -- shift the choice space in two fundamental ways: 
+
+1. LLMs shift the personalization from the recommender algorithm underlying search engines and product platforms to the personalization based on in-context knowledge through chats / behavior[^1]. 
+2. LLMs conduct more rigorous pre-selection, usually providing between 3 and 5 options (check if someone tested the exact numbers), instead of the endless scrolling feature / 10+ pages usually displayed with direct internet search. 
+3. Consumer behavior shifts from interacting with search terms and filters to open-text format descriptions of their needs, likes and dislikes. 
+
+These technical and experiential differences between LLM mediated consumption environments and traditional recommender systems suggest many profound changes in the online marketing and consumer behavior landscape. While @hermannNEXTFRONTIERDIGITAL discuss the implications for digital platforms in the sense that they need to optimize for LLM search in the future [add all the existing discourse], this discussion focuses on the consumer's perspective. 
+
+For the consumer, the fundamental shift is to delegate the decision from being the primary selector, decider and actor, to constructing a variation of the self that selects, constructs and decides on their behalf. This phenomenon introduces a fundamentally novel actor, namely the **algorithmic representation of the consumer**, into the equation. 
+
+## The Algorithmic Consumer and the Digital Twin
+
+The term *algorithmic consumer* is not new, and has been used before the large scale availability of LLMs. Traditionally, *algorithmic consumers* are defined as "algorithms that handle entire transactions: using data to predict consumers' preferences, choosing the products or services to purchase, negotiating and executing the transaction, and even automatically forming coalitions of buyers to secure optimal terms and conditions." [@galAlgorithmicConsumers, p. 310]. Algorithmic consumers in the sense of an algorithmic representation of the true self differ from this definition in two areas: First, while digital assistants in the form of LLM agents may already fulfill all requirements to this definition, the usual scenario still involves the human making the final call, meaning that the ultimate choice and transaction is in the hand of the consumer. Second, LLMs as consumer proxies are not (yet) systematically organized. While the rise of LLMs certainly shifts the digital marketing environment [see @hermannNEXTFRONTIERDIGITAL], there are no digital consumer parties as of now. 
+
+Third, and most fundamentally, LLMs have proven to be a general purpose tool, used in many applications ranging from wording an e-mail to deciding on a vacation destination to self-help applications (find sources). Resultingly, many consumers do not shape their alrorithmic self specifically tailored to a shoppint environment, but present a d digital copy of themselves that encompasses more than just their preferred brand of cat food. One could argue that these digital copies are a bottom-up reconstruction of what has been commonly termed the *digital twin*, but consulting literature on this phenomenon casts some doubts: 
+
+*Digital twins* are defined as *data-driven virtual replica that simulate the behaviors of it's real world counterparts, whether an object, system or process, in response to environmental stimuly" [@liPredictingBehaviorsLarge, p.4]. The ultimate goal of the digital twin is to represent it's (in the case of consumer research human) counterpart as accuratly as possible, and to make decisions that are functionally indistingusheable from the decision the human counterpart would have made [@pengDigitalTwinsFunhouse2026]. However, it is debateable if the algorithmic representation consumers shape of themselves are actually shaped with these intentions. Instead, is it possible that consumers shape their algorithmic representations to be more disciplined, polite, health-conscious and budget-conscious as their true decision habits would suggest?
+
+Looking at LLM mediated envirnoments from the perspective of algorithmic consumers and digital twins illustrates two fundamental, related tensions: 
+
+The first one is the declarative versus observed nature of algorithmic representation towards LLMs. This differenciation is interesting in particular, as traditional recommender systems (and therefore also discussions about algorithmic consumers beyond LLMs) usually follow a strongy data-driven, observational approach in forming an algorithmic profile with declarative input such as "topics I'm interested in" etc. are often prominent at creation of a profile, but after fall to the background. LLMs on the other hand side operate the other way around: While there are observational context clues (e.g. in-chat context, system prompts, memory functions), much of the active shaping of an algorithmic profile happens declaratively by the consumer, and is both more salient and iterative than "traditional" recommender system profiles. Beyond that, and as mentioned previously, LLMs are often used for way more than "just" purchasing decisions, therefore especially the system personality shaped through system prompts and memory functions is often much more generic than the aspects specifically pertaining to the shopping decision, which are constructed in-chat. 
+
+The second tension arises from the idealistic vs true representation. Digital twins would suggest consumers to shape a profile as close to their true self as possible. This is however not only not necessarily desireable from the consumer's perspective: When sending an algorithmic consumer to do their online shopping on their behalf, they may strategically use this proxy to act more moral, sustainable, or frugal. When having a digital assistant send out e-mails, they may use way more formal and polite wording no matter the adressant, while they would not do so writing the e-mail themselves. 
+
+## LLMs as Mirrors or Tools
+Illustrating these tensions in shaping an algorithmic representation of the self also introduce a more fundamental question: The way the LLM is used. By usage, both the application domain and the degree of autonomy is adressed. 
+
+In agentic assistants, there has been a strong, implicit trend to treat the assistant as an extension of the self making the decisions on one's behalf, not as a copy. This is particularly evident in the openclaw community going so far as to give their assistants a "soul" detailing how they ought to think, act, and decide. In LLMs as Chatbots, this same idea applies to a lesser extent with custom system prompts. A representation of the consumer is usually constructed in the form of a "user" template detailing important pointers for digital assistants, whereas Chatbots usually do not differenciate between a user profile and memory about past interactions. This concept of persistent memory also applies to digital assistants, often separate from the user. 
+
+Looking at this way of consumers using LLMs as algorithmic consumers, their construction of the self suggests that they do not construct much of a "self" at all, and instead construct their digital assistant's self. Nevertheless, one key selling argument of LLMs is that they learn the likes and dislikes of their user (e.g. OpenClaw having "learning from interactions" as a key selling point), or Claude selling their memory portability feature as "Bring your preferences and context from other AI providers to Claude. [...] You’ve spent months teaching another AI how you work. That context shouldn’t disappear because you want to try something new. Claude can import what matters, so your first conversation feels like your hundredth." This explicit marketing of an LLM *learning* who a consumer is suggests less declarative input and more observational input than one would intuitively think of. One possible way to resolve this tension is to understand memory and user-files as fundamental, stable personality profiles, whereas declarative information given with a prompt is more of a context-dependent preference. **This distinction is however to be tested.** 
+
+This apparent tension calls into question when and where this fundamental user understanding is more pronounced. One possiblity is that the degree of autonomy a system has correlates with the perceived need to understand "who it is working for", meaning that a digital assistant needs a profound, in-depth understanding of the algorithmic consumer (again, the authenticity of this mirror to be questioned), whereas a Chatbot merely making suggestions should be less concerned with who a consumer fundamentally is, and more with the context-specific preferences applying to this domain.
+
+In other applications however, such as using LLMs as sparring partners or companions, people do disclose a lot about themselves as a person. 
+
+# Research Questions
+
+In sum: LLMs are shifting the way in which consumers interact with digital choice space platforms in many ways. However, due to their general purpose nature, they open up even more questions by becoming the item of consumption themselves. Due to their iterative and responsive nature, consumers shape their algorithmic personality and preferences for the LLM mediated environments, be this through LLMs as a curator, LLMs as an assistant (writing e-mails, ...) or as a partner.
+
+The question now becomes: 
+
+**How do consumers construct an algorithmic representation of themselves in LLM-mediated environments?**
+
+**To what extent does this representation reflect the consumer’s perceived true self versus an aspirational or strategically edited self?**
+
+**How stable is the algorithmic self across contexts, or is it reconstructed situationally for different decision domains?**
+
+**Are consumers more likely to present an idealized self when the system can act autonomously than when it merely advises?**
+
+**Do consumers believe idealized self-representations produce better outcomes than accurate ones?**
+
+On the other hand side, LLMs also introduce the novel application that consumers not only disclose themselves towards an algorithmic consumer / decisionmaker, but also personalize the intermediary party to their requirements. 
+
+Research Qustions:
+
+**Do consumers treat LLMs as mirrors of themselves or as tools optimized to compensate for their limitations? Is perceived autonomy a moderator for the desired character of the intermediary agent?**
+
+**Do consumers prefer assistants that amplify their existing preferences or correct them?**
+
+**How do consumers assign moral, social, and economic decision rules to an intermediary agent?**
+- how are these rules connected to the actual and ideal self? 
+
+# Dependent Variables
+
+**Decision ownership** matters beyond purchasing because LLMs increasingly do not just help people choose products; they help them choose how to act. If an LLM drafts an email to your boss, helps you decide whether to move cities, or tells you how to handle a friendship conflict, the key question is still: do I feel that this was my decision? In the long run, low ownership matters because it can erode self-efficacy, increase passive delegation, and blur responsibility for consequential life outcomes.
+
+**Outcome satisfaction** also generalizes well because people use LLMs to pursue outcomes, not just purchases. A “good outcome” could be a well-written email, a vacation plan, a career choice, or a difficult conversation handled smoothly. Satisfaction matters because it predicts whether people will reuse the tool, trust it, and build it into their routines. Long term, repeated satisfaction can normalize AI mediation in everyday life; repeated dissatisfaction can trigger rejection even if the advice was objectively sound.
+
+**Authenticity** may be the most important one outside purchasing. In many LLM uses, the issue is not “did I buy the right thing?” but did this action still feel like me? That matters for emails, social messages, self-descriptions, and life decisions especially strongly. Someone may send a better email with AI help but later feel: “that was polished, but not really me.” Long term, that matters because repeated inauthentic mediation can create self-alienation, while authentic mediation can help people stabilize a coherent sense of self across human and AI-assisted action.
+
+
+
+# Footnotes
+[^1]: While it cannot be said for sure, it can be assumed that LLMs use browser APIs to conduct web search on a consumers behalf, meaning that cookies, personalizations and settings implemented by the consumer in their regular browser as well as targeted recommendations to a consumer profile on e.g. Amazon will not interfere with the LLM search, as the LLM uses a fundamentally different browser that does not have these abilities. It is debateable if LLM providers don't also use OBM tracking tactics and in reality *do* have this info, but for the sake of argument integrity, I follow the official statements by OpenAI and co. on this. 
+
+# Bibliography

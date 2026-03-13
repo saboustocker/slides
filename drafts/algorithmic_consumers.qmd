@@ -1,0 +1,77 @@
+---
+title: "Shaping my Algorithmic Consumer"
+subtitle: "Consequences of perceived monitoring and updating of algorithmic personality on consumer behavior and cognition"
+author: Sabou Rani Stocker
+date: today
+format:
+  html:
+    theme: [sandstone, ../styles/hsg_pages.scss]
+project: "aPKM"
+bibliography: ../bibliography.bib
+navbar: false
+---
+
+# Summary of the Project
+
+LLM-assisted recommendation can be understood as a reduced form of agentic assistance because it shifts the system from merely presenting options toward partially performing the cognitive labor of deciding.
+
+In LLM-assisted or delegated choice, the system does not merely model the consumer; it may instantiate an operationalized version of the consumer that then participates in the choice process on the user’s behalf.
+
+
+## Phenomenon
+
+Traditional recommender systems have always tailored customized recommendations to the algorithmic profile of the consumer. This profile has traditionally been constructed from both declarative input through preferences, subscriptions, and settings, but also through observed input such as behavior on platform, dwell time, and more.
+
+
+### (1) Input
+
+### (2) Preselection
+
+### (3) Choice
+
+
+## Relevance
+
+- Agentic systems are coming, introducing an algorithmic representation of us as consumers that makes decisions on our behalf $\rightarrow$ this fundamentally shifts the locus of control in digital environments, and has major implications for both consumers and marketers
+    - Consumer: While recommender systems have always pre-selected content and tried to abuse human fallacies and shortcomings, the consumer was the person chosing to engage with a recommendation or not.
+    - LLM support: When using LLMs such as ChatGPT to make consumption decisions (from simple such as what to have for dinner to complex such as which destination vacation to book)[^1], we introduce an additional layer of recommendation. This additional layer has implications for both the consumer as well as the algorithm:
+        - The consumer gets pre-selected information based on their past behavior and tailored to their algorithmic profile they (actively and passively) curated for the LLM
+        - The LLM needs to unify input from both the consumer as well as its base settings and the outcomes of its research. This step gets complicated if the LLM accesses resources from the internet. According to OpenAI, internet search conducted through OpenAI's models (both Chat and API) do not use personal cookies or cache by the user, meaning that the search is minimally tailored through the browser and maximally through the LLM
+    - LLM agents: When an agent executes on a decision on the consumer's behalf, the effects of LLM intermediaries described above are amplified, because the LLM not only makes a preselection and a recommendation, but actually executes it. This can - again - mean something inconsequential such as "ordering dinner" from eat.ch, or something financially taxing such as booking a vacation. 
+
+- The consumer is more vulnerable? Disclosure of my algorithmic personality enables LLMs to optimize for consumption instead of my best interests
+- The consumer is also more in control: proactive control of my algorithmic personality enables me to more actively shape my consumption
+
+## Boundary Conditions
+- when the prices are too high?
+- when disclosure of information is too sensitive (e.g. would I tell it my health history to recommend which specialist to book an appointment with?)
+
+
+## Questions
+- What do we disclose and what does the algorithm learn? 
+    - Are we more accepting of decisions from our disclosed selves, from our learned selves, or from a hybrid mechanism? 
+    - Are we more willing to give up control to a representation of us that is learned or shaped? 
+
+    $\rightarrow$ Hypothesis: Consumers' perceived control over the algorithm increases their willingness to delegate decision power.
+
+- how willing are we to disclose information? 
+- What type of information do we disclose? 
+    - does it differ if it is a traditional recommender system vs. a chat? 
+- Are we happy with the recommendations after? 
+
+- In LLM assisted systems, do we work more on the LLM or on our representation? 
+- **do we assign the label of "algorithmic consumer" to the representation of US or to the representation of the LLM?**
+
+# Difference between traditional Recommender Systems and LLM-assisted Consumption Environments
+
+## Traditional Recommender Systems
+
+## LLM-assisted Consumption Environments
+
+
+# My Algorithmic Personality: What do I share with LLMs vs. Humans to Consume on My Behalf?
+
+# Involuntary Disclosure: How does my Algorithmic Personality affect my Consumption Behavior? 
+
+# Footnotes
+[^1]: Importance in this example operationalized through increased financial and time commitment.
