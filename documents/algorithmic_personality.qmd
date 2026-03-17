@@ -12,8 +12,6 @@ bibliography: ../bibliography.bib
 navbar: false
 ---
 
-**To nöget: This is an early draft. Your job is to read it and tell me which ideas are good and make for a good story. Think of how i can test them as well.**
-
 # Summary
 
 LLMs create a new action environment in which people increasingly do not act directly, but act through a personalized algorithmic intermediary. Prior digital environments mainly asked consumers to choose directly from options that platforms ranked for them. LLM environments are different: they ask people to become legible to a system and to configure that system as an intermediary that speaks, recommends, and sometimes acts on their behalf. 

@@ -11,16 +11,30 @@ bibliography: ../bibliography.bib
 navbar: false
 ---
 
-# Summary of the Project
+# Constructing the Algorithmic Consumer: How People Curate Selves for AI-Mediated Consumption
 
 LLM-assisted recommendation can be understood as a reduced form of agentic assistance because it shifts the system from merely presenting options toward partially performing the cognitive labor of deciding.
 
 In LLM-assisted or delegated choice, the system does not merely model the consumer; it may instantiate an operationalized version of the consumer that then participates in the choice process on the user’s behalf.
 
+When configuring AI systems to recommend or act on their behalf, consumers often construct an algorithmically legible proxy that differs from their lived, situational, and sometimes contradictory preferences. The more authentically a consumer represents themselves, the messier and less operational the profile may be. The more useful the representation is for algorithmic optimization, the more curated and less authentic it may become.
+
+**Would you want your digital twin to go grocery shopping on your behalf?**
+
+- why not? 
+
+**Would you want your digital twin to write an email to your boss on your behalf?**
+
+- why not? 
+
+**
+
+**Would you want your digital twin to 
 
 ## Phenomenon
 
 Traditional recommender systems have always tailored customized recommendations to the algorithmic profile of the consumer. This profile has traditionally been constructed from both declarative input through preferences, subscriptions, and settings, but also through observed input such as behavior on platform, dwell time, and more.
+
 
 
 ### (1) Input
