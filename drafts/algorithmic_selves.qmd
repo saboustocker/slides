@@ -11,6 +11,11 @@ bibliography: ../bibliography.bib
 navbar: false
 ---
 
+# Summary
+
+Consumers have long been confronted with the reality that 
+
+
 # Existing Literature on related Phenomena
 
 ## Dataveillance
@@ -43,8 +48,13 @@ digital surveillance also has self-censoring effects in other, non-political dom
 ### intimate surveillance
 “The concept of ‘intimate surveillance’ refers to the scrutiny of children and young people by parents, caretakers, and friends (Leaver 2015), or technologically enabled control of women by their husbands (Hannaford 2015).” ([Ruckenstein and Granroth, 2020, p. 14](zotero://select/library/items/WHRG6ETM)) ([pdf](zotero://open-pdf/library/items/ZE3LPQ9E?page=4&annotation=MM79PMCS))“normalization of surveillance as care (Leaver 2017) and suggestions that parental monitoring of babies and infants contributes to a surveillance culture wherein choosing not to survey can be read as a failure of good parenting” ([Ruckenstein and Granroth, 2020, p. 14](zotero://select/library/items/WHRG6ETM)) ([pdf](zotero://open-pdf/library/items/ZE3LPQ9E?page=4&annotation=2IFGXKHS))
 “Those interviewees who did not share fearful reactions in terms of dataveillance, held it unlikely that their information would be misused.” ([Ruckenstein and Granroth, 2020, p. 18](zotero://select/library/items/WHRG6ETM)) ([pdf](zotero://open-pdf/library/items/ZE3LPQ9E?page=8&annotation=YD43UM8D))
+- if people feel not seen by ads, it leads to irritation and annoyance (e.g. if shown a pregnancy test ad although no intention to have children)
+“When targeted ads become part of online experiences, they are not merely offering purchasing suggestions, but are transformed into shaping forces in how people see themselves, others, and their online environment.” ([Ruckenstein and Granroth, 2020, p. 22](zotero://select/library/items/WHRG6ETM)) ([pdf](zotero://open-pdf/library/items/ZE3LPQ9E?page=12&annotation=6Z9QQ2YH))
 
 ## Digital Twins 
+
+- do digital twins learn from their real-life counterparts? 
+- 
 
 
 # Agentic AI: From algorithmic curators to algorithmic consumers
@@ -67,4 +77,105 @@ With the rise of agentic AI agents, consumers move from a world where digital pr
 
 ## Agency-"Privacy" Discrepancy
 - drift between the empirically demonstrated effects (surveillance leads to less self-disclosure) and the want to have as optimal of an algorithmic self
-- 
+
+
+
+## Self-Censorship 
+
+## 
+
+# Exploratory Questionnaire
+
+## Algorithmic Folk Theories 
+
+**What do you think a platform is trying to achieve when it recommends certain content or products to you?**
+
+> open question
+
+**I believe recommendations are designed to steer my behavior in certain directions.**
+
+:::{.manual-blockquote}
+
+:::{.even-cols}
+| strongly disagree |     |     |     |     |     | strongly agree |
+|-------------------|-----|-----|-----|-----|-----|----------------|
+| 1                 | 2   | 3   | 4   | 5   | 6   | 7              |
+:::
+:::
+
+## Reactions to Algorithmic Folk Theories 
+
+**How, if at all, do you adjust your behavior to the recommendations you get?**
+
+> open-ended question 
+
+**Do you attempt to influence/steer the recommendations you get? If so, how do you do so?**
+
+> open-ended question 
+
+**I adjust my behavior based on the recommendations I get.**
+
+:::{.manual-blockquote}
+
+:::{.even-cols}
+| strongly disagree |     |     |     |     |     | strongly agree |
+|-------------------|-----|-----|-----|-----|-----|----------------|
+| 1                 | 2   | 3   | 4   | 5   | 6   | 7              |
+:::
+:::
+
+**I purposefully click on items to teach my algorithm that I like something.**
+
+:::{.manual-blockquote}
+
+:::{.even-cols}
+| strongly disagree |     |     |     |     |     | strongly agree |
+|-------------------|-----|-----|-----|-----|-----|----------------|
+| 1                 | 2   | 3   | 4   | 5   | 6   | 7              |
+:::
+:::
+
+**I purposefully avoid clicking on items to teach my algorithm that I do not like something.**
+
+:::{.manual-blockquote}
+
+:::{.even-cols}
+| strongly disagree |     |     |     |     |     | strongly agree |
+|-------------------|-----|-----|-----|-----|-----|----------------|
+| 1                 | 2   | 3   | 4   | 5   | 6   | 7              |
+:::
+:::
+
+
+## Algorithmic Sense of Self
+
+**What do you think platforms recommending you things *know* about you, if anything at all?**
+
+> open-ended question 
+
+**The recommendations I get reflect who I am.**
+
+:::{.manual-blockquote}
+
+:::{.even-cols}
+| never |     |     |     |     |     | always |
+|-------------------|-----|-----|-----|-----|-----|----------------|
+| 1                 | 2   | 3   | 4   | 5   | 6   | 7              |
+:::
+:::
+
+**The recommendations I get support my goals.**
+
+:::{.manual-blockquote}
+
+:::{.even-cols}
+| never |     |     |     |     |     | always |
+|-------------------|-----|-----|-----|-----|-----|----------------|
+| 1                 | 2   | 3   | 4   | 5   | 6   | 7              |
+:::
+:::
+
+
+# Autonomy of Algorithms
+
+**I would consider using an AI assistant for my everyday tasks.**

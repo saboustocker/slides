@@ -18,7 +18,7 @@ The introduction of LLM-based decision-making has fundamentally shifted the way 
 
 Introducing LLMs into the decision-making equation -- be this in the form of chatbots or agents -- introduces some fundamental shifts in how consumers experience the decision-making process: 
 
-1. 1. **Active self-construction**: Traditional recommender systems personalize experiences through inferences drawn from past behavior [@dongBriefHistoryRecommender2017; @ruckensteinAlgorithmsAdvertisingIntimacy2020, and others], LLMs construct a persistent memory of the user based on disclosure through prompts [@papnejaSelfdisclosureConversationalAI2025; @user2026; @openclaw_memory; @WhatMemory]. This means that consumers are actively invited to more actively shape their algorithmic personality for the LLM.
+1. **Active self-construction**: Traditional recommender systems personalize experiences through inferences drawn from past behavior [@dongBriefHistoryRecommender2017; @ruckensteinAlgorithmsAdvertisingIntimacy2020, and others], LLMs construct a persistent memory of the user based on disclosure through prompts or through textual representations of their personality on whih agents act [@papnejaSelfdisclosureConversationalAI2025; @openclaw_USER; @openclaw_memory; @WhatMemory]. This means that consumers are explicitly invited to more actively shape their algorithmic personality for the LLM.
 2. **Agency in constructing the choice set**: Users actively shape the decision-space through behaviors such as scrolling, filtering, refreshing, and reformulating search terms in traditional platforms used for decision-making. In LLM-based recommendation, these tasks are delegated to the system itself, which interprets the request, selects relevant criteria, and presents a narrowed set of options. While this shift can reduce decision overload, and feel more personalized and tailored, it also introduces a threat that many decisions antecedent to the ultimate choice set presented to the consumer are made based on flawed assumptions about their preferences. Fundamentally, I also subsume control over the recommendation process as part of the agency in constructing the choice set. While consumers can control the profile used to *shape* the choice set, they are no longer the ones *doing the shaping*[^1].
 3. **Consequentiality of Outcome**: Finally, control over the outcome concerns who retains final decision authority. In most traditional systems, the ultimate choice remains with the consumer. In LLM-based recommendation, this authority exists on a spectrum: chatbot-based systems still leave the final decision to the user, whereas agentic assistants may increasingly act on the user’s behalf, up to and including executing decisions directly.
 
@@ -37,10 +37,6 @@ I hypothesize that the fundamental changes in the technological environment impa
 In what follows, I will illustrate two models describing the relationship between changes in technology and decision-ownership, how I would experimentally test them, and what the implications are if the models hold up. 
 
 # Path 1) Changes in Technology ellicit Compensatory Behavior 
-
-:::{.callout-note collapse="true"}
-In researching actual self/ideal self in consumer+technology research, I had an incredibly hard time integrating this explicit distinction into the change in self-presentation. This is because I believe that people do not fundamentally appeal to one self over the other as induced by changes in the essence of technology, but instead construct a *compensatory* personality profile. This may align with ideal or social self norms, but I believe that the compensatory nature of the profile is more directly related to the inherent nature of the technology itself through agency and control. Resultingly, I refrain from explicitly including actual/ideal self.
-:::
 
 As agency increases, users need to put increasing trust into an algorithmic system to make decisions coherent with their true self-concept. This trust is, however, not natural, as systems act as intermediaries between the consumer and the choice space, and this relationship is determined by the extent to which the "system understands the consumer". Resultingly, I ask: 
 
@@ -371,17 +367,19 @@ Participants in the **low-agency** conditions should show lower compensatory beh
 :::
 
 
-## Critique and Open Questions Proposal 1
+## Issues with and Open Questions Proposal 1
 
 - What I am still having issues with is pointing my finger on *why* someone would / would not always want to have an as detailed representation of themselves
   - one possible pathway would be to appeal to actual/ideal self, where potential costs become too high if the system makes autonomous decisions based on the false self, but I don't know if that argument holds under scrutiny
-- Much of the real examples that correspond to the agency-control "dilemma" do not employ (or omit to employ) compensatory behavior because of self-protection, but because of (misguided) assumptions about how the algorithm works. This could be a viable alternative pathway to explain the model, without having the issue described in point 1
+- Much of the real examples that correspond to the agency-control "dilemma" do not employ (or omit to employ) compensatory behavior because of self-protection, but because of (misguided) assumptions about how the algorithm works. This could be a viable alternative pathway to explain the model, without having the issue described in point 1. This however risks just becoming yet another algorithm aversion/algorithm appreciation in new wrapping paper. 
 
 # Path 2) Salience in Self-Concept mismatch leads to strategic (Dis-)Engagement
 
 Consumers generally strive for a coherent sense of self [@sirgySelfConceptConsumerBehavior1982;@rifkinVarietySelfExpressionUndermines2019;@rossSelfConceptBrandPreference1971, and others], also known as self-continuity. This self-continuity has strategically been used to market to consumers before: by appealing to their actual self, brands can evoke feelings of authenticity and intimacy, whereas appealing to consumers' ideal self can evoke feelings of aspiration or status seeking. Importantly, recent studies have found that appealing to consumers' ideal selves does not reduce authenticity per se, but can also increase positive pride and reduce hubristic pride [@zogajBenefitsMatchingConsumers2021]. 
 
 When using an AI assistant to shape one's algorithmic self, there are essentially two parameters that can be used to determine the overall profile: The user, and the "soul". While the term user is easy to understand, the concept of an "algorithmic soul" has only recently been introduced through digital agents such as OpenClaw [@SOULmdTemplate;@SOULmdWhatMakes], but -- in a less "dramatic form" -- the same concept also persists in popular agents such as ChatGPT [@ChatGPTCustomInstructions] or Claude [@HowClaudeRemembers].
+
+![](..\images\model_path2.svg)
 
 These two modes of personalization allow the consumer to resolve tensions between their true preferences and situational outcomes in two different ways: Either, they update their understanding of their selves (i.e. the user), or they externalize this tension to the algorithm (i.e., update the soul):
 
@@ -607,6 +605,11 @@ Participants in the own-profile condition should report higher decision ownershi
 Participants in the assistant-profile condition should experience the recommendation as less personally theirs, because the logic of the decision has been delegated to the assistant. As a result, they should be less likely to double-check the recommendation carefully before approving it.
 
 :::
+
+## Issues with and Open Questions Proposal 2
+
+- Ties into aspects of the self and their relationship to novel technologies are there, however I am not sure if this is exciting and novel enough
+- autonomy of system underdeveloped: currently, I operationalize $autonomy = f(agency, control)$, but this is not final. 
 
 
 

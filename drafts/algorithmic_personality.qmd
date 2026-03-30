@@ -1,5 +1,5 @@
 ---
-title: "Shaping my Algorithmic Self"
+title: "Unstructured Notes"
 subtitle: "How do Consumers shape their Algorithmic Personality in LLM Mediated Consumption Environments?"
 author: Sabou Rani Stocker
 date: 2026-03-13
@@ -11,6 +11,128 @@ project: "algorithmic consumers"
 bibliography: ../bibliography.bib
 navbar: false
 ---
+
+# Summary
+
+**When consumers delegate choice to an AI intermediary, do they construct that intermediary to represent who they really are, or to compensate for who they think they are not—and what does that do to decision ownership, autonomy, and authenticity?**
+
+If I build the assistant as “me,” I should feel more ownership and authenticity; if I build it as “better than me,” I may gain instrumental confidence but lose ownership/authenticity.
+
+Existing work shows that consumers delegate difficult decisions partly to offload responsibility; AI delegation in purchasing can reduce perceived autonomy; beliefs about algorithms shape acceptance; and authenticity is already a live issue in consumer responses to AI-authored communications. Your angle adds something new upstream: before the AI acts, consumers author a proxy self for it to use.
+
+
+The algorithmic intermediary is made up from three components: the *real self* representing the true self-perception of the consumer, the *constructed self* being the version of the consumer that is shaped through disclosed and inferred information, wherein the constructed self may differ from the real self, and the algorithm influence summarizing both base LLM settings and custom system settings.
+
+# The Algorithmic Intermediary
+
+The *algorithmic intermediary* is what acts on the consumer's behalf, and is made up of all three components: 
+
+1. **The real self**: The true self is the consumers true perception of the self, which consists of all aspects they believe to be true about themselves, including aspects they would not be willing to share with someone or something else. Importantly, the real self does not necessitate being a true self in the sense that it portrays the "deep truth" of the consumer's personality, but a mirror of who the consumer thinks they are in private without feeling the need to adapt their true values, opinions and beliefs to their environment or societal expectations. 
+2. **The constructed self**: The constructed self consists of the image that is constructed for the LLM, both actively through active disclosure, and passively through behavior and in-context information. The constructed self can overlap with the real self. Assuming a perfect overlap of the true self and the constructed self, the constructed self can be understood as a digital twin of the consumer [@pengDigitalTwinsFunhouse2026].
+3. **The LLM**: Because LLMs available to consumers come with predefined behavior and settings that cannot be overruled by constructing a self that is opposing to these predefined settings, the LLM itself cannot be neglected when discussing the construction of an algorithmic intermediary. Consumers can (to a certain extent) shape the "personality" of their LLM through custom instructions or similar. The LLM component encompasses both the default out-of-the-box behavior and the custom instructions provided by the user.
+
+The *algorithmic intermediary* is the assumed persona at the core of research performed by an LLM, the persona at the basis of advice given by the chatbot, but also the persona on whose behalf an agentic assistant may send e-mails, or fill and pay for the online grocery shopping cart.
+
+The *algorithmic intermediary* can formally be defined as congruent respectively incongruent with the real self. The algorithmic intermediary $I$ is an function of $I = f(C,C',L)$ wherein each the consumer $C$, the constructed self $C'$ and the base LLM $L$ have a radius ranging from 0 to 1. 
+
+[to add a definition of how I understand the algorithmic intermediary]. 
+
+This effectively leaves an environment where the consumer has two key levers accessible to them to construct their algorithmic intermediary: 
+
+1. The distance $D(C, C')$ of which the lower the distance, the higher the mirroring.
+2. The distance $D(C, L)$ which is the degree to which they align their assistants (be this a chat or an agent) to their values and beliefs. 
+
+The consumer does not have control over the relative position $D(L,C')$ although they might attempt to influence it. 
+
+The questions now arise:
+
+**RQ1: How do consumers shape their algorithmic self through disclosure of information?**
+--> Purposeful path, active participation 
+
+**RQ1b: How do consumers 
+
+
+
+LLMs create a new environment in which people increasingly do not act directly, but delegate actions through a personalized *algorithmic intermediary* in the form of a Chatbot, a digital assistant, or even an agentic AI[^1] acting on their behalf. This algorithmic intermediary fundamentally change how people move and behave in digital environments in two ways:
+
+First, and most prominently, consumers no longer interact with digital end-systems themselves, but instead instruct an LLM to do so on their behalf. This ranges from decisions such as looking up "healthy vegetarian dinner" on Pinterest shifting to "what should I eat tonight?" asked to ChatGPT to consequential decisions such as writing an e-mail to a supervisor requesting more payment, or evaluating loan options to make a downpayment for a home. What these examples illustrate is that LLMs have quickly found their use across a vast domain of applications, and data shows how diverse the use cases for consumers of such systems really is [@chatterjiHowPeopleUse]. 
+
+Second, less prominently but possibly introducing an even stronger, fundamental shift in consumer behavior, is the novel need of a *constructed self* which the algorithmic intermediary uses to base it's recommendations, tone, and decisions on. LLM-mediated environments form representations of the user on several levels: most saliently, users often provide in-context information such as "it should be kid-friendly" for the healthy vegetarian dinner, "it should be friendly but stern, I have worked hard and was always skipped for the promotion" to contextualize the e-mail, and "I value someone who has a consultant guiding me through the process and showing me options" when researching their bank of choice for a downpayment. Additionally, however, LLMs are increasingly implementing so-called memory functions -- be this in the form of memories in ChatGPT and Claude [@WhatMemory,@HowClaudeRemembers], or in the form of user.md [@openclaw_USER] and memory.md [@openclaw_memory] in novel applications such as OpenClaw assistants. 
+
+Algorithmic intermediaries acting on behalf of consumers are however influenced by additional guardrails and constraints: LLMs accessible to consumers have inbuilt and innate guardrails hindering certain behaviors. Beyond that, consumers increasingly rely on giving their intermediaries a "personality" themselves. In Chatbots, this usually happens through use of system-wiede instructions --  "custom instructions" [@ChatGPTCustomInstructions] or "use styles" [@ConfigureUseStyles] instructing the system how to behave across situations and contexts. In digital assitants, consumers are encouraged to give their assistant a "soul" [@SOULmdTemplate].
+
+Taken together, consumers construct their algorithmic selves both actively and passively through providing context and observed behavior stored to memory, while they simultaneously contribute to how the system behaves through system-wide instructions. Including the fourth component being the limitations of the system itself, LLM mediated environments depict a complex and intertwined landscape of consumer's reflection of their self, which opens many questions for the consequences these reflections may bear. 
+
+# Constructing the Algorithmic Intermediary
+
+The algorithmic intermediary is resultingly made up from three components: the *real self* representing the true self-perception of the consumer, the *constructed self* being the version of the consumer that is shaped through disclosed and inferred information, wherein the constructed self may differ from the real self, and the algorithm influence summarizing both base LLM settings and custom system settings. 
+
+The *algorithmic intermediary* is what acts on the consumer's behalf, and is made up of all three components: 
+
+1. **The true self**: The true self is the consumers true perception of the self, which consists of all aspects they believe to be true about themselves, including aspects they would not be willing to share with someone or something else. 
+2. **The constructed self**: The constructed self consists of the image that is constructed for the LLM, both actively through active disclosure, and passively through behavior and in-context information. The constructed self can overlap with the true self. Assuming a perfect overlap of the true self and the constructed self, the constructed self can be understood as a digital twin of the consumer [@pengDigitalTwinsFunhouse2026].
+3. **The LLM**: Because LLMs available to consumers come with predefined behavior and settings that cannot be overruled by constructing a self that is opposing to these predefined settings, the LLM itself cannot be neglected when discussing the construction of an algorithmic intermediary. Consumers can (to a certain extent) shape the "personality" of their LLM through custom instructions or similar. The LLM component encompasses both the default out-of-the-box behavior and the custom instructions provided by the user. 
+
+# Research Directions
+
+This outset leads to several possible streams of research: 
+
+## Algorithmic Mirrors or Algorithmic Compensators? 
+The first stream of research pertains to the question whether consumers use their constructed self as a mirror of their true self, or as a complement. Anectotally, leaders in the LLM space such as Sam Altman discuss particularly young users as "[they] don't really make life decisions without asking ChatGPT what to do. And it has every context of every person in their life they have ever talked about." [@ai-ascent-sequoia-2025, 15:00-15:35]. Simultaneously, evidence shows that users do adapt their behavior in reaction to being confronted with an algorithm [e.g., @goergenAIAssessmentChanges2025]. The question therefore arises: **How and when do consumers purposefully shape a constructed self that deviates from their true self, and in which dimensions do they deviate?** 
+
+## Domain-specificity of Algorithmic Intermediary
+The second stream of research ties into a recent publication from OpenAI itself [@chatterjiHowPeopleUse] describing various ways in which consumers use ChatGPT, further corroborated by other media such as @zao-sandersHowPeopleAre2025 and others. Consumers use AI in a non-work context for all sorts of things: @chatterjiHowPeopleUse summarize three major categories of use cases being **practical guidance, seeking information, and writing**. In all three, it can be assumed that the consumer wants their self represented in some form, be this their true self (mirror) or more of a curated / aspirational version. The question is if consumers shape one "general-purpose" algorithmic intermediary, or prefer to rely on context-specific variants, i.e.: **How do consumers shape their constructed self in different contexts and how does the overlap between the real self and the constructed self differ depending on the use case?**
+
+## How do algorithmic folk theories shape the constructed self? 
+The third stream of research pertains to the question how consumers *think* LLMs represent them on their behalf (i.e. the folk theories they assign to the LLM's working) and their resulting reactions in strategically shaping the self. There is evidence that consumers strategically highlight certain aspects of themselves in interactions with LLM's such as presenting themselves as more analytical when being assessed by an LLM [@goergenAIAssessmentChanges2025]. These phenomena can be generalized and extended, which offers the question: **How do consumers shape their constructed self in response to the perceived workings of the LLM?** This question is of particular interest in contexts where consumers interact with proprietary LLMs by marketers: If a consumer describes themselves towards a proprietary digital assistant such as Amazon's Rufus [@staffAmazonsNextgenAI2025], will they anticipate that amazon tries to impose their own interests and steer against it? When chatting to "Health Answers by Pfizer" [@IntroducingHEALTHANSWERS], will consumers construct their selves as more health-conscious and adhering to all the best practices? 
+
+Naturally, more research directions pertaining to this vast topic are imagineable. 
+
+# Independent Variables 
+
+## Congruence between the real self and the constructed self
+Do people model the representation of themselves as a mirror, or do they selectively shape it. 
+
+## Congruence between the algorithm and the real self
+Do people model their assistant after themselves, or do they model them as an extension of themselves? 
+
+## Congruence between the algorithmic intermediary and the real self
+- If the algorithmic intermediary deviates from the self, although the constructed self does not, does this lead to particular aversion or annoyance? 
+- 
+
+
+## Constructed Self as an observed Self or as a disclosed self
+Do the DVs change based on the observed or disclosed nature of the self? 
+
+## Trust in the AI
+Folk theories 
+
+# Dependent Variables
+
+Irrespective of the research direction, several key variables pertinent to consumer welfare and satisfaction are expected to be affected by this shift from acting oneself to sending out an actor on one's behalf: 
+
+## Decision Ownership
+Do consumers still feel like the decisions being made on their behalf are "their own"? 
+
+## Decision Autonomy
+Do consumers feel less autonomous in their decisions if they construct an algorithmic intermediary to make them on their behalf, or do they feel more autonomous because the algorithmic intermediary can consider 
+
+## Authenticity
+Do consumers still feel like the decision they made was congruent with their authentic self? 
+
+# Mediators and Moderators
+
+## Moderator: Degree of Autonomy
+
+## Application Domain 
+
+# Empirical Package Options
+
+If I were optimizing for JCR, I would push it slightly more as a substantive contemporary phenomenon: consumers increasingly configure AI systems that act on their behalf, and those configurations shape consumer welfare-relevant outcomes. Then I would add one richer, more naturalistic study using actual user-written assistant instructions or a realistic agent setup. That plays directly into JCR’s current appetite for consequential AI-consumer phenomena.
+
+
+[^1]: While I do not believe that the term "artificial intelligence" should be used for the agentic LLM systems that are currently available to consumers, it is the commonly used term and will be used throughout this document for ease of reading.
+
 
 # Summary
 
@@ -48,6 +170,8 @@ Outcome satisfaction also generalizes well because people use LLMs to pursue out
 
 Authenticity may be the most important one outside purchasing. In many LLM uses, the issue is not “did I buy the right thing?” but did this action still feel like me? That matters for emails, social messages, self-descriptions, and life decisions especially strongly. Someone may send a better email with AI help but later feel: “that was polished, but not really me.” Long term, that matters because repeated inauthentic mediation can create self-alienation, while authentic mediation can help people stabilize a coherent sense of self across human and AI-assisted action.
 
+- do people "speak" (incl prompt) differently depending of the degree of antromorphization 
+- "rent an AI" vs "rent a human"
 
 
 # Background and Relevant Literature

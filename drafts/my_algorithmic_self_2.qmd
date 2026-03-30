@@ -506,7 +506,7 @@ Perceived decision ownership can be measured with items such as:
 
 #### Dependent Variable: Compensatory Self-Construction
 
-The main dependent variable is measured **behaviorally at the profile setup stage**, before the assistant generates or selects the meal plan.
+The mediator is measured **behaviorally at the profile setup stage**, before the assistant generates or selects the meal plan.
 
 Compensatory self-construction can be operationalized as:
 
@@ -671,7 +671,6 @@ To test whether the ideal self was made salient, participants respond to the fol
 Additionally, we should check if participants filled in the profile section in accordance with our expectations:
 
 - The profile I created reflects the kind of person I ideally want to be.
-
 
 #### Controls
 

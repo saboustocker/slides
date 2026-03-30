@@ -126,8 +126,312 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<section id="shaping-my-algorithmic-self" class="level1">
+<h1>Shaping my Algorithmic Self</h1>
+<section id="core-summary" class="level2">
+<h2 class="anchored" data-anchor-id="core-summary">Core summary</h2>
+<p>This proposal can be reduced to two clean theoretical routes.</p>
+<p>The first route starts from a <strong>change in the technology</strong>. Compared with earlier recommender systems, LLM-based assistants do not only rank or suggest options; they can also build persistent user representations, accept direct self-descriptions, and increasingly act on the user’s behalf in consequential decisions <span class="citation" data-cites="dongBriefHistoryRecommender2017 chatterjiHowPeopleUse papnejaSelfdisclosureConversationalAI2025 WhatMemory">[@dongBriefHistoryRecommender2017; @chatterjiHowPeopleUse; @papnejaSelfdisclosureConversationalAI2025; @WhatMemory]</span>. As a result, the key psychological question is not only whether recommendations are accurate, but whether the resulting decision still feels like <strong>my</strong> decision. I define this as <strong>decision ownership</strong>: the extent to which the consumer experiences the final outcome as one they made rather than one the system made for them. [DEFINE MORE CLEARLY: distinguish decision ownership from perceived control, responsibility, and satisfaction.]</p>
+<p>The central claim of the first route is that <strong>higher system agency reduces decision ownership</strong>, and that consumers respond by investing more in shaping the system’s representation of them. I refer to this as <strong>compensatory self-construction</strong>. The idea is not merely that consumers disclose more information, but that they do so because the system increasingly stands in for the self. [NEEDS TIGHTER LOGIC: make clearer why this is specifically about threatened decision ownership rather than general uncertainty reduction or folk theories about how AI works.] Perceived control should weaken this response: if users believe they can still stop a bad outcome, they should feel less need to compensate through profile construction.</p>
+<p>The second route starts from a <strong>change in the salience of the self</strong>. LLM-based assistants can often be personalized in two distinct ways: users can define <strong>who they are</strong> for the system, and they can define <strong>how the assistant should behave</strong>. This creates two possible strategies for resolving mismatch between one’s preferences and the assistant’s recommendation. When the <strong>ideal self</strong> is salient, consumers should be more likely to update their own profile, because the recommendation can then be grounded in a version of the self they positively identify with. When the <strong>ought/social self</strong> is salient, consumers should be more likely to update the assistant’s personality or rules instead, effectively externalizing what they feel they should do to the system. [DEFINE MORE CLEARLY: decide whether this is “ought self,” “social self,” or both; right now these are not interchangeable.] The core implication is that these two forms of updating should not have the same psychological consequence: updating the self should increase decision ownership, whereas updating the assistant should not fully realign ownership.</p>
+<p>Taken together, the proposal argues that personalization in agentic AI does more than improve fit. It changes where the self is located in the decision process. In one case, consumers react to delegated agency by trying to build a better representation of themselves for the system. In the other, consumers strategically decide whether the self or the assistant should carry the burden of the decision. This matters because lower decision ownership should reduce subsequent oversight of the system, especially when the delegated choice reflects what the consumer feels they ought to do rather than what they feel is authentically theirs. [SOURCE NEEDED if you want to make stronger claims about downstream supervision or disengagement.]</p>
+<hr>
+</section>
+<section id="path-1-change-in-technology---compensatory-self-construction" class="level2">
+<h2 class="anchored" data-anchor-id="path-1-change-in-technology---compensatory-self-construction">Path 1: Change in technology -&gt; compensatory self-construction</h2>
+<section id="core-model" class="level3">
+<h3 class="anchored" data-anchor-id="core-model">Core model</h3>
+<p><strong>Higher system agency</strong><br>
++ <strong>lower perceived control</strong><br>
+-&gt; <strong>lower decision ownership</strong><br>
+-&gt; <strong>more compensatory self-construction</strong></p>
+<p><strong>Moderation claim:</strong> perceived control attenuates the effect of high system agency on compensatory self-construction.</p>
+</section>
+<section id="justification" class="level3">
+<h3 class="anchored" data-anchor-id="justification">Justification</h3>
+<p>Traditional recommendation environments still leave much of the construction of the choice set visible and manipulable to the consumer through searching, filtering, scrolling, and comparing. LLM-based and agentic systems compress more of this work into the system itself and can move from recommending to deciding and even acting <span class="citation" data-cites="dongBriefHistoryRecommender2017 chatterjiHowPeopleUse">[@dongBriefHistoryRecommender2017; @chatterjiHowPeopleUse]</span>. This should matter because the more the system stands in for the user, the less obvious it becomes that the outcome is still the user’s own decision. The predicted response is compensatory: consumers should try to make the system’s representation of them more accurate, detailed, and personal.</p>
+<p>[DEFINE MORE CLEARLY: “agency” and “control” need to stay separate throughout. Agency is who constructs/selects the option; control is whether the user can still stop the outcome.]</p>
+</section>
+<section id="hypotheses" class="level3">
+<h3 class="anchored" data-anchor-id="hypotheses">Hypotheses</h3>
+<p><strong>H1:</strong> Higher system agency reduces perceived decision ownership.<br>
+<strong>H2:</strong> Lower decision ownership increases compensatory self-construction.<br>
+<strong>H3:</strong> Perceived control attenuates the positive relationship between high system agency and compensatory self-construction.</p>
+</section>
+<section id="main-experiment-behavioral-2-x-2-study" class="level3">
+<h3 class="anchored" data-anchor-id="main-experiment-behavioral-2-x-2-study">Main experiment: behavioral 2 x 2 study</h3>
+<section id="purpose" class="level4">
+<h4 class="anchored" data-anchor-id="purpose">Purpose</h4>
+<p>Test whether compensatory self-construction is strongest when the assistant both <strong>decides on the user’s behalf</strong> and <strong>cannot easily be stopped</strong>.</p>
+</section>
+<section id="design" class="level4">
+<h4 class="anchored" data-anchor-id="design">Design</h4>
+<p>Between-subjects 2 x 2 design:</p>
+<ul>
+<li>High system agency / high perceived control</li>
+<li>High system agency / low perceived control</li>
+<li>Low system agency / high perceived control</li>
+<li>Low system agency / low perceived control</li>
+</ul>
+</section>
+<section id="context" class="level4">
+<h4 class="anchored" data-anchor-id="context">Context</h4>
+<p>A simulated AI meal-planning and grocery-delivery assistant.</p>
+</section>
+<section id="manipulation-1-system-agency" class="level4">
+<h4 class="anchored" data-anchor-id="manipulation-1-system-agency">Manipulation 1: system agency</h4>
+<p><strong>Low-agency condition:</strong><br>
+The assistant generates a shortlist of meal plans, and the participant chooses one.</p>
+<p><strong>High-agency condition:</strong><br>
+The assistant directly selects the meal plan for the participant based on the profile the participant created.</p>
+<p>The difference is whether the assistant <strong>recommends</strong> or <strong>decides</strong>.</p>
+</section>
+<section id="manipulation-2-perceived-control" class="level4">
+<h4 class="anchored" data-anchor-id="manipulation-2-perceived-control">Manipulation 2: perceived control</h4>
+<p><strong>Low-control condition:</strong><br>
+Once the meal plan is selected, it is finalized immediately. The participant cannot stop, reverse, or cancel the weekly plan.</p>
+<p><strong>High-control condition:</strong><br>
+Once the meal plan is selected, the participant can still cancel the week before the grocery order is finalized.</p>
+<p>Important: the high-control condition should only allow participants to <strong>stop</strong> the outcome, not to revise the choice or select another plan. This keeps control separate from authorship.</p>
+</section>
+<section id="behavioral-measure-compensatory-self-construction" class="level4">
+<h4 class="anchored" data-anchor-id="behavioral-measure-compensatory-self-construction">Behavioral measure: compensatory self-construction</h4>
+<p>Before the assistant generates or selects the plan, participants complete a profile setup stage. They can optionally fill in fields such as:</p>
+<ul>
+<li>dietary restrictions</li>
+<li>favorite meals</li>
+<li>disliked ingredients</li>
+<li>allergies</li>
+<li>cooking ability</li>
+<li>health goals</li>
+<li>budget priorities</li>
+<li>daily schedule</li>
+<li>household context</li>
+<li>indulgence preferences</li>
+<li>“hard no” ingredients</li>
+<li>free-text note: “Is there anything else the assistant should know about you?”</li>
+</ul>
+<p>Behavioral indicators:</p>
+<ul>
+<li>number of optional fields completed</li>
+<li>time spent on profile construction</li>
+<li>number of edits made</li>
+<li>length of free-text response</li>
+<li>specificity/depth of disclosed information [DEFINE MORE CLEARLY: pre-specify how “specificity” will be coded]</li>
+</ul>
+<p>These can be analyzed separately or combined into an index.</p>
+</section>
+<section id="mediator-decision-ownership" class="level4">
+<h4 class="anchored" data-anchor-id="mediator-decision-ownership">Mediator: decision ownership</h4>
+<p>Measured after the meal plan has been selected:</p>
+<ul>
+<li>“The final meal plan felt like my decision.”</li>
+<li>“I felt that I was the one choosing the outcome.”</li>
+<li>“The final outcome reflected what I wanted.”</li>
+<li>“The assistant decided for me.” (reverse-coded)</li>
+<li>“I felt ownership over the final meal plan.”</li>
+</ul>
+</section>
+<section id="manipulation-checks" class="level4">
+<h4 class="anchored" data-anchor-id="manipulation-checks">Manipulation checks</h4>
+<p><strong>Agency check</strong> - “The assistant made the meal decision on my behalf.” - “The assistant had substantial influence over the final meal plan.” - “I remained the primary decision-maker.” (reverse-coded)</p>
+<p><strong>Control check</strong> - “I could still stop the final outcome from happening.” - “I had a way to prevent an unwanted meal delivery.” - “Once the decision was made, I had no real influence over the outcome.” (reverse-coded)</p>
+</section>
+<section id="expected-pattern" class="level4">
+<h4 class="anchored" data-anchor-id="expected-pattern">Expected pattern</h4>
+<p>Compensatory self-construction should be highest in the <strong>high-agency / low-control</strong> condition.<br>
+It should remain elevated but weaker in the <strong>high-agency / high-control</strong> condition.<br>
+It should be lower in both <strong>low-agency</strong> conditions.</p>
+<p>This pattern would support the claim that compensatory self-construction is a response to threatened decision ownership, especially when the system must stand in for the self and cannot easily be stopped.</p>
+<p>[NEEDS TIGHTER LOGIC: if compensatory behavior is measured before the decision occurs, you need to be explicit that participants are responding to the anticipated decision structure, not to experienced ownership.]</p>
+<hr>
+</section>
+</section>
+</section>
+<section id="path-2-salience-of-self---strategic-use-of-technology" class="level2">
+<h2 class="anchored" data-anchor-id="path-2-salience-of-self---strategic-use-of-technology">Path 2: Salience of self -&gt; strategic use of technology</h2>
+<section id="core-model-1" class="level3">
+<h3 class="anchored" data-anchor-id="core-model-1">Core model</h3>
+<p><strong>Ideal-self salience</strong><br>
+-&gt; update <strong>own profile</strong><br>
+-&gt; higher decision ownership</p>
+<p><strong>Ought/social-self salience</strong><br>
+-&gt; update <strong>assistant personality/rules</strong><br>
+-&gt; no comparable increase in decision ownership</p>
+</section>
+<section id="justification-1" class="level3">
+<h3 class="anchored" data-anchor-id="justification-1">Justification</h3>
+<p>LLM-based assistants introduce a new structural feature: personalization can target either the <strong>user model</strong> or the <strong>assistant model</strong>. That makes it possible for consumers to resolve mismatch in two different ways. They can say, in effect, “this is who I am,” or they can say, “this is how you should behave for me.” This distinction matters because the two strategies should not anchor the recommendation in the same place. Updating one’s own profile should make the outcome feel more self-relevant; updating the assistant’s personality should make the outcome feel more delegated.</p>
+<p>This route is most useful when the mismatch is not caused by the technology alone, but by the salience of different self-standards. When the ideal self is salient, incorporating aspirational traits into the user profile should help the recommendation feel self-congruent. When the ought/social self is salient, consumers may prefer to offload discipline or norm compliance to the assistant instead. [SOURCE NEEDED for the claim that consumers resist integrating moral/normative standards into the self more than they resist delegating them.] [DEFINE MORE CLEARLY: explain why “ought” should map onto assistant-updating rather than self-updating; this is currently plausible but not yet fully justified.]</p>
+</section>
+<section id="hypotheses-1" class="level3">
+<h3 class="anchored" data-anchor-id="hypotheses-1">Hypotheses</h3>
+<p><strong>H4:</strong> When the ideal self is salient, consumers will preferentially reconcile mismatch by updating their own profile.<br>
+<strong>H5:</strong> Updating one’s own profile under ideal-self salience increases decision ownership.<br>
+<strong>H6:</strong> When the ought/social self is salient, consumers will preferentially reconcile mismatch by updating the assistant’s personality or decision rules.<br>
+<strong>H7:</strong> This strategy does not increase decision ownership to the same extent.</p>
+</section>
+<section id="main-experiment-2-x-2-vignette-study" class="level3">
+<h3 class="anchored" data-anchor-id="main-experiment-2-x-2-vignette-study">Main experiment: 2 x 2 vignette study</h3>
+<section id="purpose-1" class="level4">
+<h4 class="anchored" data-anchor-id="purpose-1">Purpose</h4>
+<p>Test whether the effect of self-salience on decision ownership depends on <strong>where personalization is located</strong>: in the user profile or in the assistant’s personality.</p>
+</section>
+<section id="design-1" class="level4">
+<h4 class="anchored" data-anchor-id="design-1">Design</h4>
+<p>Between-subjects 2 x 2 design:</p>
+<ul>
+<li>Ideal self salience x updating own profile</li>
+<li>Ideal self salience x updating assistant personality</li>
+<li>Ought/social self salience x updating own profile</li>
+<li>Ought/social self salience x updating assistant personality</li>
+</ul>
+</section>
+<section id="context-1" class="level4">
+<h4 class="anchored" data-anchor-id="context-1">Context</h4>
+<p>A personalized AI meal-planning agent (“eatly”) that makes future meal decisions on the user’s behalf.</p>
+</section>
+<section id="manipulation-1-self-salience" class="level4">
+<h4 class="anchored" data-anchor-id="manipulation-1-self-salience">Manipulation 1: self-salience</h4>
+<p><strong>Ideal-self condition</strong><br>
+Participants read a baseline description of eatly plus language emphasizing the kind of eater they would like to be.</p>
+<p>Example wording:<br>
+“This is eatly, your personalized meal planning agent. Eatly will make your life easier by doing your meal-planning, grocery shopping, and re-stocking on your behalf based on your preferences. Use eatly to reach your healthy eating goals!”</p>
+<p><strong>Ought/social-self condition</strong><br>
+Participants read the same baseline description plus language emphasizing what they feel they should do.</p>
+<p>Example wording:<br>
+“This is eatly, your personalized meal planning agent. Eatly will make your life easier by doing your meal-planning, grocery shopping, and re-stocking on your behalf based on your preferences. Use eatly to make sure you eat the way you should!”</p>
+<p>[NEEDS TIGHTER LOGIC: the normative appeal may need to be stronger and more concrete; as written it may not reliably induce ought/social-self salience.]</p>
+</section>
+<section id="manipulation-2-target-of-updating" class="level4">
+<h4 class="anchored" data-anchor-id="manipulation-2-target-of-updating">Manipulation 2: target of updating</h4>
+<p><strong>Own-profile condition</strong><br>
+Participants are asked to complete a persistent user profile.</p>
+<p>Prompt:<br>
+“Describe yourself so eatly can better tailor future meal-planning decisions to you.”</p>
+<p><strong>Assistant-personality condition</strong><br>
+Participants are asked to define how the assistant should behave.</p>
+<p>Prompt:<br>
+“Describe how eatly should behave so it can better make meal-planning decisions on your behalf.”</p>
+<p>This keeps the target of personalization clean: either the participant describes the self, or the participant describes the assistant’s rules.</p>
+</section>
+<section id="outcome-stimulus" class="level4">
+<h4 class="anchored" data-anchor-id="outcome-stimulus">Outcome stimulus</h4>
+<p>After the setup task, participants see a short example recommendation framed as based on the profile or assistant personality they just created.</p>
+</section>
+<section id="dependent-variable-decision-ownership" class="level4">
+<h4 class="anchored" data-anchor-id="dependent-variable-decision-ownership">Dependent variable: decision ownership</h4>
+<ul>
+<li>“The decision felt like it was mine.”</li>
+<li>“I felt that this recommendation reflected who I am.”</li>
+<li>“I felt personal ownership over this decision.”</li>
+<li>“I would stand behind this decision as my own.”</li>
+<li>“This felt like a decision I made, not just one the system made for me.”</li>
+</ul>
+</section>
+<section id="behavioral-or-coded-measure-updating-content" class="level4">
+<h4 class="anchored" data-anchor-id="behavioral-or-coded-measure-updating-content">Behavioral or coded measure: updating content</h4>
+<p>The text participants produce is coded for whether it primarily reflects:</p>
+<ul>
+<li>aspirational / ideal-self language</li>
+<li>norm-compliance / ought-self language</li>
+<li>self-description</li>
+<li>assistant-rule description</li>
+</ul>
+<p>This is needed to verify that participants actually used the provided personalization channel in the predicted way.</p>
+<p>[DEFINE MORE CLEARLY: decide in advance whether this coding is binary, scaled, or dictionary-based.]</p>
+</section>
+<section id="manipulation-checks-1" class="level4">
+<h4 class="anchored" data-anchor-id="manipulation-checks-1">Manipulation checks</h4>
+<p><strong>Ideal-self salience</strong> - “I thought about the kind of eater I want to be.” - “The scenario made me think about improving myself through healthier eating.”</p>
+<p><strong>Ought/social-self salience</strong> - “I thought about the kind of eater I should be.” - “The scenario made me think about what I ought to do when making food choices.”</p>
+<p><strong>Target-of-updating check</strong> - “The setup task was mainly about defining who I am for the assistant.” - “The setup task was mainly about defining how the assistant should behave.”</p>
+</section>
+<section id="expected-pattern-1" class="level4">
+<h4 class="anchored" data-anchor-id="expected-pattern-1">Expected pattern</h4>
+<p>Decision ownership should be highest in the <strong>ideal-self x own-profile</strong> condition.<br>
+The <strong>ought/social-self x assistant-personality</strong> condition should show greater willingness to externalize guidance to the assistant, but lower decision ownership.</p>
+<p>This would support the claim that consumers strategically use different personalization tools depending on which version of the self is salient, and that these tools do not have the same effect on ownership.</p>
+<hr>
+</section>
+</section>
+</section>
+<section id="optional-follow-up-experiment-for-path-2" class="level2">
+<h2 class="anchored" data-anchor-id="optional-follow-up-experiment-for-path-2">Optional follow-up experiment for Path 2</h2>
+<p>If you want the behavioral consequence, the cleanest follow-up is the subscription-management simulation you already drafted.</p>
+<section id="purpose-2" class="level3">
+<h3 class="anchored" data-anchor-id="purpose-2">Purpose</h3>
+<p>Test whether lower decision ownership after <strong>assistant-centered personalization</strong> reduces review of the assistant’s recommendation.</p>
+</section>
+<section id="design-2" class="level3">
+<h3 class="anchored" data-anchor-id="design-2">Design</h3>
+<p>Two conditions:</p>
+<ul>
+<li>own-profile condition</li>
+<li>assistant-profile condition</li>
+</ul>
+</section>
+<section id="context-2" class="level3">
+<h3 class="anchored" data-anchor-id="context-2">Context</h3>
+<p>A financial assistant (“Penny”) reviews subscriptions and proposes what to cancel, downgrade, or keep.</p>
+</section>
+<section id="procedure" class="level3">
+<h3 class="anchored" data-anchor-id="procedure">Procedure</h3>
+<ol type="1">
+<li>Participants personalize Penny either by describing themselves or by defining how Penny should behave.</li>
+<li>Penny produces a recommendation.</li>
+<li>Participants can either:
+<ul>
+<li>click “Review details,” or</li>
+<li>click “Approve now.”</li>
+</ul></li>
+</ol>
+</section>
+<section id="behavioral-outcome" class="level3">
+<h3 class="anchored" data-anchor-id="behavioral-outcome">Behavioral outcome</h3>
+<ul>
+<li>whether they open the review page</li>
+<li>time spent reviewing</li>
+<li>number of details opened before approval</li>
+</ul>
+</section>
+<section id="prediction" class="level3">
+<h3 class="anchored" data-anchor-id="prediction">Prediction</h3>
+<p>Own-profile personalization should increase decision ownership and therefore increase review.<br>
+Assistant-profile personalization should lower ownership and reduce review.</p>
+<p>[NEEDS MORE EXPLANATION: spell out why lower ownership should reduce supervision rather than increase vigilance because the system feels external.]</p>
+<hr>
+</section>
+</section>
+<section id="what-can-be-cut-from-the-longer-draft" class="level2">
+<h2 class="anchored" data-anchor-id="what-can-be-cut-from-the-longer-draft">What can be cut from the longer draft</h2>
+<ul>
+<li>The long differentiator list; keep only the distinctions that matter for the causal model.</li>
+<li>The representativeness point, unless you define it sharply. [DEFINE MORE CLEARLY]</li>
+<li>The multiple vignette versions for Path 1; the 2 x 2 behavioral design is the cleanest single study.</li>
+<li>The anecdotal real-world examples, unless you use them only in the motivation section.</li>
+<li>Claims about prompting making users feel <em>more</em> agency unless you add evidence. [SOURCE NEEDED]</li>
+<li>Claims about hidden search strings / interface opacity unless they are central and sourced. [SOURCE NEEDED]</li>
+</ul>
+</section>
+<section id="current-weak-points-to-tighten-before-turning-this-into-a-proposal" class="level2">
+<h2 class="anchored" data-anchor-id="current-weak-points-to-tighten-before-turning-this-into-a-proposal">Current weak points to tighten before turning this into a proposal</h2>
+<ol type="1">
+<li><p><strong>Decision ownership needs a harder definition.</strong><br>
+Right now it sits very close to agency, control, authorship, and responsibility.</p></li>
+<li><p><strong>Path 1 needs a cleaner rival explanation section.</strong><br>
+You likely need to show why compensatory self-construction is not just uncertainty reduction or better-task-performance motivation.</p></li>
+<li><p><strong>Path 2 needs sharper construct boundaries.</strong><br>
+“Ideal,” “ought,” and “social” self are doing too much work at once.</p></li>
+<li><p><strong>The supervision consequence needs stronger logic.</strong><br>
+It is plausible, but not yet demonstrated why lower ownership should reduce checking rather than increase it.</p></li>
+<li><p><strong>The target of personalization is your strongest novel element.</strong><br>
+That distinction should be foregrounded much earlier.</p></li>
+</ol>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
