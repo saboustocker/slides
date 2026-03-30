@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Sabou Rani Stocker">
+<meta name="dcterms.date" content="2026-03-17">
+
+<title>Shaping the Algorithmic Intermediary – IBT-HSG - Slides</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-4f19b9360d534060e8f9131b7e5aad04.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#background-and-relevant-literature" id="toc-background-and-relevant-literature" class="nav-link active" data-scroll-target="#background-and-relevant-literature">Background and Relevant Literature</a>
+  <ul class="collapse">
+  <li><a href="#how-we-shift-to-a-world-of-algorithmic-intermediaries" id="toc-how-we-shift-to-a-world-of-algorithmic-intermediaries" class="nav-link" data-scroll-target="#how-we-shift-to-a-world-of-algorithmic-intermediaries">How we shift to a world of Algorithmic Intermediaries</a></li>
+  <li><a href="#the-shape-of-the-algorithmic-self" id="toc-the-shape-of-the-algorithmic-self" class="nav-link" data-scroll-target="#the-shape-of-the-algorithmic-self">The Shape of the Algorithmic Self</a>
+  <ul class="collapse">
+  <li><a href="#disclosure-vs.-inference" id="toc-disclosure-vs.-inference" class="nav-link" data-scroll-target="#disclosure-vs.-inference">Disclosure vs.&nbsp;Inference</a></li>
+  <li><a href="#mirrors-vs.-compensators" id="toc-mirrors-vs.-compensators" class="nav-link" data-scroll-target="#mirrors-vs.-compensators">Mirrors vs.&nbsp;Compensators</a></li>
+  </ul></li>
+  <li><a href="#facts-and-folk-theories-about-how-llms-make-decisions" id="toc-facts-and-folk-theories-about-how-llms-make-decisions" class="nav-link" data-scroll-target="#facts-and-folk-theories-about-how-llms-make-decisions">Facts and Folk Theories about how LLMs make Decisions</a>
+  <ul class="collapse">
+  <li><a href="#how-llms-really-make-recommendations-and-decisions" id="toc-how-llms-really-make-recommendations-and-decisions" class="nav-link" data-scroll-target="#how-llms-really-make-recommendations-and-decisions">How LLMs really make Recommendations and Decisions</a></li>
+  <li><a href="#how-consumers-believe-llms-make-recommendations-and-decisions" id="toc-how-consumers-believe-llms-make-recommendations-and-decisions" class="nav-link" data-scroll-target="#how-consumers-believe-llms-make-recommendations-and-decisions">How Consumers believe LLMs make Recommendations and Decisions</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#the-algorithmic-intermediary" id="toc-the-algorithmic-intermediary" class="nav-link" data-scroll-target="#the-algorithmic-intermediary">The Algorithmic Intermediary</a>
+  <ul class="collapse">
+  <li><a href="#affective-implications-of-in-congruence" id="toc-affective-implications-of-in-congruence" class="nav-link" data-scroll-target="#affective-implications-of-in-congruence">Affective Implications of (In-)congruence</a></li>
+  <li><a href="#behavioral-implications-of-in-congruence" id="toc-behavioral-implications-of-in-congruence" class="nav-link" data-scroll-target="#behavioral-implications-of-in-congruence">Behavioral Implications of (In-)congruence</a></li>
+  </ul></li>
+  <li><a href="#empirical-approaches" id="toc-empirical-approaches" class="nav-link" data-scroll-target="#empirical-approaches">Empirical Approaches</a>
+  <ul class="collapse">
+  <li><a href="#survey" id="toc-survey" class="nav-link" data-scroll-target="#survey">Survey</a></li>
+  <li><a href="#folk-theories" id="toc-folk-theories" class="nav-link" data-scroll-target="#folk-theories">Folk Theories</a></li>
+  <li><a href="#degree-of-autonomy" id="toc-degree-of-autonomy" class="nav-link" data-scroll-target="#degree-of-autonomy">Degree of Autonomy</a></li>
+  <li><a href="#disclosure-vs.-inference-1" id="toc-disclosure-vs.-inference-1" class="nav-link" data-scroll-target="#disclosure-vs.-inference-1">Disclosure vs.&nbsp;inference</a></li>
+  <li><a href="#behavioral-response-to-divergence-from-mirrored-vs.-compensatory-intermediaries" id="toc-behavioral-response-to-divergence-from-mirrored-vs.-compensatory-intermediaries" class="nav-link" data-scroll-target="#behavioral-response-to-divergence-from-mirrored-vs.-compensatory-intermediaries">Behavioral response to divergence from mirrored vs.&nbsp;compensatory intermediaries</a></li>
+  <li><a href="#repeated-interaction-longitudinal-design" id="toc-repeated-interaction-longitudinal-design" class="nav-link" data-scroll-target="#repeated-interaction-longitudinal-design">Repeated-interaction / longitudinal design</a></li>
+  </ul></li>
+  <li><a href="#open-questions" id="toc-open-questions" class="nav-link" data-scroll-target="#open-questions">Open Questions</a></li>
+  <li><a href="#long-term-follow-up-ideas" id="toc-long-term-follow-up-ideas" class="nav-link" data-scroll-target="#long-term-follow-up-ideas">Long-term follow up ideas</a></li>
+  <li><a href="#footnotes" id="toc-footnotes" class="nav-link" data-scroll-target="#footnotes">Footnotes</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Shaping the Algorithmic Intermediary</h1>
+<p class="subtitle lead">Do consumers construct algorithmic intermediaries as mirrors of the self or as compensators for perceived shortcomings?</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Sabou Rani Stocker </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 17, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>LLMs create a new environment in which people increasingly do not act directly, but delegate actions through a personalized algorithmic intermediary in the form of a chatbot, a digital assistant, or even an agentic AI<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> acting on their behalf. This algorithmic intermediary fundamentally changes how people move and behave in digital environments. Consumers no longer interact with digital end-systems themselves, but instead instruct an LLM to do so “on their behalf.” Consumers have quickly adopted LLMs as advisors and delegates across a variety of tasks and domains <span class="citation" data-cites="chatterjiHowPeopleUse zao-sandersHowPeopleAre2025">(<a href="#ref-chatterjiHowPeopleUse" role="doc-biblioref">Chatterji et al. 2025</a>; <a href="#ref-zao-sandersHowPeopleAre2025" role="doc-biblioref">Zao-Sanders 2025</a>)</span>.</p>
+<p>But how do consumers shape the “on behalf” for the LLM? LLM-mediated environments form representations of the user on several levels: consumers disclose relevant contextual information about decisions through the prompts they write, but LLMs also infer traits and preferences about the user based on their interaction behavior. Additionally, consumers are increasingly encouraged to shape the personality of the LLM itself (i.e.&nbsp;the “LLM personality”) through system prompts and custom instructions. Together, these components influence the formation and manifestation of the algorithmic intermediary, an amalgamation of the consumer’s true traits and preferences, the LLM’s understanding of the consumer, and its constraints and instructions regarding what to make of this.</p>
+<p>Discourse in the AI innovation space points toward increasingly unfiltered and transparent self-disclosure of traits and preferences to the LLMs consumers interact with <span class="citation" data-cites="ai-ascent-sequoia-2025 zao-sandersHowPeopleAre2025">(e.g., <a href="#ref-ai-ascent-sequoia-2025" role="doc-biblioref">Altman 2025</a>; <a href="#ref-zao-sandersHowPeopleAre2025" role="doc-biblioref">Zao-Sanders 2025</a>)</span>. Simultaneously, as LLMs are increasingly used as delegates rather than merely as supporters, the question arises whether consumers intend to present a representation of themselves that is as faithful as possible, or instead construct a variation of the self that is better suited to the person they (think they) ought to be for a given task.</p>
+<p>The question therefore arises:</p>
+<p><strong>When consumers delegate choice to an algorithmic intermediary, do they construct that intermediary to represent who they really are, or to compensate for perceived shortcomings of themselves or the environment—and what does that do to decision ownership, perceived autonomy, and authenticity?</strong></p>
+<p>If consumers construct the intermediary to mirror their actual preferences, they should experience higher decision ownership and authenticity because the output can be interpreted as an extension of the self. Yet this may also complicate autonomy: even when choice is delegated, consumers may feel more autonomous if the intermediary is experienced as “me in algorithmic form.”</p>
+<p>This also raises a second question: if the intermediary is constructed in ways that do not fully align with the consumer’s true preferences and traits, what follows behaviorally from that divergence?</p>
+<p><strong>When consumers’ algorithmic intermediary makes suggestions or decisions that diverge from their true preferences and traits, how does this impact their behavior?</strong></p>
+<p>This question matters because divergence between the intermediary and the true self may not only alter immediate perceptions, but also shape downstream behavior: consumers may override recommendations, adapt their own preferences, or gradually align themselves with the intermediary’s outputs.</p>
+<p>Several aspects are expected to shape how consumers construct themselves for the algorithm, as well as the consequences of this. First, and naturally, the degree of autonomy the algorithm has is expected to change how consumers shape their own image. Second, consumer beliefs about the algorithm itself—mainly trust, or folk theories—are expected to shape how they construct that image in response to it. Lastly, consumers are expected to perceive a higher degree of ownership and autonomy if they actively shape their algorithmic self through disclosure, rather than being “creeped on” by the LLM through observation.</p>
+<p>Theoretically, this research contributes to emerging work on consumer interaction with LLMs by conceptualizing the algorithmic intermediary as a distinct object of consumer construction, rather than treating algorithmic outputs as either neutral recommendations or mere reflections of inferred preference.</p>
+<p>Empirically, the project asks how consumers construct this intermediary through disclosure, inference, and instruction, and how variation in that construction shapes perceived ownership, autonomy, authenticity, and subsequent behavior.</p>
+<section id="background-and-relevant-literature" class="level1">
+<h1>Background and Relevant Literature</h1>
+<section id="how-we-shift-to-a-world-of-algorithmic-intermediaries" class="level2">
+<h2 class="anchored" data-anchor-id="how-we-shift-to-a-world-of-algorithmic-intermediaries">How we shift to a world of Algorithmic Intermediaries</h2>
+<p>LLMs—and by extension agentic assistants—make big promises: making us more efficient, freeing up our time, and boosting productivity <span class="citation" data-cites="CollaborateClaudeProjects AgentforceAIAgent GeminiMakesYour2024 EntdeckeGPT522026">(<a href="#ref-CollaborateClaudeProjects" role="doc-biblioref">Anthropic 2025</a>; <a href="#ref-AgentforceAIAgent" role="doc-biblioref">Agentforce 2025</a>; <a href="#ref-GeminiMakesYour2024" role="doc-biblioref">Google 2024</a>; <a href="#ref-EntdeckeGPT522026" role="doc-biblioref">OpenAI 2026</a>)</span>. However, to do so, we as consumers must necessarily shift our workflows: we no longer search for “healthy vegetarian dinner” on Pinterest, which in turn recommends options based on its recommender algorithm trained on our past behavior and the behavior of consumers similar to us. Instead, we go to our LLM of choice and ask the same question. We no longer Google to find the best bank for a loan, where the results are tied to our location and interests based on cookies, but instead tell the LLM to find a bank suited to our needs, and we no longer type out our emails ourselves, but instead tell the LLM to “write a message to my boss asking for a raise.” What these examples, drawn from a vast collection of use cases <span class="citation" data-cites="chatterjiHowPeopleUse 100-applications-usecases-2024 zao-sandersHowPeopleAre2025">(<a href="#ref-chatterjiHowPeopleUse" role="doc-biblioref">Chatterji et al. 2025</a>; <a href="#ref-100-applications-usecases-2024" role="doc-biblioref">Filtered Technologies 2024</a>; <a href="#ref-zao-sandersHowPeopleAre2025" role="doc-biblioref">Zao-Sanders 2025</a>)</span>, all have in common is that we as consumers no longer do the thing ourselves, but instead construct our algorithmic intermediary to do the thing on our behalf. The relevant change is therefore not only technical but behavioral: consumers must increasingly decide how to represent themselves to the system that will search, recommend, and sometimes act in their place. What changes is not merely the interface through which consumers access digital systems, but the location at which search, evaluation, and representation are performed.</p>
+<p>This shift is gradual and influenced by several domains. Most notably, our behavior fundamentally shifts the locus of decision autonomy as well as the locus of effort: the more of the search process through decision space we delegate to the AI, the less effort we expend, but also the less autonomous we are in our choice. Taking the bank loan as an example, our research time is drastically reduced because the LLM pre-selects a group of presumably suitable lenders for us; however, this also reduces our autonomy to consider alternatives that the LLM did not deem suitable and therefore did not include in the pre-selection. This example also demonstrates that autonomy is a spectrum: while we lose some decision autonomy, we still pick one of the pre-selected options, and the LLM does not enter contractual obligations on our behalf. Looking at an agentic assistant managing our calendars <span class="citation" data-cites="GeminiMakesYour2024">(e.g., <a href="#ref-GeminiMakesYour2024" role="doc-biblioref">Google 2024</a>)</span>, on the other hand, both dimensions approach a more pronounced extreme: we no longer have to open our calendar app at all, and the assistant schedules our meetings on our behalf. This reduces our decision autonomy to practically zero, as we have no control over where and when appointments are booked.</p>
+<p>While the idea of an algorithmic intermediary from the consumer’s perspective seems relatively unexplored, research on related concepts exists. <span class="citation" data-cites="galAlgorithmicConsumers">Gal and Elkin-Koren (<a href="#ref-galAlgorithmicConsumers" role="doc-biblioref">n.d.</a>)</span> describe the concept of an algorithmic consumer, essentially an algorithmic representation of both the consumer’s interests and the marketer’s specifications that makes optimized decisions on the consumer’s behalf. This concept differs from the algorithmic intermediary on two levels: first, it operates primarily on observational data derived from massive amounts of consumer interactions with marketers; and second, it is centered on the idea that the algorithmic consumer is a collective algorithm representing the interests of many consumers, not individuals. Further, research on digital twins <span class="citation" data-cites="pengDigitalTwinsFunhouse2026 toubiaDatabaseReportTwin2K5002025">(e.g., <a href="#ref-pengDigitalTwinsFunhouse2026" role="doc-biblioref">Peng et al. 2026</a>; <a href="#ref-toubiaDatabaseReportTwin2K5002025" role="doc-biblioref">Toubia et al. 2025</a>)</span> in combination with LLMs taps into the representation of a person through an LLM. However, this research focuses more on applications of synthetic consumers in marketing for rapid iterative testing and deployment, and less on how consumers themselves may shape or utilize their digital twins. Unlike these concepts, the algorithmic intermediary is an individualized, partially user-constructed, and action-oriented representation that mediates between consumer and marketplace.</p>
+</section>
+<section id="the-shape-of-the-algorithmic-self" class="level2">
+<h2 class="anchored" data-anchor-id="the-shape-of-the-algorithmic-self">The Shape of the Algorithmic Self</h2>
+<p>But how can we ensure that decisions are made in our best interest? There are essentially two components consumers can influence: the description of themselves (subsequently termed the “algorithmic self”), and the adjustment of the LLM (subsequently termed “LLM personality”<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>). To my knowledge, no prior literature directly examines the cognitive mechanisms by which consumers decide how and when to disclose aspects of themselves to LLMs.</p>
+<p>The algorithmic self refers to the representation of the consumer that is made available to the LLM through a combination of disclosed information, behavioral traces, and inferred traits and preferences.</p>
+<section id="disclosure-vs.-inference" class="level3">
+<h3 class="anchored" data-anchor-id="disclosure-vs.-inference">Disclosure vs.&nbsp;Inference</h3>
+<p>The first question is how the algorithmic self is shaped. In LLM environments, consumers have the option to actively disclose information through prompts or user.md files <span class="citation" data-cites="openclaw_USER">(<a href="#ref-openclaw_USER" role="doc-biblioref"><span>“<span>USER</span>”</span> 2026</a>)</span> in agentic systems. Additionally, however, LLMs also infer user characteristics based on interactions and context, which are then stored to memory <span class="citation" data-cites="whatMemory HowClaudeRemembers">(<a href="#ref-whatMemory" role="doc-biblioref"><strong>whatMemory?</strong></a>; <a href="#ref-HowClaudeRemembers" role="doc-biblioref"><span>“How <span>Claude</span> Remembers Your Project”</span> 2026</a>)</span>. This observational nature of LLMs and their subsequent adaptation to the user’s specific requirements and needs is also explicitly used as a selling point for adopting agentic assistants such as OpenClaw <span class="citation" data-cites="openclaw_memory">(<a href="#ref-openclaw_memory" role="doc-biblioref"><span>“Memory”</span> 2026</a>)</span>. Analytically, disclosure and inference should be distinguished because the former is experienced as agentic self-presentation, whereas the latter may be experienced as passive extraction.</p>
+<p>Previous literature on recommender systems and the perception of being observed suggests that this constant observation could also be perceived negatively: consumers tend to exhibit aversion to the feeling of being surveilled <span class="citation" data-cites="ruckensteinAlgorithmsAdvertisingIntimacy2020 zhangGoogleKnowsMe2025">(<a href="#ref-ruckensteinAlgorithmsAdvertisingIntimacy2020" role="doc-biblioref">Ruckenstein and Granroth 2020</a>; <a href="#ref-zhangGoogleKnowsMe2025" role="doc-biblioref">Zhang et al. 2025</a>, among others)</span>, especially if the observations feel eerie. These phenomena map particularly onto the inferred preferences LLMs store and use to shape their recommendations and answers to consumers.</p>
+<p>In some contexts, namely when people expect disproportionate downstream consequences, they even actively enact self-censorship to avoid those consequences. These effects are also called chilling effects <span class="citation" data-cites="buchiChillingEffectsDigital2022">(<a href="#ref-buchiChillingEffectsDigital2022" role="doc-biblioref">Büchi, Festic, and Latzer 2022</a>)</span>. While chilling effects are most commonly discussed in the context of state surveillance, the underlying mechanism rests on the perception that seemingly minor or inconsequential actions (e.g., publicly criticizing healthcare systems) may lead to disproportionate downstream consequences, such as jeopardizing a student visa <span class="citation" data-cites="buchiChillingEffectsDigital2022">(<a href="#ref-buchiChillingEffectsDigital2022" role="doc-biblioref">Büchi, Festic, and Latzer 2022</a>)</span>. Self-censoring responses to perceived observation are not limited to state surveillance contexts. For instance, similar effects have been documented in domains such as health-monitoring devices, where individuals adjust their behavior in light of being tracked <span class="citation" data-cites="demetrovicsExploringLifestylePressures2025">(<a href="#ref-demetrovicsExploringLifestylePressures2025" role="doc-biblioref">Demetrovics, Ballester-Ripoll, and Billieux 2025</a>)</span>. The question arises to what extent consumers transfer these chilling effects to the construction of their algorithmic self: if consumers believe that LLMs may retain and later reuse unfavorable traits or disclosures, they may strategically omit, soften, or reframe those aspects when constructing their algorithmic self.</p>
+<p>Both related phenomena—dataveillance and chilling effects—cannot be mapped directly onto LLM interactions, but they can inform hypotheses about consumer perceptions and reactions in these environments. In recommender systems literature, theories about how the companies providing the recommendations work, and what their “agenda” is, influence consumer reactions <span class="citation" data-cites="devitoAlgorithmsRuinEverything2017 raderUnderstandingUserBeliefs2015 hamExploringHowConsumers2017">(<a href="#ref-devitoAlgorithmsRuinEverything2017" role="doc-biblioref">DeVito, Gergle, and Birnholtz 2017</a>; <a href="#ref-raderUnderstandingUserBeliefs2015" role="doc-biblioref">Rader and Gray 2015</a>; <a href="#ref-hamExploringHowConsumers2017" role="doc-biblioref">Ham 2017</a>)</span>. It should be expected that LLMs are no exception to this influence of folk theories.</p>
+</section>
+<section id="mirrors-vs.-compensators" class="level3">
+<h3 class="anchored" data-anchor-id="mirrors-vs.-compensators">Mirrors vs.&nbsp;Compensators</h3>
+<p>The second question in how consumers shape their algorithmic selves pertains to the disclosed information they provide. While behavioral inferences made by LLMs can be assumed to mirror consumers’ actual behavior more closely, consumers more actively shape the information they provide through disclosure. The question therefore arises whether consumers try to provide an image as close to themselves as possible <span class="citation" data-cites="ai-ascent-sequoia-2025">(as suggested by <a href="#ref-ai-ascent-sequoia-2025" role="doc-biblioref">Altman 2025</a>, i.e.&nbsp;mirroring)</span>, or whether they selectively disclose or avoid disclosing information based on the anticipated reaction of the LLM.</p>
+<p>One form of such compensation concerns the consumer’s own perceived shortcomings. In this case, consumers may disclose a version of themselves that is closer to an ideal self than to their actual self. They may not present the traits and preferences they truly have, but those they believe they ought to have in order to arrive at better decisions or outcomes. In this sense, the constructed algorithmic self would not mirror who they are, but who they would like the intermediary to act for.</p>
+<p>A second form of compensation concerns the algorithm’s perceived shortcomings. Here, consumers may strategically shape their inputs not because they want to improve themselves, but because they believe the system will otherwise misunderstand, misweigh, or poorly process their traits and preferences. Existing literature on recommender systems and algorithmic recommendations in general raises the question of whether consumers purposefully adapt their behavior to compensate for perceived algorithmic shortcomings. <span class="citation" data-cites="goergenAIAssessmentChanges2025">Goergen, De Bellis, and Klesse (<a href="#ref-goergenAIAssessmentChanges2025" role="doc-biblioref">2025</a>)</span>, for example, demonstrate that people overstate their analytical abilities in hiring processes when they are assessed by an LLM. This suggests that while they may not perceive themselves as being truly analytical, they may construct their self in a way that compensates for the anticipated behavior of the algorithm. Other work (Anne’s unpublished study, the project group knows Anne so you can keep this) suggests that consumers state preferences that are less broad when they interact with algorithms compared to humans because they believe that algorithms cannot accurately weigh preferences.</p>
+<p>Self-disclosure toward algorithms and LLMs is not a novel topic. However, no existing research specifically addresses the overlap of true self and constructed self as discussed in this write-up. This mirror-versus-compensator distinction is important because LLMs shape their understanding of the consumer based on inputs and behavior, which—if they deviate from true traits and preferences—reduces the fit of recommendations and decisions to the consumer’s actual preferences, which in turn can have long-term negative outcomes. Additionally, research on the influence of system autonomy on strategic self-construction is currently very limited due to the novelty of this phenomenon.</p>
+<p>Existing research suggests that inter-individual differences in self-disclosure toward LLMs exist <span class="citation" data-cites="westerTheoryMindSelfPresentation2024">(<a href="#ref-westerTheoryMindSelfPresentation2024" role="doc-biblioref">Wester, Jacobsen, and de Jong 2024</a>)</span>, depending on self-presentation styles. Other research suggests that different modalities beyond inter-individual differences influence the extent of self-disclosure <span class="citation" data-cites="papnejaSelfdisclosureConversationalAI2025">(<a href="#ref-papnejaSelfdisclosureConversationalAI2025" role="doc-biblioref">Papneja and Yadav 2025</a>)</span>. There is, however, limited to no experimental evidence on the accuracy of these self-disclosure profiles, and no discussion of the strategic shaping of these inputs. Research on memory profiles by <span class="citation" data-cites="dashAlgorithmicSelfPortraitDeconstructing2026">Dash et al. (<a href="#ref-dashAlgorithmicSelfPortraitDeconstructing2026" role="doc-biblioref">2026</a>)</span> calls into question the extent to which this purposeful disclosure and shaping of the self is even possible, as they cite 96% of memories as being derived from observation through the LLM rather than from direct user input. This statistic should be critically re-examined from the perspective of disclosed versus inferred inputs: if a consumer discloses in context that they “like things neat and organized,” and the LLM stores this to memory, the addition to memory may be done by the LLM, but it still originated in a disclosed aspect of the constructed self. As is assumed to be the case in the first dimension describing the shaping of one’s algorithmic self, it should also be assumed that folk theories about how the LLM works shape the extent to which the representation is mirrored versus shaped in a compensatory fashion. Beyond the more generalized recommender-system phenomena described above, this is also evidenced by <span class="citation" data-cites="coxImpactChatbotsEphemeralityFraming2025">Cox, Jacobsen, and Berkel (<a href="#ref-coxImpactChatbotsEphemeralityFraming2025" role="doc-biblioref">2025</a>)</span>.</p>
+</section>
+</section>
+<section id="facts-and-folk-theories-about-how-llms-make-decisions" class="level2">
+<h2 class="anchored" data-anchor-id="facts-and-folk-theories-about-how-llms-make-decisions">Facts and Folk Theories about how LLMs make Decisions</h2>
+<section id="how-llms-really-make-recommendations-and-decisions" class="level3">
+<h3 class="anchored" data-anchor-id="how-llms-really-make-recommendations-and-decisions">How LLMs really make Recommendations and Decisions</h3>
+<!-- (add sources here!! <- I will do this, I just have the zotero stuff not downloaded yet)-->
+<p>At a functional level, LLM recommendations are generated from the context assembled at inference time: the current prompt, recent interaction history, persistent instructions, stored memory, and any retrieved external information. These outputs are further bounded by provider-side rules and, in some environments, may also be shaped by commercial incentives.</p>
+<p>When an LLM answers a recommendation query (e.g., “where should I go on holiday?”), it generates the answer from the context assembled for that run: the current prompt, the recent chat, persistent user instructions, and any saved memory or retrieved profile information about the user. OpenAI states that saved memories and custom instructions are used in future responses, and connected apps can add user-specific external data; by contrast, ordinary web search is provided through the model’s web-search tool, so personalization does not come from a user’s site-specific accounts or cookies unless the user has explicitly connected a data source or the system is operating in a logged-in browser session. The resulting recommendation is further bounded by provider-side rules: OpenAI’s Model Spec and usage policies impose a hierarchy in which user instructions are followed only within system and safety constraints, so disallowed content is filtered or refused even if the user requests it. Finally, outputs may reflect platform incentives rather than only user welfare: Amazon documents that “prompts” are an ad format for Sponsored Products and Sponsored Brands, meaning commercial content can be inserted into conversational recommendation environments.</p>
+<p>In agentic systems, the decision problem shifts from “what text should be produced?” to “what sequence of actions should be executed?” OpenClaw describes this as an agent loop in which the system assembles context, queries the model, executes tools, observes results, and iterates. The action policy is conditioned by an OpenClaw-built system prompt, conversation history, tool outputs, workspace files, and persistent identity and memory files such as SOUL.md, USER.md, and MEMORY.md; these materials constrain both recommendations and actions. OpenClaw also provides web and browser tools, so the system can translate model outputs into concrete operations on external interfaces.</p>
+<p>Consumers do not necessarily understand these mechanisms in technical terms, but instead act on informal theories of them.</p>
+</section>
+<section id="how-consumers-believe-llms-make-recommendations-and-decisions" class="level3">
+<h3 class="anchored" data-anchor-id="how-consumers-believe-llms-make-recommendations-and-decisions">How Consumers believe LLMs make Recommendations and Decisions</h3>
+<p>Folk theories about LLMs are widespread and frequently misaligned with the systems’ actual functioning. For example, prompts such as “make no mistakes” are sometimes interpreted as mechanisms that ensure factual accuracy, reflecting the assumption that the model can be instructed into guaranteed truthfulness. Such interactions illustrate the occasionally problematic mental models consumers bring to AI-mediated systems.</p>
+<p>Many chatbots further reinforce these interpretive frameworks by offering system-level prompts that allow users to configure the assistant’s tone, style, or “personality,” thereby fostering the impression that one can construct “one’s own” LLM with a distinctive character. Online discussions likewise reveal extensive engagement with notions of emergent personalities and the personification of LLMs, with users attributing stable traits, dispositions, or even intentions to these systems.</p>
+<p>In digital assistant ecosystems, this logic is formalized in artifacts such as “soul.md” files, which are described as specifying the assistant’s “soul” or enduring character. Across these contexts, a common feature of folk theories surrounding AI-mediated environments is the pronounced anthropomorphization of the underlying algorithms. This tendency appears markedly stronger than in popular conceptions of more traditional recommender systems, which are typically understood in more instrumental and less personified terms.</p>
+<p>Consumers’ reactions to algorithmic recommendations are shaped by their folk theories about how these systems operate. Rather than interpreting recommendations as outputs of statistical or mathematical models, consumers rely on intuitive, experience-based explanations of how algorithms function <span class="citation" data-cites="devitoAlgorithmsRuinEverything2017 raderUnderstandingUserBeliefs2015">(<a href="#ref-devitoAlgorithmsRuinEverything2017" role="doc-biblioref">DeVito, Gergle, and Birnholtz 2017</a>; <a href="#ref-raderUnderstandingUserBeliefs2015" role="doc-biblioref">Rader and Gray 2015</a>)</span>. These folk theories provide a cognitive framework through which algorithmic outputs are interpreted and evaluated.</p>
+<p>Such interpretations can be situated within the Persuasion Knowledge Model (PKM) <span class="citation" data-cites="friestadPersuasionKnowledgeModel1994">(<a href="#ref-friestadPersuasionKnowledgeModel1994" role="doc-biblioref">Friestad and Wright 1994</a>)</span>. When consumers infer persuasive intent or strategic curation, they activate persuasion knowledge and adjust their responses accordingly, as demonstrated in the context of online behavioral advertising <span class="citation" data-cites="hamExploringHowConsumers2017">(<a href="#ref-hamExploringHowConsumers2017" role="doc-biblioref">Ham 2017</a>)</span>. Thus, algorithmic outputs are not evaluated in isolation, but filtered through pre-existing beliefs about system motives, data use, and personalization practices. Frameworks such as the PKM may therefore help explain how consumers assign certain LLMs “external motivations,” “ulterior motives,” or similar qualities, whether these are true or not.</p>
+<p>These folk theories should shape whether consumers aim for faithful self-representation or strategic compensation, because they determine what users think the system needs, remembers, values, or misinterprets.</p>
+</section>
+</section>
+</section>
+<section id="the-algorithmic-intermediary" class="level1">
+<h1>The Algorithmic Intermediary</h1>
+<p>Based on this theoretical backdrop, the algorithmic intermediary is shaped by a combination of true consumer traits and preferences, how consumers selectively report and modify them for the LLM, and how this input is then taken up, processed, and revalued by the LLM itself. The algorithmic intermediary is the effective decision-making representation that emerges from the interaction between the consumer’s true preferences, their disclosed or withheld self-presentation, the system’s inferred profile of them, and the model’s own constraints and transformations. Based on this amalgamation of inputs, the algorithmic intermediary is then “sent out” to perform searches or, in the case of agentic systems, even make decisions on the consumer’s behalf. This fundamentally shifts existing ways of understanding consumer behavior in digital environments, as marketers no longer observe consumers themselves, but instead their algorithmic intermediaries. While this shift certainly has widespread implications for both marketers and consumers, the focus of the following research questions is on the consumer.</p>
+<section id="affective-implications-of-in-congruence" class="level2">
+<h2 class="anchored" data-anchor-id="affective-implications-of-in-congruence">Affective Implications of (In-)congruence</h2>
+<p>Consumers generally prefer self-congruence and self-continuity <span class="citation" data-cites="rifkinVarietySelfExpressionUndermines2019">(<a href="#ref-rifkinVarietySelfExpressionUndermines2019" role="doc-biblioref">Rifkin and Etkin 2019</a>)</span>. Nevertheless, they also optimize for the best outcome, which—depending on context and assumptions about how the algorithmic intermediary comes to be—may necessitate a strategic presentation of the constructed self that deviates from one’s true preferences and traits.</p>
+<p>The implications of this spectrum of match and mismatch are addressed in research question 1:</p>
+<p><strong>When consumers delegate choice to an algorithmic intermediary, do they construct that intermediary to represent who they really are, or to compensate for perceived shortcomings of themselves or the environment—and what does that do to decision ownership, perceived autonomy, and authenticity?</strong></p>
+<p>A key question is where consumers locate the compensation. Do they compensate by shifting their own construction of the self, or do they instead try to adapt the LLM? One possibility is that consumers prefer to keep the self-representation relatively self-congruent while shifting compensatory adjustments to the assistant’s persona or operating style. This would allow them to preserve authenticity while still correcting for perceived moral, cognitive, or situational shortcomings. If consumers are able to make the assistant different, they may therefore prefer a more self-congruent image of themselves, while introducing ethical, moral, or other desired corrections through the assistant rather than through misrepresenting the self.</p>
+<p>Decision ownership concerns the extent to which consumers feel that “this was my decision.” It matters beyond purchasing because LLMs increasingly do not just help people choose products; they help them choose how to act. If an LLM drafts an email to a boss, helps someone decide whether to move cities, or suggests how to handle a friendship conflict, the key question remains whether the consumer experiences the resulting action as their own decision. In the long run, low ownership may matter because it can erode self-efficacy, increase passive delegation, and blur responsibility for consequential life outcomes.</p>
+<p>Authenticity concerns whether the mediated output still “feels like me.” This may be especially important outside purchase contexts. In many LLM uses, the issue is not simply whether the outcome was good, but whether the resulting action still felt self-expressive. This matters particularly for emails, social messages, self-descriptions, and life decisions. Someone may send a better email with AI assistance but later feel that it was polished without really being them. In the long run, repeated inauthentic mediation may create self-alienation, whereas authentic mediation may help consumers stabilize a coherent sense of self across human and AI-assisted action.</p>
+<p>Autonomy concerns whether consumers still feel agentic despite delegation. Even if consumers willingly delegate parts of the decision process, they may still differ in whether they experience the resulting action as self-directed or externally driven. This suggests that delegation does not simply reduce autonomy in a uniform way; rather, perceived autonomy may depend on whether the algorithmic intermediary is experienced as an extension of the self or as something acting over and above it.</p>
+<p>It is expected that responses to incongruence are mediated by at least two factors outlined above: Algorithmic folk theories, and the way the profile was formed.</p>
+<p>In line with the PKM <span class="citation" data-cites="friestadPersuasionKnowledgeModel1994">(<a href="#ref-friestadPersuasionKnowledgeModel1994" role="doc-biblioref">Friestad and Wright 1994</a>)</span>, it is expected that consumers shape their understanding of a situation in accordance with their beliefs about the marketers knowledge on them, goals, and more. Resultingly, when interacting with an LLM that is known to push sponsored results (as an example), they may adapt their self-presentation accordingly. On the other hand, if the belief is that LLMs are essentially “humans” understanding their deepest needs and desires <span class="citation" data-cites="ai-ascent-sequoia-2025">(as suggested by <a href="#ref-ai-ascent-sequoia-2025" role="doc-biblioref">Altman 2025</a>)</span>, this may lead consumers to reconstruct a personality as closely to their true traits and preferences as possible.</p>
+<p>The other mediator specifically relates LLMs back to research on recommender systems: an algorithmic self shaped based on observed behavior may feel intrusive and creepy, but - compared against the disclosed aspects - may be more accurate, and therefore feel more authentic. Being “profiled” based on observation is specifically expected to increase perceived authenticity, yet lower autonomy and decision ownership because it feels intrusive. Disclosed aspects on the other side are expected to increase perceived autonomy and ownership, yet reduce felt authenticity.</p>
+<p>As moderating factors, I expect the degree of autonomy of a system to be of relevance: The more autonomy a system receives (i.e.&nbsp;the closer it is to making fully unobtrused decisions), the more the deviation from one’s true preferences will occur.</p>
+<p>A possible boundary condition is the degree to which consumers beliefe that they can influence the algorithmic personality itself: If they can shape the LLMs behavior to compensate for traits they aspire to, but do not believe to possess themselves, they will favor that over constructing a deviating self.</p>
+<p>In sum, research question 1 could be addressed with the following variables:</p>
+<p><img src="../images/algorithmic-consumers-rq1.svg" class="img-fluid"></p>
+</section>
+<section id="behavioral-implications-of-in-congruence" class="level2">
+<h2 class="anchored" data-anchor-id="behavioral-implications-of-in-congruence">Behavioral Implications of (In-)congruence</h2>
+<p>Perceptions alone are not enough. If the intermediary diverges from the true self, the key question is not only how this feels, but how consumers respond behaviorally: whether they resist, correct, comply with, or internalize the intermediary’s outputs. The behavioral implications follow directly from the theory above. If consumers experience the intermediary as sufficiently self-congruent, they may treat its outputs as self-relevant and legitimate. If, by contrast, they experience it as misaligned or externally imposed, they may be more likely to resist its outputs or revise how they construct the self for future interactions.</p>
+<p>Resultingly, research Question 2 asks:</p>
+<p><strong>When consumers’ algorithmic intermediary makes suggestions or decisions that diverge from their true preferences and traits, how does this impact their behavior?</strong></p>
+<p>More specifically, are consumers more likely to overrule decisions made on their behalf, to revise the way they present themselves to the system, or to update their own preferences in response to the intermediary’s outputs?</p>
+<p>Consumers may respond to divergence in at least three ways: they may override the intermediary’s decisions, revise the self they present to the system, or update their own preferences in the direction of the intermediary’s outputs. These responses are not equally likely across all forms of divergence. When the intermediary is experienced as more mirrored and self-congruent, its outputs may be more likely to be interpreted as self-relevant rather than externally imposed. In such cases, consumers may be more willing to incorporate those outputs into their own preference structure. By contrast, when the intermediary is experienced as strategically shaped, misaligned, or overly driven by inference, consumers may be more likely to resist its outputs or to correct the representation they provide to the system.</p>
+<p>A corresponding expectation is therefore that the more mirrored the intermediary is, the more likely consumers are to update their own preferences in response to its outputs. The less mirrored and the more externally attributed the intermediary is, the more likely consumers are to override its decisions or strategically reconstruct the self they present to it.</p>
+<p>The same moderators and mediators as discussed in RQ1 are expected to apply here:</p>
+<p><img src="../images/algorithmic-consumers-rq1.svg" class="img-fluid"></p>
+</section>
+</section>
+<section id="empirical-approaches" class="level1">
+<h1>Empirical Approaches</h1>
+<section id="survey" class="level2">
+<h2 class="anchored" data-anchor-id="survey">Survey</h2>
+</section>
+<section id="folk-theories" class="level2">
+<h2 class="anchored" data-anchor-id="folk-theories">Folk Theories</h2>
+<p>Participants privately report baseline preferences, then learn more about the mechanisms of the LLM they are using. They are then asked to create the profile the assistant will use for recommendations. The dependent variable is how closely that constructed profile mirrors baseline preferences versus strategically distorts them, and how this affects ownership, authenticity, and autonomy.</p>
+</section>
+<section id="degree-of-autonomy" class="level2">
+<h2 class="anchored" data-anchor-id="degree-of-autonomy">Degree of Autonomy</h2>
+</section>
+<section id="disclosure-vs.-inference-1" class="level2">
+<h2 class="anchored" data-anchor-id="disclosure-vs.-inference-1">Disclosure vs.&nbsp;inference</h2>
+<p>Participants receive recommendations from an AI assistant based on a profile that is held as constant as possible across conditions, but the source of that profile is manipulated: either the participant actively disclosed it, or the system inferred it from their prior behavior. This design tests whether active self-construction, relative to passive inference, increases perceived ownership, authenticity, and autonomy, while reducing feelings of surveillance or creepiness.</p>
+</section>
+<section id="behavioral-response-to-divergence-from-mirrored-vs.-compensatory-intermediaries" class="level2">
+<h2 class="anchored" data-anchor-id="behavioral-response-to-divergence-from-mirrored-vs.-compensatory-intermediaries">Behavioral response to divergence from mirrored vs.&nbsp;compensatory intermediaries</h2>
+<p>Participants first construct an algorithmic intermediary under either mirror or compensatory framing and then receive a recommendation that is either aligned or misaligned with their baseline preferences. The main behavioral outcomes are whether they override the recommendation, revise the profile they provided, revise the assistant settings, or update their own stated preferences in the direction of the AI output. This tests whether self-congruent intermediaries are more likely to induce internalization, whereas misaligned or strategically shaped intermediaries are more likely to trigger resistance and correction.</p>
+</section>
+<section id="repeated-interaction-longitudinal-design" class="level2">
+<h2 class="anchored" data-anchor-id="repeated-interaction-longitudinal-design">Repeated-interaction / longitudinal design</h2>
+<p>Participants interact with the same AI assistant across multiple decision rounds, allowing observation of how profile construction, recommendations, and behavioral reactions evolve over time. This design examines whether repeated exposure to a mirrored versus less congruent intermediary leads consumers to increasingly internalize the assistant’s outputs, revise their self-presentation, or reduce delegation after perceived misfit. It is especially useful for testing preference updating as a dynamic process rather than a one-shot response.</p>
+</section>
+</section>
+<section id="open-questions" class="level1">
+<h1>Open Questions</h1>
+<ul>
+<li>Scope: Shaping the algorithmic intermediary can apply to as few or as many application domains of LLMs and “agentic assistants”</li>
+<li>if we feel like we want to go all-in in the agentic assistants literature, we could focus on consumption environments and make the parallels to recommender systems very explicit, however I am not sure if this is too narrow or if we risk not being relevant with this anymore because these things rapidly change</li>
+<li>as one could think of. Do we constrain ourselves or do we try to use this generalizeability as an asset?</li>
+<li>I believe that one distinction that is not clear enough yet is the argumentation to separate LLMs as personal advisors / therapists and companions versus as utility machines that do something on the consumers behalf. I expect that this is a boundary condition for the effect I describe, and that personal assistants are shaped differently than therapists.</li>
+<li>the dependent variables I suggest right now are autonomy, authenticity and ownership, but I am very open to also include other ones, or only focus on one and instead focus more on behavioral outcomes as well.</li>
+<li>I currently always write “traits and preferences”, however I’m very happy to remove one of the two - this is just because as of right now, I don’t have better words for it</li>
+</ul>
+</section>
+<section id="long-term-follow-up-ideas" class="level1">
+<h1>Long-term follow up ideas</h1>
+<ul>
+<li>how do consumer theories still apply to algorithmic intermediaries, and how do we have to revise them if at all?</li>
+</ul>
+</section>
+<section id="footnotes" class="level1">
+
+
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Footnotes</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-AgentforceAIAgent" class="csl-entry" role="listitem">
+Agentforce. 2025. <span>“Agentforce: <span>The AI Agent Platform</span>.”</span> Salesforce. 2025. <a href="https://www.salesforce.com/eu/agentforce/">https://www.salesforce.com/eu/agentforce/</a>.
+</div>
+<div id="ref-ai-ascent-sequoia-2025" class="csl-entry" role="listitem">
+Altman, Sam. 2025. <em><span>OpenAI</span>’s <span>Sam Altman</span> on <span>Building</span> the ’<span>Core AI Subscription</span>’ for <span>Your Life</span></em>. USA: Sequoia Capital.
+</div>
+<div id="ref-CollaborateClaudeProjects" class="csl-entry" role="listitem">
+Anthropic. 2025. <span>“Collaborate with <span>Claude</span> on <span>Projects</span>.”</span> 2025. <a href="https://www.anthropic.com/news/projects?utm_source=chatgpt.com">https://www.anthropic.com/news/projects?utm_source=chatgpt.com</a>.
+</div>
+<div id="ref-buchiChillingEffectsDigital2022" class="csl-entry" role="listitem">
+Büchi, Moritz, Noemi Festic, and Michael Latzer. 2022. <span>“The <span>Chilling Effects</span> of <span>Digital Dataveillance</span>: <span>A Theoretical Model</span> and an <span>Empirical Research Agenda</span>.”</span> <em>Big Data &amp; Society</em> 9 (1): 20539517211065368. <a href="https://doi.org/10.1177/20539517211065368">https://doi.org/10.1177/20539517211065368</a>.
+</div>
+<div id="ref-chatterjiHowPeopleUse" class="csl-entry" role="listitem">
+Chatterji, Aaron, Tom Cunningham, David Deming, Zoe Hitzig, Christopher Ong, Carl Shan, and Kevin Wadman. 2025. <span>“How <span>People Use ChatGPT</span>.”</span>
+</div>
+<div id="ref-coxImpactChatbotsEphemeralityFraming2025" class="csl-entry" role="listitem">
+Cox, Samuel Rhys, Rune Møberg Jacobsen, and Niels van Berkel. 2025. <span>“The <span>Impact</span> of a <span>Chatbot</span>’s <span>Ephemerality-Framing</span> on <span>Self-Disclosure Perceptions</span>.”</span> In <em>Proceedings of the 7th <span>ACM Conference</span> on <span>Conversational User Interfaces</span></em>, 1–17. <a href="https://doi.org/10.1145/3719160.3736617">https://doi.org/10.1145/3719160.3736617</a>.
+</div>
+<div id="ref-dashAlgorithmicSelfPortraitDeconstructing2026" class="csl-entry" role="listitem">
+Dash, Abhisek, Soumi Das, Elisabeth Kirsten, Qinyuan Wu, Sai Keerthana Karnam, Krishna P. Gummadi, Thorsten Holz, Muhammad Bilal Zafar, and Savvas Zannettou. 2026. <span>“The <span>Algorithmic Self-Portrait</span>: <span>Deconstructing Memory</span> in <span>ChatGPT</span>.”</span> February 23, 2026. <a href="https://doi.org/10.48550/arXiv.2602.01450">https://doi.org/10.48550/arXiv.2602.01450</a>.
+</div>
+<div id="ref-demetrovicsExploringLifestylePressures2025" class="csl-entry" role="listitem">
+Demetrovics, Orsolya, Rafael Ballester-Ripoll, and Joel Billieux. 2025. <span>“Exploring <span>Lifestyle Pressures</span> and <span>Expectations Induced</span> by <span>Continuous Health Monitoring</span>.”</span> <em>Health Nexus</em> 3 (3): 1–10. <a href="https://doi.org/10.61838/kman.hn.3.3.13">https://doi.org/10.61838/kman.hn.3.3.13</a>.
+</div>
+<div id="ref-devitoAlgorithmsRuinEverything2017" class="csl-entry" role="listitem">
+DeVito, Michael Ann, Darren Gergle, and Jeremy Birnholtz. 2017. <span>“"<span>Algorithms</span> Ruin Everything": #<span>RIPTwitter</span>, <span>Folk Theories</span>, and <span>Resistance</span> to <span>Algorithmic Change</span> in <span>Social Media</span>.”</span> In <em>Proceedings of the 2017 <span>CHI Conference</span> on <span>Human Factors</span> in <span>Computing Systems</span></em>, 3163–74. Denver Colorado USA: ACM. <a href="https://doi.org/10.1145/3025453.3025659">https://doi.org/10.1145/3025453.3025659</a>.
+</div>
+<div id="ref-100-applications-usecases-2024" class="csl-entry" role="listitem">
+Filtered Technologies. 2024. <span>“100 <span>Applications</span> of <span>Generative AI</span>.”</span>
+</div>
+<div id="ref-friestadPersuasionKnowledgeModel1994" class="csl-entry" role="listitem">
+Friestad, Marian, and Peter Wright. 1994. <span>“The <span>Persuasion Knowledge Model</span>: <span>How People Cope</span> with <span>Persuasion Attempts</span>.”</span> <em>Journal of Consumer Research</em> 21 (1): 1–31. <a href="https://doi.org/10.1086/209380">https://doi.org/10.1086/209380</a>.
+</div>
+<div id="ref-galAlgorithmicConsumers" class="csl-entry" role="listitem">
+Gal, Michal S, and Niva Elkin-Koren. n.d. <span>“Algorithmic <span>Consumers</span>.”</span>
+</div>
+<div id="ref-goergenAIAssessmentChanges2025" class="csl-entry" role="listitem">
+Goergen, Jonas, Emanuel De Bellis, and Anne-Kathrin Klesse. 2025. <span>“<span>AI</span> Assessment Changes Human Behavior.”</span> <em>Proceedings of the National Academy of Sciences</em> 122 (25): e2425439122. <a href="https://doi.org/10.1073/pnas.2425439122">https://doi.org/10.1073/pnas.2425439122</a>.
+</div>
+<div id="ref-GeminiMakesYour2024" class="csl-entry" role="listitem">
+Google. 2024. <span>“Gemini Makes Your Mobile Device a Powerful <span>AI</span> Assistant.”</span> Google. August 13, 2024. <a href="https://blog.google/products-and-platforms/products/gemini/made-by-google-gemini-ai-updates/">https://blog.google/products-and-platforms/products/gemini/made-by-google-gemini-ai-updates/</a>.
+</div>
+<div id="ref-hamExploringHowConsumers2017" class="csl-entry" role="listitem">
+Ham, Chang-Dae. 2017. <span>“Exploring How Consumers Cope with Online Behavioral Advertising.”</span> <em>International Journal of Advertising</em> 36 (4): 632–58. <a href="https://doi.org/10.1080/02650487.2016.1239878">https://doi.org/10.1080/02650487.2016.1239878</a>.
+</div>
+<div id="ref-HowClaudeRemembers" class="csl-entry" role="listitem">
+<span>“How <span>Claude</span> Remembers Your Project.”</span> 2026. Claude Code Docs. 2026. <a href="https://code.claude.com/docs/en/memory">https://code.claude.com/docs/en/memory</a>.
+</div>
+<div id="ref-openclaw_memory" class="csl-entry" role="listitem">
+<span>“Memory.”</span> 2026. OpenClaw. 2026. <a href="https://docs.openclaw.ai/concepts/memory">https://docs.openclaw.ai/concepts/memory</a>.
+</div>
+<div id="ref-EntdeckeGPT522026" class="csl-entry" role="listitem">
+OpenAI. 2026. <span>“Entdecke GPT-5.2.”</span> March 16, 2026. <a href="https://openai.com/de-DE/index/introducing-gpt-5-2/">https://openai.com/de-DE/index/introducing-gpt-5-2/</a>.
+</div>
+<div id="ref-papnejaSelfdisclosureConversationalAI2025" class="csl-entry" role="listitem">
+Papneja, Hashai, and Nikhil Yadav. 2025. <span>“Self-Disclosure to Conversational <span>AI</span>: A Literature Review, Emergent Framework, and Directions for Future Research.”</span> <em>Personal and Ubiquitous Computing</em> 29 (2): 119–51. <a href="https://doi.org/10.1007/s00779-024-01823-7">https://doi.org/10.1007/s00779-024-01823-7</a>.
+</div>
+<div id="ref-pengDigitalTwinsFunhouse2026" class="csl-entry" role="listitem">
+Peng, Tianyi, George Gui, Melanie Brucks, Daniel J. Merlau, Grace Jiarui Fan, Malek Ben Sliman, Eric J. Johnson, et al. 2026. <span>“Digital <span>Twins</span> as <span>Funhouse Mirrors</span>: <span>Five Key Distortions</span>.”</span> January 4, 2026. <a href="https://doi.org/10.48550/arXiv.2509.19088">https://doi.org/10.48550/arXiv.2509.19088</a>.
+</div>
+<div id="ref-raderUnderstandingUserBeliefs2015" class="csl-entry" role="listitem">
+Rader, Emilee, and Rebecca Gray. 2015. <span>“Understanding <span>User Beliefs About Algorithmic Curation</span> in the <span>Facebook News Feed</span>.”</span> In <em>Proceedings of the 33rd <span>Annual ACM Conference</span> on <span>Human Factors</span> in <span>Computing Systems</span></em>, 173–82. Seoul Republic of Korea: ACM. <a href="https://doi.org/10.1145/2702123.2702174">https://doi.org/10.1145/2702123.2702174</a>.
+</div>
+<div id="ref-rifkinVarietySelfExpressionUndermines2019" class="csl-entry" role="listitem">
+Rifkin, Jacqueline R, and Jordan Etkin. 2019. <span>“Variety in <span>Self-Expression Undermines Self-Continuity</span>.”</span> <em>Journal of Consumer Research</em> 46 (4): 725–49. <a href="https://doi.org/10.1093/jcr/ucz016">https://doi.org/10.1093/jcr/ucz016</a>.
+</div>
+<div id="ref-ruckensteinAlgorithmsAdvertisingIntimacy2020" class="csl-entry" role="listitem">
+Ruckenstein, Minna, and Julia Granroth. 2020. <span>“Algorithms, Advertising and the Intimacy of Surveillance.”</span> <em>Journal of Cultural Economy</em> 13 (1): 12–24. <a href="https://doi.org/10.1080/17530350.2019.1574866">https://doi.org/10.1080/17530350.2019.1574866</a>.
+</div>
+<div id="ref-toubiaDatabaseReportTwin2K5002025" class="csl-entry" role="listitem">
+Toubia, Olivier, George Z. Gui, Tianyi Peng, Daniel J. Merlau, Ang Li, and Haozhe Chen. 2025. <span>“Database <span>Report</span>: <span>Twin-2K-500</span>: <span>A Data Set</span> for <span>Building Digital Twins</span> of over 2,000 <span>People Based</span> on <span>Their Answers</span> to over 500 <span>Questions</span>.”</span> <em>Marketing Science</em> 44 (6): 1446–55. <a href="https://doi.org/10.1287/mksc.2025.0262">https://doi.org/10.1287/mksc.2025.0262</a>.
+</div>
+<div id="ref-openclaw_USER" class="csl-entry" role="listitem">
+<span>“<span>USER</span>.”</span> 2026. OpenClaw. 2026. <a href="https://docs.openclaw.ai/reference/templates/USER">https://docs.openclaw.ai/reference/templates/USER</a>.
+</div>
+<div id="ref-westerTheoryMindSelfPresentation2024" class="csl-entry" role="listitem">
+Wester, Joel, Rune Møberg Jacobsen, and Sander de Jong. 2024. <span>“Theory of <span>Mind</span> and <span>Self-Presentation</span> in <span>Human-LLM Interactions</span>.”</span>
+</div>
+<div id="ref-zao-sandersHowPeopleAre2025" class="csl-entry" role="listitem">
+Zao-Sanders, Marc. 2025. <span>“How <span>People Are Really Using Gen AI</span> in 2025.”</span> <em>Harvard Business Review</em>, April 9, 2025. <a href="https://hbr.org/2025/04/how-people-are-really-using-gen-ai-in-2025">https://hbr.org/2025/04/how-people-are-really-using-gen-ai-in-2025</a>.
+</div>
+<div id="ref-zhangGoogleKnowsMe2025" class="csl-entry" role="listitem">
+Zhang, Dong, Joanna Strycharz, Sophie C. Boerman, Theo Araujo, and Hilde Voorveld. 2025. <span>“Google Knows Me Too Well! <span>Coping</span> with Perceived Surveillance in an Algorithmic Profiling Context.”</span> <em>Computers in Human Behavior</em> 165 (April): 108536. <a href="https://doi.org/10.1016/j.chb.2024.108536">https://doi.org/10.1016/j.chb.2024.108536</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>This is a working term that I am not necessarily happy with, because “personality” strongly implies antromorphism. While I believe that most people do in fact anthromorphize their LLMs, I do not position myself as claiming that this is a necessary requirement for algorithmic intermediaries to be formed.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>This is a working term that I am not necessarily happy with, because “personality” strongly implies antromorphism. While I believe that most people do in fact anthromorphize their LLMs, I do not position myself as claiming that this is a necessary requirement for algorithmic intermediaries to be formed.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
