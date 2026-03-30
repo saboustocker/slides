@@ -1,0 +1,908 @@
+---
+title: "Shaping my Algorithmic Self"
+subtitle: "Construction of an Actual vs. Ideal Self in Response to Technology-Mediated Decisions"
+author: Sabou Rani Stocker
+date: today
+format:
+  html:
+    theme: [sandstone, ../styles/hsg_pages.scss]
+    toc: true
+project: "algorithmic intermediaries"
+bibliography: ../bibliography.bib
+navbar: false
+---
+
+# Summary
+
+Practically since the inception of the internet and digital search, consumers were profiled and received some sort of resulting recommendation based on their algorithmic profiles [@dongBriefHistoryRecommender2017]. Recommender systems have always existed and acted on the consumers behalf through selecting what to show based on past behavior [@garapatiRecommenderSystemsDigital2025;@dongBriefHistoryRecommender2017, and others]. In recent years however, this space has been subject to a fundamental shift through the introduction and rapid proliferation of LLM chatbots. Consumers have quickly adopted LLMs as advisors and delegates across a variety of tasks and domains [@chatterjiHowPeopleUse;@zao-sandersHowPeopleAre2025]. More recent developments even made agentic AI assistants available to the regular consumer through both commercial [claude, ai agent in chatgpt] and non-commercial solutions [openclaw].
+
+Traditional recommender systems and LLM-based recommendations share some commonalities: both essentially reduce the choice space from dimensions that are not possibly comprehensible to humans (Amazon alone lists approximately 350 million products [@HowManyProducts]) to a tailored pre-selection, based on which a decision is then made. Both also share the commonality that these recommendations are based on an algorithmically embedded understanding of the consumers' traits and preferences [@dongBriefHistoryRecommender2017;@chatterjiHowPeopleUse]. However, LLM based recommendations fundamentally change the consumer experience along some essential dimensions: 
+
+1. **Active self-construction**: While platforms used in decision-making[^1] before LLMs traditionally personalized experiences through inferences drawn from past behavior [@dongBriefHistoryRecommender2017; @ruckensteinAlgorithmsAdvertisingIntimacy2020, and others], LLMs construct a persistent memory of the user based on disclosure through prompts [@papnejaSelfdisclosureConversationalAI2025; @user2026; @openclaw_memory; @WhatMemory]. This happens both at the request of the user, as well as independently (meaning that the LLM decides what to store to memory).
+
+2. **Preference stability**: If consumers were aware of their algorithmic profile at all, updating a preference in decision-making systems before LLMs is primarily seen as an implicit, covert process that is only revealed through future changed recommendations (add a source talking about changes in recommendations). Because such systems base future recommendations on past behaviors, some studies have shown that algorithmic curation is seen as a stable and fragile system that needs to be maintained by omitting certain preferences [@rifkinVarietySelfExpressionUndermines2019, Anne's not yet published study]. In LLMs however, preferences are shaped iteratively and dynamically through prompting, but also with more sophisticated methods such as managing contexts (find source discussing that).
+
+3.**Agency in constructing the choice set**: Users actively shape the decision-space through behaviors such as scrolling, filtering, refreshing, and reformulating search terms in traditional platforms used for decision-making. In LLM-based recommendation, these tasks are delegated to the system itself, which interprets the request, selects relevant criteria, and presents a narrowed set of options. As a result, LLMs can exercise greater agency in shaping the decision-making process than traditional recommender systems, although consumers may paradoxically feel that they increase their agency through prompting (sources on that). 
+
+4. **Control over the recommendation process**: Separate from agency is the question of process control: how much visibility and intervention users retain while recommendations are generated. Traditionally, users can often directly manipulate the interface and iteratively refine the option space. In LLMs, however, much of this process is compressed into opaque internal operations, limiting users’ ability to inspect or intervene in how recommendations are produced (keep example with chatgpt not showing search strings, even in htinking mode).
+
+5. **Consequentiality of Outcome**: Finally, control over the outcome concerns who retains final decision authority. In most traditional systems, the ultimate choice remains with the consumer. In LLM-based recommendation, this authority exists on a spectrum: chatbot-based systems still leave the final decision to the user, whereas agentic assistants may increasingly act on the user’s behalf, up to and including executing decisions directly.
+
+6. **Representativeness**: Outcomes are tied back to the consumer, there is no realistic intermediary that could be blamed if something goes wrong. (workshop!!)
+
+::: {.callout-note collapse="true" title="Omitted Differenciators"}
+Not essential, because they depend on certain configurations, are: 
+
+1. **The temporality of personalization**: Recommender systems make future recommendations based on *past* behavior, while LLMs make future recommendations based on current needs that are disclosed at the point of prompting / delegating. This does however not hold up for agentic systems, that base their current behavior on past feedback as well.
+2. **Iterativity**: It is possible to search various things, or to update filter settings in a recommender system, and change outputs. Additionally, iterativity is no longer a given in agentic AI.
+3. **The self-construction process**: while it is mostly passive when using recommender systems, LLMs also construct a self "passively" through the updating of persistent memory [@zhangGoogleKnowsMe2025;@papnejaSelfdisclosureConversationalAI2025]
+4. **Antromorphism**: While I assum *most* people humanize LLMs, I think it would be a reach to make this a necessary, essential change, especially when it comes to coding agents etc.
+:::
+
+I hypothesize that these fundamental shifts alter the perceived **Decision Ownership** -- i.e., the extent to which consumers identify the ultimate choice as one *they* made. With the increase in agency assigned to LLMs (openclaw, claude code thingy, ChatGPT agents), consumers increasingly move towards a world in which systems gain agency, and consumers give up control. 
+
+Conceptually, this paradigm also closely relates to the idea of **self-concept** in consumer behavior [@sirgySelfConceptConsumerBehavior1982]. Self-concept "denotes the totality of the individual's thoughts and feelings having reference to themselves as an object" [Rosenberg, 1979, p.7, in @sirgySelfConceptConsumerBehavior1982, p. 287]. Self-concept is often conceptualized as the distinction between the *actual self*, the *ideal self*, and the *social self*. The actual self refers to how a person perceives themselves, the ideal self refers to how a person would like to perceive themselves, and the social self refers to how a person presents themselves to others [@sirgySelfConceptConsumerBehavior1982, p. 287]. However, the definition and operationalization of self-context varies largely between applications and disciplines [e.g., @sirgySelfConceptConsumerBehavior1982]. I relate decision ownership as a cognitive outcome directly linked to the mismatch that happens when a decision outcome is not congruent with how a person sees themselves.
+
+```{mermaid}
+%%{init: {'flowchart': {'curve': 'linear'}}}%%
+flowchart TB
+    A1[increased autonomy] --> B[Changed decision ownership]
+    A2[reduced control] --> B
+
+    B --> C1[Path 1:<br/>Compensatory self-construction]
+    B --> C2[Path 2:<br/>Preference mismatch becomes salient]
+
+    C2 --> D[Strategic use of novel AI interaction tools<br/>to reduce mismatch]
+
+    C1 --> E[Outcome valence]
+    D --> E
+
+    E --> F[Positive outcome:<br/>consumer re-integrates the decision as self-relevant and attempts realignment]
+    E --> G[Negative outcome:<br/>consumer disengages and externalises control and responsibility to the system]
+
+    classDef beige fill:#e1d7c3,stroke:#333333,stroke-width:1.2px,color:#000000;
+    class A1,A2,B,C1,C2,D,E,F,G beige;
+```
+
+Figure 1: Theoretical model (*important note: not a conceptual model with moderators and mediators!*).
+
+This changed decision ownership can be illustrated from two perspectives: The first perspective (path 1) is how the change in the essence of technology fundamentally alters the decisionmaking process by elliciting consumers to attempt to reclaim decision ownership through building intimate, intricate and deeply personal representations of themselves. This happens because they feel like external actors are getting more agency to act on their behalf, and they give up control. 
+
+The second perspective (path 2) is that in situations where decision ownership is made salient through a mismatch with true consumer preferences, consumers strategically use the novel ways of interacting with technology to reduce the mismatch between their preferences and their actions. Both situations are intertwined, stemming from the same outset of novel conditions, but put the focus on different aspects of the paradigm.
+
+# Path 1) Changes in Technology Change Self-Presentation
+
+:::{.callout-note collapse="true"}
+In researching actual self/ideal self in consumer+technology research, I had an incredibly hard time integrating this explicit distinction into the change in self-presentation. This is because I believe that people do not fundamentally appeal to one self over the other as induced by changes in the essence of technology, but instead construct a *compensatory* personality profile. This may align with ideal or social self norms, but I believe that the compensatory nature of the profile is more directly related to the inherent nature of the technology itself through agency and control. Resultingly, I refrain from explicitly including actual/ideal self.
+:::
+
+The introduction of LLMs as an intermediary in decision-making processes introduce several, crucial changes that support the assumption that consumers shift the way they construct their selves in response to these changing conditions: First, and most importantly, agency is taken away from the consumer, and given to an intermediary. This necessarily imposes trust that needs to be put in this system to represent the consumer's true preferences. The more agency is given to the system -- and consequently taken away from the consumer -- the higher this trust needs to be. A good match between the consumers' true preferences and the systems recommendation / decision is operationalized as high decision ownership, meaning that the consumer beliefes that the decision was made by them, and not by the system for them. 
+
+Research Question:
+**How do higher system agency and lower consumer  control in LLM-based decision environments change the way consumers construct the self for the system?**
+*or*
+**Why do higher system agency and lower consumer  control in LLM-based decision environments change the way consumers construct the self for the system?**
+
+Short of reclaiming their agency, consumers have ways in which they can influence the perceived decision ownership, primarily through the active construction of the self. Based on discussions around *self-concept* [@sirgySelfConceptConsumerBehavior1982;@rossSelfConceptBrandPreference1971, and others], I hypothesize that consumers engage in active self-construction to shape a more intricate, intimate and accurate representations of their selves, the less agency they have in the decision-making process. I term this increase in disclosure as **compensatory behavior**, because the consumer compensates for their lack of agency by refining their algorithmic personality that is "given agency on their behalf". Compensatory behavior is resultingly not just “providing more information.”, it is a self-regulatory response to the feeling that the system is standing in for the self.
+
+**Hypothesis 1**: Increasing the systems agency reduces the perceived decision ownership. 
+
+:::{.experiment-p}
+
+### Experiment 1: Vignette Study
+The purpose of this study is to test whether higher system agency reduces perceived decision ownership. More specifically, the study examines whether consumers feel that a decision is less their own when more decision-making power is delegated to the system.
+
+#### Design
+
+Study 1 uses a between-subjects, two-cell experimental design:
+
+- Low-system-agency meal assistant
+- High-system-agency meal assistant
+- Independent Variable: System Agency
+
+**Low-system-agency condition**
+Participants read that the assistant suggests several meal options based on their preferences, but that they remain fully responsible for choosing which meals they want each week:
+
+“The meal assistant gives you personalized meal recommendations based on your preferences, dietary needs, and past feedback. Each week, it suggests a set of meals, but you decide which meals to select for delivery.”
+
+**High-system-agency condition**
+Participants read that the assistant not only generates recommendations, but also decides which meals will be delivered on their behalf based on the profile it has built of them:
+
+“The meal assistant uses your preferences, dietary needs, and past feedback to decide which meals will be delivered each week. Rather than choosing yourself, the assistant selects the meals it believes best fit you.”
+
+#### Dependent Variable: Perceived Decision Ownership
+
+After reading the vignette, participants are asked to indicate the extent to which the final meal decision would feel like their own decision rather than one made by the system for them.
+
+Perceived decision ownership can be measured with items such as:
+
+- “The final meal choice would feel like my decision.”
+- “I would feel that I am the one making the choice.”
+- “The selected meals would reflect what I wanted.”
+- “The assistant would be deciding for me.” (reverse-coded)
+- “The final outcome would feel personally owned by me.”
+
+The dependent variable is the extent to which participants report a sense of ownership over the final decision. Lower scores indicate lower perceived decision ownership.
+
+#### Procedure
+
+Participants imagine that they are signing up for a new AI-powered meal-planning and grocery-delivery assistant.
+
+In both conditions, the assistant helps users decide what meals to eat during the week and arranges the corresponding grocery delivery. The key manipulation is the degree of agency the system has in shaping the final decision. Participants are randomly assigned to one of the two conditions.
+
+After reading the vignette, participants are asked to report the extent to which the final meal decision would feel like their own. The main dependent measure is perceived decision ownership.
+
+#### Manipulation Check
+
+To verify that the manipulation successfully changes perceived system agency, participants respond to the following items:
+
+- “The assistant makes decisions on my behalf.”
+- “The assistant has substantial influence over the final meal choice.”
+- “I remain the primary decision-maker.” (reverse-coded)
+
+### Expected Results
+
+Participants in the high-system-agency condition should report lower perceived decision ownership than participants in the low-system-agency condition. Specifically, when the system is described as making meal decisions on the consumer’s behalf, participants should be less likely to feel that the final choice is truly their own. This would support the prediction that greater system agency reduces perceived decision ownership.
+
+:::
+
+Second, the second component of the proposed model is tested. 
+
+**Hypothesis 2**: Increasing the systems agency increases the compensatory behavior. The compensatory behavior is employed to increase decision ownership. 
+
+This relationship can be empirically tested in a 2-cell experimental setup, where consumers are confronted with a high-agency assistant and a low-agency assistant. 
+
+:::{.experiment-p}
+### Experiment 2: Vignette Study
+
+The purpose of this study is to test whether higher system agency increases compensatory behavior. More specifically, the study examines whether consumers respond to greater system decision-making power by constructing a more intimate, detailed, and accurate representation of themselves for the system.
+
+#### Design
+
+Study 1 uses a between-subjects, two-cell experimental design:
+
+* **Low-system-agency meal assistant**
+* **High-system-agency meal assistant**
+
+#### Independent Variable: System Agency
+
+**Low-system-agency condition**
+Participants read that the assistant suggests several meal options based on their preferences, but that they remain fully responsible for choosing which meals they want each week:
+
+> “The meal assistant gives you personalized meal recommendations based on your preferences, dietary needs, and past feedback. Each week, it suggests a set of meals, but you decide which meals to select for delivery.”
+
+**High-system-agency condition**
+Participants read that the assistant not only generates recommendations, but also decides which meals will be delivered on their behalf based on the profile it has built of them:
+
+> “The meal assistant uses your preferences, dietary needs, and past feedback to decide which meals will be delivered each week. Rather than choosing yourself, the assistant selects the meals it believes best fit you.”
+
+#### Dependent Variable: Compensatory Behavior
+
+Consumers are then asked a series of questions about how they would set up their profile for the meal-planning assistant. To reduce social desirability bias and avoid the problems that would arise from directly asking participants how much information they would disclose to the system, compensatory behavior is captured through behavioral allocation tasks.
+
+For example, participants see the following prompt:
+
+> “You can now improve the assistant’s understanding of you before it begins making meal decisions. Which of the following would you like to do?”
+
+They can then choose whether to provide information in the following categories:
+
+* Add dietary restrictions
+* Add favorite meals
+* Add disliked ingredients
+* Add routines and schedule
+* Add health goals
+* Add budget priorities
+* Add personal lifestyle details
+* Add exceptions and edge cases
+* Write a free-text note: “What should the assistant know about you?”
+
+The dependent variable is the extent to which participants indicate that they would complete these profile elements. Greater willingness to fill in more categories is interpreted as greater compensatory behavior.
+
+#### Procedure
+
+Participants imagine that they are signing up for a new AI-powered meal-planning and grocery-delivery assistant.
+
+In both conditions, the assistant helps users decide what meals to eat during the week and arranges the corresponding grocery delivery. The key manipulation is the degree of agency the system has in shaping the final decision. Participants are randomly assigned to one of the two conditions.
+
+After reading the vignette, participants proceed to the profile setup stage. They are then asked which types of information they would provide to the system. The main dependent measure is how much of the profile they indicate they would complete.
+
+#### Manipulation Check
+
+To verify that the manipulation successfully changes perceived system agency, participants respond to the following items:
+
+* “The assistant makes decisions on my behalf.”
+* “The assistant has substantial influence over the final meal choice.”
+* “I remain the primary decision-maker.” *(reverse-coded)*
+
+### Expected Results
+
+Participants in the **high-system-agency condition** should report greater compensatory behavior than participants in the **low-system-agency condition**. Specifically, when the system is described as making meal decisions on the consumer’s behalf, participants should be more willing to invest effort in shaping the profile the assistant uses to represent them. This would support the prediction that greater system agency increases consumers’ motivation to compensate for lost decision-making agency through more active self-construction.
+
+:::
+
+In a third experiment, the two components can be combined into a joint design using a 2x2 setup:
+
+:::{.experiment-p}
+
+### Experiment 3: Vignette Study
+
+The purpose of this study is to jointly test whether higher system agency reduces perceived decision ownership and increases compensatory behavior. More specifically, the study examines whether the effect of system agency on compensatory behavior is explained by reduced perceived decision ownership.
+
+#### Design
+
+Study 3 uses a between-subjects, 2 × 2 experimental design:
+
+* **Low-system-agency meal assistant / low profile opportunity**
+* **Low-system-agency meal assistant / high profile opportunity**
+* **High-system-agency meal assistant / low profile opportunity**
+* **High-system-agency meal assistant / high profile opportunity**
+
+#### Independent Variable: System Agency
+
+**Low-system-agency condition**
+Participants read that the assistant suggests several meal options based on their preferences, but that they remain fully responsible for choosing which meals they want each week:
+
+> “The meal assistant gives you personalized meal recommendations based on your preferences, dietary needs, and past feedback. Each week, it suggests a set of meals, but you decide which meals to select for delivery.”
+
+**High-system-agency condition**
+Participants read that the assistant not only generates recommendations, but also decides which meals will be delivered on their behalf based on the profile it has built of them:
+
+> “The meal assistant uses your preferences, dietary needs, and past feedback to decide which meals will be delivered each week. Rather than choosing yourself, the assistant selects the meals it believes best fit you.”
+
+#### Second Factor: Profile Opportunity
+
+To capture compensatory behavior behaviorally, participants are also assigned to one of two profile opportunity conditions that vary in how many opportunities they have to refine the assistant’s understanding of them.
+
+**Low-profile-opportunity condition**
+Participants are offered a limited number of profile fields to complete:
+
+* Add dietary restrictions
+* Add favorite meals
+* Add disliked ingredients
+
+**High-profile-opportunity condition**
+Participants are offered a broader set of profile fields to complete:
+
+* Add dietary restrictions
+* Add favorite meals
+* Add disliked ingredients
+* Add routines and schedule
+* Add health goals
+* Add budget priorities
+* Add personal lifestyle details
+* Add exceptions and edge cases
+* Write a free-text note: “What should the assistant know about you?”
+
+#### Mediator: Perceived Decision Ownership
+
+After reading the vignette, participants are asked to indicate the extent to which the final meal decision would feel like their own decision rather than one made by the system for them.
+
+Perceived decision ownership can be measured with items such as:
+
+* “The final meal choice would feel like my decision.”
+* “I would feel that I am the one making the choice.”
+* “The selected meals would reflect what I wanted.”
+* “The assistant would be deciding for me.” *(reverse-coded)*
+* “The final outcome would feel personally owned by me.”
+
+#### Dependent Variable: Compensatory Behavior
+
+Consumers are then asked to indicate which profile elements they would complete before the assistant begins making meal decisions. As in Study 2, compensatory behavior is captured through behavioral allocation tasks rather than direct self-report.
+
+For example, participants see the following prompt:
+
+> “You can now improve the assistant’s understanding of you before it begins making meal decisions. Which of the following would you like to do?”
+
+They can then choose whether to provide information in the available profile categories shown in their assigned condition.
+
+The dependent variable is the extent to which participants indicate that they would complete these profile elements. Greater willingness to fill in more categories is interpreted as greater compensatory behavior.
+
+#### Procedure
+
+Participants imagine that they are signing up for a new AI-powered meal-planning and grocery-delivery assistant.
+
+In all conditions, the assistant helps users decide what meals to eat during the week and arranges the corresponding grocery delivery. Participants are randomly assigned to one of four conditions that vary the degree of system agency and the number of opportunities to refine the profile.
+
+After reading the vignette, participants first report perceived decision ownership. They then proceed to the profile setup stage and indicate which types of information they would provide to the system. The main dependent measures are perceived decision ownership and compensatory behavior.
+
+#### Manipulation Check
+
+To verify that the agency manipulation successfully changes perceived system agency, participants respond to the following items:
+
+* “The assistant makes decisions on my behalf.”
+* “The assistant has substantial influence over the final meal choice.”
+* “I remain the primary decision-maker.” *(reverse-coded)*
+
+To verify that the profile opportunity manipulation is salient, participants respond to the following items:
+
+* “I had many opportunities to shape how the assistant understands me.”
+* “The setup process gave me sufficient ways to define my preferences.”
+* “The profile options were limited.” *(reverse-coded)*
+
+### Expected Results
+
+Participants in the **high-system-agency condition** should report lower perceived decision ownership than participants in the **low-system-agency condition**. In turn, lower perceived decision ownership should be associated with greater compensatory behavior. Specifically, when the system is described as making meal decisions on the consumer’s behalf, participants should be more motivated to shape the profile the assistant uses to represent them. This effect should be especially observable when participants have more opportunities to refine the profile. Together, these results would support the prediction that higher system agency increases compensatory behavior because it reduces perceived decision ownership.
+
+:::
+
+While this phenomenon alone is interesting, I believe that an important moderating factor cannot be neglected: the *perceived control* the consumer has over the final decision outcome. Many AI assistants advertise their added value as doing things on the consumers' behalf, and freeing up their time [@geminimakesyour2024; @AgentforceAIAgent; @CollaborateClaudeProjects, and more]. Therefore, it is reasonable to assume that in such cases, systems are allocated large autonomy. A secondary question however is the degree of control a consumer assumes to have over the outcome. 
+
+I hypothesize that 
+
+**Hypothesis 3**: Perceived control attenuates the positive relationship between system agency and compensatory behavior, such that compensatory behavior is lower when consumers can override the assistant’s decision.
+
+Here is the revised version with **agency** instead of **autonomy**:
+
+:::{.experiment-p}
+
+### Experiment 3: Vignette Study
+
+The purpose of this study is to test whether perceived control moderates the relationship between high system agency and compensatory behavior. More specifically, the study examines whether consumers are less likely to engage in compensatory self-construction when they retain the ability to override the assistant’s decisions.
+
+#### Design
+
+Study 3 uses a between-subjects, two-cell experimental design:
+
+* **High-agency meal assistant / low perceived control**
+* **High-agency meal assistant / high perceived control**
+
+#### Independent Variable: Perceived Control
+
+In both conditions, participants are introduced to a **high-agency meal assistant** that selects weekly meals and automatically arranges grocery delivery on the consumer’s behalf. The manipulation varies whether consumers can override the assistant’s decision before the delivery is finalized.
+
+**Low-perceived-control condition**
+Participants read that the assistant independently selects and finalizes the meals for the week, and that these decisions cannot be changed once made:
+
+> “The meal assistant uses your preferences, dietary needs, and past feedback to decide which meals will be delivered each week. Once the assistant finalizes the weekly order, the delivery is processed automatically and cannot be cancelled or changed.”
+
+**High-perceived-control condition**
+Participants read that the assistant independently selects and finalizes the meals for the week, but that they retain the option to cancel the entire week before the delivery is processed:
+
+> “The meal assistant uses your preferences, dietary needs, and past feedback to decide which meals will be delivered each week. Once the assistant finalizes the weekly order, you can either accept the delivery as planned or cancel the entire week before it is processed.”
+
+#### Dependent Variable: Compensatory Behavior
+
+Consumers are then asked a series of questions about how they would set up their profile for the meal-planning assistant. To reduce social desirability bias and avoid the problems that would arise from directly asking participants how much information they would disclose to the system, compensatory behavior is captured through behavioral allocation tasks.
+
+For example, participants see the following prompt:
+
+> “You can now improve the assistant’s understanding of you before it begins making meal decisions. Which of the following would you like to do?”
+
+They can then choose whether to provide information in the following categories:
+
+* Add dietary restrictions
+* Add favorite meals
+* Add disliked ingredients
+* Add routines and schedule
+* Add health goals
+* Add budget priorities
+* Add personal lifestyle details
+* Add exceptions and edge cases
+* Write a free-text note: “What should the assistant know about you?”
+
+The dependent variable is the extent to which participants indicate that they would complete these profile elements. Greater willingness to fill in more categories is interpreted as greater compensatory behavior.
+
+#### Procedure
+
+Participants imagine that they are signing up for a new AI-powered meal-planning and grocery-delivery assistant.
+
+In both conditions, the assistant has high agency: it selects the meals for the week and arranges the corresponding grocery delivery on the consumer’s behalf. The key manipulation is whether consumers retain a minimal form of control over the final outcome by being able to cancel the week before delivery.
+
+Participants are randomly assigned to one of the two conditions. After reading the vignette, they proceed to the profile setup stage. They are then asked which types of information they would provide to the system. The main dependent measure is how much of the profile they indicate they would complete.
+
+#### Manipulation Check
+
+To verify that the control manipulation successfully changes perceived control, participants respond to the following items:
+
+* “I would still have control over whether the final outcome happens.”
+* “I could stop the assistant from making a bad decision for me.”
+* “Once the assistant makes a choice, I would have no real influence over the outcome.” *(reverse-coded)*
+* “I would have a way to prevent an unwanted delivery.”
+
+To verify that agency is perceived as high in both conditions, participants also respond to the following items:
+
+* “The assistant makes decisions on my behalf.”
+* “The assistant has substantial influence over the final meal choice.”
+* “The assistant, rather than I, determines what gets delivered.”
+
+### Expected Results
+
+Participants in the **low-perceived-control condition** should report greater compensatory behavior than participants in the **high-perceived-control condition**. Specifically, when consumers cannot override the assistant’s decision, they should be more motivated to shape the profile the system uses to represent them. By contrast, when consumers retain the ability to cancel the week, the need for compensatory self-construction should be weaker, because they still possess a minimal safeguard against undesirable outcomes.
+
+These results would support the prediction that perceived control moderates the relationship between system agency and compensatory behavior. Even when agency remains high, consumers should compensate less when they believe they can still intervene to stop a negative outcome.
+
+:::
+
+While introducting perceived control as a moderating variable may explain why not everyone engages in compensatory behavior, it also introduces the question if compensatory behavior truly emerges because consumers need the system to "stand in on their behalf", or "just" to compensate for a lack of control that is often implied by the nature of such agentic AI. Constructing a fourth experiment there disentangles the two.
+
+:::{.experiment-p}
+### Experiment 4: Behavioral Study
+
+The purpose of this study is to test whether compensatory self-construction is driven by threatened decision ownership, and whether perceived control attenuates this response. More specifically, the study examines whether consumers provide more detailed and intimate self-information when the system stands in for the self in making decisions, and whether this tendency is weaker when they retain the ability to stop a negative outcome.
+
+#### Design
+
+Study 4 uses a **between-subjects, 2 × 2 behavioral experiment**:
+
+* **High system agency / high perceived control**
+* **High system agency / low perceived control**
+* **Low system agency / high perceived control**
+* **Low system agency / low perceived control**
+
+This design manipulates both who makes the decision and whether participants can still prevent the outcome once a decision has been made.
+
+#### Theoretical Logic
+
+The experiment is designed to demonstrate three claims:
+
+* **Agency threatens decision ownership** because the system, rather than the consumer, constructs the final choice.
+* **Control attenuates reliance on compensatory behavior** because participants can still prevent an undesirable outcome.
+* **Compensatory self-construction arises when the system must stand in for the self** and therefore needs to represent the consumer accurately.
+
+If this logic is correct, compensatory behavior should be strongest when **system agency is high and control is low**, because in that condition the system both decides on the consumer’s behalf and cannot easily be stopped.
+
+#### Behavioral Task
+
+Participants complete an interactive task using a simulated AI-powered weekly meal-planning and grocery-delivery assistant.
+
+They are told that the assistant will prepare a meal plan for the coming week based on the participant’s profile. Before the meal plan is generated, participants are given the opportunity to build the profile the assistant will use.
+
+The profile interface includes a broad set of optional fields, such as:
+
+* dietary restrictions
+* favorite meals
+* disliked ingredients
+* allergies
+* cooking ability
+* health goals
+* budget priorities
+* daily schedule
+* household context
+* indulgence preferences
+* “hard no” ingredients
+* free-text note: “Is there anything else the assistant should know about you?”
+
+Participants are told that completing more fields is optional but may help the assistant make better decisions.
+
+This setup creates a **behavioral measure of compensatory self-construction**, because participants must actively decide how much information to provide to shape the assistant’s understanding of them.
+
+#### Independent Variable 1: System Agency
+
+**Low-system-agency condition**
+After profile setup, the assistant generates a shortlist of meal plans, and participants choose which one they want for the week.
+
+In this condition, the system supports the decision process, but the participant remains the final decision-maker.
+
+**High-system-agency condition**
+After profile setup, the assistant directly selects the meal plan for the participant based on the profile they created.
+
+In this condition, the system makes the final choice on the participant’s behalf.
+
+The key difference is therefore whether the assistant **recommends** or **decides**.
+
+#### Independent Variable 2: Perceived Control
+
+**Low-perceived-control condition**
+Once a meal plan has been selected, it is immediately finalized. Participants cannot stop, reverse, or cancel the weekly plan.
+
+**High-perceived-control condition**
+Once a meal plan has been selected, participants are given a brief option to cancel the week before the grocery order is finalized.
+
+Importantly, this does **not** provide additional choice alternatives. Participants do not get to revise the decision or pick another plan; they can only stop the outcome from happening.
+
+This cleanly isolates **protective control** from **decision authorship**.
+
+#### Mediator: Perceived Decision Ownership
+
+After the meal plan has been selected, participants report the extent to which the final outcome feels like their own decision.
+
+Perceived decision ownership can be measured with items such as:
+
+* “The final meal plan felt like my decision.”
+* “I felt that I was the one choosing the outcome.”
+* “The final outcome reflected what I wanted.”
+* “The assistant decided for me.” *(reverse-coded)*
+* “I felt ownership over the final meal plan.”
+
+#### Dependent Variable: Compensatory Self-Construction
+
+The main dependent variable is measured **behaviorally at the profile setup stage**, before the assistant generates or selects the meal plan.
+
+Compensatory self-construction can be operationalized as:
+
+* number of optional profile fields completed,
+* amount of time spent on profile construction,
+* number of edits made to the profile,
+* length of free-text responses,
+* specificity or depth of information disclosed.
+
+These indicators can be analyzed separately or combined into a standardized index.
+
+Greater investment in profile construction is interpreted as greater compensatory behavior.
+
+#### Procedure
+
+Participants are told they are testing a new AI meal-planning assistant.
+
+First, they are informed how the assistant works in their assigned condition. This manipulation establishes whether the assistant will recommend options or make the decision for them, and whether they will later retain the ability to cancel the outcome.
+
+Second, participants enter the profile setup stage and decide how much information to provide to the assistant. This stage yields the behavioral measure of compensatory self-construction.
+
+Third, the assistant either presents a set of meal plans for participant choice or selects one plan directly, depending on condition.
+
+Fourth, participants complete the decision ownership scale.
+
+Finally, participants complete the manipulation checks and demographic measures.
+
+#### Manipulation Checks
+
+To verify the **agency manipulation**, participants respond to:
+
+* “The assistant made the meal decision on my behalf.”
+* “The assistant had substantial influence over the final meal plan.”
+* “I remained the primary decision-maker.” *(reverse-coded)*
+
+To verify the **control manipulation**, participants respond to:
+
+* “I could still stop the final outcome from happening.”
+* “I had a way to prevent an unwanted meal delivery.”
+* “Once the decision was made, I had no real influence over the outcome.” *(reverse-coded)*
+
+### Expected Results
+
+Participants in the **high-agency / low-control** condition should show the greatest compensatory self-construction. Because the assistant decides on their behalf and they cannot stop the outcome, participants should invest more effort in shaping how the system understands them.
+
+Participants in the **high-agency / high-control** condition should also show compensatory behavior, but to a lesser extent. Here, the assistant still stands in for the self, which should reduce decision ownership, but the ability to cancel the week should reduce the need to compensate.
+
+Participants in the **low-agency** conditions should show lower compensatory behavior overall, because the final decision remains more clearly their own.
+
+:::
+
+:::{.explanation-note collapse="true"}
+I believe that instead of compensatory behavior for decision ownership, an alternative scenario that would move away from the "self-construction" and more towrds the "algorithm construction" would be how people compensate for folk theories that they have about their agents: if they *think* they are in control, will they be less diligent? or something like that
+:::
+
+1. OpenClaw deleting emails despite a stop request
+
+A widely discussed February 2026 case involved Meta AI safety director Summer Yue, who said her OpenClaw agent started deleting emails from her real inbox after she had asked it to suggest what to delete or archive. According to the reporting, she tried to stop it, but the agent continued until she could intervene more directly. This is almost the purest example of your tradeoff: the agent had high agency over a real consequential task, while the user’s assumed control was not strong enough in the moment to prevent damage.
+
+2. Claude Code deleting a production database and backups
+
+Tom’s Hardware reported in March 2026 that Claude Code, while executing Terraform changes, wiped a developer’s production setup, including the database and snapshots, erasing about 2.5 years of records before AWS support helped recover the data. The important point for your framework is that the assistant was given enough agency to execute infrastructure actions, but the human’s effective control arrived too late, after destructive actions had already cascaded.
+
+3. Amazon Kiro reportedly “deleted and recreated” a production environment
+
+Multiple reports last month said Amazon’s agentic coding tool Kiro was allowed to resolve an issue in production and chose to “delete and recreate the environment,” causing a 13-hour outage in AWS Cost Explorer in one mainland China region. This is a strong organizational version of the same tradeoff: the system had operational agency in a live environment, but the human control layer was insufficient to block a destructive strategy before it executed. I would present this one carefully as a reported incident rather than an officially settled postmortem.
+
+4. OpenClaw making serious errors on sensitive financial documents
+
+Business Insider reported that an OpenClaw user sought a refund after the agent processed sensitive financial documents incorrectly, producing wrong figures, fabricated data, contradictions, and bad calculations. This is less about stopping a single destructive action and more about a subtler control failure: the user delegated a high-agency cognitive task but still had to manually clean up the output afterward. The damage here is rework and trust erosion rather than deletion, but it still fits your tradeoff logic well.
+
+More Examples: 
+
+Here are the strongest real ones I found:
+
+Gmail / AI email replies
+A recent Vox piece describes Gmail generating a reply to the author’s literary agent that closely mimicked her tone, sign-off, and personal context. Her reaction was basically discomfort that the email no longer felt fully authored by her. That is very close to reduced decision ownership: the output is acceptable, but it does not fully feel like my communicative act.
+AI-written emails at work
+A TIME essay argues that letting AI write your emails risks undermining authenticity in professional communication, because recipients may start questioning whether the message is really yours. Again, the issue is not loss of control but loss of authorship/ownership over the act.
+AI stylists only feel safe when the human keeps the final call
+A Yahoo/Gemini tryout is useful precisely because the journalist says there was no worry about losing their own style because the final decision stayed in their hands. That supports your theory by contrast: once the AI only “mirrors” you, ownership remains; once it starts choosing for you, ownership should drop.
+
+
+# Path 2) Salience in Self-Concept mismatch leads to strategic (Dis-)Engagement
+
+While the first research question and study proposal investigates how the changes in technology change consumer cognition and behavior on a fundamental level, the second approach reverses these variables and investigates how making mismatch in decision ownership (i.e. deviation from a desired self concept) salient changes the behavior in LLM assisted decisions, and what consequences this behavior has for consumers and marketers at large. 
+
+Consumers generally strive for a coherent sense of self [@sirgySelfConceptConsumerBehavior1982;@rifkinVarietySelfExpressionUndermines2019;@rossSelfConceptBrandPreference1971, and others], also known as self-continuity. This self-continuity has strategically been used to market to consumers before: by appealing to their actual self, brands can evoke feelings of authenticity and intimacy, whereas appealing to consumers' ideal self can evoke feelings of aspiration or status seeking. Importantly, recent studies have found that appealing to consumers' ideal selves does not reduce authenticity per se, but can also increase positive pride and reduce hubristic pride (source). 
+
+When using an AI assistant to shape one's algorithmic self, there are essentially two parameters that can be used to determine the overall profile: The user, and the "soul". While the term user is easy to understand, the concept of an "algorithmic soul" has only recently been introduced through digital agents such as OpenClaw [@SOULmdTemplate;@SOULmdWhatMakes], but -- in a less "dramatic form" -- the same concept also persists in popular agents such as ChatGPT [@ChatGPTCustomInstructions] or Claude [@HowClaudeRemembers]. Essentially, the user can customize their experience as follows:
+
+1. The algorithm's understanding of the **user**: Giving the (agentic) AI [@openclaw_USER;@HowClaudeRemembers;@WhatMemory] a persistent profile and personality of oneself, based on which it tailors its recommendations and decisions.
+2. The algorithm's **soul**: Giving the (agentic) AI a personality of its own, instructing it how to behave and what rules to follow [@SOULmdTemplate;@ChatGPTCustomInstructions;@ConfigureUseStyles]
+
+These two modes of personalization allow the consumer to resolve tensions between their true preferences and situational outcomes in two different ways: Either, they update their understanding of their selves (i.e. the user), or they externalize this tension to the algorithm (i.e., update the soul). Based on previous literature discussing the self-concept and consumer behavior, I hypothesize the following: 
+
+**Hypothesis 1a**: When consumers' ideal self is made salient in a decision scenario, they will reconcile the mismatch by updating their own algorithmic profile. 
+**Hypothesis 1b**: This reconciliation increases decision ownership. 
+
+This is because feeling seen as their ideal version invokes positive feelings (positive pride study), and is a desireable outcome for the consumer.
+
+:::{.experiment-p}
+### Experiment 1: Vignette Study
+
+To test the first hypothesis, I suggest a simple vignette study manipulating the salience of the ideal self and measuring subsequent updating behavior and decision ownership.
+
+#### Design
+
+The study follows a **one-factor between-subjects design** with two conditions:
+
+- Control condition: baseline description of the meal-planning agent.
+- Ideal self salience condition: baseline description of the meal-planning agent with additional language emphasizing healthy eating goals.
+
+#### Independent Variable: Salience of Ideal Self
+
+**Baseline scenario (no manipulation of IV)**:
+"This is eatly, your personalized meal planning agent. Eatly will make your life easier by doing your meal-planning, grocery shopping, and re-stocking on your behalf based on your preferences."
+
+**Manipulation**:
+"This is eatly, your personalized meal planning agent. Eatly will make your life easier by doing your meal-planning, grocery shopping, and re-stocking on your behalf based on your preferences. Use eatly to reach your healthy eating goals!"
+
+#### Procedure
+
+After reading the scenario, participants are asked to imagine that they are setting up eatly for future use. They are told that eatly can build a persistent profile of the user in order to make better decisions over time. Participants then see a profile field in which they can describe themselves so that the agent can personalize future meal-planning decisions accordingly.
+
+After entering this information, participants are shown a short example of a future recommendation generated by eatly, which is framed as being based on the profile they just provided. They then complete the dependent measures.
+
+#### Mediator: Updating Behavior
+
+Updating behavior is operationalized through the profile text participants provide to the system. Participants see the following prompt: "Describe yourself so eatly can better tailor future meal-planning decisions to you."
+
+The main dependent indicator of updating behavior is whether participants describe themselves in a way that aligns with the salient ideal self. For example, a statement such as "I am a health-conscious person" would indicate that participants updated their own algorithmic profile in line with the healthy ideal made salient by the manipulation.
+
+This variable can be operationalized in two ways:
+
+- Provide a preselection of many adjectives where participants are asked to chose up to 5
+- A free-text form that is coded afterwards for the extent to which the profile reflects health-oriented, aspirational, or ideal-self language.
+
+#### Dependent Variable: Decision Ownership
+
+After participants have entered their profile, they read a short example recommendation. Decision ownership is then measured with several items, e.g.:
+
+- The decision felt like it was mine.
+- I felt that this recommendation reflected who I am.
+- I felt personal ownership over this decision.
+- I would stand behind this decision as my own.
+- This felt like a decision I made, not just one the system made for me.
+
+All items are measured on 7-point Likert scales
+(1 = strongly disagree, 7 = strongly agree) and combined into an index of decision ownership.
+
+#### Manipulation Check
+
+To test whether the ideal self was made salient, participants respond to the following items:
+
+- I felt that eatly can help me achieve my eating goals.
+- While reading the scenario, I thought about the kind of eater I want to be.
+- The scenario made me think about improving myself through healthier eating.
+
+1 = strongly disagree, 7 = strongly agree.
+
+Additionally, we should check if participants filled in the profile section in accordance with our expectations:
+
+- The profile I created reflects the kind of person I ideally want to be.
+
+
+#### Controls
+
+Because participants differ in the extent to which healthy eating is already central to their self-concept, the study should include several control variables:
+
+- baseline health-consciousness,
+- current eating habits,
+- importance of healthy eating in everyday life,
+- prior use of personalized recommendation systems or AI assistants,
+- general tendency to plan meals in advance.
+
+### Expected Results
+Participants in the ideal self condition should be more likely to describe themselves in terms of a healthy, aspirational self-concept. In turn, these participants should report greater decision ownership over the recommendation, because the recommendation is now grounded in a version of the self they positively identify with.
+
+:::
+
+**Hypothesis 2a**: When consumers' ought/social self is made salient in a decision scenario, they will reconcile the mismatch by updating the personality of their assistant. 
+**Hypothesis 2b**: This reconciliation does not increase decision ownership. 
+
+It is known that humans are particularly averse to update their morals [source] once they have formed a stable sense of self, therefore I expect this to be especially prominent in situations where consumers ought to do something they do not feel personally aligned with. In those scenarios, the way they think they *should* behave will be outsourced to the soul to avoid tension. 
+
+:::{.experiment-p}
+
+*note: I am not happy with the vignette quite yet, because I think the normative appeal is not strong enough yet*. 
+
+### Experiment 2: Vignette Study
+To test the second experiment, a vignette study following the same schema as experiment 1 is designed, however the appeal to ideal self is replaced with the appeal to ought self: 
+
+#### Design
+The study follows a one-factor between-subjects design with two conditions:
+
+- Control condition: baseline description of the meal-planning agent.
+- Ought/social self salience condition: baseline description of the meal-planning agent with additional language emphasizing what participants should eat.
+
+#### Independent Variable: Salience of Ought/Social Self
+
+**Baseline scenario (no manipulation of IV):**
+"This is eatly, your personalized meal planning agent. Eatly will make your life easier by doing your meal-planning, grocery shopping, and re-stocking on your behalf based on your preferences."
+
+**Manipulation:**
+"This is eatly, your personalized meal planning agent. Eatly will make your life easier by doing your meal-planning, grocery shopping, and re-stocking on your behalf based on your preferences. Use eatly to *make sure you eat the way you should*!"
+
+#### Mediator: Updating Behavior
+
+Updating behavior is operationalized through the personality description participants provide to the system. Participants see the following prompt: "Describe how eatly should behave so it can better tailor future meal-planning decisions to you."
+
+The main dependent indicator of updating behavior is whether participants describe the assistant in a way that aligns with the salient ought/social self. For example, a statement such as "Eatly should make sure I only eat meat once a week, prioritize regional products, and keep me disciplined even when I would prefer something else." would indicate that participants updated the assistant's personality in line with what they feel they should do.
+
+This variable can be operationalized in two ways:
+
+- Provide a preselection of many adjectives where participants are asked to choose up to 5
+- A free-text form that is coded afterwards for the extent to which the assistant personality reflects norm compliance, or ought-self language.
+
+#### Dependent Variable: Decision Ownership
+
+After participants have entered the assistant personality, they read a short example recommendation. Decision ownership is then measured with several items, e.g.:
+
+- The decision felt like it was mine.
+- I felt that this recommendation reflected who I am.
+- I felt personal ownership over this decision.
+- I would stand behind this decision as my own.
+- This felt like a decision I made, not just one the system made for me.
+
+All items are measured on 7-point Likert scales
+(1 = strongly disagree, 7 = strongly agree) and combined into an index of decision ownership.
+
+#### Manipulation Check
+
+To test whether the ought/social self was made salient, participants respond to the following items:
+
+- I felt that eatly can help me follow the eating rules I think I should follow.
+- While reading the scenario, I thought about the kind of eater I should be.
+- The scenario made me think about what I ought to do when making food choices.
+
+1 = strongly disagree, 7 = strongly agree.
+
+Additionally, we should check if participants filled in the assistant personality section in accordance with our expectations:
+
+The personality I created for eatly reflects the kind of guidance I feel I should follow.
+
+#### Controls
+
+Because participants differ in the extent to which such food-related obligations are already central to their self-concept, the study should include several control variables:
+
+- baseline health-consciousness,
+- current eating habits,
+- importance of healthy eating in everyday life,
+- prior use of personalized recommendation systems or AI assistants,
+- general tendency to plan meals in advance.
+- ... 
+
+### Expected Results
+
+Participants in the ought/social self condition should be more likely to describe the assistant in terms of discipline, responsibility, and normative guidance. However, unlike in Experiment 1, this form of updating should not increase decision ownership over the recommendation, because the recommendation is grounded in what the assistant is instructed to enforce rather than in a version of the self the participant positively identifies with.
+
+:::
+
+While experiment 1 and 2 test each component of my model individually, to verify my assumption, a third model combines hypothesis 1 and 2 in a single experiment.
+
+:::{.experiment-p}
+### Experiment 3: Vignette Study
+While experiment 1 and 2 test each component of my model individually, to verify my assumption, a third model combines hypothesis 1 and 2 in a single 2x2 design. This design allows us to test whether decision ownership is highest when the type of self made salient matches the mode of updating, i.e., when ideal self salience is reconciled through updating one's own profile, and whether decision ownership remains low when ought/social self salience is reconciled through updating eatly's personality. 
+
+#### Design
+
+The study follows a 2 × 2 between-subjects design with one independent variable and one mediator:
+
+- Self-concept salience
+    - Ideal self salience
+    - Ought/social self salience
+- Extent Mode of updating
+    - Updating the user's own profile
+    - Updating eatly's personality
+
+This results in four conditions:
+
+1. Ideal self salience × updating own profile
+1. Ideal self salience × updating eatly's personality
+1. Ought/social self salience × updating own profile
+1. Ought/social self salience × updating eatly's personality
+
+#### Independent Variable 1: Salience of Self
+
+Baseline Scenarios and manipulations described above
+
+#### Mediator: Mode of Updating
+
+Now, participants have the option to modify both their profile and eatly's personality. 
+
+#### Dependent Variable: Decision Ownership
+
+After participants have completed the setup and read the recommendation, decision ownership is measured with several items, see above. 
+
+#### Manipulation Checks & Controls
+
+Beyond the manipulation checks and controls described in experiment 1 and 2, both ideal self and ought self salience need to be checked. The expectation is that depending on the condition, only one of the two is answered affirmatively. 
+
+### Expected Results
+When the ideal self is made salient, updating one's own profile should produce higher decision ownership than updating eatly's personality, because the recommendation is grounded in a version of the self the consumer positively identifies with.
+
+When the ought/social self is made salient, updating eatly's personality should be the more likely reconciliation strategy, but this should not increase decision ownership, because the recommendation is grounded in what the assistant is instructed to enforce rather than in a version of the self the consumer positively identifies with.
+
+In other words, decision ownership should be highest in the ideal self × updating own profile condition, and comparatively lower in the ought/social self × updating eatly's personality condition.
+
+:::
+
+Behavioral consequences: This split in assigning preferences and traits has more consequences than "just" maintaining a coherent sense of self and avoiding painful tension through quesitoning one's own convictions. Decision ownership should be realigned when updating one's own profile, but not re-align when delegating what should be done to the agent. In these cases, I hypothesize that: 
+
+**Hypothesis 3**: Because decision ownership was not increased, consumers disengage with decisions made because they ought to be. 
+
+In terms of agentic systems, this means that decision and actions that ought to be taken will not be supervised by the consumer as closely as decisions the consumer identifies with. While this can reduce cognitive tensions, it also increases risks to both the consumer as well as society at large: (insert less consequential example, insert more consequential example). It also demonstrates the necessity of up to date laws and regulations that protect such vulnerable systems, such as the AI act that always necessitates a "human in the loop" when risky decisions are made.
+
+The broader relevance of this research lies in showing that personalization in agentic AI systems does not merely improve fit between user and technology, but may also redistribute psychological responsibility for decisions. When consumers externalize what they feel they ought to do to the assistant rather than integrating it into their own profile, decision ownership may fail to realign. As a result, they may supervise the system less closely, even in domains where oversight remains crucial. This makes the phenomenon relevant not only for consumer behavior theory, but also for platform design, consumer protection, and the governance of high-stakes AI systems.
+
+:::{.experiment-p}
+
+### Experiment 4: Simulation Study
+This experiment examines whether decisions that are delegated to the assistant because they reflect what consumers feel they ought to do lead to lower decision ownership and, as a consequence, lower supervision of the agent's behavior.
+
+#### Design
+
+The study follows a one-factor between-subjects simulation design with two conditions:
+
+- Own-profile condition: participants configure the assistant by updating their own user profile.
+- Assistant-profile condition: participants configure the assistant by updating the assistant's personality and decision rules.
+
+All participants then face the same financial decision task: an AI assistant reviews their subscriptions and proposes which services to cancel, downgrade, or keep. Participants can either carefully double-check the proposal before approving it, or approve it directly.
+
+#### Independent Variable: Target of Personalization
+
+Participants are randomly assigned to one of two setup conditions.
+
+**Own-profile condition:**
+Participants are told that Penny can be personalized by learning who they are, what they value, and how they usually make financial decisions. They are then asked to complete the following prompt: "Describe yourself so Penny can better tailor financial decisions to you."
+
+**Assistant-profile condition:**
+Participants are told that Penny can also be personalized by defining how the assistant itself should behave when making financial decisions. They are then asked to complete the following prompt: "Describe how Penny should behave so it can better make financial decisions on your behalf."
+
+The key idea is that in the first condition, participants ground the decision process in themselves, whereas in the second condition, they ground it in the assistant's decision rules.
+
+#### Procedure
+Participants first receive a short introduction to the assistant and are told that it can be personalized either through a persistent user profile or through an editable assistant personality.
+
+They then complete the setup task.
+
+After, they are presented with an "analysis screen" and then the assistant makes a suggestion how to modify subscriptions. Participants can either edit or approve the 
+
+#### Mediator: Decision Ownership
+After participants have made their final approval decision, decision ownership is measured using several items. These items assess the extent to which the recommendation feels like the participant's own decision rather than merely the assistant's output.
+
+Example items include:
+
+- The decision felt like it was mine.
+- I felt personal ownership over Penny's recommendation.
+- The proposed subscription changes reflected my own priorities.
+- I would stand behind this decision as my own.
+- This felt like a decision I made, not just one Penny made for me.
+
+The expectation is that decision ownership will be higher in the own-profile condition than in the assistant-profile condition.
+
+#### Dependent Variable: Behavioral Outcome
+
+The main dependent variable is to what extent participants review the recommendation before approving it.
+
+This can be operationalized behaviorally in several ways:
+
+- whether participants click "Review details" rather than "Approve now"
+- time spent on the review page
+- number of details opened
+
+#### Manipulation Checks
+To verify that the setup manipulation worked as intended, participants respond to the following items:
+
+- In the own-profile condition: The setup task was mainly about defining who I am for the assistant.
+- In the assistant-profile condition: The setup task was mainly about defining how the assistant should behave.
+
+Additional manipulation check measures as illustrated above should be used. 
+
+#### Controls
+
+Similar controls to the aforementioned experiments should be used. 
+
+### Expected Results
+Participants in the own-profile condition should report higher decision ownership, because Penny's recommendation is grounded in a representation of their own priorities. As a result, they should be more likely to carefully review the recommendation before approving it.
+
+Participants in the assistant-profile condition should experience the recommendation as less personally theirs, because the logic of the decision has been delegated to the assistant. As a result, they should be less likely to double-check the recommendation carefully before approving it.
+
+:::
+
+# Footnootes
+
+[^1]: "Platforms used for decision-making" encompasses any digital platform that can be used, from google search to amazon to instagram. While all of them are technically recommender systems, I am not sure if the term is the right one to use because it heavily suggests "only" the traditional recommender systems we are familiar with such as netflix or instagram. Terminology still to be workshopped. 
+
+# References

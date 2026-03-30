@@ -1,0 +1,128 @@
+---
+title: "Shaping my Algorithmic Self"
+subtitle: "Construction of an Actual vs. Ideal Self in Response to Technology-Mediated Decisions"
+author: Sabou Rani Stocker
+date: today
+format:
+  html:
+    theme: [sandstone, ../styles/hsg_pages.scss]
+project: "aPKM"
+bibliography: ../bibliography.bib
+navbar: false
+---
+
+::: explanation-p
+This document summarizes the shift in consumer spaces with the introduction of LLMs, and two possible research directions resulting from it.
+
+The first research direction considers consumers' reactions to the essential changes in technology from recommender systems to LLMs as the independent variable, and investigates how this changes their self-presentation for the algorithm and why, and -- in turn -- what cognitive and behavioral outcomes this implies.
+
+The second research direction remains in line with previous research on actual, ought and ideal selves in consumer spaces, and investigates how consumers use the novel technology in reaction to situations appealing to either the actual, ought, or ideal self.
+:::
+
+# Algorithmic Mirrors or Algorithmic Compensators?
+
+::: explanation-p
+What are the driving factors of technologies making consumers construct an **authentic self** or an **idealized self** in digital decision environments?
+:::
+
+In a digital world, consumers interact with vast amounts of data every day. By the end of 2025, Instagram was estimated to have accumulated 34 billion posts uploaded in that year alone [@HowManyInstagram2024]. Amazon lists approximately 350 million products [@HowManyProducts], and about 360 hours of content are uploaded to YouTube every minute [@admin-hartonYouTubeStatsEverything2025]. Given this scale, consumers cannot realistically navigate these systems without algorithmic recommendations. Since the introduction of the World Wide Web, such recommendations have been tailored to consumer profiles derived from observed behavior [@dongBriefHistoryRecommender2017].
+
+However, the public availability of LLMs is fundamentally changing these dynamics. Consumers no longer rely solely on search engines when researching and making decisions, but increasingly use LLMs as search engines, decision aids, and recommenders [see also @hermannNEXTFRONTIERDIGITAL, @galAlgorithmicConsumers, @sifatAlgorithmicConsumerConceptual2025, among others]. In more extreme cases, such as when consumers employ an agentic AI assistant, LLMs may even become decision-makers acting on the consumer’s behalf.
+
+## Essential Differences between Platform-Based Decisions and LLM-Based Decisions
+
+I argue that the shift from traditional recommender systems to LLM-mediated recommendations fundamentally changes how consumers perceive the recommendation and decision-making process. Importantly, this fundamental shift occurs between traditional recommender systems and LLM-based decision-making, but not necessarily between chatbots and agentic AI. Accordingly, I will subsequently refer to traditional recommender systems (such as Amazon or Galaxus in Switzerland, but also more social-media-based recommender systems used to discover products, such as Instagram or Pinterest) as **platform-based decisions**, and to all recommendations and decisions made through some form of LLM-mediated environment – whether through soliciting recommendations or advice from a chatbot, or through employing one’s own agentic AI to make decisions on one’s behalf – as **LLM-based decisions**.
+
+In the following table, essential similarities and differences between platform-based decisions and LLM-based decisions are illustrated. Importantly, the differences are illustrated from the *consumers'* perspective, which does not necessarily overlap with the factual implementation of the technical underpinnings of these differences.
+
++----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                      | Platform-based decisions                                                                                                                     | LLM-based decisions                                                                                                                 |
++======================================================================+==============================================================================================================================================+=====================================================================================================================================+
+| **Self-construction**                                                | Passive: Learned through behavior [@zhangGoogleKnowsMe2025; @brownRecommendedSelvesAuthenticity2025; @garapatiRecommenderSystemsDigital2025] | Active: Constructed through disclosure [@dashAlgorithmicSelfPortraitDeconstructing2026; @papnejaSelfdisclosureConversationalAI2025] |
++----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+| **Source of Personalization**                                        | primarily revealed through past behavior [@ruckensteinAlgorithmsAdvertisingIntimacy2020; @dong2017]                                          | primarily declared through disclosure [@papnejaSelfdisclosureConversationalAI2025; @user2026; @openclaw_memory]                     |
++----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+| **Profile Updating**                                                 | Implicit in future recommendations                                                                                                           | Explicit in prompts and iteration                                                                                                   |
+|                                                                      |                                                                                                                                              |                                                                                                                                     |
+|                                                                      | Static: Stable profiles that need to be maintained                                                                                           | Dynamic: Updating profile based on conversation                                                                                     |
+|                                                                      |                                                                                                                                              |                                                                                                                                     |
+|                                                                      | [@rifkinVarietySelfExpressionUndermines2019, Anne's not yet published study]                                                                 | [@openclaw_memory; @user2026]                                                                                                       |
++----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+| **Consumer involvement in decision-making process (inverse agency)** | Implicit: Decision space is pre-shaped through past behavior                                                                                 | Explicit: Decision space is pre-shaped through questioning and iteration                                                            |
++----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+| **Decision Ownership (inverse autonomy)**                            | Consumer: Consumer makes choice based on list-based preselection                                                                             | Co-Constructed: Consumer makes choice based on explicit recommendation                                                              |
+|                                                                      |                                                                                                                                              |                                                                                                                                     |
+|                                                                      |                                                                                                                                              | LLM: In agentic environments, decision is made by LLM                                                                               |
++----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+| **Control**                                                          | Low real-time control; limited ability to intervene in recommendation logic                                                                  | High real-time control; substantial ability to intervene through iterative refinement                                               |
++----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+| **Interaction**                                                      | List-based / non-conversational                                                                                                              | Conversational                                                                                                                      |
++----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+| Basis of Recommendation                                              | Constructed version of the true self                                                                                                         | Constructed version of the true self                                                                                                |
++----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+| Outcome of Recommendation                                            | Dissatisfaction in case of mismatch                                                                                                          | Dissatisfaction in case of mismatch                                                                                                 |
+|                                                                      |                                                                                                                                              |                                                                                                                                     |
+|                                                                      | ...                                                                                                                                          | ...                                                                                                                                 |
++----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+
+## Driving Factors for Self-Construction
+
+These differences essentially translate into a model of independent variables that change the fundamental decision process the consumer goes through, mediating factors, and the resulting outcome. In terms of the outcome, this overview focuses in particular on the construction of the self, and the decision ownership. Essentially, the essential differences in these systems boil down to three components shaping the locus of outcome ownership – agency (of the system), control (of the consumer), and autonomy (of the system) – and one locus of perception(find better term) – being the conversational nature versus list-based nature.
+
+Definition *agency*: the ability to take action or to choose what action to take. (Cambridge dictionary)
+
+Definition *control*: to order, limit, or rule something, or someone's actions or behaviour.
+
+Definition *autonomy*: the ability to make your own decisions without being controlled by anyone else.
+
+In this understanding, and applied specifically to the context of agentic AI, agency, control and autonomy are directly intertwined, whereas the autonomy of a the system is a function of agency and control.
+
+Decision Ownership decreases with increased autonomy (to be determined if it matters if the increase in autonomy may be due to increased agency or control. Hypothesize that only decreased control, but not increased autonomy will influence decision ownership).
+
+**In low-control environments, consumers generally present themselves as more ideal self than actual self because they feel the need to be defensive and conform to norms (in anticipation of being seen doing something?). This means that perceived control over agentic AI is the primary driver of presenting oneself more ideally. However, when perceived control is increased, e.g. through iterative decision processes, they present themselves more authentically.**
+
+Decision Process: The more autonomous the system is, the less involved the human is. Hypothesis that only
+
+Consumer involvement: explicit involvement based on iterativity reduces perceived agency of system and increases control, making it feel less autonomous, although in reality it is more autonomous because it makes many micro-decisions (e.g. what clarifying questions to ask). Therefore, consumer involvement could become a nefarious tactic to make the consumer feel like they are in control while taking it away from them.
+
+Full Model
+
+**I believe that actual vs ideal self is not a good mediating variable for this question, because it is not defensible and too shoehorned**.
+
+# Shaping my Algorithmic Intermediary
+
+::: explanation-p
+How do consumers resolve tensions between their actual, ideal, and ought selves when constructing their algorithmic personality?
+:::
+
+In LLM environments, consumers have the option to actively disclose information through prompts or user.md files [@openclaw_USER] in agentic systems. Additionally, however, LLMs also infer user characteristics based on interactions and context, which are then stored to memory [@whatMemory; @HowClaudeRemembers]. This observational nature of LLMs and their subsequent adaptation to the user’s specific requirements and needs is also explicitly used as a selling point for adopting agentic assistants such as OpenClaw [@openclaw_memory]. Many chatbots further reinforce these interpretive frameworks by offering system-level prompts that allow users to configure the assistant’s tone, style, or “personality,” thereby fostering the impression that one can construct “one’s own” LLM with a distinctive character. Online discussions likewise reveal extensive engagement with notions of emergent personalities and the personification of LLMs, with users attributing stable traits, dispositions, or even intentions to these systems.
+
+In digital assistant ecosystems, this logic is formalized in artifacts such as “soul.md” files, which are described as specifying the assistant’s “soul” or enduring character. Across these contexts, a common feature of folk theories surrounding AI-mediated environments is the pronounced anthropomorphization of the underlying algorithms. This tendency appears markedly stronger than in popular conceptions of more traditional recommender systems, which are typically understood in more instrumental and less personified terms.
+
+This means that consumers now have two levers they can adjust to construct their algorithmic personality that "acts on their behalf". First is their digital self-disclosure through user.md and persistent memory. Second is the shape of their algorithmic assistant.
+
+Literature on actual, ideal and ought self reveals that discrepancies and tensions are unpleasant for consumers.
+
+Tension actual \<\> ideal = aspirational, future me, ...
+
+Tension actual \<\> ought self = moral failure
+
+**What impacts does this have on cognitive outcomes?**
+
+**What impacts does this have on behavioral outcomes?**
+
+Traditional recommenders mostly mirror and nudge the actual self, while agentic assistants are more capable of engaging and co‑constructing the ideal self. How designs cue one or the other will shape not just what consumers choose, but who they feel they are when they choose.
+
+## Does AI-assisted decision making influence discrepancies between actual and ideal self?
+
+Yes! AR “try‑on” tech literally changes how people see themselves: virtual face augmentation shifts either actual or ideal attractiveness, altering the actual–ideal gap and downstream well‑being and choices.
+
+In AI-assisted tasks, poor AI performance often makes people blame themselves, lowering self-confidence and pushing them into over‑reliance on AI, a pattern that can undermine the actual self’s sense of competence. Experimental work shows people’s self-confidence aligns with AI’s confidence and this effect can persist after AI is removed, reshaping how capable they feel on their own.
+
+When users see ChatGPT’s superior personal advice before generating their own, they rate their own advice as less authentic, prompting “me vs. the machine” comparisons that may distance the actual self from an implicitly raised ideal standard.
+
+## What are the Consequences of AI assisted Decision-making?
+
+# Different Ways to Resolve Tensions through means of the novel Technology
+
+Option 2: Depending on which part of their selves is appealed to (actual, ought and ideal self), consumers delegate different aspects to the personality of the AI assistant.

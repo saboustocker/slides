@@ -30,6 +30,15 @@ a {
   font-size: 0.9em;
 }
 
+.experiment-p {
+  color: $hsg-dunkelgruen;
+  font-size: 0.9em;
+  background-color: rgba($hsg-beige, 0.5);
+  border-color: $hsg-dunkelgruen;
+  border-radius: 1%;
+  padding: 5%;
+}
+
 .blockquote {
   color: $hsg-dunkelgruen;
   border-left: 4px solid $hsg-dunkelgruen;
