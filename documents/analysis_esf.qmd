@@ -119,12 +119,12 @@ data <- data %>%
 
 ## Summary and General Info
 
-- data collection between 12. - 15. december
-- sample: students from the course *Empirische Sozialforschung (ESF)*
-- number of participants: `r nrow(data)`
-    - of which finished: `r sum(data$Progress == 100, na.rm = TRUE)`
-- self-reported number of participants from classroom: `r sum(data$participation == "2.0", na.rm = TRUE)`
-- self-reported number of participants from home: `r sum(data$participation == "1.0", na.rm = TRUE)`
+-   data collection between 12. - 15. december
+-   sample: students from the course *Empirische Sozialforschung (ESF)*
+-   number of participants: `r nrow(data)`
+    -   of which finished: `r sum(data$Progress == 100, na.rm = TRUE)`
+-   self-reported number of participants from classroom: `r sum(data$participation == "2.0", na.rm = TRUE)`
+-   self-reported number of participants from home: `r sum(data$participation == "1.0", na.rm = TRUE)`
 
 ### Progress throughout Survey
 
@@ -140,14 +140,14 @@ ggplot(data, aes(x = Progress)) +
   theme_minimal(base_size = 14)
 ```
 
-- mean participant progression: `r round(mean(data$Progress, na.rm = TRUE),3)`%
-- two small peaks: some participants started but did not make it past the first two open-ended questions (number of participants stopping at or before 30%: $n = `r sum(data$Progress <= 30)`$), and many participants made it to the last page (participants reaching at least 90%: $n = `r sum(data$Progress >= 90)`$)
+-   mean participant progression: `r round(mean(data$Progress, na.rm = TRUE),3)`%
+-   two small peaks: some participants started but did not make it past the first two open-ended questions (number of participants stopping at or before 30%: $n = `r sum(data$Progress <= 30)`$), and many participants made it to the last page (participants reaching at least 90%: $n =`r sum(data$Progress >= 90)`$)
 
 ### Scrolling Behavior
 
-- counterintuitively to our expectation, not many participants actually used TikTok: $n_\text{TikTok} = `r sum(data$platforms_behavior_tiktok,na.rm=TRUE)`$ ($`r round(sum(data$platforms_behavior_tiktok,na.rm=TRUE) / nrow(data),3)*100`\%$)
-- the majority of participants used Instagram: $n_\text{Instagram} = `r sum(data$platforms_behavior_instagram,na.rm=TRUE)`$ ($`r round(sum(data$platforms_behavior_instagram,na.rm=TRUE) / nrow(data),3)*100`\%$)
-- and a minority used a platform other than instagram or TikTok: $n_\text{other} = `r sum(data$platforms_behavior_other,na.rm=TRUE)`$ ($`r round(sum(data$platforms_behavior_other,na.rm=TRUE) / nrow(data),3)*100`\%$)
+-   counterintuitively to our expectation, not many participants actually used TikTok: $n_\text{TikTok} = `r sum(data$platforms_behavior_tiktok,na.rm=TRUE)`$ ($`r round(sum(data$platforms_behavior_tiktok,na.rm=TRUE) / nrow(data),3)*100`\%$)
+-   the majority of participants used Instagram: $n_\text{Instagram} = `r sum(data$platforms_behavior_instagram,na.rm=TRUE)`$ ($`r round(sum(data$platforms_behavior_instagram,na.rm=TRUE) / nrow(data),3)*100`\%$)
+-   and a minority used a platform other than instagram or TikTok: $n_\text{other} = `r sum(data$platforms_behavior_other,na.rm=TRUE)`$ ($`r round(sum(data$platforms_behavior_other,na.rm=TRUE) / nrow(data),3)*100`\%$)
 
 ```{r}
 #| output: false
@@ -187,12 +187,14 @@ ggsave("images/plattformen.svg", width = 4, height = 4, bg = "transparent")
 ```
 
 ## Open Associations
+
 ### When you browsed through your social media feed, which content-related thoughts crossed your mind?
 
 $n = `r sum(!is.na(data$considerations_open))`$ answered this question.
 
 #### Summary
-When we just ask about *content-related thoughts*, there is little to no associations with origin, origin ambiguity or AI in particular. 
+
+When we just ask about *content-related thoughts*, there is little to no associations with origin, origin ambiguity or AI in particular.
 
 ```{r}
 DT::datatable(
@@ -210,18 +212,18 @@ DT::datatable(
 
 ```
 
-
 ### Social media content can be created in different ways. When browsing your social media feed, did you wonder how some of the content was created?
 
 $n = `r sum(!is.na(data$evaluation_open))`$ answered this question.
 
 #### Summary
-When asking specifically about *creation of content*, we do get some associations with AI: 
 
-- "AI generated Memes, Edits, Animated videos, Picture-Slideshows"
-- "at some point yes, because some videos are most likely created with artificial intelligence. But nowadays sometimes you can‘t tell if the content is real or made up."
-- " Sometimes there are AI created content, thats more interesting but this time that wasn‘t the case"
-- and others
+When asking specifically about *creation of content*, we do get some associations with AI:
+
+-   "AI generated Memes, Edits, Animated videos, Picture-Slideshows"
+-   "at some point yes, because some videos are most likely created with artificial intelligence. But nowadays sometimes you can‘t tell if the content is real or made up."
+-   " Sometimes there are AI created content, thats more interesting but this time that wasn‘t the case"
+-   and others
 
 ```{r}
 DT::datatable(
@@ -251,9 +253,9 @@ ggplot(data, aes(x = recall_selfreport_1)) +
   theme_minimal(base_size = 14)
 ```
 
-In general, participants reported to not recall much of the content they had just consumed (just under 50%: $mean_\text{Recall} = `r round(mean(data$recall_selfreport_1,na.rm=TRUE),3)`$, ($SD_\text{Recall} = `r round(sd(data$recall_selfreport_1,na.rm=TRUE),3)`$).
+In general, participants reported to not recall much of the content they had just consumed (just under 50%: $mean_\text{Recall} = `r round(mean(data$recall_selfreport_1,na.rm=TRUE),3)`$, ($SD_\text{Recall} =`r round(sd(data$recall_selfreport_1,na.rm=TRUE),3)`$).
 
-There is a peak around 25%, and a second, smaller peak at 75%. 
+There is a peak around 25%, and a second, smaller peak at 75%.
 
 Recall did not significantly differ between platforms (TikTok, Instagram, Other).
 
@@ -291,7 +293,7 @@ kruskal.test(recall_selfreport_1 ~ platform, data = recall_long)
 
 ### Origin Ambiguity
 
-We asked a total of 6 questions pertaining to origin ambiguity: 
+We asked a total of 6 questions pertaining to origin ambiguity:
 
 ```{r}
 #| fig-width: 10
@@ -476,10 +478,11 @@ round(mean(data$closed_associations_5,na.rm=TRUE),2)
 round(sd(data$closed_associations_5,na.rm=TRUE),2)
 ```
 
-Most responses were neither skewed in one or the other direction, implying moderate agreement. Surprisingly, our results show a tendency to rather not have experienced origin ambiguity in the past couple of minutes, as indicated by a mean of $mean_\text{real} = `r round(mean(data$closed_associations_2,na.rm=TRUE),3)`$ ($SD_\text{real} = `r round(sd(data$closed_associations_2,na.rm=TRUE),3)`$). 
+Most responses were neither skewed in one or the other direction, implying moderate agreement. Surprisingly, our results show a tendency to rather not have experienced origin ambiguity in the past couple of minutes, as indicated by a mean of $mean_\text{real} = `r round(mean(data$closed_associations_2,na.rm=TRUE),3)`$ ($SD_\text{real} =`r round(sd(data$closed_associations_2,na.rm=TRUE),3)`$).
 
 ## General Perception
-The subsequent questions were asked about participants' **social media feed overall**, not the past two minutes. 
+
+The subsequent questions were asked about participants' **social media feed overall**, not the past two minutes.
 
 ### Thinking about your social media feed overall, what proportion of the content you see is …
 
@@ -638,6 +641,7 @@ p1 + (p2 / p3 / p4)
 ```
 
 #### Instagram Only
+
 ```{r}
 #| fig-width: 10
 #| fig-height: 8
@@ -757,6 +761,7 @@ p1 + (p2 / p3 / p4)
 ```
 
 #### TikTok Only
+
 ```{r}
 #| fig-width: 10
 #| fig-height: 8
@@ -875,7 +880,7 @@ p4 <- ggplot(data, aes(x = prop_involvement_3)) +
 p1 + (p2 / p3 / p4)
 ```
 
-It appears that people think a majority of the content they consume has been created by a human. However, when asked about the involvement of AI, much of the content is perceived as at least augmented by AI. This dichotomy could be resolved in several ways. One possiblity is that participants misunderstood the first question and interpreted "definitely made by AI" as meaning 100% bot accounts without any human involvement. The second possibility is that participants perceive content based on a human-written prompt or base image (augmentation) as still clearly made by a human, although the human had help from AI. 
+It appears that people think a majority of the content they consume has been created by a human. However, when asked about the involvement of AI, much of the content is perceived as at least augmented by AI. This dichotomy could be resolved in several ways. One possiblity is that participants misunderstood the first question and interpreted "definitely made by AI" as meaning 100% bot accounts without any human involvement. The second possibility is that participants perceive content based on a human-written prompt or base image (augmentation) as still clearly made by a human, although the human had help from AI.
 
 ### When I am not sure about the origin of the content, I ...
 
@@ -1020,7 +1025,6 @@ While people generally seem to experience origin ambiguity infrequently (as indi
 
 The following questions were asked about participants' perception of their social media feed they scrolled through **just now**.
 
-
 ### Thinking about your social media feed you scrolled through in the last few minutes, what proportion of the content you saw was …
 
 ```{r}
@@ -1141,7 +1145,7 @@ p4 <- ggplot(data, aes(x = aid_specific_3)) +
 p1 + (p2 / p3 / p4)
 ```
 
-When asking participants about the content they just watched, the patterns regarding origin assumptions and augmentation remain the same. 
+When asking participants about the content they just watched, the patterns regarding origin assumptions and augmentation remain the same.
 
 ### Specific Instances
 
@@ -1154,9 +1158,10 @@ data <- data %>%
     ))
 ```
 
-Of all respondents, $n = `r sum(data$AI_content == "1.0", na.rm = TRUE)`$ reported that they recalled a specific instance of content they wondered was generated by AI. $n = `r sum(data$AI_content == "2.0", na.rm = TRUE)`$ did report that there was no content generated by AI. In total, $n = `r sum(data$number_instances,na.rm=TRUE)`$ instances were reported, meaning that some participants recalled more than one instance. The following charts summarize responses across all instances, meaning that certain participants repeat. 
+Of all respondents, $n = `r sum(data$AI_content == "1.0", na.rm = TRUE)`$ reported that they recalled a specific instance of content they wondered was generated by AI. $n =`r sum(data$AI_content == "2.0", na.rm = TRUE)`$ did report that there was no content generated by AI. In total, $n = `r sum(data$number_instances,na.rm=TRUE)`$ instances were reported, meaning that some participants recalled more than one instance. The following charts summarize responses across all instances, meaning that certain participants repeat.
 
 ### Description of the Instance(s)
+
 ```{r}
 
 dataframe_instances <- data %>%
@@ -1179,6 +1184,7 @@ DT::datatable(
 ```
 
 ### Reasons Given
+
 ```{r}
 
 df_x1 <- data %>% select(starts_with("x1")) %>% rename_with(~ str_remove(.x, "^x1_"))
@@ -1215,7 +1221,7 @@ DT::datatable(
 
 ### Modality and Type
 
-Looking at the modality of content, the overwhelming majority of examples given seems to be videos. Almost all examples stem from the entertainment domain. 
+Looking at the modality of content, the overwhelming majority of examples given seems to be videos. Almost all examples stem from the entertainment domain.
 
 ```{r}
 p1 <- df_specific %>% filter(!is.na(modality)) %>%
@@ -1252,7 +1258,8 @@ p1 + p2
 ```
 
 ### Certainty and Involvement
-On average, participants were $mean_\text{certainty} = `r round(mean(df_specific$certainty_1, na.rm=TRUE),3)`, SD_\text{certainty} = `r round(sd(df_specific$certainty_1, na.rm=TRUE),3)`$ certain that the content they were referring to was AI-generated. Additionally, participants tended to say AI was rather more involved than less ($mean_\text{involvement} = `r round(mean(df_specific$involved_1, na.rm=TRUE),3)`, SD_\text{certainty} = `r round(sd(df_specific$involved_1, na.rm=TRUE),3)`$). The correlation between certainty and involvement is $r = `r cor(df_specific$certainty_1, df_specific$involved_1, use = "pairwise.complete.obs")`$. However, as visualized in the plot, the number of data points is low and the dispersion is large.
+
+On average, participants were $mean_\text{certainty} = `r round(mean(df_specific$certainty_1, na.rm=TRUE),3)`, SD_\text{certainty} =`r round(sd(df_specific$certainty_1, na.rm=TRUE),3)`$ certain that the content they were referring to was AI-generated. Additionally, participants tended to say AI was rather more involved than less ($mean_\text{involvement} = `r round(mean(df_specific$involved_1, na.rm=TRUE),3)`, SD_\text{certainty} =`r round(sd(df_specific$involved_1, na.rm=TRUE),3)`$). The correlation between certainty and involvement is $r = `r cor(df_specific$certainty_1, df_specific$involved_1, use = "pairwise.complete.obs")`$. However, as visualized in the plot, the number of data points is low and the dispersion is large.
 
 ```{r}
 
@@ -1334,7 +1341,9 @@ df_specific %>%
 ```
 
 ### Reactions
+
 After seeing the content, I ...
+
 ```{r}
 reaction_long <- df_specific %>%
     select(reaction_content_attention:reaction_content_click) %>%
@@ -1374,7 +1383,7 @@ reaction_long %>%
 ggsave("images/reactionspecific.svg",height=6,width=8,bg="transparent")
 ```
 
-Reactions to the content again demonstrate that at least some effects we hypothesize seem to occurr: Paying attention to context cues, and looking for additional information. 
+Reactions to the content again demonstrate that at least some effects we hypothesize seem to occurr: Paying attention to context cues, and looking for additional information.
 
 ## Demographics & Controls
 
@@ -1585,6 +1594,7 @@ ggsave("images/participationmode.svg",height=4,width=8)
 ## General Origin Ambiguity Perception
 
 ### Correlations within Closed Associations about Origin Ambiguity
+
 ```{r}
 cordata <- data %>% select(closed_associations_1:closed_associations_6)
 
@@ -1597,12 +1607,12 @@ cormat_ambiguity
 
 **Summary**
 
-- People who found themselves looking for clues about the origin of something also found themselves to wonder about the veracity of content ($r = `r cor(data$closed_associations_5,data$closed_associations_6,use="pairwise.complete.obs")`$)
-- people who **cared** about who or what created the content also paid attention to context cues ($r = `r cor(data$closed_associations_3,data$closed_associations_5,use="pairwise.complete.obs")`$) and cared about the veracity of the content ($r = `r cor(data$closed_associations_3,data$closed_associations_6,use="pairwise.complete.obs")`$)
+-   People who found themselves looking for clues about the origin of something also found themselves to wonder about the veracity of content ($r = `r cor(data$closed_associations_5,data$closed_associations_6,use="pairwise.complete.obs")`$)
+-   people who **cared** about who or what created the content also paid attention to context cues ($r = `r cor(data$closed_associations_3,data$closed_associations_5,use="pairwise.complete.obs")`$) and cared about the veracity of the content ($r = `r cor(data$closed_associations_3,data$closed_associations_6,use="pairwise.complete.obs")`$)
 
 ### Correlation between perceived Ambiguity in the last 2 minutes and Recall of Content
 
-The self-reported recall of content in percent did not correlate strongly with the perceived content having been created by AI ($r = `r cor(data$recall_selfreport_1,data$proportion_specific_1,use="pairwise.complete.obs")`$), by a human ($r = `r cor(data$recall_selfreport_1,data$proportion_specific_2,use="pairwise.complete.obs")`$) or ambiguous ($r = `r cor(data$recall_selfreport_1,data$proportion_specific_3,use="pairwise.complete.obs")`$). 
+The self-reported recall of content in percent did not correlate strongly with the perceived content having been created by AI ($r = `r cor(data$recall_selfreport_1,data$proportion_specific_1,use="pairwise.complete.obs")`$), by a human ($r = `r cor(data$recall_selfreport_1,data$proportion_specific_2,use="pairwise.complete.obs")`$) or ambiguous ($r = `r cor(data$recall_selfreport_1,data$proportion_specific_3,use="pairwise.complete.obs")`$).
 
 ### Correlation within General Statements about Reactions to Origin Ambiguity
 
@@ -1617,6 +1627,6 @@ cor_mat
 
 **Summary**
 
-- people who find themselves looking for context clues are also looking for additional info in the comments ($r = 0.417$), or elsewhere ($r = 0.374$). 
-- unsurprisingly, people who say they pay less attention to content also tend to ignore the content ($r = 0.51$)
-- people who look for more info elsewhere also tend to click to learn more ($r = 0.487$) but surprisingly the correlation with the self-reported looking for info in comments is not as high ($r = 0.257$)
+-   people who find themselves looking for context clues are also looking for additional info in the comments ($r = 0.417$), or elsewhere ($r = 0.374$).
+-   unsurprisingly, people who say they pay less attention to content also tend to ignore the content ($r = 0.51$)
+-   people who look for more info elsewhere also tend to click to learn more ($r = 0.487$) but surprisingly the correlation with the self-reported looking for info in comments is not as high ($r = 0.257$)

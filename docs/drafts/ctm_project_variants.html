@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Sabou Rani Stocker">
+<meta name="dcterms.date" content="2026-05-04">
+
+<title>A Map of the Consumers+Technology Dialogue – IBT-HSG - Slides</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-4f19b9360d534060e8f9131b7e5aad04.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a>
+  <ul class="collapse">
+  <li><a href="#goal-of-the-project" id="toc-goal-of-the-project" class="nav-link" data-scroll-target="#goal-of-the-project">Goal of the Project</a></li>
+  <li><a href="#timeline" id="toc-timeline" class="nav-link" data-scroll-target="#timeline">Timeline</a></li>
+  </ul></li>
+  <li><a href="#scope" id="toc-scope" class="nav-link" data-scroll-target="#scope">Scope</a>
+  <ul class="collapse">
+  <li><a href="#sampling-strategy" id="toc-sampling-strategy" class="nav-link" data-scroll-target="#sampling-strategy">Sampling Strategy</a></li>
+  <li><a href="#sample-inclusion-and-exclusion" id="toc-sample-inclusion-and-exclusion" class="nav-link" data-scroll-target="#sample-inclusion-and-exclusion">Sample Inclusion and Exclusion</a></li>
+  <li><a href="#computational-approach" id="toc-computational-approach" class="nav-link" data-scroll-target="#computational-approach">Computational Approach</a>
+  <ul class="collapse">
+  <li><a href="#overview-1" id="toc-overview-1" class="nav-link" data-scroll-target="#overview-1">Overview</a></li>
+  <li><a href="#bibliometric-analysis" id="toc-bibliometric-analysis" class="nav-link" data-scroll-target="#bibliometric-analysis">Bibliometric Analysis</a></li>
+  <li><a href="#bertopic-embedding-based-analysis" id="toc-bertopic-embedding-based-analysis" class="nav-link" data-scroll-target="#bertopic-embedding-based-analysis">BERTOPIC (Embedding-based) Analysis</a></li>
+  <li><a href="#combined-approaches" id="toc-combined-approaches" class="nav-link" data-scroll-target="#combined-approaches">Combined Approaches</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">A Map of the Consumers+Technology Dialogue</h1>
+<p class="subtitle lead">Towards an integration of theories and concepts in the research domain of consumer-technology-interaction</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Sabou Rani Stocker </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 4, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="overview" class="level1">
+<h1>Overview</h1>
+<p>This document is my collection of experimentation and notes, combined with any open questions that need to be adressed to adequately plan the scope and content of the project “Consumers + Technology Map: A landscape of our Field (so far)”.</p>
+<p>Open questions are marked in blue boxes at the start of each section. There are probably many more questions that I do not have on my radar yet, so this is not a conclusive list.</p>
+<p>Many questions in the project depend on each other. The following flowchart is my understanding of how the moving parts connect to each other.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+
+subgraph Q1[Overarching Goal?]
+    A11[CTD specific]
+    A12[field specific]
+end
+
+subgraph Q2[Sampling]
+A21[Full texts]
+A22[Abstracts + Keywords]
+end
+
+subgraph Q3[Inclusion criteria]
+A31[Keyword-based]
+A32[Author-based]
+end
+
+subgraph Q4[Analysis approach]
+    A41[Classical SLR]
+    A42[Bibliometric analysis]
+    A43[LDA/STD style]
+    A44[Embedding-based]
+    A45[Combined approaches]
+end
+
+A11 --&gt; A21
+A11 --&gt; A22
+
+A12 --&gt; A22
+
+
+A21 --&gt; A32
+
+A22 --&gt; A31
+A22 --&gt; A32
+
+A31 --&gt; A42
+A31 --&gt; A43
+A31 --&gt; A44
+A31 --&gt; A45
+
+A32 --&gt; A41
+A32 --&gt; A42
+A32 --&gt; A43
+A32 --&gt; A44
+A32 --&gt; A45
+
+style Q1 fill:#e8f4ff,stroke:#2b6cb0,stroke-width:2px
+style Q2 fill:#e8f4ff,stroke:#2b6cb0,stroke-width:2px
+style Q3 fill:#e8f4ff,stroke:#2b6cb0,stroke-width:2px
+style Q4 fill:#e8f4ff,stroke:#2b6cb0,stroke-width:2px
+
+style A11 fill:#eafaf1,stroke:#2f855a,stroke-width:2px
+style A12 fill:#eafaf1,stroke:#2f855a,stroke-width:2px
+style A21 fill:#eafaf1,stroke:#2f855a,stroke-width:2px
+style A22 fill:#eafaf1,stroke:#2f855a,stroke-width:2px
+style A31 fill:#eafaf1,stroke:#2f855a,stroke-width:2px
+style A32 fill:#eafaf1,stroke:#2f855a,stroke-width:2px
+style A41 fill:#eafaf1,stroke:#2f855a,stroke-width:2px
+style A42 fill:#eafaf1,stroke:#2f855a,stroke-width:2px
+style A43 fill:#eafaf1,stroke:#2f855a,stroke-width:2px
+style A44 fill:#eafaf1,stroke:#2f855a,stroke-width:2px
+style A45 fill:#eafaf1,stroke:#2f855a,stroke-width:2px
+
+
+
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<section id="goal-of-the-project" class="level2">
+<h2 class="anchored" data-anchor-id="goal-of-the-project">Goal of the Project</h2>
+<div class="callout callout-style-default callout-note callout-titled" title="Open Questions">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Open Questions
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>If we have to complete the sentence “The aim of this project is to …”, what will we write?</li>
+<li>To what extent does this project involve active contribution <em>during</em> the CTD? Will it be more of an input, or will it be an interactive, growing part of the conference?</li>
+<li>To what extent do we want to keep the dialogue vs.&nbsp;the scientific output in the focus?</li>
+<li>Is writing a paper out of this project a given, or an option?</li>
+</ul>
+</div>
+</div>
+<p>On 24th to 26th of June, 2026, we will hold the Consumers + Technology Dialogue in Zermatt. This unique opportunity allows us to bring together a group of experts in the domain of consumer-technology interaction. The two days will be centered around the <strong>state of our field in the past and present</strong>, as well as the <strong>future of our field</strong>. To facilitate a discussion and frame the entire event, we want to create a <strong>map of the field</strong> that analyzes and visualizes the state of research up to now, and the connections between the different areas of research.</p>
+<p>Additionally, this map of the field could offer an interesting perspective to be publised in the <em>Current Opinion in Psychology</em> special issue lead by Emanuel, Anne and Ana on the topic of <strong>Humans and Technology</strong>.</p>
+</section>
+<section id="timeline" class="level2">
+<h2 class="anchored" data-anchor-id="timeline">Timeline</h2>
+<p>The project falls under a rather tight timeline. Below, I have tried to illustrate what a timeline <em>could</em> look like. Regardless of the decisions we made in the steps above, it is very evident that there is very little time for data collection &amp; analysis upfront the CTD26. One big open question (already covered in goals) is what our ultimate goal of the project is. The timeline will vary based on the goal.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">gantt
+    title Potential Timeline
+    dateFormat  YYYY-MM-DD
+    axisFormat  %d.%m.%Y
+
+    section Preparation &lt;br&gt;CTD26
+    Data collection           :a1, 2026-05-01, 2026-05-08
+    Preliminary analysis       :a2, after a1, 2026-05-13
+    Presentation in Colloqium?: milestone,m0,2026-05-13,0d
+    First dissemnination: a3, after a2, 2026-05-21
+    Discussion and revisions: a4, after a3, 2026-05-30
+    Preparation results and presentation: a5, after a4, 2026-06-10
+
+
+    section Consumers + &lt;br&gt;Technology Dialogue 2026
+    CTD26              :b1, 2026-06-24, 2026-06-26
+    Presentation     :milestone, m1, 2026-06-24, 0d
+
+    section Preparation Manuscript
+    Reanalysis based on CTD input                :c1, 2026-07-01, 10d
+    Writing of manuscript          :c2, after c1, 2026-07-20
+    Feedback v1 manuscript: c3, after c2, 2026-07-31
+    Revision of manuscript: c4, after c3, 2026-08-14
+    some more back and forth: c5, after c4, 2026-08-30
+    Submission manuscript: milestone, m3, 2026-08-31,0d
+
+    section Finalization
+    Aftermath          :d1, 2026-09-1, 2026-09-30
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="scope" class="level1">
+<h1>Scope</h1>
+<section id="sampling-strategy" class="level2">
+<h2 class="anchored" data-anchor-id="sampling-strategy">Sampling Strategy</h2>
+<div class="callout callout-style-default callout-note callout-titled" title="Open Questions">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Open Questions
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Do we want to do a full-text analysis or an abstract-based approach?</p>
+</div>
+</div>
+<p>Depending on our goal, we essentially have two options when it comes to the sampling strategy:</p>
+<ol type="1">
+<li><strong>Bibliometric approaches</strong> using SCOPUS or Web of Science</li>
+</ol>
+<p>The bibliometric approaches are limited in depth, as they generally include titles, abstracts, and keywords. However, if we assume that people will declare the key concepts of their work in the abstract, it offers an opportunity to have a very encompassing literature base, that is freely available to us through SCOPUS (and to a limited extent WoS).</p>
+<ol start="2" type="1">
+<li><strong>Full-text approaches</strong> using manual search</li>
+</ol>
+<p>While full-text analysis gives more depth and profound understanding of concepts and theories and how they relate to each other, it is a limiting approach for several reasons. First, full-text availability is not guaranteed, and texts need to be searched and identified manually. This can be done for a select scope (e.g.&nbsp;30-100 full texts), but not for a systematic overview of our field. Second, even if we somehow find a way to include a larger corpus of full text in our analysis, full-text analysis also needs more time (either manual, or by pre-processing text through computational approaches), which is limited for this project. Third, complex data requires complex methods, and if we want to use any form of non-local LLM (and potentially even local!) to analyze texts, we need explicit consent from all authors to not violate copyright law. Even if we assume that we get this consent, obtaining it would be a project spanning several months in itself.</p>
+</section>
+<section id="sample-inclusion-and-exclusion" class="level2">
+<h2 class="anchored" data-anchor-id="sample-inclusion-and-exclusion">Sample Inclusion and Exclusion</h2>
+<div class="callout callout-style-default callout-note callout-titled" title="Open Questions">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Open Questions
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Do we aim to primarily cover the CTD community, or do we aim to primarily cover <em>the field</em> at large?</p>
+</div>
+</div>
+<p>The first criteria to be defined are how to include papers in our field map.</p>
+<p>Including a sample based on <strong>authorship</strong> (e.g.&nbsp;important people from the CTD community) would set our sample at ~1000 papers (I have done a preliminary analysis on Scopus with all attending guests of CTD26 and come to 891 papers). Including additional papers that cite these core papers expands the number to approximately 40’000 (35’876 in the preliminary analysis).</p>
+<p>Including a sample based on <strong>keywords</strong> increases this number exponentially: the search string “TITLE, ABSTRACT, KEYWORD = {human* AND technology}” leads to 980’000 search results, “TITLE, ABSTRACT, KEYWORD = {human* AND technology AND interact*}” to 11’850.</p>
+<p>Regardless of the exact method through which we arrive at a map of the field, the two sampling strategies offer several advantages and disadvantages:</p>
+<table class="table-striped table-hover caption-top table">
+<caption>Advantages and disadvantages of sampling strategies</caption>
+<colgroup>
+<col style="width: 20%">
+<col style="width: 40%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Sampling Strategy</th>
+<th><strong>Advantages</strong></th>
+<th><strong>Disadvantages</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Authorship</td>
+<td>- clear tie into conference and highly relevant to the discussions <br> - manageable sample even if full-text screening is needed <br> - could make use of expertise by authors</td>
+<td>- scientific merit / justification? <br> - bias <br> - will miss some topics because noone covers that niche <br> - does not conform to the current publication standard for any type of Systematic Literature Analysis</td>
+</tr>
+<tr class="even">
+<td>Keywords</td>
+<td>- scoping very broad <br> - scientifically easier to justify (why these keywords) <br> - niche topics not on our radar could be identified</td>
+<td>- ginormous amount of data <br> - who decides the right keywords <br> - relevance to CTD not guaranteed upfront</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-tip callout-titled" title="Sabou's unstructured ramblings">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Sabou’s unstructured ramblings
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>In my personal estimation, I think using an authorship-based inclusion would give us a very nice tie in to CTD. We could include all the “neat” things such as:</p>
+<ul>
+<li>highlighting the senior members at CTD and their expertise and influence (Jacob, Bernd, Carey among others are very highly cited)</li>
+<li>strategically highlight the invited participants that will give pitches on Thursday (and Friday? exact program tbd) on a content map and show how their expertise has shaped the discussions on that topic so far</li>
+<li>get some historical datapoints on the development of our field</li>
+<li>make members of CTD feel valued</li>
+</ul>
+<p>However, I am worried that going with an authorship based approach, which was my understanding is the plan according to Ana, could cause issues down the line, that we then have a really need content map of the CTD community, but not really “consumers and technology”. Of course, some patterns will repeat, but it is unclear to me what breadth “our” community really covers.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="computational-approach" class="level2">
+<h2 class="anchored" data-anchor-id="computational-approach">Computational Approach</h2>
+<div class="callout callout-style-default callout-note callout-titled" title="Open Questions">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Open Questions
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>To what extent is the computational approach we choose also a reflection of the topics on Friday? We could of course also approach this idea with a meta-science framing and compare traditional approaches to novel (LLM-based, agentic??) alternatives.</p>
+</div>
+</div>
+<p>Creating a “map of the field” can assume several ways, that vary in scope, interpretability, and feasibility. The table below summarizes the approaches I see viable. I already tested out some approaches and have summarized more detailed insights further down below.</p>
+<section id="overview-1" class="level3">
+<h3 class="anchored" data-anchor-id="overview-1">Overview</h3>
+<table class="table-striped table-hover caption-top table">
+<caption>Comparison of possible methodological approaches</caption>
+<colgroup>
+<col style="width: 11%">
+<col style="width: 17%">
+<col style="width: 8%">
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 7%">
+<col style="width: 10%">
+<col style="width: 11%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Approach</th>
+<th>Description</th>
+<th style="text-align: right;">Data scope</th>
+<th>Advantages</th>
+<th>Disadvantages</th>
+<th style="text-align: center;">Estimated effort</th>
+<th>Tools</th>
+<th>Sources</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Manual qualitative content analysis</td>
+<td>Systematic literature review in the traditional sense</td>
+<td style="text-align: right;">10–100 papers</td>
+<td>- Human expertise and interpretation at every step<br>- Captures nuances and subtext</td>
+<td>- Very labor-intensive<br>- Would necessarily drastically reduce the sample size</td>
+<td style="text-align: center;">⭐⭐⭐</td>
+<td>No tools needed</td>
+<td>PRISMA Scoping Review</td>
+</tr>
+<tr class="even">
+<td>Bibliometric analysis</td>
+<td>Summarizes large quantities of bibliometric data to present the intellectual structure and emerging trends of a research topic or field.</td>
+<td style="text-align: right;">500–20,000 papers</td>
+<td>- Fully quantitative/computational, but less human effort<br>- Reproducible<br>- Established scientific method<br>- Tools are available, including R packages and visualizations</td>
+<td>- Based on less refined ML methods<br>- Context and nuances are hard to grasp<br>- Established tools such as Bibliometrix have certain limitations</td>
+<td style="text-align: center;">⭐⭐⭐</td>
+<td>Bibliometrix<br>VOSviewer<br>CiteSpace</td>
+<td>Donthu et al.&nbsp;(2021)</td>
+</tr>
+<tr class="odd">
+<td>Structured Topic Modeling</td>
+<td>Text analysis framework that identifies hidden topics in large datasets while incorporating document-level metadata such as author, date, or source. Basically LDF with extra steps.</td>
+<td style="text-align: right;">500–20,000 papers</td>
+<td>- Fully quantitative/computational, but less human effort<br>- Reproducible<br>- Established scientific method, although not necessarily prevalent in “our” fields<br>- Tools are available through R packages and embeddings from TF-IDF, BERT, etc.</td>
+<td>- Based on less refined ML methods<br>- Context and nuances are hard to grasp<br>- Existing tools have certain limitations<br>- I have done LDF and BERTopic modeling, but not STM yet, so outcomes are hard to estimate</td>
+<td style="text-align: center;">⭐⭐⭐⭐</td>
+<td><code>stm</code> R package</td>
+<td>Roberts et al.&nbsp;(2014)</td>
+</tr>
+<tr class="even">
+<td>Topic modeling with embedding models</td>
+<td>Topic modeling approach that extracts coherent topic representations using class-based TF-IDF. BERTopic generates document embeddings with pre-trained transformer-based language models, clusters these embeddings, and then generates topic representations with class-based TF-IDF.</td>
+<td style="text-align: right;">500–20,000 papers</td>
+<td>- Quantitative with some human input, such as defining clusters or manually fixing certain elements<br>- Embedding-based approach allows for more nuance<br>- Well-established method</td>
+<td>- Dimensionality reduction can be somewhat probabilistic<br>- Data preprocessing is highly relevant<br>- Bad preprocessing can lead to bad embeddings<br>- Sometimes difficult to work with</td>
+<td style="text-align: center;">⭐⭐⭐⭐</td>
+<td>BERTopic Python packages</td>
+<td>Grootendorst (2022)</td>
+</tr>
+<tr class="odd">
+<td>LLM-based approach</td>
+<td>Building recurring loops with generative LLMs and specified prompts to build a database.</td>
+<td style="text-align: right;">10–20,000 papers</td>
+<td>- Human expertise and requirements can be given upfront<br>- Much more customizable<br>- Allows for some “understanding” of the content<br>- Tools are available, although they are more suited for exploration than scientific publication</td>
+<td>- Replicability is limited, even with temperature = 0<br>- Risk of introducing biases through biased prompting<br>- Output still needs to be treated somehow, for example through clustering</td>
+<td style="text-align: center;">⭐⭐⭐⭐</td>
+<td>Various</td>
+<td>Wang et al.&nbsp;(2023)</td>
+</tr>
+<tr class="even">
+<td>Combined approaches</td>
+<td>Using LLMs to standardize data and then applying topic modeling, bibliometric analysis, or another quantitative approach to the outputs.</td>
+<td style="text-align: right;">500–20,000 papers</td>
+<td>- Human expertise and requirements can be given through prompts<br>- Multi-layer approaches are easier, for example distinguishing “theories” from “concepts”<br>- Relatively straightforward with API calls</td>
+<td>- Replicability is still problematic<br>- Somewhat iterative process that needs to be adapted based on output</td>
+<td style="text-align: center;">⭐⭐⭐⭐⭐</td>
+<td>APIs, LLMs, topic modeling tools, bibliometric tools</td>
+<td>Wang et al.&nbsp;(2023)<br>Liu et al., LLM-guided semantic-aware clustering</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="bibliometric-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="bibliometric-analysis">Bibliometric Analysis</h3>
+<p>I did run a quick analysis utilizing the Bibliometrix Package with R on the data of our attending conference members over the weekend. Some notes:</p>
+<ul>
+<li>The package is extremely easy to use out of the box</li>
+<li>The analysis is smooth and much of it can be used as is (e.g.&nbsp;citation maps), and also looks pretty cool :)</li>
+<li>Unfortunately, the topic modelling is limited at best, as it primarily follows word frequency and dictionary approaches, meaning that it has a hard time capturing nuances. As an example: “Open Data” is apparently frequently used when describing our work, however this is not the subject matter of our domain, more just a tool / practice we follow. Never the less, it appears as a topic on the content map.</li>
+</ul>
+<p><img src="../images/output_plot.png" class="img-fluid"></p>
+</section>
+<section id="bertopic-embedding-based-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="bertopic-embedding-based-analysis">BERTOPIC (Embedding-based) Analysis</h3>
+<p>I have worked a lot with embedding-based clustering and approaches, and ran a quick analysis based on the same data used above with BERTopic and a medium-sized embedding model:</p>
+<ul>
+<li>It was an absolute bitch to get to work (as BERTopic often is) and refused to cluster adequatly until I had tinkered with it for 10+ iterations</li>
+<li>This colorful personality persisted even after, as clusters are objectively not optimally distributed</li>
+<li>Topic modelling in multi-dimensional spaces works pretty well, but reducing it to a 2- or 3-dimensional map is very difficult, and furthermore hard to make replicable without relying on inadequate minimalist models which then reduce the quality of the dimensionality reduction, as also evidenced in the plot below 🫠…</li>
+</ul>
+<p><img src="../images/example_plot.png" class="img-fluid"></p>
+</section>
+<section id="combined-approaches" class="level3">
+<h3 class="anchored" data-anchor-id="combined-approaches">Combined Approaches</h3>
+<p>I have not had time to test out a combined approach on this data, but coincidentally did so just last week for the Agentic AI project, where I clustered 10k reddit comments according to use-cases that users claim they use Agentic AI for. My thoughts:</p>
+<ul>
+<li>I used OpenAI’s 4o-mini to extract topics from open text and then ran semantic embedding clustering (BERTopic again) on it</li>
+<li>With pre-processed data that went through an LLM, the clusters made more sense and were less subject to the personality of the model</li>
+<li>The prompts used to generate the information needed a lot of refinement, but once I was happy with the output of the small test sample, the rest ran very smooth</li>
+<li>I have only visualized the use cases in the plot below, however I added additional clusters by coding for “attributed autonomy” of OpenClaw and “perceived control” over the processes by the user through additional LLM-based prompting. Adding dimensions that require a form of “understanding” is rather easy with this approach</li>
+<li>While generally being happy with the output, I am still hesitant about replicability, as even with a temperature of 0, identical models, and identical prompts, there were slight variations in the output. Because I was not able to rerun the full analysis on 10k samples several times, I cannot judge how substantial these variations are across a large sample</li>
+<li>I don’t love the fact that we are basically forced to use close-weights models (OpenAI, Claude, …) because the open weight ones I can run on my hardware (computer we have at home) are not sufficient for the purposes (I can get up to 72b parameters to run, which is a lot, but nowhere near state of the art)</li>
+</ul>
+<p><img src="../images/cluster_2d_10.png" class="img-fluid"></p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Some more of Sabou's ramblings">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Some more of Sabou’s ramblings
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>An additional approach, that would however be rather risky and could only be done in combination with one of the other approaches, would be to pick up additional meta-topics also proposed by participants, and have an LLM agent do the analysis and topic modelling according to our criteria, e.g.&nbsp;having Claude Cowork with a set amount of credits do this. This would most likely not end in favor of the agent, but could be a cool perspective to show what can already be done with these agents and where they still fall short.</p>
+</div>
+</div>
+</div>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

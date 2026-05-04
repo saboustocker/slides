@@ -1,0 +1,53 @@
+---
+title: "Consumers+Technology Map"
+author: Sabou Rani Stocker
+date: today
+subtitle: "Project Draft: Towards a Map of consumer–technology interaction research"
+
+format:
+  revealjs:
+    theme: [../styles/hsg_slides.scss]
+    slide-number: c
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+          <script src="https://kit.fontawesome.com/c7ccd7afd8.js" crossorigin="anonymous"></script>
+    title-slide-attributes:
+      data-background-color: "#0a5f2d"
+    auto-play-media: true
+
+project: "Consumers + Technology Dialogue"
+bibliography: ../bibliography.bib
+---
+
+# Overview {.section-header-bg}
+
+:::{.subtitle-section-header}
+Subtitle
+:::
+
+## The Project from Back to Front
+
+### Goal
+
+- creating a "map of the field": What research has been done on the **interaction of consumers and technology**?
+- having this map of the field as a **starting point** for **expert discussions by the people who shape the fiel**d at the CTD26
+- Using this map of the field to illustrate gaps and define future research agendas 
+    - Reverse temporality: Which theories and concepts of the past apply to the future
+    - Essences of technology: To what extent are the connections of concepts that form theories dependent on the technology. Can we reverse-engineer the essence from it? 
+    - 
+- 
+
+### 
+
+## Bibliographic Analysis 
+
+## Content Analysis
+
+## Inclusion of Experts
+
+## Final Product
+
+# Timeline
+
+# 

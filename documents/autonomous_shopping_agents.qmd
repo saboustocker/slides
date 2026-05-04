@@ -1,0 +1,105 @@
+---
+title: "Overview Autonomous Shopping Agents"
+subtitle: "How do (self-declared) autonomous systems appeal to the user in terms of personalization and goal-setting?"
+author: Sabou Rani Stocker
+date: today
+format:
+  html:
+    theme: [sandstone, ../styles/hsg_pages.scss]
+    toc: true
+  docx: default
+project: "algorithmic intermediaries"
+bibliography: ../bibliography.bib
+navbar: false
+---
+
+
+## Experimental Design
+A two-phased design makes a lot of sense, I think it is almost inevitable for what we're trying to show here. 
+The DV is relatively complex now for a first pilot and rn we'd need to think of the exact operationalization of "overlap" or similarity in choice sets.  If we prefer starting simpler, option 1 might also be implementable in two phases.
+
+## Suggested Definitions
+> We need to fix definitions that are valid and this needs to be closely matched by our descriptions in the survey.
+
+*Def. **Actual Self***: 
+
+The actual self is the representation of the attributes that someone (the consumer themselves or someone else) believes they actually possess [@higginsSelfdiscrepancyTheoryRelating1987, p. 320]. In this context, only the perceptions of consumers about themselves is considered. 
+
+*Def. **Ideal Self***: 
+
+The ideal self is the representation of the attributes that someone (the consumer themselves or someone else) would like to ideally possess, i.e. a representation of someone's hopes, aspirations, or wishes for oneself. [@higginsSelfdiscrepancyTheoryRelating1987, p. 320f]. In this context, only the perceptions of consumers about themselves is considered.
+
+*Def. **Ought Self***:
+
+The ought self is the representation of the attributes that someone (the consumer themselves or someone else) believes they should or ought to possess, i.e. a representation of someone's sense of duty, obligations, or responsibilities [@higginsSelfdiscrepancyTheoryRelating1987, p. 321]. In this context, only the perceptions of consumers about themselves is considered.
+
+*Def. **Perceived Agency***: 
+
+Personal agency: Beliefs that one possesses the resources necessary to perform a behavior or set of behaviors required to produce certain outcomes or achieve certain ends [@landauCompensatoryControlAppeal2015, p.2]. Inversely, system agency should therefore be: beliefs taht the system possesses the resources necessary to perform a behavior or set of behaviors required to produce certain outcomes or achieve certain ends. I assume that consumers understand personal agency and system agency as a tradeoff, meaning that as system agency increases, personal agency decreases ($\text{agency}_s = 1 - \text{agency}_h$). 
+
+*Def. **Perceived Autonomy***: 
+
+The ability of the human to make a decision without being controlled by anyone (or anything) else. The decision pertains to initiating or omitting an action, not to control of the outcome [adapted by @wertenbrochAutonomyConsumerChoice2020, p.430-431]. Following the argumentation of @goergen2026technology, and assuming that in agentic AI systems, there are no interventions that frame autonomy as an infinite resource, I assume that an increase in perceived autonomy of the system necessitates a decrease in perceived autonomy of the human ($\text{autonomy}_s = 1 - \text{autonomy}_h$). 
+
+*Def. **Perceived Control***: 
+
+The ability of the human to influence the outcome of a decision with their choices or actions [adapted by @wertenbrochAutonomyConsumerChoice2020, p.430]. 
+
+
+## Theoretical Rationale
+> What is the current theoretical rationale? We can, of course, do this more inductively yet it might make sense to collect literature on the two selves and think of a connection to agency loss (?). 
+
+A more detailed overview over existing theories and their implications (in my interpretation) can be found here
+ -- I also added a second tab summarizing the empirical studies and what they imply.
+
+At its core, I understand the known effects on actual-ideal self construction in relationship to agentic systems as follows: If we assume that higher agency of a system increases the perceived psychological and temporal distance of a consequence, and makes a choice feel more abstract, this should trigger a more ideal-self leaning construction of the self [@alickeSelfenhancementSelfprotectionWhat2009; @thalerEconomicTheorySelfControl;@prelecSelfsignalingSelfcontrol;@tropeConstruallevelTheoryPsychological2010;@carverControlTheoryUseful, and others]. Generally, autonomy is seen as a fundamental human need [@ryan2000selfdetermination; @ryanSocialPsychologyAuthenticity2019], and consumers are reluctant to relinquish control over a situation [e.g. @adamNavigatingAutonomyControl2024; @bobadilla-suarezIntrinsicValueChoice2017]. The need to maintain agency is also extensively discussed, especially in the context of compensatory control measures to regain perceived agency [@landauCompensatoryControlAppeal2015].
+
+If we understand agency as a function of autonomy and control, these are two levers where consumers could engage in compensatory actions.
+
+If we follow @wertenbrochAutonomyConsumerChoice2020 definition of autonomy, autonomy makes up the part of agency that initiates the behaviors that lead up to a decision. As an agentic system must have a high degree of autonomy to enact its agentic abilities, consumers can only reduce the perceived autonomy of the system to a certain extent. They can however engage in a sort of "second-order autonomy" by constructing a profile based on which the system takes autonomous action that should then act "as if it were them", i.e. a profile closely aligned with how they truly see themselves. This construction of an intimate, accurate profile of the consumer is a phenonmenon also observed in real life [@ai-ascent-sequoia-2025; @7LetMe2025; and more].
+
+On the other hand, if consumers feel like they cannot regain control through increasing their perceived autonomy, they might engage in behaviors that increase their control over the outcome. However, a truly agentic system also must have a high degree of control to act fully agentic and fulfill its reported purpose of acting on the consumer’s behalf. Relinquishing control over a situation generally nudges people to present a more actual-self aligned view of themselves [@alickeSelfenhancementSelfprotectionWhat2009;@prelecSelfsignalingSelfcontrol;@thalerEconomicTheorySelfControl, and others].
+
+Pushing the interplay between autonomy, control and agency further, I could imagine that the way autonomy (of the system) and control (of the human) are perceived shape the perceived agency of the system differently. Assuming agency is a function of autonomy and control ($\text{agency}_s = \text{autonomy}_s \cdot (1 - \text{control}_h) + \epsilon$), one could ask the question how weighting autonomy against control influences perceived agency, and how this can be exploitet by organizations trying to use "their" agents for malicious purposes. Specifically, research shows that people perfer to pay a penalty (either monetary or in the form of suboptimal outcome) to remain in control over the decision outcome [e.g. @adamNavigatingAutonomyControl2024; @bobadilla-suarezIntrinsicValueChoice2017]. This would imply that by giving the consumer the illusion of control, companies can actually reduce their autonomy further than they would be comfortable otherwise and thereby imposing decision spaces on the consumer that do not correspond to their true preferences at all.
+
+The question whether a consumer shapes an actual-self or an ideal-self profile to me therefore depends on the following factors:
+
+The level of abstraction: The more distant the decision feels, the stronger an idealized self-presentation should occur
+The mode of agency restoration: If agency-restoration only feels possible through self-representation, people will try to do "damage control" by aligning the presentation with their true preferences to reduce the chance of a costly (non-compatible) outcome. If agency-restoration feels possible through controlling the outcome, this path is favored and self-presentation remains unaffected.
+
+## Moderators
+> Could there be an important moderator? This might not play out for everyone in the same way. I.e. potentially there is an omitted variable like self-esteem, technological confidence or product category (just thinking out loud; think of a 2x2 baseline, where those with higher (lower) tech confidence always go for actual (ideal) self or where virtue and vice products flip the effect). These papers are typical JCR and could work in this case, if we find such a moderator. Maybe we can collect some and measure along?
+
+### Perceived Control
+
+Perceived autonomy, control and agency are inherently correlated and influence each other. One moderator of the relationship between self-presentation and autonomy / agency (purposefully using both because to me there is still an open decision what our primary IV should be) could be an interesting addition and framing, especially considering the fact that the future seems to look more agentic, inherently implying less human control. Nevertheless, perceived control seems to be a strong driver that causes messy outcomes (some examples: [AI agent deleting all the emails](https://www.fastcompany.com/91497841/meta-superintelligence-lab-ai-safety-alignment-director-lost-control-of-agent-deleted-her-emails), [this OpenClaw agent losing its mind](https://chrisboyd.me/blog/openclaw-meltdown/), [this github issue documents accidental security leaks](https://github.com/openclaw/openclaw/issues/38246), all of them describe the presumption of the consumer that they were in control, while the events prove that they were not). While none of the examples reference presentation of the self, I believe that perceived control will certainly influence how a system is "seen" and in turn how the self is shaped.
+
+### Consequentiality of Outcome
+
+A substantial stream of literature suggests that when a decision is seen as potentially costly (i.e. when the stakes are high), people abandon their ideal-self view in favor of a more actual self view [@alickeSelfenhancementSelfprotectionWhat2009;@prelecSelfsignalingSelfcontrol;@thalerEconomicTheorySelfControl, and others]. Presuming that we find a tendency towards an idealized self default, it would be interesting to see if this changes when the stakes are raised. Consequentiality could be raised with several factors, such as higher cost, lower reversibility, public consequences instead of private ones, and others.
+
+### Folk Theories about LLMs / Agents
+
+Seeing the agentic system as a "tool" or an "other" will probably influence self-presentation: Seeing the agentic system as a tool would probably reduce the differences in behavior between "traditional" recommender systems and agentic AI, whereas seeing it as an "other" would humanize it and therefore amplify effects related to social others [@prelecSelfsignalingSelfcontrol; @belkPossessionsExtendedSelf1988;@belkExtendedSelfDigital2013;@learyImpressionManagementLiterature, and others]. Generally, being perceived by a social other leads to more idealistic self-presentation.
+
+### Which Self does the Context Appeal to?
+
+We currently focus heavily on the actual vs. ideal self, which makes sense in some contexts. However, propose that beyond actual and ideal self, there are many situation that appeal to neither, and instead appeal to an ought self [@higginsSelfdiscrepancyTheoryRelating1987]. I could imagine that psychological distance from the decision (through the introduction of the agentic intermediary) has different effects on the way consumers construct their selves: specifically, I hypothesize based on known phenomena that contexts which appeal to the ideal self (healthier eating, resourceful spending, ...) are introduced, while contexts which appeal to the ought self (sustainable travel despite higher cost, ...) are not. The latter could be because consumers may use the distance to the decision to also distance themselves from the outcome and shift responsibility [see e.g., @bartlingShiftingBlameDelegation2012; @steffelPassingBuckDelegating2016;@banduraMoralDisengagementPerpetration]. Specific discussions on scapegoating as a strategy to regain control and agency are also discussed in @landauCompensatoryControlAppeal2015
+
+### Demographic Factors
+
+Beyond contextual and perceptive moderators, existing literature shows that certain demographic factors in general influence the relationship between actual-ideal self and various outcomes: self-esteem tends to be associated with stronger ideal-self construction [@malarEmotionalBrandAttachment2011; @mcadamsSelfIdentityPersonality2021; @stuppyAmThereforeBuy2020].
+
+### Salience of Self-Construction Process
+
+Our experiment makes the construction of an actual vs. ideal self very salient. However, many agentic systems do not have profiles that are formed this declaratively, but instead through user input that is stored to memory [@openclaw_USER; @openclaw_memory; @WhatMemory].
+
+
+## Ecological Validity
+> The question of ecologial validity. Probably we can write around this, given that it might be a thing sooner or later, but, assuming we find a consistent effect, one may wonder, ok but where and how does that actually work in practice? I saw your excel and this is great, I'd say this is sufficient for now and to start a project like this. But curious to hear the others' opinion.
+
+
+# Bibliography
+
+
+
