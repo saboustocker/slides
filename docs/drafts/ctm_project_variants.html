@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Sabou Rani Stocker">
-<meta name="dcterms.date" content="2026-05-04">
+<meta name="dcterms.date" content="2026-05-08">
 
 <title>A Map of the Consumers+Technology Dialogue – IBT-HSG - Slides</title>
 <style>
@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -92,7 +112,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a>
   <ul class="collapse">
   <li><a href="#goal-of-the-project" id="toc-goal-of-the-project" class="nav-link" data-scroll-target="#goal-of-the-project">Goal of the Project</a></li>
-  <li><a href="#timeline" id="toc-timeline" class="nav-link" data-scroll-target="#timeline">Timeline</a></li>
   </ul></li>
   <li><a href="#scope" id="toc-scope" class="nav-link" data-scroll-target="#scope">Scope</a>
   <ul class="collapse">
@@ -106,6 +125,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#combined-approaches" id="toc-combined-approaches" class="nav-link" data-scroll-target="#combined-approaches">Combined Approaches</a></li>
   </ul></li>
   </ul></li>
+  <li><a href="#timeline" id="toc-timeline" class="nav-link" data-scroll-target="#timeline">Timeline</a></li>
   </ul>
 </nav>
     </div>
@@ -132,7 +152,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 4, 2026</p>
+      <p class="date">May 8, 2026</p>
     </div>
   </div>
   
@@ -146,9 +166,30 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level1">
 <h1>Overview</h1>
-<p>This document is my collection of experimentation and notes, combined with any open questions that need to be adressed to adequately plan the scope and content of the project “Consumers + Technology Map: A landscape of our Field (so far)”.</p>
-<p>Open questions are marked in blue boxes at the start of each section. There are probably many more questions that I do not have on my radar yet, so this is not a conclusive list.</p>
-<p>Many questions in the project depend on each other. The following flowchart is my understanding of how the moving parts connect to each other.</p>
+<p>On 24th to 26th of June, 2026, we will hold the Consumers + Technology Dialogue in Zermatt. This unique opportunity allows us to bring together a group of experts in the domain of consumer-technology interaction. The two days will be centered around the <strong>state of our field in the past and present</strong>, as well as the <strong>future of our field</strong>. To facilitate a discussion and frame the entire event, we want to create a <strong>map of the field</strong> that analyzes and visualizes the state of research up to now, and the connections between the different areas of research.</p>
+<p>Additionally, this map of the field could offer an interesting perspective to be published in the <em>Current Opinion in Psychology</em> special issue lead by Emanuel, Anne and Ana on the topic of <strong>Humans and Technology</strong>.</p>
+<p>This document is a collection of experimentation and notes, combined with any open questions that need to be adressed to adequately plan the scope and content of the project “Consumers + Technology: A landscape of our Research Field (so far)” (working title).</p>
+<section id="goal-of-the-project" class="level2">
+<h2 class="anchored" data-anchor-id="goal-of-the-project">Goal of the Project</h2>
+<p>The goal of this project is to have a comprehensive overview over the themes, theories, and connections (both thematic as well as interpersonal) of the field. In doing so, we want to provide a framing of what our field has done so far, and give a perspective of where it might go in the future. However, many of the specifics and details are unclear and yet to be defined. Therefore, this document provides a list of options which could lead us towards a Consumers + Technology Map of the Field.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Open Questions">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Open Questions
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>To what extent does this project involve active contribution <em>during</em> the CTD? Will it be more of an input, or will it be an interactive, growing part of the conference?</li>
+<li>Is writing a paper out of this project a given, or an option?</li>
+<li>To what extent do we want to disentangle subject matter and methodologies? Both seem to be of interest in the community, at least according to the survey answers we got</li>
+</ul>
+</div>
+</div>
+<p>There are several moving parts on which we need to make decisions, which will be discussed in more detail below. The current decision tree denotes options Emanuel and I saw as probably reasonable (still up to discussion!!) in green, and options we see as less optimal in orange.</p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
@@ -156,22 +197,22 @@ ul.task-list li input[type="checkbox"] {
 <div>
 <pre class="mermaid mermaid-js">flowchart TD
 
-subgraph Q1[Overarching Goal?]
-    A11[CTD specific]
-    A12[field specific]
+subgraph Q1[Overarching Goal]
+    A11[&lt;b&gt;CTD specific:&lt;/b&gt;&lt;br&gt;We want to have a taxonomy tailored to the CTD conference]
+    A12[&lt;b&gt;Field-encompassing:&lt;/b&gt;&lt;br&gt;We want to have a taxonomy of the field of consumers+technology research]
 end
 
-subgraph Q2[Sampling]
+subgraph Q2[Sampling Strategy?]
 A21[Full texts]
 A22[Abstracts + Keywords]
 end
 
-subgraph Q3[Inclusion criteria]
+subgraph Q3[Sample Inclusion and Exclusion]
 A31[Keyword-based]
 A32[Author-based]
 end
 
-subgraph Q4[Analysis approach]
+subgraph Q4[Computational Approach]
     A41[Classical SLR]
     A42[Bibliometric analysis]
     A43[LDA/STD style]
@@ -206,28 +247,29 @@ style Q2 fill:#e8f4ff,stroke:#2b6cb0,stroke-width:2px
 style Q3 fill:#e8f4ff,stroke:#2b6cb0,stroke-width:2px
 style Q4 fill:#e8f4ff,stroke:#2b6cb0,stroke-width:2px
 
-style A11 fill:#eafaf1,stroke:#2f855a,stroke-width:2px
+style A11 fill:#fff3e0,stroke:#f97316,stroke-width:2px
 style A12 fill:#eafaf1,stroke:#2f855a,stroke-width:2px
-style A21 fill:#eafaf1,stroke:#2f855a,stroke-width:2px
-style A22 fill:#eafaf1,stroke:#2f855a,stroke-width:2px
+style A21 fill: #fff3e0,stroke:#f97316,stroke-width:2px
+style A22 fill: #eafaf1,stroke:#2f855a,stroke-width:2px
 style A31 fill:#eafaf1,stroke:#2f855a,stroke-width:2px
-style A32 fill:#eafaf1,stroke:#2f855a,stroke-width:2px
-style A41 fill:#eafaf1,stroke:#2f855a,stroke-width:2px
+style A32 fill:#fff3e0,stroke:#f97316,stroke-width:2px
+style A41 fill:#fff3e0,stroke:#f97316,stroke-width:2px
 style A42 fill:#eafaf1,stroke:#2f855a,stroke-width:2px
 style A43 fill:#eafaf1,stroke:#2f855a,stroke-width:2px
 style A44 fill:#eafaf1,stroke:#2f855a,stroke-width:2px
 style A45 fill:#eafaf1,stroke:#2f855a,stroke-width:2px
-
-
-
 </pre>
 </div>
 <p></p></figure><p></p>
 </div>
 </div>
 </div>
-<section id="goal-of-the-project" class="level2">
-<h2 class="anchored" data-anchor-id="goal-of-the-project">Goal of the Project</h2>
+</section>
+</section>
+<section id="scope" class="level1">
+<h1>Scope</h1>
+<section id="sampling-strategy" class="level2">
+<h2 class="anchored" data-anchor-id="sampling-strategy">Sampling Strategy</h2>
 <div class="callout callout-style-default callout-note callout-titled" title="Open Questions">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -238,20 +280,286 @@ style A45 fill:#eafaf1,stroke:#2f855a,stroke-width:2px
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li>If we have to complete the sentence “The aim of this project is to …”, what will we write?</li>
-<li>To what extent does this project involve active contribution <em>during</em> the CTD? Will it be more of an input, or will it be an interactive, growing part of the conference?</li>
-<li>To what extent do we want to keep the dialogue vs.&nbsp;the scientific output in the focus?</li>
-<li>Is writing a paper out of this project a given, or an option?</li>
-</ul>
+<p>Do we want to do a full-text analysis or an abstract-based approach?</p>
 </div>
 </div>
-<p>On 24th to 26th of June, 2026, we will hold the Consumers + Technology Dialogue in Zermatt. This unique opportunity allows us to bring together a group of experts in the domain of consumer-technology interaction. The two days will be centered around the <strong>state of our field in the past and present</strong>, as well as the <strong>future of our field</strong>. To facilitate a discussion and frame the entire event, we want to create a <strong>map of the field</strong> that analyzes and visualizes the state of research up to now, and the connections between the different areas of research.</p>
-<p>Additionally, this map of the field could offer an interesting perspective to be publised in the <em>Current Opinion in Psychology</em> special issue lead by Emanuel, Anne and Ana on the topic of <strong>Humans and Technology</strong>.</p>
+<p>Depending on our goal, we essentially have two options when it comes to the sampling strategy:</p>
+<ol type="1">
+<li><strong>Bibliometric approaches</strong> using SCOPUS or Web of Science</li>
+</ol>
+<p>The bibliometric approaches are limited in depth, as they generally include titles, abstracts, and keywords. However, if we assume that people will declare the key concepts of their work in the abstract, it offers an opportunity to have a very encompassing literature base, that is freely available to us through SCOPUS (and to a limited extent WoS). I have put some very preliminary examples of SCOPUS based analyses further down below.</p>
+<ol start="2" type="1">
+<li><strong>Full-text approaches</strong> using manual search</li>
+</ol>
+<p>While full-text analysis gives more depth and profound understanding of concepts and theories and how they relate to each other, it is a limiting approach for several reasons. First, full-text availability is not guaranteed, and texts need to be searched and identified manually. This can be done for a select scope (e.g.&nbsp;30-100 full texts), but not for a systematic overview of our field. Second, even if we somehow find a way to include a larger corpus of full text in our analysis, full-text analysis also needs more time (either manual, or by pre-processing text through computational approaches), which is limited for this project. Third, complex data requires complex methods, and if we want to use any form of non-local LLM (and potentially even local!) to analyze texts, we need explicit consent from all authors to not violate copyright law. Even if we assume that we get this consent, obtaining it would be a project spanning several months in itself.</p>
 </section>
-<section id="timeline" class="level2">
-<h2 class="anchored" data-anchor-id="timeline">Timeline</h2>
-<p>The project falls under a rather tight timeline. Below, I have tried to illustrate what a timeline <em>could</em> look like. Regardless of the decisions we made in the steps above, it is very evident that there is very little time for data collection &amp; analysis upfront the CTD26. One big open question (already covered in goals) is what our ultimate goal of the project is. The timeline will vary based on the goal.</p>
+<section id="sample-inclusion-and-exclusion" class="level2">
+<h2 class="anchored" data-anchor-id="sample-inclusion-and-exclusion">Sample Inclusion and Exclusion</h2>
+<div class="callout callout-style-default callout-note callout-titled" title="Open Questions">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Open Questions
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Do we aim to primarily cover the CTD community, or do we aim to primarily cover <em>the field</em> at large?</p>
+</div>
+</div>
+<p>The first criteria to be defined are how to include papers in our field map.</p>
+<p>Including a sample based on <strong>authorship</strong> (e.g.&nbsp;important people from the CTD community) would set our sample at ~1000 papers (I have done a preliminary analysis on Scopus with all attending guests of CTD26 and come to 891 papers). Including additional papers that cite these core papers expands the number to approximately 40’000 (35’876 in the preliminary analysis).</p>
+<p>Including a sample based on <strong>keywords</strong> increases this number exponentially: the search string “TITLE, ABSTRACT, KEYWORD = {human* AND technology}” leads to 980’000 search results, “TITLE, ABSTRACT, KEYWORD = {human* AND technology AND interact*}” to 11’850. Replacing “human” with “Consumers” yields similar results.</p>
+<p>Regardless of the exact method through which we arrive at a map of the field, the two sampling strategies offer several advantages and disadvantages:</p>
+<table class="table-striped table-hover caption-top table">
+<caption>Advantages and disadvantages of sampling strategies</caption>
+<colgroup>
+<col style="width: 20%">
+<col style="width: 40%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Sampling Strategy</th>
+<th><strong>Advantages</strong></th>
+<th><strong>Disadvantages</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Authorship</td>
+<td>- clear tie into conference and highly relevant to the discussions <br> - manageable sample even if full-text screening is needed <br> - could make use of expertise by authors</td>
+<td>- scientific merit / justification? <br> - bias <br> - will miss some topics because noone covers that niche <br> - does not conform to the current publication standard for any type of Systematic Literature Analysis</td>
+</tr>
+<tr class="even">
+<td>Keywords</td>
+<td>- scoping very broad <br> - scientifically easier to justify (why these keywords) <br> - niche topics not on our radar could be identified</td>
+<td>- ginormous amount of data (could also be an advantage!) <br> - who decides the right keywords <br> - relevance to CTD not guaranteed upfront</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-tip callout-titled" title="Sabou's additional Thoughts">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Sabou’s additional Thoughts
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>In my personal estimation, I think using an authorship-based inclusion would give us a very nice tie in to CTD. We could include all the “neat” things such as:</p>
+<ul>
+<li>highlighting the senior members at CTD and their expertise and influence (Jacob, Bernd, Carey among others are very highly cited)</li>
+<li>strategically highlight the invited participants that will give pitches on Thursday (and Friday? exact program tbd) on a content map and show how their expertise has shaped the discussions on that topic so far</li>
+<li>get some historical datapoints on the development of our field</li>
+<li>make members of CTD feel valued</li>
+</ul>
+<p>However, I am worried that going with an authorship based approach could cause issues down the line, that we then have a really neat content map of the CTD community, but not really “consumers and technology”. Of course, some patterns will repeat, but it is unclear to me what breadth “our” community really covers.</p>
+<p>Analyzing a specific subsample of the CTD community within the field at large would of course be another, alternative option, that would combine the best of both worlds.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="computational-approach" class="level2">
+<h2 class="anchored" data-anchor-id="computational-approach">Computational Approach</h2>
+<p>Creating a “map of the field” can assume several ways, that vary in scope, interpretability, and feasibility. The table below summarizes the approaches I see viable. I already tested out some approaches and have summarized more detailed insights further down below.</p>
+<section id="overview-1" class="level3">
+<h3 class="anchored" data-anchor-id="overview-1">Overview</h3>
+<table class="table-striped table-hover caption-top table">
+<caption>Comparison of possible methodological approaches</caption>
+<colgroup>
+<col style="width: 10%">
+<col style="width: 15%">
+<col style="width: 8%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 6%">
+<col style="width: 9%">
+<col style="width: 10%">
+<col style="width: 10%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Approach</th>
+<th>Description</th>
+<th style="text-align: right;">Data scope</th>
+<th>Advantages</th>
+<th>Disadvantages</th>
+<th style="text-align: center;">Estimated effort</th>
+<th>Tools</th>
+<th>Example</th>
+<th>Sources</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Manual qualitative content analysis</td>
+<td>Systematic literature review in the traditional sense</td>
+<td style="text-align: right;">10–100 papers</td>
+<td>- Human expertise and interpretation at every step<br>- Captures nuances and subtext</td>
+<td>- Very labor-intensive<br>- Would necessarily drastically reduce the sample size</td>
+<td style="text-align: center;">⭐⭐⭐</td>
+<td>No tools needed</td>
+<td></td>
+<td>PRISMA Scoping Review</td>
+</tr>
+<tr class="even">
+<td>Bibliometric analysis</td>
+<td>Summarizes large quantities of bibliometric data to present the intellectual structure and emerging trends of a research topic or field.</td>
+<td style="text-align: right;">500–20,000 papers</td>
+<td>- Fully quantitative/computational, but less human effort<br>- Reproducible<br>- Established scientific method<br>- Tools are available, including R packages and visualizations</td>
+<td>- Based on less refined ML methods<br>- Context and nuances are hard to grasp<br>- Established tools such as Bibliometrix have certain limitations</td>
+<td style="text-align: center;">⭐⭐⭐</td>
+<td>Bibliometrix<br>VOSviewer<br>CiteSpace</td>
+<td>&lt;a href=“#bibliometric-analysis”&gt;Bibliometric analysis Example&lt;/a&gt;</td>
+<td><span class="citation" data-cites="donthuHowConductBibliometric2021">Donthu et al. (<a href="#ref-donthuHowConductBibliometric2021" role="doc-biblioref">2021</a>)</span></td>
+</tr>
+<tr class="odd">
+<td>Structured Topic Modeling</td>
+<td>Text analysis framework that identifies hidden topics in large datasets while incorporating document-level metadata such as author, date, or source. Basically LDF with extra steps.</td>
+<td style="text-align: right;">500–20,000 papers</td>
+<td>- Fully quantitative/computational, but less human effort<br>- Reproducible<br>- Established scientific method, although not necessarily prevalent in “our” fields<br>- Tools are available through R packages and embeddings from TF-IDF, BERT, etc.</td>
+<td>- Based on less refined ML methods<br>- Context and nuances are hard to grasp<br>- Existing tools have certain limitations<br>- I have done LDF and BERTopic modeling, but not STM yet, so outcomes are hard to estimate</td>
+<td style="text-align: center;">⭐⭐⭐⭐</td>
+<td><code>stm</code> R package</td>
+<td></td>
+<td><span class="citation" data-cites="robertsStructuralTopicModels2014">Roberts et al. (<a href="#ref-robertsStructuralTopicModels2014" role="doc-biblioref">2014</a>)</span></td>
+</tr>
+<tr class="even">
+<td>Topic modeling with embedding models</td>
+<td>Topic modeling approach that extracts coherent topic representations using class-based TF-IDF. BERTopic generates document embeddings with pre-trained transformer-based language models, clusters these embeddings, and then generates topic representations with class-based TF-IDF.</td>
+<td style="text-align: right;">500–20,000 papers</td>
+<td>- Quantitative with some human input, such as defining clusters or manually fixing certain elements<br>- Embedding-based approach allows for more nuance<br>- Well-established method</td>
+<td>- Dimensionality reduction can be somewhat probabilistic<br>- Data preprocessing is highly relevant<br>- Bad preprocessing can lead to bad embeddings<br>- Sometimes difficult to work with</td>
+<td style="text-align: center;">⭐⭐⭐⭐</td>
+<td>BERTopic Python packages</td>
+<td><a href="#bertopic-embedding-based-analysis">BERTopic / embedding-based analysis</a></td>
+<td><span class="citation" data-cites="grootendorstBERTopicNeuralTopic2022">Grootendorst (<a href="#ref-grootendorstBERTopicNeuralTopic2022" role="doc-biblioref">2022</a>)</span></td>
+</tr>
+<tr class="odd">
+<td>LLM-based approach</td>
+<td>Building recurring loops with generative LLMs and specified prompts to build a database.</td>
+<td style="text-align: right;">10–20,000 papers</td>
+<td>- Human expertise and requirements can be given upfront<br>- Much more customizable<br>- Allows for some “understanding” of the content<br>- Tools are available, although they are more suited for exploration than scientific publication</td>
+<td>- Replicability is limited, even with temperature = 0<br>- Risk of introducing biases through biased prompting<br>- Output still needs to be treated somehow, for example through clustering</td>
+<td style="text-align: center;">⭐⭐⭐⭐</td>
+<td>Various</td>
+<td></td>
+<td><span class="citation" data-cites="wangPromptingLargeLanguage2023">Wang et al. (<a href="#ref-wangPromptingLargeLanguage2023" role="doc-biblioref">2023</a>)</span></td>
+</tr>
+<tr class="even">
+<td>Combined approaches</td>
+<td>Using LLMs to standardize data and then applying topic modeling, bibliometric analysis, or another quantitative approach to the outputs.</td>
+<td style="text-align: right;">500–20,000 papers</td>
+<td>- Human expertise and requirements can be given through prompts<br>- Multi-layer approaches are easier, for example distinguishing “theories” from “concepts”<br>- Relatively straightforward with API calls</td>
+<td>- Replicability is still problematic<br>- Somewhat iterative process that needs to be adapted based on output</td>
+<td style="text-align: center;">⭐⭐⭐⭐⭐</td>
+<td>APIs, LLMs, topic modeling tools, bibliometric tools</td>
+<td><a href="#combined-approaches">Combined approaches</a></td>
+<td><span class="citation" data-cites="wangPromptingLargeLanguage2023">Wang et al. (<a href="#ref-wangPromptingLargeLanguage2023" role="doc-biblioref">2023</a>)</span> <br>Liu et al., LLM-guided semantic-aware clustering</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="bibliometric-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="bibliometric-analysis">Bibliometric Analysis</h3>
+<p>I did run a quick analysis utilizing the Bibliometrix Package with R on the data of our attending conference members over the weekend. Some notes:</p>
+<ul>
+<li>The package is extremely easy to use out of the box</li>
+<li>The analysis is smooth and much of it can be used as is (e.g.&nbsp;citation maps), and also looks pretty cool :)</li>
+<li>Unfortunately, the topic modelling is limited at best, as it primarily follows word frequency and dictionary approaches, meaning that it has a hard time capturing nuances. As an example: “Open Data” is apparently frequently used when describing our work, however this is not the subject matter of our domain, more just a tool / practice we follow. Never the less, it appears as a topic on the content map.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/output_plot.png" class="img-fluid figure-img"></p>
+<figcaption>Thematic map of keyword clusters generated with bibliometrix.Sample = 891 papers stemming from the CTD community. The x-axis indicates the relevance degree, based on the centrality of each keyword cluster within the overall co-occurrence network, while the y-axis indicates the development degree, based on the internal density of the cluster. Larger bubbles represent more frequent themes.</figcaption>
+</figure>
+</div>
+<!--
+The content/thematic map was generated from a keyword co-occurrence network. Themes correspond to clusters of co-occurring keywords. The x-axis, relevance degree, represents the ranked centrality of each cluster, calculated from its external links to other clusters. The y-axis, development degree, represents the ranked density of each cluster, calculated from the internal links among keywords within the cluster. Thus, highly relevant themes are strongly connected to other themes, whereas highly developed themes show strong internal cohesion. 
+-->
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/keyword_count_manual.png" class="img-fluid figure-img"></p>
+<figcaption>Cumulative occurrences of the top 30 author keywords over time, based on a deduplicated Scopus export of 838 papers. Keywords were extracted from the DE field, separated by “;”, and counted cumulatively per year using a manual implementation in R.</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled" title="Additional Plots">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Additional Plots
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The following is the out-of-the-box plot coming from Bibliometrix, where counts are somehow inflated. I could not find the reason for it when inspecting the internal code, so I’ve made a github issue. If anyone wants to know why, happy to keep you posted :D.</p>
+<p><img src="../images/keywords_over_time.png" class="img-fluid"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="bertopic-embedding-based-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="bertopic-embedding-based-analysis">BERTOPIC (Embedding-based) Analysis</h3>
+<p>I have worked a lot with embedding-based clustering and approaches, and ran a quick analysis based on the same data used above with BERTopic and a medium-sized embedding model:</p>
+<ul>
+<li>It was an absolute bitch to get to work (as BERTopic often is) and refused to cluster adequatly until I had tinkered with it for 10+ iterations</li>
+<li>This colorful personality persisted even after, as clusters are objectively not optimally distributed</li>
+<li>Topic modelling in multi-dimensional spaces works pretty well, but reducing it to a 2- or 3-dimensional map is very difficult, and furthermore hard to make replicable without relying on inadequate minimalist models which then reduce the quality of the dimensionality reduction, as also evidenced in the plot below 🫠…</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/example_plot.png" class="img-fluid figure-img"></p>
+<figcaption>Topics identified by BERTopic across the corpus of 838 papers, visualised as a Universal Topics Map (UTM). Each color represents one of the 10 extracted topics, naming auto-generated by word-frequency in topic map.</figcaption>
+</figure>
+</div>
+</section>
+<section id="combined-approaches" class="level3">
+<h3 class="anchored" data-anchor-id="combined-approaches">Combined Approaches</h3>
+<p>I have not had time to test out a combined approach on this data, but coincidentally did so just last week for the Agentic AI project, where I clustered 10k reddit comments according to use-cases that users claim they use Agentic AI for. My thoughts:</p>
+<ul>
+<li>I used OpenAI’s 4o-mini to extract topics from open text and then ran semantic embedding clustering (BERTopic again) on it</li>
+<li>With pre-processed data that went through an LLM, the clusters made more sense and were less subject to the personality of the model</li>
+<li>The prompts used to generate the information needed a lot of refinement, but once I was happy with the output of the small test sample, the rest ran very smooth</li>
+<li>I have only visualized the use cases in the plot below, however I added additional clusters by coding for “attributed autonomy” of OpenClaw and “perceived control” over the processes by the user through additional LLM-based prompting. Adding dimensions that require a form of “understanding” is rather easy with this approach</li>
+<li>While generally being happy with the output, I am still hesitant about replicability, as even with a temperature of 0, identical models, and identical prompts, there were slight variations in the output. Because I was not able to rerun the full analysis on 10k samples several times, I cannot judge how substantial these variations are across a large sample</li>
+<li>I don’t love the fact that we are basically forced to use close-weights models (OpenAI, Claude, …) because the open weight ones I can run on my hardware (computer we have at home) are not sufficient for the purposes (I can get up to 72b parameters to run, which is a lot, but nowhere near state of the art)</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/cluster_2d_10.png" class="img-fluid figure-img"></p>
+<figcaption>Universal Topics Map (UTM) of 10 topics extracted via BERTopic from 10,000 Reddit comments, pre-coded and labelled by GPT-4o mini.</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Some more of Sabou's ramblings">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Some more of Sabou’s ramblings
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>An additional approach, that would however be rather risky and could only be done in combination with one of the other approaches, would be to pick up additional meta-topics also proposed by participants, and have an LLM agent do the analysis and topic modelling according to our criteria, e.g.&nbsp;having Claude Cowork with a set amount of credits do this. This would most likely not end in favor of the agent, but could be a cool perspective to show what can already be done with these agents and where they still fall short.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="timeline" class="level1">
+<h1>Timeline</h1>
+<p>The project falls under a rather tight timeline. Below, I have tried to illustrate what a timeline <em>could</em> look like. Regardless of the decisions we made in the steps above, it is very evident that there is very little time for data collection &amp; analysis upfront the CTD26. One big open question (already covered in goals) is what our ultimate goal of the project is. The timeline will vary based on the goal, especially the publication-part out-back after CTD26.</p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
@@ -291,266 +599,25 @@ style A45 fill:#eafaf1,stroke:#2f855a,stroke-width:2px
 </div>
 </div>
 </div>
-</section>
-</section>
-<section id="scope" class="level1">
-<h1>Scope</h1>
-<section id="sampling-strategy" class="level2">
-<h2 class="anchored" data-anchor-id="sampling-strategy">Sampling Strategy</h2>
-<div class="callout callout-style-default callout-note callout-titled" title="Open Questions">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Open Questions
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Do we want to do a full-text analysis or an abstract-based approach?</p>
-</div>
-</div>
-<p>Depending on our goal, we essentially have two options when it comes to the sampling strategy:</p>
-<ol type="1">
-<li><strong>Bibliometric approaches</strong> using SCOPUS or Web of Science</li>
-</ol>
-<p>The bibliometric approaches are limited in depth, as they generally include titles, abstracts, and keywords. However, if we assume that people will declare the key concepts of their work in the abstract, it offers an opportunity to have a very encompassing literature base, that is freely available to us through SCOPUS (and to a limited extent WoS).</p>
-<ol start="2" type="1">
-<li><strong>Full-text approaches</strong> using manual search</li>
-</ol>
-<p>While full-text analysis gives more depth and profound understanding of concepts and theories and how they relate to each other, it is a limiting approach for several reasons. First, full-text availability is not guaranteed, and texts need to be searched and identified manually. This can be done for a select scope (e.g.&nbsp;30-100 full texts), but not for a systematic overview of our field. Second, even if we somehow find a way to include a larger corpus of full text in our analysis, full-text analysis also needs more time (either manual, or by pre-processing text through computational approaches), which is limited for this project. Third, complex data requires complex methods, and if we want to use any form of non-local LLM (and potentially even local!) to analyze texts, we need explicit consent from all authors to not violate copyright law. Even if we assume that we get this consent, obtaining it would be a project spanning several months in itself.</p>
-</section>
-<section id="sample-inclusion-and-exclusion" class="level2">
-<h2 class="anchored" data-anchor-id="sample-inclusion-and-exclusion">Sample Inclusion and Exclusion</h2>
-<div class="callout callout-style-default callout-note callout-titled" title="Open Questions">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Open Questions
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Do we aim to primarily cover the CTD community, or do we aim to primarily cover <em>the field</em> at large?</p>
-</div>
-</div>
-<p>The first criteria to be defined are how to include papers in our field map.</p>
-<p>Including a sample based on <strong>authorship</strong> (e.g.&nbsp;important people from the CTD community) would set our sample at ~1000 papers (I have done a preliminary analysis on Scopus with all attending guests of CTD26 and come to 891 papers). Including additional papers that cite these core papers expands the number to approximately 40’000 (35’876 in the preliminary analysis).</p>
-<p>Including a sample based on <strong>keywords</strong> increases this number exponentially: the search string “TITLE, ABSTRACT, KEYWORD = {human* AND technology}” leads to 980’000 search results, “TITLE, ABSTRACT, KEYWORD = {human* AND technology AND interact*}” to 11’850.</p>
-<p>Regardless of the exact method through which we arrive at a map of the field, the two sampling strategies offer several advantages and disadvantages:</p>
-<table class="table-striped table-hover caption-top table">
-<caption>Advantages and disadvantages of sampling strategies</caption>
-<colgroup>
-<col style="width: 20%">
-<col style="width: 40%">
-<col style="width: 40%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Sampling Strategy</th>
-<th><strong>Advantages</strong></th>
-<th><strong>Disadvantages</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Authorship</td>
-<td>- clear tie into conference and highly relevant to the discussions <br> - manageable sample even if full-text screening is needed <br> - could make use of expertise by authors</td>
-<td>- scientific merit / justification? <br> - bias <br> - will miss some topics because noone covers that niche <br> - does not conform to the current publication standard for any type of Systematic Literature Analysis</td>
-</tr>
-<tr class="even">
-<td>Keywords</td>
-<td>- scoping very broad <br> - scientifically easier to justify (why these keywords) <br> - niche topics not on our radar could be identified</td>
-<td>- ginormous amount of data <br> - who decides the right keywords <br> - relevance to CTD not guaranteed upfront</td>
-</tr>
-</tbody>
-</table>
-<div class="callout callout-style-default callout-tip callout-titled" title="Sabou's unstructured ramblings">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Sabou’s unstructured ramblings
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>In my personal estimation, I think using an authorship-based inclusion would give us a very nice tie in to CTD. We could include all the “neat” things such as:</p>
-<ul>
-<li>highlighting the senior members at CTD and their expertise and influence (Jacob, Bernd, Carey among others are very highly cited)</li>
-<li>strategically highlight the invited participants that will give pitches on Thursday (and Friday? exact program tbd) on a content map and show how their expertise has shaped the discussions on that topic so far</li>
-<li>get some historical datapoints on the development of our field</li>
-<li>make members of CTD feel valued</li>
-</ul>
-<p>However, I am worried that going with an authorship based approach, which was my understanding is the plan according to Ana, could cause issues down the line, that we then have a really need content map of the CTD community, but not really “consumers and technology”. Of course, some patterns will repeat, but it is unclear to me what breadth “our” community really covers.</p>
-</div>
-</div>
-</div>
-</section>
-<section id="computational-approach" class="level2">
-<h2 class="anchored" data-anchor-id="computational-approach">Computational Approach</h2>
-<div class="callout callout-style-default callout-note callout-titled" title="Open Questions">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Open Questions
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>To what extent is the computational approach we choose also a reflection of the topics on Friday? We could of course also approach this idea with a meta-science framing and compare traditional approaches to novel (LLM-based, agentic??) alternatives.</p>
-</div>
-</div>
-<p>Creating a “map of the field” can assume several ways, that vary in scope, interpretability, and feasibility. The table below summarizes the approaches I see viable. I already tested out some approaches and have summarized more detailed insights further down below.</p>
-<section id="overview-1" class="level3">
-<h3 class="anchored" data-anchor-id="overview-1">Overview</h3>
-<table class="table-striped table-hover caption-top table">
-<caption>Comparison of possible methodological approaches</caption>
-<colgroup>
-<col style="width: 11%">
-<col style="width: 17%">
-<col style="width: 8%">
-<col style="width: 18%">
-<col style="width: 18%">
-<col style="width: 7%">
-<col style="width: 10%">
-<col style="width: 11%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Approach</th>
-<th>Description</th>
-<th style="text-align: right;">Data scope</th>
-<th>Advantages</th>
-<th>Disadvantages</th>
-<th style="text-align: center;">Estimated effort</th>
-<th>Tools</th>
-<th>Sources</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Manual qualitative content analysis</td>
-<td>Systematic literature review in the traditional sense</td>
-<td style="text-align: right;">10–100 papers</td>
-<td>- Human expertise and interpretation at every step<br>- Captures nuances and subtext</td>
-<td>- Very labor-intensive<br>- Would necessarily drastically reduce the sample size</td>
-<td style="text-align: center;">⭐⭐⭐</td>
-<td>No tools needed</td>
-<td>PRISMA Scoping Review</td>
-</tr>
-<tr class="even">
-<td>Bibliometric analysis</td>
-<td>Summarizes large quantities of bibliometric data to present the intellectual structure and emerging trends of a research topic or field.</td>
-<td style="text-align: right;">500–20,000 papers</td>
-<td>- Fully quantitative/computational, but less human effort<br>- Reproducible<br>- Established scientific method<br>- Tools are available, including R packages and visualizations</td>
-<td>- Based on less refined ML methods<br>- Context and nuances are hard to grasp<br>- Established tools such as Bibliometrix have certain limitations</td>
-<td style="text-align: center;">⭐⭐⭐</td>
-<td>Bibliometrix<br>VOSviewer<br>CiteSpace</td>
-<td>Donthu et al.&nbsp;(2021)</td>
-</tr>
-<tr class="odd">
-<td>Structured Topic Modeling</td>
-<td>Text analysis framework that identifies hidden topics in large datasets while incorporating document-level metadata such as author, date, or source. Basically LDF with extra steps.</td>
-<td style="text-align: right;">500–20,000 papers</td>
-<td>- Fully quantitative/computational, but less human effort<br>- Reproducible<br>- Established scientific method, although not necessarily prevalent in “our” fields<br>- Tools are available through R packages and embeddings from TF-IDF, BERT, etc.</td>
-<td>- Based on less refined ML methods<br>- Context and nuances are hard to grasp<br>- Existing tools have certain limitations<br>- I have done LDF and BERTopic modeling, but not STM yet, so outcomes are hard to estimate</td>
-<td style="text-align: center;">⭐⭐⭐⭐</td>
-<td><code>stm</code> R package</td>
-<td>Roberts et al.&nbsp;(2014)</td>
-</tr>
-<tr class="even">
-<td>Topic modeling with embedding models</td>
-<td>Topic modeling approach that extracts coherent topic representations using class-based TF-IDF. BERTopic generates document embeddings with pre-trained transformer-based language models, clusters these embeddings, and then generates topic representations with class-based TF-IDF.</td>
-<td style="text-align: right;">500–20,000 papers</td>
-<td>- Quantitative with some human input, such as defining clusters or manually fixing certain elements<br>- Embedding-based approach allows for more nuance<br>- Well-established method</td>
-<td>- Dimensionality reduction can be somewhat probabilistic<br>- Data preprocessing is highly relevant<br>- Bad preprocessing can lead to bad embeddings<br>- Sometimes difficult to work with</td>
-<td style="text-align: center;">⭐⭐⭐⭐</td>
-<td>BERTopic Python packages</td>
-<td>Grootendorst (2022)</td>
-</tr>
-<tr class="odd">
-<td>LLM-based approach</td>
-<td>Building recurring loops with generative LLMs and specified prompts to build a database.</td>
-<td style="text-align: right;">10–20,000 papers</td>
-<td>- Human expertise and requirements can be given upfront<br>- Much more customizable<br>- Allows for some “understanding” of the content<br>- Tools are available, although they are more suited for exploration than scientific publication</td>
-<td>- Replicability is limited, even with temperature = 0<br>- Risk of introducing biases through biased prompting<br>- Output still needs to be treated somehow, for example through clustering</td>
-<td style="text-align: center;">⭐⭐⭐⭐</td>
-<td>Various</td>
-<td>Wang et al.&nbsp;(2023)</td>
-</tr>
-<tr class="even">
-<td>Combined approaches</td>
-<td>Using LLMs to standardize data and then applying topic modeling, bibliometric analysis, or another quantitative approach to the outputs.</td>
-<td style="text-align: right;">500–20,000 papers</td>
-<td>- Human expertise and requirements can be given through prompts<br>- Multi-layer approaches are easier, for example distinguishing “theories” from “concepts”<br>- Relatively straightforward with API calls</td>
-<td>- Replicability is still problematic<br>- Somewhat iterative process that needs to be adapted based on output</td>
-<td style="text-align: center;">⭐⭐⭐⭐⭐</td>
-<td>APIs, LLMs, topic modeling tools, bibliometric tools</td>
-<td>Wang et al.&nbsp;(2023)<br>Liu et al., LLM-guided semantic-aware clustering</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="bibliometric-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="bibliometric-analysis">Bibliometric Analysis</h3>
-<p>I did run a quick analysis utilizing the Bibliometrix Package with R on the data of our attending conference members over the weekend. Some notes:</p>
-<ul>
-<li>The package is extremely easy to use out of the box</li>
-<li>The analysis is smooth and much of it can be used as is (e.g.&nbsp;citation maps), and also looks pretty cool :)</li>
-<li>Unfortunately, the topic modelling is limited at best, as it primarily follows word frequency and dictionary approaches, meaning that it has a hard time capturing nuances. As an example: “Open Data” is apparently frequently used when describing our work, however this is not the subject matter of our domain, more just a tool / practice we follow. Never the less, it appears as a topic on the content map.</li>
-</ul>
-<p><img src="../images/output_plot.png" class="img-fluid"></p>
-</section>
-<section id="bertopic-embedding-based-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="bertopic-embedding-based-analysis">BERTOPIC (Embedding-based) Analysis</h3>
-<p>I have worked a lot with embedding-based clustering and approaches, and ran a quick analysis based on the same data used above with BERTopic and a medium-sized embedding model:</p>
-<ul>
-<li>It was an absolute bitch to get to work (as BERTopic often is) and refused to cluster adequatly until I had tinkered with it for 10+ iterations</li>
-<li>This colorful personality persisted even after, as clusters are objectively not optimally distributed</li>
-<li>Topic modelling in multi-dimensional spaces works pretty well, but reducing it to a 2- or 3-dimensional map is very difficult, and furthermore hard to make replicable without relying on inadequate minimalist models which then reduce the quality of the dimensionality reduction, as also evidenced in the plot below 🫠…</li>
-</ul>
-<p><img src="../images/example_plot.png" class="img-fluid"></p>
-</section>
-<section id="combined-approaches" class="level3">
-<h3 class="anchored" data-anchor-id="combined-approaches">Combined Approaches</h3>
-<p>I have not had time to test out a combined approach on this data, but coincidentally did so just last week for the Agentic AI project, where I clustered 10k reddit comments according to use-cases that users claim they use Agentic AI for. My thoughts:</p>
-<ul>
-<li>I used OpenAI’s 4o-mini to extract topics from open text and then ran semantic embedding clustering (BERTopic again) on it</li>
-<li>With pre-processed data that went through an LLM, the clusters made more sense and were less subject to the personality of the model</li>
-<li>The prompts used to generate the information needed a lot of refinement, but once I was happy with the output of the small test sample, the rest ran very smooth</li>
-<li>I have only visualized the use cases in the plot below, however I added additional clusters by coding for “attributed autonomy” of OpenClaw and “perceived control” over the processes by the user through additional LLM-based prompting. Adding dimensions that require a form of “understanding” is rather easy with this approach</li>
-<li>While generally being happy with the output, I am still hesitant about replicability, as even with a temperature of 0, identical models, and identical prompts, there were slight variations in the output. Because I was not able to rerun the full analysis on 10k samples several times, I cannot judge how substantial these variations are across a large sample</li>
-<li>I don’t love the fact that we are basically forced to use close-weights models (OpenAI, Claude, …) because the open weight ones I can run on my hardware (computer we have at home) are not sufficient for the purposes (I can get up to 72b parameters to run, which is a lot, but nowhere near state of the art)</li>
-</ul>
-<p><img src="../images/cluster_2d_10.png" class="img-fluid"></p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Some more of Sabou's ramblings">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Some more of Sabou’s ramblings
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>An additional approach, that would however be rather risky and could only be done in combination with one of the other approaches, would be to pick up additional meta-topics also proposed by participants, and have an LLM agent do the analysis and topic modelling according to our criteria, e.g.&nbsp;having Claude Cowork with a set amount of credits do this. This would most likely not end in favor of the agent, but could be a cool perspective to show what can already be done with these agents and where they still fall short.</p>
-</div>
-</div>
-</div>
+
 
 
 </section>
-</section>
-</section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-donthuHowConductBibliometric2021" class="csl-entry" role="listitem">
+Donthu, Naveen, Satish Kumar, Debmalya Mukherjee, Nitesh Pandey, and Weng Marc Lim. 2021. <span>“How to Conduct a Bibliometric Analysis: <span>An</span> Overview and Guidelines.”</span> <em>Journal of Business Research</em> 133 (September): 285–96. <a href="https://doi.org/10.1016/j.jbusres.2021.04.070">https://doi.org/10.1016/j.jbusres.2021.04.070</a>.
+</div>
+<div id="ref-grootendorstBERTopicNeuralTopic2022" class="csl-entry" role="listitem">
+Grootendorst, Maarten. 2022. <span>“<span>BERTopic</span>: <span>Neural</span> Topic Modeling with a Class-Based <span>TF-IDF</span> Procedure.”</span> March 11, 2022. <a href="https://doi.org/10.48550/arXiv.2203.05794">https://doi.org/10.48550/arXiv.2203.05794</a>.
+</div>
+<div id="ref-robertsStructuralTopicModels2014" class="csl-entry" role="listitem">
+Roberts, Margaret E., Brandon M. Stewart, Dustin Tingley, Christopher Lucas, Jetson Leder‐Luis, Shana Kushner Gadarian, Bethany Albertson, and David G. Rand. 2014. <span>“Structural <span>Topic Models</span> for <span>Open</span>‐<span>Ended Survey Responses</span>.”</span> <em>American Journal of Political Science</em> 58 (4): 1064–82. <a href="https://doi.org/10.1111/ajps.12103">https://doi.org/10.1111/ajps.12103</a>.
+</div>
+<div id="ref-wangPromptingLargeLanguage2023" class="csl-entry" role="listitem">
+Wang, Han, Nirmalendu Prakash, Nguyen Khoi Hoang, Ming Shan Hee, Usman Naseem, and Roy Ka-Wei Lee. 2023. <span>“Prompting <span>Large Language Models</span> for <span>Topic Modeling</span>.”</span> December 15, 2023. <a href="https://doi.org/10.48550/arXiv.2312.09693">https://doi.org/10.48550/arXiv.2312.09693</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
