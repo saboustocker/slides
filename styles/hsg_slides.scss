@@ -57,13 +57,32 @@ $hsg-gelb: #fff04b;  // HSG-Gelb
 }
 
 .reveal figcaption {
-  text-align: center;
+  text-align: left;
+  color: $hsg-dunkelgruen;
+  font-size: 0.6em;
+}
+
+.caption {
+  color: $hsg-dunkelgruen;
+  font-size: 0.6em;
+  text-align: left;
+}
+
+.smalltext-p {
+  color: $hsg-blau;
+  font-size: 0.6em;
+}
+
+.bib-p p {
+  text-align: start;
+  font-size: 1rem;
   color: $hsg-dunkelgruen;
 }
-.bib-p p {
+
+.bib-end-p p {
   text-align: end;
   font-size: 1rem;
-  color: $hsg-gruen;
+  color: $hsg-dunkelgruen;
 }
 
 .quote-p {
@@ -145,6 +164,13 @@ body,
   );
 }
 
+section.section-header-bg.subtitle-section-header {
+  color: white !important;
+  padding: 20%;
+  width: 70% !important;
+  text-align: end;
+}
+
 
 // Quote slide 
 .slide-background.slide.level2.quote-slide-bg.present {
@@ -206,11 +232,7 @@ section.quote-slide-bg {
   );
 }
 
-.caption {
-  color: $hsg-dunkelgruen;
-  font-size: 0.6em;
-  text-align: center;
-}
+
 
 // Color Slides
 .slide-background.slide.level2.red-slide-bg.present {
@@ -339,3 +361,25 @@ ul.panel-tabset-tabby[role="tablist"] li[role="presentation"] a[aria-selected="f
 ul.panel-tabset-tabby[role="tablist"] li[role="presentation"] a[aria-selected="false"]:hover {
   background: $hsg-gruen;
 }
+
+// Images 
+
+.image-center-stack {
+  height: 70vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.image-center-stack .r-stack {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.image-center-stack img {
+  margin: auto !important;
+  display: block;
+}
+
