@@ -66,6 +66,76 @@ bibliography: ../bibliography.bib
 :::
 ::::
 
+## Timeline
+
+```{mermaid}
+%%| echo: false
+%%{init: {
+  "theme": "base",
+  "themeVariables": {
+    "fontFamily": "Inter, Arial, sans-serif",
+    "background": "#ffffff",
+    "mainBkg": "#ffffff",
+    "textColor": "#1f2937",
+    "titleColor": "#0a5f2d",
+
+    "primaryColor": "#00802f",
+    "primaryTextColor": "#ffffff",
+    "primaryBorderColor": "#0a5f2d",
+
+    "lineColor": "#0a5f2d",
+    "gridColor": "#d9e7df",
+
+    "sectionBkgColor": "#eef7f1",
+    "sectionBkgColor2": "#f7fafb",
+    "altSectionBkgColor": "#f7fafb",
+
+    "taskBkgColor": "#73a5af",
+    "taskBorderColor": "#0a5f2d",
+    "taskTextColor": "#102027",
+    "taskTextOutsideColor": "#102027",
+
+    "activeTaskBkgColor": "#00802f",
+    "activeTaskBorderColor": "#0a5f2d",
+
+    "doneTaskBkgColor": "#cfe8d9",
+    "doneTaskBorderColor": "#0a5f2d",
+
+    "critBkgColor": "#eb6969",
+    "critBorderColor": "#0a5f2d",
+
+    "todayLineColor": "#eb6969"
+  }
+}}%%
+
+gantt
+    dateFormat  YYYY-MM-DD
+    axisFormat  %d.%m.%Y
+
+    section Preparation CTD26
+    First data collection                   :done, a1, 2026-05-01, 2026-05-08
+    Preliminary analysis                    :active, a2, after a1, 2026-05-15
+    Presentation in Colloquium              :milestone, m0, 2026-05-13, 0d
+    First dissemination                     :active, a3, after a2, 2026-05-21
+    Discussion and revisions                :a4, after a3, 2026-05-30
+    Preparation results and presentation    :a5, after a4, 2026-06-10
+
+    section Consumers + Technology Dialogue 2026
+    CTD26                                   :crit, b1, 2026-06-23, 2026-06-26
+    Presentation at CTD                            :milestone, m1, 2026-06-24, 0d
+
+    section Preparation Manuscript
+    Further analyses based on CTD input           :c1, 2026-07-01, 10d
+    Writing of manuscript                   :c2, after c1, 2026-07-20
+    Feedback v1 manuscript                  :c3, after c2, 2026-07-31
+    Revision of manuscript                  :c4, after c3, 2026-08-14
+    Further revision rounds                  :c5, after c4, 2026-08-30
+    Submission manuscript                   :milestone, m3, 2026-08-31, 0d
+
+    section Finalization
+    Aftermath (?)                               :d1, 2026-09-01, 2026-09-30
+```
+
 ## Goal of Today's Colloqium{.center}
 
 -   What would make a field map **useful** to you?
@@ -523,9 +593,9 @@ inertia = how much of the overall structure in the document–keyword matrix is 
 ### Embedding-based Models
 
 <iframe 
-  class="r-stretch"
+  class="plotly-frame r-stretch"
   src="../images/bertopic_keyword_map.html"
-  style="width: 80%; border: none; overflow: hidden;display:block;padding:20px;"
+  loading="lazy"
 ></iframe>
 
 :::{.bib-p}
@@ -536,9 +606,9 @@ Intertopic Distance map of titles + keywords from select FT50 journal papers con
 ### LLM augmented models
 
 <iframe 
-  class="r-stretch"
+  class="plotly-frame r-stretch"
   src="../images/LLM_bertopic_combo_map.html"
-  style="width: 80%; border: none; overflow: hidden;display:block;"
+  loading="lazy"
 ></iframe>
 
 :::{.bib-p}
@@ -548,14 +618,43 @@ Intertopic Distance map of LLM-extracted technology–change–consequence combi
 ## Topics{.image-slide-bg}
 ### LLM augmented models
 
-<iframe 
-  class="r-stretch"
-  src="../images/LLM_bertopic_combo_document_map.html"
-  style="width: 80%; border: none; overflow: hidden;display:block;"
-></iframe>
+  <iframe 
+    class="plotly-frame r-stretch"
+    src="../images/LLM_bertopic_combo_document_map.html"
+    loading="lazy">
+  </iframe>
+
 
 :::{.bib-p}
-Intertopic Distance map of LLM-extracted technology–change–consequence combinations from select FT50 journal papers containing technolo* in title, abstract or keywords. BERTopic embeddings with BAAI/bge-small-en-v1.5, UMAP with cosine distance metric, n_neighbors = 15 and n_components = 5. Technology, change, and consequence codes are LLM generated from abstracts (OpenAI ChatGPT-4o-mini, t = 0). Topic titles are LLM generated (OpenAI ChatGPT-4o-mini, t = 0). Own visualization with `plotly`.
+Intertopic Distance map of LLM-extracted technology–change–consequence combinations from select FT50 journal papers containing technolo* in title, abstract or keywords. BERTopic embeddings with `BAAI/bge-small-en-v1.5`, UMAP with cosine distance metric, n_neighbors = 15 and n_components = 5. Technology, change, and consequence codes are LLM generated from abstracts (OpenAI ChatGPT-4o-mini, t = 0). Topic titles are LLM generated (OpenAI ChatGPT-4o-mini, t = 0). Own visualization with `plotly`.
+:::
+
+## Topics{.image-slide-bg}
+### LLM augmented models
+
+  <iframe 
+    class="plotly-frame r-stretch"
+    src="../images/LLM_technology_consequence_3d_map.html"
+    loading="lazy">
+  </iframe>
+
+
+:::{.bib-p}
+3D semantic map of LLM-extracted technology–consequence relations from select FT50 journal papers containing technolo* in title, abstract or keywords. Separate BERTopic models cluster technologies and consequences; point positions are based on shared `BAAI/bge-small-en-v1.5` embeddings reduced with 3D UMAP. Codes and topic labels are LLM generated (OpenAI `ChatGPT-4o-mini`, t = 0). Own visualization with `plotly`.
+:::
+
+## Topics{.image-slide-bg}
+### LLM augmented models
+
+  <iframe 
+    class="plotly-frame r-stretch"
+    src="../images/LLM_technology_change_3d_map.html"
+    loading="lazy">
+  </iframe>
+
+
+:::{.bib-p}
+3D semantic map of LLM-extracted technology–change relations from select FT50 journal papers containing technolo* in title, abstract or keywords. Separate BERTopic models cluster technologies and changes; point positions are based on shared `BAAI/bge-small-en-v1.5` embeddings reduced with 3D UMAP. Codes and topic labels are LLM generated (OpenAI `ChatGPT-4o-mini`, t = 0). Own visualization with `plotly`.
 :::
 
 
