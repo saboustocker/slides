@@ -1,0 +1,337 @@
+---
+title: "Pilot Experiment: Agentic AI x Preference Construction"
+author: Sabou Rani Stocker
+date: 2026-05-21
+subtitle: Overview of Operationalizations, and Examples from Existing Literature
+format:
+  html:  
+    theme: [sandstone, hsg_pages.scss]
+    navbar: false
+    toc: true
+title-slide-attributes: 
+  data-background-color: "#0a5f2d"
+project: "Origin Ambiguity"
+bibliography: ../bibliography.bib
+---
+
+# Actual-Ideal Preference Discrepancies 
+
+Both understandings of actual and ideal preference / self-concept are prevalent in literature: The understanding that actual self-concept / preference and ideal self-concept / preference are independent from each other, meaning that **ideal self is not a state relative to the actual self**, and that the actual self-concept / preference and ideal self-concept / preference are inherently linked to each other, meaning that **the ideal self must be an idealized state relative to the actual self**. It appears that the choice which definition to use primarily depends on the research question asked, and I was not able to identify big philosophical debates why one could be better or worse than the other. 
+
+Prevalent theories relating to self-concept / preferences and identity-based consumption can broadly be categorized into these two aspects: 
+
+## Discrepancy Perspective 
+
+- @higginsSelfdiscrepancyTheoryRelating1987 conceptualizes the self-discrepancy between actual-ideal, actual-ought and ought-ideal as **relative to a personal reference-point**, meaning that any effects from discrepancies only occur if the difference is large enough, not merely because ideal selves / preferences are high on an absolute scale. 
+- @mandelCompensatoryConsumerBehavior2017 argues that self-discrepancies can motivate consumption as compensation
+
+## Congruity Perspective 
+
+- @sirgySelfConceptConsumerBehavior1982 conceptualizes the ideal self is “the image of oneself as one would like to be” and **ideal congruity is the match between a product/user image and that ideal self-image**. He does not explicitly declare this, but from his descriptions, it can be implied that he sees ideal self and actual self as absolute self-images, not relative images to each other. Sirgy explicitly models actual- and ideal-self in relation to **product congruence** ($\sum_i|P_{ij}-I_{ij}|$ and $\sum_i|P_{ij}-S_{ij}|$, wherein $P$ is product attributes, $S$ is actual self, and $I$ is ideal self). 
+- @belkExtendedSelfDigital2013, @belkPossessionsExtendedSelf1988 argue that possessions become part of the extended self, wherein consumers should shed or neglect possessions is when possessions no longer fit consumers' ideal self-images. This can occur either because the ideal self-image has changed or because the images of the objects formerly incorporated in extended self have changed. [@belkPossessionsExtendedSelf1988; p. 159]
+
+
+## Empirical Examples of Operationalization
+
+<style>
+.actual-ideal-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+.actual-ideal-table th,
+.actual-ideal-table td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  vertical-align: top;
+}
+</style>
+
+<table class="actual-ideal-table">
+  <thead>
+    <tr>
+      <th>Paper</th>
+      <th>Framework</th>
+      <th>Operationalization</th>
+      <th>Scales</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>@khambattaTailoringRecommendationAlgorithms2023</td>
+      <td>Discrepancy</td>
+      <td>They measure actual and ideal preferences separately, but focus on the gap/conflict between them. They explicitly focus on cases where actual and ideal recommendations differ; when both would recommend the same article, they say there is no meaningful actual-vs-ideal manipulation.</td>
+      <td>
+        “How much do you ACTUALLY want to read this article?” (0–100)<br>
+        “How much would you IDEALLY want to read this article?” (0–100)<br>
+        Self-developed.
+      </td>
+    </tr>
+
+    <tr>
+      <td>@shehzalaSocialMediaStars2024</td>
+      <td>Discrepancy</td>
+      <td>They look at actual and ideal preferences specifically in relation to a gap: exposure to influencer content may influence the ideal self and result in self-discrepancy or a “gap between his/her actual self and this ideal self.”</td>
+      <td>
+        Participants rated themselves on semantic scales for five dimensions, for example attractive vs. unattractive: how they actually see themselves and how they ideally see themselves.<br>
+        Based on Ohanian (1990).
+      </td>
+    </tr>
+
+    <tr>
+      <td>@huberRoleActualIdeal2018</td>
+      <td>Discrepancy</td>
+      <td>They operationalize the ideal self relative to the actual self and postulate that the magnitude of mismatch fuels the motivation to close this gap.</td>
+      <td>
+        The personality of brand X is consistent with how I see myself (my actual self).<br>
+        The personality of brand X is a mirror image of me (my actual self).<br><br>
+        The personality of brand X is consistent with how I would like to be (my ideal self).<br>
+        The personality of brand X is a mirror image of the person I would like to be (my ideal self).<br>
+        Self-developed.
+      </td>
+    </tr>
+
+    <tr>
+      <td>@shanHowWhenActualideal2022</td>
+      <td>Discrepancy</td>
+      <td>“Self-concept was measure by a semantic differential scale with 12 adjectives adapted from Graeff (1996), such as mature versus youthful, active versus passive, trendy versus outdated, interesting versus dull, and leader versus follower. We asked respondents to first evaluate themselves against these twelve adjectives as they actually were, and then indicate how they would ideally like to be.”</td>
+      <td>
+        Semantic differential scale with 12 adjectives.<br>
+        Based on Graeff (1996).
+      </td>
+    </tr>
+
+    <tr>
+      <td>@malarEmotionalBrandAttachment2011</td>
+      <td>Congruity</td>
+      <td>Ideal self-congruence is conceptualized on an independent scale to actual self-congruence.</td>
+      <td>
+        “Does this product match how I actually see myself?” and “how I ideally see myself?” without referencing the other anchor point. Therefore, ideal self-congruence is conceptualized on an independent scale to actual self-congruence.<br>
+        Based on @sirgyAssessingPredictiveValidity1997.
+      </td>
+    </tr>
+
+    <tr>
+      <td>@javornikAugmentedSelfEffects2021</td>
+      <td>Discrepancy</td>
+      <td>They measure actual–ideal attractiveness discrepancy as the gap between actual attractiveness and ideal attractiveness.</td>
+      <td>
+        <strong>Actual attractiveness:</strong> I am extremely attractive / extremely beautiful / extremely good-looking / extremely pretty.<br><br>
+        <strong>Ideal attractiveness:</strong> Ideally, I would like to be extremely attractive / extremely beautiful / extremely good-looking / extremely pretty.<br><br>
+        <strong>Discrepancy:</strong> gap between the two measures.<br>
+        Based on Heine &amp; Leghan (1990).
+      </td>
+    </tr>
+
+    <tr>
+      <td>@ayoubiEXAMININGHOWCONSUMERS2024</td>
+      <td>Congruity</td>
+      <td>Uses two separate scales for actual and ideal self and defines the actual self as the “current self-perception” and the ideal self as the “traits and attributes an individual aspires to possess.”</td>
+      <td>
+        Brand personality scale by @aakerDimensionsBrandPersonality1997. They operationalize actual and ideal self-concept independently from each other.
+      </td>
+    </tr>
+
+    <tr>
+      <td>@kaurActualIdealSelf2021</td>
+      <td>Congruity</td>
+      <td>They look at actual vs. ideal preferences in the context of fashion congruity, but do not analyze the gap between actual and ideal fashion self-congruity.</td>
+      <td>
+        <strong>Actual Fashion Self-congruity:</strong> The extent to which an individual perceives his/her fashion style to be a representation of attributes that he/she believes he actually possesses.<br><br>
+        <strong>Ideal Fashion Self-congruity:</strong> The extent to which an individual perceives his/her fashion style to be a representation of attributes that he/she aspires to possess.<br>
+        Self-developed.
+      </td>
+    </tr>
+
+    <tr>
+      <td>@zogajPursuitIdealSelf2024</td>
+      <td>Congruity</td>
+      <td>They base their items on several other sources, but make their own items. Their item formulation strongly implies a discrepancy/difference for the ideal self, but they do not explicitly state that in their paper.</td>
+      <td>
+        The personality of the “ABC/Mercedes” brand is consistent with how I see myself (my actual self).<br>
+        The personality of the “ABC/Mercedes” brand is a mirror image of me (my actual self).<br><br>
+        The personality of the “ABC/Mercedes” brand is consistent with how I would like to be (my ideal self).<br>
+        The personality of the “ABC/Mercedes” brand is a mirror image of the person I would like to be (my ideal self).
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+# Operationalizing Actual vs. Ideal Preferences when it comes to Dietary Habits
+
+## Options in Operationalizing 
+
+All options listed are based on the discussions we had previously. I hope I didn't miss anything. 
+
+<h3>Input: Open-ended vs. Predefined</h3>
+
+<table style="width:100%; border-collapse:collapse; font-size:0.9rem; line-height:1.35;">
+  <thead>
+    <tr>
+      <th style="border:1px solid #ddd; padding:0.75rem; background:#f5f5f5; text-align:left;">Option</th>
+      <th style="border:1px solid #ddd; padding:0.75rem; background:#f5f5f5; text-align:left;">Advantages</th>
+      <th style="border:1px solid #ddd; padding:0.75rem; background:#f5f5f5; text-align:left;">Disadvantages</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #ddd; padding:0.75rem; vertical-align:top;"><strong>Open-ended</strong></td>
+      <td style="border:1px solid #ddd; padding:0.75rem; vertical-align:top;">
+        More individualized; participants are more likely to identify with the foods they list; higher personal relevance.
+      </td>
+      <td style="border:1px solid #ddd; padding:0.75rem; vertical-align:top;">
+        Higher risk of consistency bias: participants may avoid self-conflict and claim that the foods they listed are also what they ideally want.
+      </td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:0.75rem; vertical-align:top;"><strong>Predefined list</strong></td>
+      <td style="border:1px solid #ddd; padding:0.75rem; vertical-align:top;">
+        More generalizable and comparable across participants; easier to analyze systematically.
+      </td>
+      <td style="border:1px solid #ddd; padding:0.75rem; vertical-align:top;">
+        Lower personal investment; lists can become long quickly; some participants may not identify with specific products.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Open-ended Input Options</h3>
+
+<table style="width:100%; border-collapse:collapse; font-size:0.9rem; line-height:1.35;">
+  <thead>
+    <tr>
+      <th style="border:1px solid #ddd; padding:0.75rem; background:#f5f5f5; text-align:left;">Option</th>
+      <th style="border:1px solid #ddd; padding:0.75rem; background:#f5f5f5; text-align:left;">Advantages</th>
+      <th style="border:1px solid #ddd; padding:0.75rem; background:#f5f5f5; text-align:left;">Disadvantages</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #ddd; padding:0.75rem; vertical-align:top;"><strong>List n foods they would like to eat</strong></td>
+      <td style="border:1px solid #ddd; padding:0.75rem; vertical-align:top;">
+        Simple and personally meaningful; captures foods participants actively desire.
+      </td>
+      <td style="border:1px solid #ddd; padding:0.75rem; vertical-align:top;">
+        Does not clearly distinguish actual preferences from ideal preferences.
+      </td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:0.75rem; vertical-align:top;"><strong>List current foods + foods to eat more/less of</strong></td>
+      <td style="border:1px solid #ddd; padding:0.75rem; vertical-align:top;">
+        Directly separates actual behavior from desired change; better suited for a discrepancy perspective.
+      </td>
+      <td style="border:1px solid #ddd; padding:0.75rem; vertical-align:top;">
+        More complex; may make actual–ideal conflict more salient.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Evaluation: Independent vs. Relative Actual–Ideal Preferences</h3>
+
+<table style="width:100%; border-collapse:collapse; font-size:0.9rem; line-height:1.35;">
+  <thead>
+    <tr>
+      <th style="border:1px solid #ddd; padding:0.75rem; background:#f5f5f5; text-align:left;">Option</th>
+      <th style="border:1px solid #ddd; padding:0.75rem; background:#f5f5f5; text-align:left;">Advantages</th>
+      <th style="border:1px solid #ddd; padding:0.75rem; background:#f5f5f5; text-align:left;">Disadvantages</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #ddd; padding:0.75rem; vertical-align:top;"><strong>Treat actual and ideal preferences independently</strong></td>
+      <td style="border:1px solid #ddd; padding:0.75rem; vertical-align:top;">
+        Simpler design; can test whether one profile is more ideal-congruent than another.
+      </td>
+      <td style="border:1px solid #ddd; padding:0.75rem; vertical-align:top;">
+        Cannot show whether ideal preferences differ from actual preferences; high ideal-congruence may simply reflect already-ideal behavior.
+      </td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:0.75rem; vertical-align:top;"><strong>Treat actual and ideal preferences relative to each other</strong></td>
+      <td style="border:1px solid #ddd; padding:0.75rem; vertical-align:top;">
+        Allows estimating the actual–ideal discrepancy; directly tests whether profiles move closer to actual or ideal preferences.
+      </td>
+      <td style="border:1px solid #ddd; padding:0.75rem; vertical-align:top;">
+        More complex design and analysis; requires measuring both actual and ideal preferences.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Discrepancy Measurement Options</h3>
+
+<table style="width:100%; border-collapse:collapse; font-size:0.9rem; line-height:1.35;">
+  <thead>
+    <tr>
+      <th style="border:1px solid #ddd; padding:0.75rem; background:#f5f5f5; text-align:left;">Option</th>
+      <th style="border:1px solid #ddd; padding:0.75rem; background:#f5f5f5; text-align:left;">Advantages</th>
+      <th style="border:1px solid #ddd; padding:0.75rem; background:#f5f5f5; text-align:left;">Disadvantages</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #ddd; padding:0.75rem; vertical-align:top;"><strong>Two-phased design</strong></td>
+      <td style="border:1px solid #ddd; padding:0.75rem; vertical-align:top;">
+        Cleanest separation between baseline preferences and profile construction; closest to a stated vs. revealed preference logic; can adapt @khambattaTailoringRecommendationAlgorithms2023.
+      </td>
+      <td style="border:1px solid #ddd; padding:0.75rem; vertical-align:top;">
+        Most complex; requires multiple survey stages or repeated contact.
+      </td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:0.75rem; vertical-align:top;"><strong>One-phased design</strong></td>
+      <td style="border:1px solid #ddd; padding:0.75rem; vertical-align:top;">
+        Simpler and easier to implement; avoids needing a separate pre-survey.
+      </td>
+      <td style="border:1px solid #ddd; padding:0.75rem; vertical-align:top;">
+        Higher risk of post-hoc consistency bias: participants may rate their own profile as ideal because they just created it.
+      </td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:0.75rem; vertical-align:top;"><strong>Rank-order / selection design</strong></td>
+      <td style="border:1px solid #ddd; padding:0.75rem; vertical-align:top;">
+        Simple behavioral indicator; lower rating burden; easy to quantify as share of actual vs. ideal foods selected.
+      </td>
+      <td style="border:1px solid #ddd; padding:0.75rem; vertical-align:top;">
+        Less precise than continuous ratings; depends heavily on how the actual and ideal food pools are constructed.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!--
+### Input: Open-ended vs. Predefined
+
+- Open-ended makes it more individualized and therefore increases chances that participants identify with the choices, but also risks that they want to avoid "self conflict" and then necessarily say that they ideally want to consume what they just listed, although that might not be their true ideal 
+    - If we go with open-ended questions, we could either make them list $n$ foods that they would like to eat, 
+    - or directly ask them to list $n$ foods that they currently eat a lot, and $n$ foods that they would like to eat more/less of 
+
+- Closed-ended makes it more generalizeable and therefore lowers changes of "personal investment", but lists can get very long very quick and not everyone will identify with some products, which could make it difficult to get proper ratings
+
+### Evaluation
+
+- Treating actual and ideal preferences independently: We could just ask about ideal preferences without considering actual preferences, and see if one profile is more ideal than the other. This would make the setup simpler, but risk that we cannot differ if people are just very self-controlled (and already live their ideal preference) or if they genuinely have bigger discrepancies. 
+- Treating actual and ideal preferences relative to each other: We could ask for each preference what their actual behavior is and what their ideal behavior would be. This would allow us to show the discrepancies, but makes the study design inherently more complicated. 
+
+#### Treating actual and ideal preferences relative to each other
+
+If we decide to go for this route, we could measure the discrepancies in several ways: 
+
+- Two-phased design: Ask people in a separate survey ahead of time how often they eat certain foods, and if their ideal eating habits look different. This would introudce the most objective "stated vs. revealed preferences" perspective, but be rather complex. Going with this option, we could very well adopt the rating schemes by @khambattaTailoringRecommendationAlgorithms2023
+
+- One-phased design: Make people construct their profile and then ask them after the fact how much they ideally want to eat the way they just proclaimed in the profile. This would make the study one-phased and simpler, but could cause biases because people don't want to admit to themselves that what they just selected is discrepant from their ideal preferences.
+
+- Rank-order design: Make people select a subset from a pool of actual and ideal foods and sum up how many of the selected foods are from the actual vs. from the ideal pool 
+-->
+
+Based on our research question, I think we should adopt a **discrepancy perspective** on actual and ideal preferences. We hypothesize that consumers construct different profiles depending on whether the system is agentic or just recommends.
+
+To test this, we need to measure both actual and ideal preferences. If we only measure ideal preferences, we can show whether a profile is ideal-congruent, but we cannot determine whether it is **more ideal than actual**, nor whether agentic and recommender systems shift profile construction in opposite directions. The prediction is comparative: a profile may be close to the ideal self, close to the actual self, or somewhere between the two. Without measuring the actual baseline, we cannot estimate this distance.
+
+For example, suppose a participant says they ideally want to eat more vegetables. If we only measure this ideal preference, and their AI profile includes many vegetables, we might conclude that the profile is ideal-congruent. However, this conclusion is incomplete if the participant already eats many vegetables in everyday life. In that case, the profile may not reflect an ideal shift at all; it may simply reproduce the actual baseline.
+
+Therefore, measuring both actual and ideal preferences allows us to identify the actual–ideal discrepancy and test whether system type changes which side of the discrepancy consumers orient toward. This is essential because our theoretical claim concerns **preference alignment relative to a baseline**, not ideal preferences in isolation.
+
+# Bibliography
