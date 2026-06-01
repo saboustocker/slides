@@ -11,6 +11,8 @@ bibliography: ../bibliography.bib
 navbar: false
 ---
 
+test change
+
 ::: explanation-p
 This document summarizes the shift in consumer spaces with the introduction of LLMs, and two possible research directions resulting from it.
 
