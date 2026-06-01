@@ -4,7 +4,8 @@
     "items": [
       "/slides/convenienceprivacy.html",
       "/slides/20251210_Colloquium.html",
-      "/slides/ctm_project.html"
+      "/slides/ctm_project.html",
+      "/slides/20260603_CTM.html"
     ]
   },
   {
@@ -14,11 +15,10 @@
       "/documents/Origin_ambiguity.html",
       "/documents/cookies_analysis.html",
       "/documents/technology_classification.html",
+      "/documents/dependent_variable_agenticai.html",
       "/documents/autonomous_shopping_agents.html",
       "/documents/ctm_project_variants.html",
-      "/documents/dependent_variable_agenticai.html",
-      "/documents/my_algorithmic_self.html",
-      "/documents/analysis_esf.html"
+      "/documents/my_algorithmic_self.html"
     ]
   }
 ]
