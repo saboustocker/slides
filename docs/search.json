@@ -1299,21 +1299,28 @@
     "href": "drafts/mapping_consumers_technology_progress_reworked.html#technology---k-10",
     "title": "Mapping Consumers + Technology",
     "section": "Technology - k = 10",
-    "text": "Technology - k = 10\n\n\nTechnology clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization."
+    "text": "Technology - k = 10\n\nCluster mapDevelopment over timeCumulative\n\n\n\n\nTechnology clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization."
+  },
+  {
+    "objectID": "drafts/mapping_consumers_technology_progress_reworked.html#technology---k-10-1",
+    "href": "drafts/mapping_consumers_technology_progress_reworked.html#technology---k-10-1",
+    "title": "Mapping Consumers + Technology",
+    "section": "Technology - k = 10",
+    "text": "Technology - k = 10\n\nCluster mapDevelopment over timeCumulative\n\n\n\n\nTechnology clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization."
   },
   {
     "objectID": "drafts/mapping_consumers_technology_progress_reworked.html#technology---k-20",
     "href": "drafts/mapping_consumers_technology_progress_reworked.html#technology---k-20",
     "title": "Mapping Consumers + Technology",
     "section": "Technology - k = 20",
-    "text": "Technology - k = 20\n\n\nTechnology clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization."
+    "text": "Technology - k = 20\n\nCluster mapDevelopment over timeCumulative\n\n\n\n\nTechnology clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization."
   },
   {
     "objectID": "drafts/mapping_consumers_technology_progress_reworked.html#technology---k-30",
     "href": "drafts/mapping_consumers_technology_progress_reworked.html#technology---k-30",
     "title": "Mapping Consumers + Technology",
     "section": "Technology - k = 30",
-    "text": "Technology - k = 30\n\n\nTechnology clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization."
+    "text": "Technology - k = 30\n\nCluster mapDevelopment over timeCumulative\n\n\n\n\nTechnology clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization."
   },
   {
     "objectID": "drafts/mapping_consumers_technology_progress_reworked.html#extraction-process",
@@ -1349,6 +1356,13 @@
     "title": "Mapping Consumers + Technology",
     "section": "Essence - k = 10",
     "text": "Essence - k = 10\n\n\nEssence clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization."
+  },
+  {
+    "objectID": "drafts/mapping_consumers_technology_progress_reworked.html#essence---k-20",
+    "href": "drafts/mapping_consumers_technology_progress_reworked.html#essence---k-20",
+    "title": "Mapping Consumers + Technology",
+    "section": "Essence - k = 20",
+    "text": "Essence - k = 20\n\n\nEssence clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization."
   },
   {
     "objectID": "drafts/mapping_consumers_technology_progress_reworked.html#essence---k-30",

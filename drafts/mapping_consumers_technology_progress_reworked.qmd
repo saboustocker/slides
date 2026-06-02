@@ -113,33 +113,123 @@ Bottom-up assessment of articles published since 2000 in the current journal set
 
 ## Technology - k = 10
 
-<iframe src="../images/Figures_CTM/technology/technology_map_k10.html" width="100%" height="620px"></iframe>
+::: {.panel-tabset}
+
+## Cluster map
+
+<iframe src="../images/Figures_CTM/technology/technology_map_k10.html" width="100%" height="500px"></iframe>
 
 <small>Technology clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization.</small>
+
+## Development over time
+
+<iframe src="../images/Figures_CTM/technology/technology_progression_line_k10.html" width="100%" height="500px"></iframe>
+
+## Cumulative
+
+<iframe src="../images/Figures_CTM/technology/technology_progression_share_k10.html" width="100%" height="500px"></iframe>
+
+:::
+
+## Technology - k = 10
+
+::: {.panel-tabset}
+
+## Cluster map
+
+<iframe src="../images/Figures_CTM/technology/technology_map_k10.html" width="100%" height="500px"></iframe>
+
+<small>Technology clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization.</small>
+
+## Development over time
+
+<iframe src="../images/Figures_CTM/technology/technology_progression_line_k10.html" width="100%" height="500px"></iframe>
+
+## Cumulative
+
+<iframe src="../images/Figures_CTM/technology/technology_progression_share_k10.html" width="100%" height="500px"></iframe>
+
+:::
 
 ## Technology - k = 15 {visibility="hidden"}
 
-<iframe src="../images/Figures_CTM/technology/technology_map_k15.html" width="100%" height="620px"></iframe>
+::: {.panel-tabset}
+
+## Cluster map
+
+<iframe src="../images/Figures_CTM/technology/technology_map_k15.html" width="100%" height="500px"></iframe>
 
 <small>Technology clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization.</small>
+
+## Development over time
+
+<iframe src="../images/Figures_CTM/technology/technology_progression_line_k15.html" width="100%" height="500px"></iframe>
+
+## Cumulative
+
+<iframe src="../images/Figures_CTM/technology/technology_progression_share_k15.html" width="100%" height="500px"></iframe>
+
+:::
 
 ## Technology - k = 20
 
-<iframe src="../images/Figures_CTM/technology/technology_map_k20.html" width="100%" height="620px"></iframe>
+::: {.panel-tabset}
+
+## Cluster map
+
+<iframe src="../images/Figures_CTM/technology/technology_map_k20.html" width="100%" height="500px"></iframe>
 
 <small>Technology clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization.</small>
+
+## Development over time
+
+<iframe src="../images/Figures_CTM/technology/technology_progression_line_k20.html" width="100%" height="500px"></iframe>
+
+## Cumulative
+
+<iframe src="../images/Figures_CTM/technology/technology_progression_share_k20.html" width="100%" height="500px"></iframe>
+
+:::
 
 ## Technology - k = 25 {visibility="hidden"}
 
-<iframe src="../images/Figures_CTM/technology/technology_map_k25.html" width="100%" height="620px"></iframe>
+::: {.panel-tabset}
+
+## Cluster map
+
+<iframe src="../images/Figures_CTM/technology/technology_map_k25.html" width="100%" height="500px"></iframe>
 
 <small>Technology clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization.</small>
+
+## Development over time
+
+<iframe src="../images/Figures_CTM/technology/technology_progression_line_k25.html" width="100%" height="500px"></iframe>
+
+## Cumulative
+
+<iframe src="../images/Figures_CTM/technology/technology_progression_share_k25.html" width="100%" height="500px"></iframe>
+
+:::
 
 ## Technology - k = 30
 
-<iframe src="../images/Figures_CTM/technology/technology_map_k30.html" width="100%" height="620px"></iframe>
+::: {.panel-tabset}
+
+## Cluster map
+
+<iframe src="../images/Figures_CTM/technology/technology_map_k30.html" width="100%" height="500px"></iframe>
 
 <small>Technology clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization.</small>
+
+## Development over time
+
+<iframe src="../images/Figures_CTM/technology/technology_progression_line_k30.html" width="100%" height="500px"></iframe>
+
+## Cumulative
+
+<iframe src="../images/Figures_CTM/technology/technology_progression_share_k30.html" width="100%" height="500px"></iframe>
+
+:::
 
 # Mechanism and Essence Maps {.green-slide-bg}
 
@@ -199,7 +289,7 @@ $\rightarrow$ currently feels like a lot of noise
 
 <small>Essence clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization.</small>
 
-## Essence - k = 20 {visibility="hidden"}
+## Essence - k = 20
 
 <iframe src="../images/Figures_CTM/essence/essence_map_k20.html" width="100%" height="620px"></iframe>
 
