@@ -25,7 +25,7 @@ project: "Consumers + Technology Dialogue"
 bibliography: ../bibliography.bib
 ---
 
-# Agenda {.section-slide-bg}
+# Agenda {.section-header-bg}
 
 ## {.blue-slide-bg}
 
@@ -33,29 +33,46 @@ bibliography: ../bibliography.bib
 
 1. **Project scope**: What should the map (not) cover? And what is our motivation?
 3. **Preliminary results**: technology, mechanism, and essence maps across k = 10-30.
-4. **Discussion decisions**: cluster granularity, prompt definitions, and next validation steps.
+4. **Discussion decisions**: cluster granularity, prompt definitions (especially mechanism / essence), and validation steps.
 
 ::: {.focusbox}
-**Overall**: Is the current approach directionally useful, and how can we refine the method to get a less noisy output?
+**Overall**: Is the current approach directionally useful, and how can we **refine the extraction** to get a less noisy output?
 :::
 
 :::
 
 # Overview {.section-header-bg}
 
-## Project at scope
+## Project at Scope
 
-This project maps **consumer-facing technologies in marketing and consumer-behavior research** since 2000.
+### Part I: Technologies and Their Essence
 
-The central idea is to create a structured overview of:
+> What consumer-facing technologies have we analyzed and to what kind of essence have we pointed?
+
+$\rightarrow$ **consumer-facing technologies in marketing and consumer-behavior research** since 2000.
+
+Structured Overview of:
 
 1. **Technologies**: what technologies appear in the literature?
 2. **Mechanisms**: What are the consequences for consumers discussed in the papers?
-3. **Essences**: What are the higher-level conceptual essences these technologies imply?
+3. **Essences**: What are the higher-level conceptual essences these technologies and essences imply?
 
-## Scope and corpus
+## Project at Scope
+
+### Part II: Technospecifity of Essence
+
+> To what extent does the essence of a technology overlap with other technologies, and what are driving factors in the overlap?
+
+Structured Overview of:
+
+1. (Lack of) **Uniqueness of Essence** described in relation to specific technologies
+2. **Determinants of Overlap** (to the extent they are identifiable)
+
+## Scope and Corpus
 
 Bottom-up assessment of articles published since 2000 in the current journal set:
+
+:::{.smaller-p}
 
 - *Journal of Marketing*
 - *Journal of Consumer Research*
@@ -65,23 +82,32 @@ Bottom-up assessment of articles published since 2000 in the current journal set
 - *International Journal of Research in Marketing*
 - *Marketing Science*
 
+:::
+
 ## Conceptual Definitions {.smaller}
 
-**Technology.** Technologies are treated as scientific knowledge and/or its application for firms and/or consumers with the potential to influence marketing-relevant activities, institutions, and exchange processes [@hoffmanRiseNewTechnologies2022].
+**Technology.** Technologies are treated as scientific knowledge and/or its application for firms and/or consumers with the potential to influence marketing-relevant activities, institutions, and exchange processes. [@hoffmanRiseNewTechnologies2022]
+<br><br> 
 
 **Consumer-facing technology.** A technology is consumer-facing when consumers or end users directly interact with it or directly experience it.
+<br><br>
 
-**Empirical basis.** An article is empirical when it relies on observation or measurement of phenomena, rather than being purely conceptual [@veraLibraryGuidesEmpirical].
+**Empirical basis.** An article is empirical when it relies on observation or measurement of phenomena, rather than being purely conceptual. [@veraLibraryGuidesEmpirical]
+<br><br>
 
-**Essence**: the deeper capacities through which technology affects consumer experiences[@VisibleMeasurableImmediate]
+**Essence**: the deeper capacities through which technology affects consumer experiences.[@VisibleMeasurableImmediate]
 
 # Preliminary Results {.section-header-bg}
 
 # Technology Maps {.green-slide-bg}
 
-## Identification of Technology
+## Identification of Technology {.image-slide-bg}
 
-![](../images/Extraction_pipeline.png)
+:::{.center-middle}
+
+![](../images/Figures_CTM/technology_identification.svg)
+
+:::
 
 ## Technology - k = 10
 
@@ -89,7 +115,7 @@ Bottom-up assessment of articles published since 2000 in the current journal set
 
 <small>Technology clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization.</small>
 
-## Technology - k = 15
+## Technology - k = 15 {visibility="hidden"}
 
 <iframe src="../images/Figures_CTM/technology/technology_map_k15.html" width="100%" height="620px"></iframe>
 
@@ -101,7 +127,7 @@ Bottom-up assessment of articles published since 2000 in the current journal set
 
 <small>Technology clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization.</small>
 
-## Technology - k = 25
+## Technology - k = 25 {visibility="hidden"}
 
 <iframe src="../images/Figures_CTM/technology/technology_map_k25.html" width="100%" height="620px"></iframe>
 
@@ -113,11 +139,17 @@ Bottom-up assessment of articles published since 2000 in the current journal set
 
 <small>Technology clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization.</small>
 
-# Mechanism Maps {.green-slide-bg}
+# Mechanism and Essence Maps {.green-slide-bg}
 
-## Mechanism maps
+## Extraction Process
 
-**Operationalization through prompts?** 
+**Mechanism**: 
+
+`PROMPT = "Identify the concrete mechanism described in THIS title/abstract."`
+
+**Essence**:
+
+`PROMPT = "The essence of a technology is the deeper mechanism through which technology reshapes consumer experience."`
 
 $\rightarrow$ currently feels like a lot of noise
 
@@ -127,7 +159,7 @@ $\rightarrow$ currently feels like a lot of noise
 
 <small>Mechanism clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization.</small>
 
-## Mechanism - k = 15
+## Mechanism - k = 15 {visibility="hidden"}
 
 <iframe src="../images/Figures_CTM/mechanism/mechanism_map_k15.html" width="100%" height="620px"></iframe>
 
@@ -139,7 +171,7 @@ $\rightarrow$ currently feels like a lot of noise
 
 <small>Mechanism clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization.</small>
 
-## Mechanism - k = 25
+## Mechanism - k = 25 {visibility="hidden"}
 
 <iframe src="../images/Figures_CTM/mechanism/mechanism_map_k25.html" width="100%" height="620px"></iframe>
 
@@ -153,31 +185,25 @@ $\rightarrow$ currently feels like a lot of noise
 
 # Essence Maps {.green-slide-bg}
 
-## Essence maps
-
-**Operationalization through prompts?** 
-
-$\rightarrow$ currently feels like a lot of noise
-
 ## Essence - k = 10
 
 <iframe src="../images/Figures_CTM/essence/essence_map_k10.html" width="100%" height="620px"></iframe>
 
 <small>Essence clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization.</small>
 
-## Essence - k = 15
+## Essence - k = 15 {visibility="hidden"}
 
 <iframe src="../images/Figures_CTM/essence/essence_map_k15.html" width="100%" height="620px"></iframe>
 
 <small>Essence clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization.</small>
 
-## Essence - k = 20
+## Essence - k = 20 {visibility="hidden"}
 
 <iframe src="../images/Figures_CTM/essence/essence_map_k20.html" width="100%" height="620px"></iframe>
 
 <small>Essence clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization.</small>
 
-## Essence - k = 25
+## Essence - k = 25 {visibility="hidden"}
 
 <iframe src="../images/Figures_CTM/essence/essence_map_k25.html" width="100%" height="620px"></iframe>
 
@@ -200,13 +226,7 @@ $\rightarrow$ currently feels like a lot of noise
 
 # Appendix
 
-# Method
-
-## Overview
-
-Inclusion of Papers: 
-
--> include figure here
+# Method {.section-header-bg}
 
 ## Identification: what is screened
 
@@ -218,8 +238,7 @@ Current screeners:
 Explorative:
 Was the technology **new at the time** of the paper, in the sense of being early in the adoption cycle?
 
-
-## Aggregation
+## Aggregation {.smaller}
 
 - Technologies, mechanisms and essences are transformed to long format (i.e. if a paper discusses more than one technology, I include it several times, once for each technology)
 - embeddings are created with `BAAI/bge-small-en-v1.5`;
@@ -231,7 +250,7 @@ Was the technology **new at the time** of the paper, in the sense of being early
 
 !! Important: Currently, there is no statistical validation of optimal method. !! 
 
-## Visualization
+## Visualization {.smaller}
 
 The visible 2D maps are used for interpretation, not for clustering.
 
@@ -244,33 +263,5 @@ Map coordinates are based on UMAP with:
 - fixed random seed for reproducibility.
 
 This means that distance on the plot is useful as an intuition, but cluster assignment should be interpreted through the embedding-and-clustering pipeline, not only visual proximity.
-
-## Mechanisms: current concern
-
-A mechanism should describe a **process that links the technology to an effect**.
-
-Current issue: the prompt may be producing too much noise, including:
-
-- outcomes instead of mechanisms;
-- vague abstractions;
-- generic marketing language;
-- mechanisms not actually supported by the abstract;
-- article-topic summaries rather than causal processes.
-
-Discussion goal: decide how restrictive the next mechanism prompt should be.
-
-
-## Essence: current concern
-
-An essence should be more abstract than a mechanism, but not so abstract that every technology collapses into the same words.
-
-Current issue: essences may become:
-
-- too generic: "consumer behavior", "digital transformation";
-- too evaluative: "better experience", "improved outcomes";
-- too distant from the technology;
-- too inconsistent across similar mechanisms.
-
-Discussion goal: decide whether essences should be generated bottom-up from mechanisms, or constrained by a predefined vocabulary.
 
 # Bibliography

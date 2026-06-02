@@ -844,7 +844,7 @@
     "href": "docs_overview.html",
     "title": "Documents Listing",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nSubtitle\n\n\n\nDate\n\n\n\nproject\n\n\n\n\n\n\n\n\nOrigin Ambiguity\n\n\nWhat happens if people no longer know if something originates from AI or human authorship?\n\n\n29.10.2025\n\n\nOrigin Ambiguity\n\n\n\n\n\n\nOrigin Ambiguity\n\n\n \n\n\n21.11.2025\n\n\nOrigin Ambiguity\n\n\n\n\n\n\nOpen Science Office Kick-Off\n\n\nAnalysis and Executive Summary\n\n\n24.02.2026\n\n\nOpen Science Office\n\n\n\n\n\n\nClassifying Technology and its Adoption Rates\n\n\nComparison of Suggestions\n\n\n25.02.2026\n\n\nHistory of AI\n\n\n\n\n\n\nPilot Experiment: Agentic AI x Preference Construction\n\n\nOverview of Operationalizations, and Examples from Existing Literature\n\n\n21.05.2026\n\n\nOrigin Ambiguity\n\n\n\n\n\n\nOverview Autonomous Shopping Agents\n\n\nHow do (self-declared) autonomous systems appeal to the user in terms of personalization and goal-setting?\n\n\n01.06.2026\n\n\nalgorithmic intermediaries\n\n\n\n\n\n\nA Map of the Consumers+Technology Dialogue\n\n\nTowards an integration of theories and concepts in the research domain of consumer-technology-interaction\n\n\n01.06.2026\n\n\nConvenience\n\n\n\n\n\n\nShaping the Algorithmic Self\n\n\nDo consumers construct algorithmic intermediaries as mirrors of the self or as compensators for perceived shortcomings?\n\n\n01.06.2026\n\n\nalgorithmic intermediaries\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nSubtitle\n\n\n\nDate\n\n\n\nproject\n\n\n\n\n\n\n\n\nOrigin Ambiguity\n\n\nWhat happens if people no longer know if something originates from AI or human authorship?\n\n\n29.10.2025\n\n\nOrigin Ambiguity\n\n\n\n\n\n\nOrigin Ambiguity\n\n\n \n\n\n21.11.2025\n\n\nOrigin Ambiguity\n\n\n\n\n\n\nOpen Science Office Kick-Off\n\n\nAnalysis and Executive Summary\n\n\n24.02.2026\n\n\nOpen Science Office\n\n\n\n\n\n\nClassifying Technology and its Adoption Rates\n\n\nComparison of Suggestions\n\n\n25.02.2026\n\n\nHistory of AI\n\n\n\n\n\n\nPilot Experiment: Agentic AI x Preference Construction\n\n\nOverview of Operationalizations, and Examples from Existing Literature\n\n\n21.05.2026\n\n\nOrigin Ambiguity\n\n\n\n\n\n\nOverview Autonomous Shopping Agents\n\n\nHow do (self-declared) autonomous systems appeal to the user in terms of personalization and goal-setting?\n\n\n02.06.2026\n\n\nalgorithmic intermediaries\n\n\n\n\n\n\nA Map of the Consumers+Technology Dialogue\n\n\nTowards an integration of theories and concepts in the research domain of consumer-technology-interaction\n\n\n02.06.2026\n\n\nConvenience\n\n\n\n\n\n\nShaping the Algorithmic Self\n\n\nDo consumers construct algorithmic intermediaries as mirrors of the self or as compensators for perceived shortcomings?\n\n\n02.06.2026\n\n\nalgorithmic intermediaries\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "documents/autonomous_shopping_agents.html",
@@ -1257,28 +1257,35 @@
     "href": "drafts/mapping_consumers_technology_progress_reworked.html#section",
     "title": "Mapping Consumers + Technology",
     "section": "",
-    "text": "Project scope: What should the map (not) cover? And what is our motivation?\nPreliminary results: technology, mechanism, and essence maps across k = 10-30.\nDiscussion decisions: cluster granularity, prompt definitions, and next validation steps.\n\n\nOverall: Is the current approach directionally useful, and how can we refine the method to get a less noisy output?"
+    "text": "Project scope: What should the map (not) cover? And what is our motivation?\nPreliminary results: technology, mechanism, and essence maps across k = 10-30.\nDiscussion decisions: cluster granularity, prompt definitions (especially mechanism / essence), and validation steps.\n\n\nOverall: Is the current approach directionally useful, and how can we refine the extraction to get a less noisy output?"
   },
   {
     "objectID": "drafts/mapping_consumers_technology_progress_reworked.html#project-at-scope",
     "href": "drafts/mapping_consumers_technology_progress_reworked.html#project-at-scope",
     "title": "Mapping Consumers + Technology",
-    "section": "Project at scope",
-    "text": "Project at scope\nThis project maps consumer-facing technologies in marketing and consumer-behavior research since 2000.\nThe central idea is to create a structured overview of:\n\nTechnologies: what technologies appear in the literature?\nMechanisms: What are the consequences for consumers discussed in the papers?\nEssences: What are the higher-level conceptual essences these technologies imply?"
+    "section": "Project at Scope",
+    "text": "Project at Scope\nPart I: Technologies and Their Essence\n\nWhat consumer-facing technologies have we analyzed and to what kind of essence have we pointed?\n\n\\(\\rightarrow\\) consumer-facing technologies in marketing and consumer-behavior research since 2000.\nStructured Overview of:\n\nTechnologies: what technologies appear in the literature?\nMechanisms: What are the consequences for consumers discussed in the papers?\nEssences: What are the higher-level conceptual essences these technologies and essences imply?"
+  },
+  {
+    "objectID": "drafts/mapping_consumers_technology_progress_reworked.html#project-at-scope-1",
+    "href": "drafts/mapping_consumers_technology_progress_reworked.html#project-at-scope-1",
+    "title": "Mapping Consumers + Technology",
+    "section": "Project at Scope",
+    "text": "Project at Scope\nPart II: Technospecifity of Essence\n\nTo what extent does the essence of a technology overlap with other technologies, and what are driving factors in the overlap?\n\nStructured Overview of:\n\n(Lack of) Uniqueness of Essence described in relation to specific technologies\nDeterminants of Overlap (to the extent they are identifiable)"
   },
   {
     "objectID": "drafts/mapping_consumers_technology_progress_reworked.html#scope-and-corpus",
     "href": "drafts/mapping_consumers_technology_progress_reworked.html#scope-and-corpus",
     "title": "Mapping Consumers + Technology",
-    "section": "Scope and corpus",
-    "text": "Scope and corpus\nBottom-up assessment of articles published since 2000 in the current journal set:\n\nJournal of Marketing\nJournal of Consumer Research\nJournal of Consumer Psychology\nJournal of the Academy of Marketing Science\nJournal of Marketing Research\nInternational Journal of Research in Marketing\nMarketing Science"
+    "section": "Scope and Corpus",
+    "text": "Scope and Corpus\nBottom-up assessment of articles published since 2000 in the current journal set:\n\n\nJournal of Marketing\nJournal of Consumer Research\nJournal of Consumer Psychology\nJournal of the Academy of Marketing Science\nJournal of Marketing Research\nInternational Journal of Research in Marketing\nMarketing Science"
   },
   {
     "objectID": "drafts/mapping_consumers_technology_progress_reworked.html#conceptual-definitions",
     "href": "drafts/mapping_consumers_technology_progress_reworked.html#conceptual-definitions",
     "title": "Mapping Consumers + Technology",
     "section": "Conceptual Definitions",
-    "text": "Conceptual Definitions\nTechnology. Technologies are treated as scientific knowledge and/or its application for firms and/or consumers with the potential to influence marketing-relevant activities, institutions, and exchange processes (Hoffman et al., 2022).\nConsumer-facing technology. A technology is consumer-facing when consumers or end users directly interact with it or directly experience it.\nEmpirical basis. An article is empirical when it relies on observation or measurement of phenomena, rather than being purely conceptual (University of South Carolina, 2026).\nEssence: the deeper capacities through which technology affects consumer experiences(de Bellis et al., 2026)"
+    "text": "Conceptual Definitions\nTechnology. Technologies are treated as scientific knowledge and/or its application for firms and/or consumers with the potential to influence marketing-relevant activities, institutions, and exchange processes. (Hoffman et al., 2022) \nConsumer-facing technology. A technology is consumer-facing when consumers or end users directly interact with it or directly experience it. \nEmpirical basis. An article is empirical when it relies on observation or measurement of phenomena, rather than being purely conceptual. (University of South Carolina, 2026) \nEssence: the deeper capacities through which technology affects consumer experiences.(de Bellis et al., 2026)"
   },
   {
     "objectID": "drafts/mapping_consumers_technology_progress_reworked.html#identification-of-technology",
@@ -1295,25 +1302,11 @@
     "text": "Technology - k = 10\n\n\nTechnology clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization."
   },
   {
-    "objectID": "drafts/mapping_consumers_technology_progress_reworked.html#technology---k-15",
-    "href": "drafts/mapping_consumers_technology_progress_reworked.html#technology---k-15",
-    "title": "Mapping Consumers + Technology",
-    "section": "Technology - k = 15",
-    "text": "Technology - k = 15\n\n\nTechnology clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization."
-  },
-  {
     "objectID": "drafts/mapping_consumers_technology_progress_reworked.html#technology---k-20",
     "href": "drafts/mapping_consumers_technology_progress_reworked.html#technology---k-20",
     "title": "Mapping Consumers + Technology",
     "section": "Technology - k = 20",
     "text": "Technology - k = 20\n\n\nTechnology clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization."
-  },
-  {
-    "objectID": "drafts/mapping_consumers_technology_progress_reworked.html#technology---k-25",
-    "href": "drafts/mapping_consumers_technology_progress_reworked.html#technology---k-25",
-    "title": "Mapping Consumers + Technology",
-    "section": "Technology - k = 25",
-    "text": "Technology - k = 25\n\n\nTechnology clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization."
   },
   {
     "objectID": "drafts/mapping_consumers_technology_progress_reworked.html#technology---k-30",
@@ -1323,11 +1316,11 @@
     "text": "Technology - k = 30\n\n\nTechnology clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization."
   },
   {
-    "objectID": "drafts/mapping_consumers_technology_progress_reworked.html#mechanism-maps-1",
-    "href": "drafts/mapping_consumers_technology_progress_reworked.html#mechanism-maps-1",
+    "objectID": "drafts/mapping_consumers_technology_progress_reworked.html#extraction-process",
+    "href": "drafts/mapping_consumers_technology_progress_reworked.html#extraction-process",
     "title": "Mapping Consumers + Technology",
-    "section": "Mechanism maps",
-    "text": "Mechanism maps\nOperationalization through prompts?\n\\(\\rightarrow\\) currently feels like a lot of noise"
+    "section": "Extraction Process",
+    "text": "Extraction Process\nMechanism:\nPROMPT = \"Identify the concrete mechanism described in THIS title/abstract.\"\nEssence:\nPROMPT = \"The essence of a technology is the deeper mechanism through which technology reshapes consumer experience.\"\n\\(\\rightarrow\\) currently feels like a lot of noise"
   },
   {
     "objectID": "drafts/mapping_consumers_technology_progress_reworked.html#mechanism---k-10",
@@ -1337,25 +1330,11 @@
     "text": "Mechanism - k = 10\n\n\nMechanism clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization."
   },
   {
-    "objectID": "drafts/mapping_consumers_technology_progress_reworked.html#mechanism---k-15",
-    "href": "drafts/mapping_consumers_technology_progress_reworked.html#mechanism---k-15",
-    "title": "Mapping Consumers + Technology",
-    "section": "Mechanism - k = 15",
-    "text": "Mechanism - k = 15\n\n\nMechanism clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization."
-  },
-  {
     "objectID": "drafts/mapping_consumers_technology_progress_reworked.html#mechanism---k-20",
     "href": "drafts/mapping_consumers_technology_progress_reworked.html#mechanism---k-20",
     "title": "Mapping Consumers + Technology",
     "section": "Mechanism - k = 20",
     "text": "Mechanism - k = 20\n\n\nMechanism clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization."
-  },
-  {
-    "objectID": "drafts/mapping_consumers_technology_progress_reworked.html#mechanism---k-25",
-    "href": "drafts/mapping_consumers_technology_progress_reworked.html#mechanism---k-25",
-    "title": "Mapping Consumers + Technology",
-    "section": "Mechanism - k = 25",
-    "text": "Mechanism - k = 25\n\n\nMechanism clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization."
   },
   {
     "objectID": "drafts/mapping_consumers_technology_progress_reworked.html#mechanism---k-30",
@@ -1365,39 +1344,11 @@
     "text": "Mechanism - k = 30\n\n\nMechanism clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization."
   },
   {
-    "objectID": "drafts/mapping_consumers_technology_progress_reworked.html#essence-maps-1",
-    "href": "drafts/mapping_consumers_technology_progress_reworked.html#essence-maps-1",
-    "title": "Mapping Consumers + Technology",
-    "section": "Essence maps",
-    "text": "Essence maps\nOperationalization through prompts?\n\\(\\rightarrow\\) currently feels like a lot of noise"
-  },
-  {
     "objectID": "drafts/mapping_consumers_technology_progress_reworked.html#essence---k-10",
     "href": "drafts/mapping_consumers_technology_progress_reworked.html#essence---k-10",
     "title": "Mapping Consumers + Technology",
     "section": "Essence - k = 10",
     "text": "Essence - k = 10\n\n\nEssence clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization."
-  },
-  {
-    "objectID": "drafts/mapping_consumers_technology_progress_reworked.html#essence---k-15",
-    "href": "drafts/mapping_consumers_technology_progress_reworked.html#essence---k-15",
-    "title": "Mapping Consumers + Technology",
-    "section": "Essence - k = 15",
-    "text": "Essence - k = 15\n\n\nEssence clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization."
-  },
-  {
-    "objectID": "drafts/mapping_consumers_technology_progress_reworked.html#essence---k-20",
-    "href": "drafts/mapping_consumers_technology_progress_reworked.html#essence---k-20",
-    "title": "Mapping Consumers + Technology",
-    "section": "Essence - k = 20",
-    "text": "Essence - k = 20\n\n\nEssence clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization."
-  },
-  {
-    "objectID": "drafts/mapping_consumers_technology_progress_reworked.html#essence---k-25",
-    "href": "drafts/mapping_consumers_technology_progress_reworked.html#essence---k-25",
-    "title": "Mapping Consumers + Technology",
-    "section": "Essence - k = 25",
-    "text": "Essence - k = 25\n\n\nEssence clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization."
   },
   {
     "objectID": "drafts/mapping_consumers_technology_progress_reworked.html#essence---k-30",
@@ -1412,13 +1363,6 @@
     "title": "Mapping Consumers + Technology",
     "section": "Decisions",
     "text": "Decisions\n\nCluster granularity: How granular is the overview we want to provide?\nMechanism prompt: how explicit must the abstract be before we accept a mechanism?\nEssence prompt: should essences be open-ended or constrained?\nValidation: How do we ensure validity of the method? (less statistical, more conceptual)"
-  },
-  {
-    "objectID": "drafts/mapping_consumers_technology_progress_reworked.html#overview-1",
-    "href": "drafts/mapping_consumers_technology_progress_reworked.html#overview-1",
-    "title": "Mapping Consumers + Technology",
-    "section": "Overview",
-    "text": "Overview\nInclusion of Papers:\n-&gt; include figure here"
   },
   {
     "objectID": "drafts/mapping_consumers_technology_progress_reworked.html#identification-what-is-screened",
@@ -1440,20 +1384,6 @@
     "title": "Mapping Consumers + Technology",
     "section": "Visualization",
     "text": "Visualization\nThe visible 2D maps are used for interpretation, not for clustering.\nMap coordinates are based on UMAP with:\n\ncosine distance;\nn_components = 2;\nmin_dist = 0.05;\ndynamic n_neighbors = min(15, N - 1);\nfixed random seed for reproducibility.\n\nThis means that distance on the plot is useful as an intuition, but cluster assignment should be interpreted through the embedding-and-clustering pipeline, not only visual proximity."
-  },
-  {
-    "objectID": "drafts/mapping_consumers_technology_progress_reworked.html#mechanisms-current-concern",
-    "href": "drafts/mapping_consumers_technology_progress_reworked.html#mechanisms-current-concern",
-    "title": "Mapping Consumers + Technology",
-    "section": "Mechanisms: current concern",
-    "text": "Mechanisms: current concern\nA mechanism should describe a process that links the technology to an effect.\nCurrent issue: the prompt may be producing too much noise, including:\n\noutcomes instead of mechanisms;\nvague abstractions;\ngeneric marketing language;\nmechanisms not actually supported by the abstract;\narticle-topic summaries rather than causal processes.\n\nDiscussion goal: decide how restrictive the next mechanism prompt should be."
-  },
-  {
-    "objectID": "drafts/mapping_consumers_technology_progress_reworked.html#essence-current-concern",
-    "href": "drafts/mapping_consumers_technology_progress_reworked.html#essence-current-concern",
-    "title": "Mapping Consumers + Technology",
-    "section": "Essence: current concern",
-    "text": "Essence: current concern\nAn essence should be more abstract than a mechanism, but not so abstract that every technology collapses into the same words.\nCurrent issue: essences may become:\n\ntoo generic: “consumer behavior”, “digital transformation”;\ntoo evaluative: “better experience”, “improved outcomes”;\ntoo distant from the technology;\ntoo inconsistent across similar mechanisms.\n\nDiscussion goal: decide whether essences should be generated bottom-up from mechanisms, or constrained by a predefined vocabulary."
   },
   {
     "objectID": "drafts/my_algorithmic_self_2.html",

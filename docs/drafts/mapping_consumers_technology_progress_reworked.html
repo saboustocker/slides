@@ -49,7 +49,7 @@
     div.csl-indent {
       margin-left: 2em;
     }  </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-37bf56eb9b91c0eb18999bdba8538062.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-4facc53261f7ad8bbb0e47447976ea93.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -165,7 +165,7 @@
   <p class="date">2026-06-03</p>
 </section>
 <section>
-<section id="agenda" class="title-slide slide level1 section-slide-bg center">
+<section id="agenda" class="title-slide slide level1 section-header-bg center">
 <h1>Agenda</h1>
 
 </section>
@@ -175,10 +175,10 @@
 <ol type="1">
 <li><strong>Project scope</strong>: What should the map (not) cover? And what is our motivation?</li>
 <li><strong>Preliminary results</strong>: technology, mechanism, and essence maps across k = 10-30.</li>
-<li><strong>Discussion decisions</strong>: cluster granularity, prompt definitions, and next validation steps.</li>
+<li><strong>Discussion decisions</strong>: cluster granularity, prompt definitions (especially mechanism / essence), and validation steps.</li>
 </ol>
 <div class="focusbox">
-<p><strong>Overall</strong>: Is the current approach directionally useful, and how can we refine the method to get a less noisy output?</p>
+<p><strong>Overall</strong>: Is the current approach directionally useful, and how can we <strong>refine the extraction</strong> to get a less noisy output?</p>
 </div>
 </div>
 </section></section>
@@ -188,18 +188,35 @@
 
 </section>
 <section id="project-at-scope" class="slide level2">
-<h2>Project at scope</h2>
-<p>This project maps <strong>consumer-facing technologies in marketing and consumer-behavior research</strong> since 2000.</p>
-<p>The central idea is to create a structured overview of:</p>
+<h2>Project at Scope</h2>
+<h3 id="part-i-technologies-and-their-essence">Part I: Technologies and Their Essence</h3>
+<blockquote>
+<p>What consumer-facing technologies have we analyzed and to what kind of essence have we pointed?</p>
+</blockquote>
+<p><span class="math inline">\(\rightarrow\)</span> <strong>consumer-facing technologies in marketing and consumer-behavior research</strong> since 2000.</p>
+<p>Structured Overview of:</p>
 <ol type="1">
 <li><strong>Technologies</strong>: what technologies appear in the literature?</li>
 <li><strong>Mechanisms</strong>: What are the consequences for consumers discussed in the papers?</li>
-<li><strong>Essences</strong>: What are the higher-level conceptual essences these technologies imply?</li>
+<li><strong>Essences</strong>: What are the higher-level conceptual essences these technologies and essences imply?</li>
+</ol>
+</section>
+<section id="project-at-scope-1" class="slide level2">
+<h2>Project at Scope</h2>
+<h3 id="part-ii-technospecifity-of-essence">Part II: Technospecifity of Essence</h3>
+<blockquote>
+<p>To what extent does the essence of a technology overlap with other technologies, and what are driving factors in the overlap?</p>
+</blockquote>
+<p>Structured Overview of:</p>
+<ol type="1">
+<li>(Lack of) <strong>Uniqueness of Essence</strong> described in relation to specific technologies</li>
+<li><strong>Determinants of Overlap</strong> (to the extent they are identifiable)</li>
 </ol>
 </section>
 <section id="scope-and-corpus" class="slide level2">
-<h2>Scope and corpus</h2>
+<h2>Scope and Corpus</h2>
 <p>Bottom-up assessment of articles published since 2000 in the current journal set:</p>
+<div class="smaller-p">
 <ul>
 <li><em>Journal of Marketing</em></li>
 <li><em>Journal of Consumer Research</em></li>
@@ -209,13 +226,14 @@
 <li><em>International Journal of Research in Marketing</em></li>
 <li><em>Marketing Science</em></li>
 </ul>
+</div>
 </section>
 <section id="conceptual-definitions" class="slide level2 smaller">
 <h2>Conceptual Definitions</h2>
-<p><strong>Technology.</strong> Technologies are treated as scientific knowledge and/or its application for firms and/or consumers with the potential to influence marketing-relevant activities, institutions, and exchange processes <span class="citation" data-cites="hoffmanRiseNewTechnologies2022">(<a href="#/bibliography" role="doc-biblioref" onclick="">Hoffman et al., 2022</a>)</span>.</p>
-<p><strong>Consumer-facing technology.</strong> A technology is consumer-facing when consumers or end users directly interact with it or directly experience it.</p>
-<p><strong>Empirical basis.</strong> An article is empirical when it relies on observation or measurement of phenomena, rather than being purely conceptual <span class="citation" data-cites="veraLibraryGuidesEmpirical">(<a href="#/bibliography" role="doc-biblioref" onclick="">University of South Carolina, 2026</a>)</span>.</p>
-<p><strong>Essence</strong>: the deeper capacities through which technology affects consumer experiences<span class="citation" data-cites="VisibleMeasurableImmediate">(<a href="#/bibliography" role="doc-biblioref" onclick="">de Bellis et al., 2026</a>)</span></p>
+<p><strong>Technology.</strong> Technologies are treated as scientific knowledge and/or its application for firms and/or consumers with the potential to influence marketing-relevant activities, institutions, and exchange processes. <span class="citation" data-cites="hoffmanRiseNewTechnologies2022">(<a href="#/bibliography" role="doc-biblioref" onclick="">Hoffman et al., 2022</a>)</span> <br><br></p>
+<p><strong>Consumer-facing technology.</strong> A technology is consumer-facing when consumers or end users directly interact with it or directly experience it. <br><br></p>
+<p><strong>Empirical basis.</strong> An article is empirical when it relies on observation or measurement of phenomena, rather than being purely conceptual. <span class="citation" data-cites="veraLibraryGuidesEmpirical">(<a href="#/bibliography" role="doc-biblioref" onclick="">University of South Carolina, 2026</a>)</span> <br><br></p>
+<p><strong>Essence</strong>: the deeper capacities through which technology affects consumer experiences.<span class="citation" data-cites="VisibleMeasurableImmediate">(<a href="#/bibliography" role="doc-biblioref" onclick="">de Bellis et al., 2026</a>)</span></p>
 </section></section>
 <section id="preliminary-results" class="title-slide slide level1 section-header-bg center">
 <h1>Preliminary Results</h1>
@@ -227,34 +245,26 @@
 <h1>Technology Maps</h1>
 
 </section>
-<section id="identification-of-technology" class="slide level2">
+<section id="identification-of-technology" class="slide level2 image-slide-bg">
 <h2>Identification of Technology</h2>
-
-<img data-src="../images/Extraction_pipeline.png" class="r-stretch"></section>
+<div class="center-middle">
+<p><img data-src="../images/Figures_CTM/technology_identification.svg"></p>
+</div>
+</section>
 <section id="technology---k-10" class="slide level2">
 <h2>Technology - k = 10</h2>
 <iframe src="../images/Figures_CTM/technology/technology_map_k10.html" width="100%" height="620px">
 </iframe>
 <p><small>Technology clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization.</small></p>
 </section>
-<section id="technology---k-15" class="slide level2">
-<h2>Technology - k = 15</h2>
-<iframe src="../images/Figures_CTM/technology/technology_map_k15.html" width="100%" height="620px">
-</iframe>
-<p><small>Technology clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization.</small></p>
-</section>
+
 <section id="technology---k-20" class="slide level2">
 <h2>Technology - k = 20</h2>
 <iframe src="../images/Figures_CTM/technology/technology_map_k20.html" width="100%" height="620px">
 </iframe>
 <p><small>Technology clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization.</small></p>
 </section>
-<section id="technology---k-25" class="slide level2">
-<h2>Technology - k = 25</h2>
-<iframe src="../images/Figures_CTM/technology/technology_map_k25.html" width="100%" height="620px">
-</iframe>
-<p><small>Technology clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization.</small></p>
-</section>
+
 <section id="technology---k-30" class="slide level2">
 <h2>Technology - k = 30</h2>
 <iframe src="../images/Figures_CTM/technology/technology_map_k30.html" width="100%" height="620px">
@@ -262,13 +272,16 @@
 <p><small>Technology clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization.</small></p>
 </section></section>
 <section>
-<section id="mechanism-maps" class="title-slide slide level1 green-slide-bg center">
-<h1>Mechanism Maps</h1>
+<section id="mechanism-and-essence-maps" class="title-slide slide level1 green-slide-bg center">
+<h1>Mechanism and Essence Maps</h1>
 
 </section>
-<section id="mechanism-maps-1" class="slide level2">
-<h2>Mechanism maps</h2>
-<p><strong>Operationalization through prompts?</strong></p>
+<section id="extraction-process" class="slide level2">
+<h2>Extraction Process</h2>
+<p><strong>Mechanism</strong>:</p>
+<p><code>PROMPT = "Identify the concrete mechanism described in THIS title/abstract."</code></p>
+<p><strong>Essence</strong>:</p>
+<p><code>PROMPT = "The essence of a technology is the deeper mechanism through which technology reshapes consumer experience."</code></p>
 <p><span class="math inline">\(\rightarrow\)</span> currently feels like a lot of noise</p>
 </section>
 <section id="mechanism---k-10" class="slide level2">
@@ -277,24 +290,14 @@
 </iframe>
 <p><small>Mechanism clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization.</small></p>
 </section>
-<section id="mechanism---k-15" class="slide level2">
-<h2>Mechanism - k = 15</h2>
-<iframe src="../images/Figures_CTM/mechanism/mechanism_map_k15.html" width="100%" height="620px">
-</iframe>
-<p><small>Mechanism clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization.</small></p>
-</section>
+
 <section id="mechanism---k-20" class="slide level2">
 <h2>Mechanism - k = 20</h2>
 <iframe src="../images/Figures_CTM/mechanism/mechanism_map_k20.html" width="100%" height="620px">
 </iframe>
 <p><small>Mechanism clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization.</small></p>
 </section>
-<section id="mechanism---k-25" class="slide level2">
-<h2>Mechanism - k = 25</h2>
-<iframe src="../images/Figures_CTM/mechanism/mechanism_map_k25.html" width="100%" height="620px">
-</iframe>
-<p><small>Mechanism clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization.</small></p>
-</section>
+
 <section id="mechanism---k-30" class="slide level2">
 <h2>Mechanism - k = 30</h2>
 <iframe src="../images/Figures_CTM/mechanism/mechanism_map_k30.html" width="100%" height="620px">
@@ -306,35 +309,15 @@
 <h1>Essence Maps</h1>
 
 </section>
-<section id="essence-maps-1" class="slide level2">
-<h2>Essence maps</h2>
-<p><strong>Operationalization through prompts?</strong></p>
-<p><span class="math inline">\(\rightarrow\)</span> currently feels like a lot of noise</p>
-</section>
 <section id="essence---k-10" class="slide level2">
 <h2>Essence - k = 10</h2>
 <iframe src="../images/Figures_CTM/essence/essence_map_k10.html" width="100%" height="620px">
 </iframe>
 <p><small>Essence clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization.</small></p>
 </section>
-<section id="essence---k-15" class="slide level2">
-<h2>Essence - k = 15</h2>
-<iframe src="../images/Figures_CTM/essence/essence_map_k15.html" width="100%" height="620px">
-</iframe>
-<p><small>Essence clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization.</small></p>
-</section>
-<section id="essence---k-20" class="slide level2">
-<h2>Essence - k = 20</h2>
-<iframe src="../images/Figures_CTM/essence/essence_map_k20.html" width="100%" height="620px">
-</iframe>
-<p><small>Essence clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization.</small></p>
-</section>
-<section id="essence---k-25" class="slide level2">
-<h2>Essence - k = 25</h2>
-<iframe src="../images/Figures_CTM/essence/essence_map_k25.html" width="100%" height="620px">
-</iframe>
-<p><small>Essence clusters based on k-means clustering. Map coordinates are based on UMAP dimensionality reduction with cosine distance, two components, min_dist = 0.05, and dynamic n_neighbors = min(15, N - 1). Coordinates are used only for visualization.</small></p>
-</section>
+
+
+
 <section id="essence---k-30" class="slide level2">
 <h2>Essence - k = 30</h2>
 <iframe src="../images/Figures_CTM/essence/essence_map_k30.html" width="100%" height="620px">
@@ -361,14 +344,9 @@
 </section>
 
 <section>
-<section id="method" class="title-slide slide level1 center">
+<section id="method" class="title-slide slide level1 section-header-bg center">
 <h1>Method</h1>
 
-</section>
-<section id="overview-1" class="slide level2">
-<h2>Overview</h2>
-<p>Inclusion of Papers:</p>
-<p>-&gt; include figure here</p>
 </section>
 <section id="identification-what-is-screened" class="slide level2">
 <h2>Identification: what is screened</h2>
@@ -379,7 +357,7 @@
 </ol>
 <p>Explorative: Was the technology <strong>new at the time</strong> of the paper, in the sense of being early in the adoption cycle?</p>
 </section>
-<section id="aggregation" class="slide level2">
+<section id="aggregation" class="slide level2 smaller">
 <h2>Aggregation</h2>
 <ul>
 <li>Technologies, mechanisms and essences are transformed to long format (i.e.&nbsp;if a paper discusses more than one technology, I include it several times, once for each technology)</li>
@@ -394,7 +372,7 @@
 </ul>
 <p>!! Important: Currently, there is no statistical validation of optimal method. !!</p>
 </section>
-<section id="visualization" class="slide level2">
+<section id="visualization" class="slide level2 smaller">
 <h2>Visualization</h2>
 <p>The visible 2D maps are used for interpretation, not for clustering.</p>
 <p>Map coordinates are based on UMAP with:</p>
@@ -406,31 +384,6 @@
 <li>fixed random seed for reproducibility.</li>
 </ul>
 <p>This means that distance on the plot is useful as an intuition, but cluster assignment should be interpreted through the embedding-and-clustering pipeline, not only visual proximity.</p>
-</section>
-<section id="mechanisms-current-concern" class="slide level2">
-<h2>Mechanisms: current concern</h2>
-<p>A mechanism should describe a <strong>process that links the technology to an effect</strong>.</p>
-<p>Current issue: the prompt may be producing too much noise, including:</p>
-<ul>
-<li>outcomes instead of mechanisms;</li>
-<li>vague abstractions;</li>
-<li>generic marketing language;</li>
-<li>mechanisms not actually supported by the abstract;</li>
-<li>article-topic summaries rather than causal processes.</li>
-</ul>
-<p>Discussion goal: decide how restrictive the next mechanism prompt should be.</p>
-</section>
-<section id="essence-current-concern" class="slide level2">
-<h2>Essence: current concern</h2>
-<p>An essence should be more abstract than a mechanism, but not so abstract that every technology collapses into the same words.</p>
-<p>Current issue: essences may become:</p>
-<ul>
-<li>too generic: “consumer behavior”, “digital transformation”;</li>
-<li>too evaluative: “better experience”, “improved outcomes”;</li>
-<li>too distant from the technology;</li>
-<li>too inconsistent across similar mechanisms.</li>
-</ul>
-<p>Discussion goal: decide whether essences should be generated bottom-up from mechanisms, or constrained by a predefined vocabulary.</p>
 </section></section>
 <section id="bibliography" class="title-slide slide level1 smaller scrollable">
 <h1>Bibliography</h1>
