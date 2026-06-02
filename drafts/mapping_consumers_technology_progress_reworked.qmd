@@ -43,9 +43,9 @@ bibliography: ../bibliography.bib
 
 # Overview {.section-header-bg}
 
-## Project at Scope
+## Project at Scope {.smaller}
 
-### Part I: Technologies and Their Essence
+### Part I: Technologies and Their Essence 
 
 > What consumer-facing technologies have we analyzed and to what kind of essence have we pointed?
 
@@ -57,7 +57,7 @@ Structured Overview of:
 2. **Mechanisms**: What are the consequences for consumers discussed in the papers?
 3. **Essences**: What are the higher-level conceptual essences these technologies and essences imply?
 
-## Project at Scope
+## Project at Scope {.smaller}
 
 ### Part II: Technospecifity of Essence
 
@@ -67,6 +67,8 @@ Structured Overview of:
 
 1. (Lack of) **Uniqueness of Essence** described in relation to specific technologies
 2. **Determinants of Overlap** (to the extent they are identifiable)
+
+**$\Rightarrow$ Out of scope for today.**
 
 ## Scope and Corpus
 
@@ -224,9 +226,9 @@ $\rightarrow$ currently feels like a lot of noise
 4. **Essence prompt**: should essences be open-ended or constrained?
 5. **Validation**: How do we ensure validity of the method? (less statistical, more conceptual)
 
-# Appendix
+# Appendix {.section-header-bg}
 
-# Method {.section-header-bg}
+# Method {.green-slide-bg}
 
 ## Identification: what is screened
 
